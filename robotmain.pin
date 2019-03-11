@@ -130,7 +130,7 @@ GNDIO                        : 60        : gnd    :                   :         
 GND*                         : 61        :        :                   :         : 2         :                
 LED_RED                      : 62        : output : 3.3-V LVTTL       :         : 2         : Y              
 VCCINT                       : 63        : power  :                   : 3.3V    :           :                
-CLK_50MHZ                    : 64        : input  : 3.3-V LVTTL       :         : 2         : Y              
+Clk_50MHZ                    : 64        : input  : 3.3-V LVTTL       :         : 2         : Y              
 GNDINT                       : 65        : gnd    :                   :         :           :                
 LED_Green                    : 66        : output : 3.3-V LVTTL       :         : 2         : Y              
 Dip[2]                       : 67        : input  : 3.3-V LVTTL       :         : 2         : Y              

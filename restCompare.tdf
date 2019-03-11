@@ -39,7 +39,7 @@ INCLUDE "lpm_compare.inc";
 SUBDESIGN restCompare
 (
 	dataa[3..0]	 : INPUT;
-	AeB	 : OUTPUT;
+	AneB	 : OUTPUT;
 )
 
 VARIABLE
@@ -53,7 +53,7 @@ VARIABLE
 
 BEGIN
 
-	AeB = lpm_compare_component.AeB;
+	AneB = lpm_compare_component.AneB;
 	lpm_compare_component.dataa[3..0] = dataa[3..0];
 	lpm_compare_component.datab[3..0] = 0;
 END;
@@ -63,12 +63,12 @@ END;
 -- ============================================================
 -- CNX file retrieval info
 -- ============================================================
--- Retrieval info: PRIVATE: AeqB NUMERIC "1"
+-- Retrieval info: PRIVATE: AeqB NUMERIC "0"
 -- Retrieval info: PRIVATE: AgeB NUMERIC "0"
 -- Retrieval info: PRIVATE: AgtB NUMERIC "0"
 -- Retrieval info: PRIVATE: AleB NUMERIC "0"
 -- Retrieval info: PRIVATE: AltB NUMERIC "0"
--- Retrieval info: PRIVATE: AneB NUMERIC "0"
+-- Retrieval info: PRIVATE: AneB NUMERIC "1"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "MAX II"
 -- Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "0"
 -- Retrieval info: PRIVATE: Latency NUMERIC "0"
@@ -84,9 +84,9 @@ END;
 -- Retrieval info: CONSTANT: LPM_REPRESENTATION STRING "UNSIGNED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COMPARE"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "4"
--- Retrieval info: USED_PORT: AeB 0 0 0 0 OUTPUT NODEFVAL AeB
+-- Retrieval info: USED_PORT: AneB 0 0 0 0 OUTPUT NODEFVAL AneB
 -- Retrieval info: USED_PORT: dataa 0 0 4 0 INPUT NODEFVAL dataa[3..0]
--- Retrieval info: CONNECT: AeB 0 0 0 0 @AeB 0 0 0 0
+-- Retrieval info: CONNECT: AneB 0 0 0 0 @AneB 0 0 0 0
 -- Retrieval info: CONNECT: @dataa 0 0 4 0 dataa 0 0 4 0
 -- Retrieval info: CONNECT: @datab 0 0 4 0 0 0 0 0 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all

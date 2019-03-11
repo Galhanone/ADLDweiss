@@ -39,10 +39,10 @@ INCLUDE "lpm_counter.inc";
 SUBDESIGN freqCounter
 (
 	clock	 : INPUT;
-	data[3..0]	 : INPUT;
+	data[7..0]	 : INPUT;
 	sload	 : INPUT;
 	cout	 : OUTPUT;
-	q[3..0]	 : OUTPUT;
+	q[7..0]	 : OUTPUT;
 )
 
 VARIABLE
@@ -51,16 +51,16 @@ VARIABLE
 			LPM_DIRECTION = "DOWN",
 			LPM_PORT_UPDOWN = "PORT_UNUSED",
 			LPM_TYPE = "LPM_COUNTER",
-			LPM_WIDTH = 4
+			LPM_WIDTH = 8
 			);
 
 BEGIN
 
 	cout = lpm_counter_component.cout;
-	q[3..0] = lpm_counter_component.q[3..0];
+	q[7..0] = lpm_counter_component.q[7..0];
 	lpm_counter_component.sload = sload;
 	lpm_counter_component.clock = clock;
-	lpm_counter_component.data[3..0] = data[3..0];
+	lpm_counter_component.data[7..0] = data[7..0];
 END;
 
 
@@ -85,21 +85,21 @@ END;
 -- Retrieval info: PRIVATE: SSET NUMERIC "0"
 -- Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
--- Retrieval info: PRIVATE: nBit NUMERIC "4"
+-- Retrieval info: PRIVATE: nBit NUMERIC "8"
 -- Retrieval info: CONSTANT: LPM_DIRECTION STRING "DOWN"
 -- Retrieval info: CONSTANT: LPM_PORT_UPDOWN STRING "PORT_UNUSED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COUNTER"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "4"
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "8"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
 -- Retrieval info: USED_PORT: cout 0 0 0 0 OUTPUT NODEFVAL cout
--- Retrieval info: USED_PORT: data 0 0 4 0 INPUT NODEFVAL data[3..0]
--- Retrieval info: USED_PORT: q 0 0 4 0 OUTPUT NODEFVAL q[3..0]
+-- Retrieval info: USED_PORT: data 0 0 8 0 INPUT NODEFVAL data[7..0]
+-- Retrieval info: USED_PORT: q 0 0 8 0 OUTPUT NODEFVAL q[7..0]
 -- Retrieval info: USED_PORT: sload 0 0 0 0 INPUT NODEFVAL sload
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
--- Retrieval info: CONNECT: q 0 0 4 0 @q 0 0 4 0
+-- Retrieval info: CONNECT: q 0 0 8 0 @q 0 0 8 0
 -- Retrieval info: CONNECT: cout 0 0 0 0 @cout 0 0 0 0
 -- Retrieval info: CONNECT: @sload 0 0 0 0 sload 0 0 0 0
--- Retrieval info: CONNECT: @data 0 0 4 0 data 0 0 4 0
+-- Retrieval info: CONNECT: @data 0 0 8 0 data 0 0 8 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL freqCounter.tdf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL freqCounter.inc TRUE

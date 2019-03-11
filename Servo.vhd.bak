@@ -1,0 +1,24 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+Entity Servo is 
+	port(Clk:	  in STD_LOGIC_VECTOR (24 DOWNTO 0);
+		 For_Rev: in STD_LOGIC;
+		 Go_Stop: in STD_LOGIC;
+		 Servo:	  out STD_LOGIC);
+End Servo;
+
+Architecture Struct of Servo is
+	
+Begin
+	Process(Clk(15))
+	Begin
+		if(Go_Stop = '0') then
+			Servo <= '0';
+		elsif(For_Rev = '0') then
+			Servo <= (Clk(15) AND Clk(16) AND Clk(17) AND Clk(18) AND Clk(19));
+		else
+			Servo <= (Clk(17) AND Clk(18) AND Clk(19));
+		end if;
+	End Process;
+End Struct;

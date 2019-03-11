@@ -16,11 +16,11 @@
 FUNCTION freqCounter 
 (
 	clock,
-	data[3..0],
+	data[7..0],
 	sload
 )
 
 RETURNS (
 	cout,
-	q[3..0]
+	q[7..0]
 );

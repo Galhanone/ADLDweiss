@@ -19,5 +19,5 @@ FUNCTION restCompare
 )
 
 RETURNS (
-	AeB
+	AneB
 );

@@ -33,9 +33,6 @@ set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id e
 set_global_assignment -name DEVICE_FILTER_PACKAGE TQFP
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 100
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 5
-set_global_assignment -name BDF_FILE robotmain.bdf
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_location_assignment PIN_19 -to BLeft_IR_Sensor
 set_instance_assignment -name IO_STANDARD "3.3V SCHMITT TRIGGER INPUT" -to BLeft_IR_Sensor
 set_location_assignment PIN_54 -to Blue_Tooth_TX_Out
@@ -119,4 +116,18 @@ set_location_assignment PIN_54 -to Blue_Tooth_TX_out
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Blue_Tooth_TX_out
 set_location_assignment PIN_64 -to Clk_50MHZ
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Clk_50MHZ
+set_global_assignment -name SOURCE_FILE Display_mux.cmp
+set_global_assignment -name VHDL_FILE Display_mux.vhd
+set_global_assignment -name VHDL_FILE Duration_ROM.vhd
+set_global_assignment -name AHDL_FILE durCounter.tdf
+set_global_assignment -name AHDL_FILE freqCounter.tdf
+set_global_assignment -name AHDL_FILE noteCounter.tdf
+set_global_assignment -name VHDL_FILE Notes.vhd
+set_global_assignment -name AHDL_FILE octaveMux.tdf
+set_global_assignment -name AHDL_FILE restCompare.tdf
+set_global_assignment -name VHDL_FILE Song_ROM.vhd
+set_global_assignment -name BDF_FILE robotmain.bdf
 set_global_assignment -name VHDL_FILE Seven_Seg_Driver.vhd
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name VHDL_FILE Servo.vhd

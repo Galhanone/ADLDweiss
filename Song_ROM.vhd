@@ -9,7 +9,7 @@ Entity Song_ROM is
 		 Duration: 	out  STD_LOGIC_VECTOR (2 downto 0));
 End Song_ROM;
 
-	Architecture Structure of Song_ROM  is
+Architecture Structure of Song_ROM  is
 	signal data: STD_LOGIC_VECTOR (8 downto 0);
 Begin
 		Octave <= data(8 downto 7);
@@ -42,6 +42,7 @@ when "010010"  => data <=  "010110001";
 when "010011"  => data <=  "010110001";
 when "010100"  => data <=  "010101100";
 when "010101"  => data <=  "010000001";
+
 when "010110"  => data <=  "011000001";
 when "010111"  => data <=  "011000001";
 when "011000"  => data <=  "100001001";
@@ -53,16 +54,19 @@ when "011101"  => data <=  "100001001";
 when "011110"  => data <=  "011010001";
 when "011111"  => data <=  "011000100";
 when "100000"  => data <=  "010000001";
-when "100001"  => data <=  "010001001";
-when "100010"  => data <=  "010001001";
+
+when "100001"  => data <=  "100001001";
+when "100010"  => data <=  "100001001";
 when "100011"  => data <=  "011100001";
 when "100100"  => data <=  "010011100";
 when "100101"  => data <=  "010000001";
+
 when "100110"  => data <=  "010110001";
 when "100111"  => data <=  "011010001";
 when "101000"  => data <=  "011000001";
 when "101001"  => data <=  "010101100";
 when "101010"  => data <=  "010000001";
+
 when "101011"  => data <=  "011000001";
 when "101100"  => data <=  "011000001";
 when "101101"  => data <=  "100001001";
@@ -74,11 +78,13 @@ when "110010"  => data <=  "100001001";
 when "110011"  => data <=  "011010001";
 when "110100"  => data <=  "011000100";
 when "110101"  => data <=  "010000001";
+
 when "110110"  => data <=  "100001001";
 when "110111"  => data <=  "011100001";
 when "111000"  => data <=  "100001001";
 when "111001"  => data <=  "100011100";
 when "111010"  => data <=  "010000001";
+
 when "111011"  => data <=  "100101001";
 when "111100"  => data <=  "100110010";
 when "111101"  => data <=  "011100001";

@@ -16,11 +16,11 @@
 FUNCTION durCounter 
 (
 	clock,
-	data[2..0],
+	data[5..0],
 	sload
 )
 
 RETURNS (
 	cout,
-	q[2..0]
+	q[5..0]
 );
