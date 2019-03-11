@@ -1,0 +1,10 @@
+|MusicLab
+speakerA <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+pin_name => inst1.IN0
+pin_name => inst1.IN1
+pin_name => inst1.IN2
+pin_name => inst~0.IN0
+pin_name => inst.CLK
+speakerB <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
