@@ -1,5 +1,5 @@
 Flow report for robotmain
-Mon Mar 11 17:22:29 2019
+Mon Mar 18 08:38:02 2019
 Quartus II Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +--------------------------+----------------------------------------------+
-; Flow Status              ; Successful - Mon Mar 11 17:22:29 2019        ;
+; Flow Status              ; Successful - Mon Mar 18 08:38:01 2019        ;
 ; Quartus II Version       ; 7.2 Build 207 03/18/2008 SP 3 SJ Web Edition ;
 ; Revision Name            ; robotmain                                    ;
 ; Top-level Entity Name    ; robotmain                                    ;
@@ -61,7 +61,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/11/2019 17:22:23 ;
+; Start date & time ; 03/18/2019 08:37:28 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; robotmain           ;
 +-------------------+---------------------+
@@ -81,11 +81,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ;
 +-------------------------+--------------+-------------------------+
-; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ;
-; Fitter                  ; 00:00:00     ; 1.0                     ;
+; Analysis & Synthesis    ; 00:00:16     ; 1.0                     ;
+; Fitter                  ; 00:00:05     ; 1.0                     ;
 ; Assembler               ; 00:00:01     ; 1.0                     ;
-; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ;
-; Total                   ; 00:00:04     ; --                      ;
+; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ;
+; Total                   ; 00:00:24     ; --                      ;
 +-------------------------+--------------+-------------------------+
 
 

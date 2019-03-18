@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for robotmain
-Mon Mar 11 17:22:29 2019
+Mon Mar 18 08:38:01 2019
 Quartus II Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
 
 
@@ -561,7 +561,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
-    Info: Processing started: Mon Mar 11 17:22:28 2019
+    Info: Processing started: Mon Mar 18 08:37:59 2019
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off robotmain -c robotmain
 Info: Started post-fitting delay annotation
 Info: Delay annotation completed successfully
@@ -791,8 +791,8 @@ Info: th for register "inst18" (data pin = "Button_2", clock pin = "Clk_50MHZ") 
         Info: Total cell delay = 2.850 ns ( 53.90 % )
         Info: Total interconnect delay = 2.438 ns ( 46.10 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Allocated 225 megabytes of memory during processing
-    Info: Processing ended: Mon Mar 11 17:22:29 2019
-    Info: Elapsed time: 00:00:01
+    Info: Allocated 201 megabytes of memory during processing
+    Info: Processing ended: Mon Mar 18 08:38:02 2019
+    Info: Elapsed time: 00:00:03
 
 
