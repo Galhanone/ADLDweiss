@@ -1,5 +1,5 @@
 Analysis & Synthesis report for robotmain
-Mon Mar 11 17:22:25 2019
+Mon Mar 18 08:37:43 2019
 Quartus II Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
 
 
@@ -53,7 +53,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Mar 11 17:22:25 2019        ;
+; Analysis & Synthesis Status ; Successful - Mon Mar 18 08:37:43 2019        ;
 ; Quartus II Version          ; 7.2 Build 207 03/18/2008 SP 3 SJ Web Edition ;
 ; Revision Name               ; robotmain                                    ;
 ; Top-level Entity Name       ; robotmain                                    ;
@@ -133,29 +133,29 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                            ;
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+
-; Display_mux.vhd                  ; yes             ; User VHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Display_mux.vhd       ;
-; Duration_ROM.vhd                 ; yes             ; User VHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Duration_ROM.vhd      ;
-; durCounter.tdf                   ; yes             ; User AHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/durCounter.tdf        ;
-; freqCounter.tdf                  ; yes             ; User AHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/freqCounter.tdf       ;
-; noteCounter.tdf                  ; yes             ; User AHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/noteCounter.tdf       ;
-; Notes.vhd                        ; yes             ; User VHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Notes.vhd             ;
-; octaveMux.tdf                    ; yes             ; User AHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/octaveMux.tdf         ;
-; restCompare.tdf                  ; yes             ; User AHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/restCompare.tdf       ;
-; Song_ROM.vhd                     ; yes             ; User VHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Song_ROM.vhd          ;
-; robotmain.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/robotmain.bdf         ;
-; Seven_Seg_Driver.vhd             ; yes             ; User VHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Seven_Seg_Driver.vhd  ;
-; Servo.vhd                        ; yes             ; User VHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Servo.vhd             ;
+; Display_mux.vhd                  ; yes             ; User VHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Display_mux.vhd           ;
+; Duration_ROM.vhd                 ; yes             ; User VHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Duration_ROM.vhd          ;
+; durCounter.tdf                   ; yes             ; User AHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/durCounter.tdf            ;
+; freqCounter.tdf                  ; yes             ; User AHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/freqCounter.tdf           ;
+; noteCounter.tdf                  ; yes             ; User AHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/noteCounter.tdf           ;
+; Notes.vhd                        ; yes             ; User VHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Notes.vhd                 ;
+; octaveMux.tdf                    ; yes             ; User AHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/octaveMux.tdf             ;
+; restCompare.tdf                  ; yes             ; User AHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/restCompare.tdf           ;
+; Song_ROM.vhd                     ; yes             ; User VHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Song_ROM.vhd              ;
+; robotmain.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/robotmain.bdf             ;
+; Seven_Seg_Driver.vhd             ; yes             ; User VHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Seven_Seg_Driver.vhd      ;
+; Servo.vhd                        ; yes             ; User VHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Servo.vhd                 ;
 ; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_counter.inc         ;
 ; lpm_mux.inc                      ; yes             ; Other                              ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_mux.inc             ;
 ; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_compare.inc         ;
-; Digit_decode.vhd                 ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Digit_decode.vhd      ;
+; Digit_decode.vhd                 ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Digit_decode.vhd          ;
 ; lpm_decode.tdf                   ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_decode.tdf          ;
 ; declut.inc                       ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/declut.inc              ;
 ; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/altshift.inc            ;
 ; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_constant.inc        ;
 ; aglobal72.inc                    ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/aglobal72.inc           ;
-; db/decode_gpe.tdf                ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/decode_gpe.tdf     ;
-; BigCount.vhd                     ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/BigCount.vhd          ;
+; db/decode_gpe.tdf                ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/decode_gpe.tdf         ;
+; BigCount.vhd                     ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/BigCount.vhd              ;
 ; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_counter.tdf         ;
 ; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_decode.inc          ;
 ; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_add_sub.inc         ;
@@ -165,20 +165,20 @@ applicable agreement for further details.
 ; alt_synch_counter_f.inc          ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/alt_synch_counter_f.inc ;
 ; alt_counter_f10ke.inc            ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/alt_counter_f10ke.inc   ;
 ; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/alt_counter_stratix.inc ;
-; db/cntr_49h.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/cntr_49h.tdf       ;
+; db/cntr_49h.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_49h.tdf           ;
 ; LPM_MUX.tdf                      ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/LPM_MUX.tdf             ;
 ; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/muxlut.inc              ;
 ; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/bypassff.inc            ;
-; db/mux_vld.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/mux_vld.tdf        ;
-; Colon_mux.vhd                    ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Colon_mux.vhd         ;
-; db/mux_sld.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/mux_sld.tdf        ;
-; db/cntr_esi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/cntr_esi.tdf       ;
-; db/cntr_j7h.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/cntr_j7h.tdf       ;
+; db/mux_vld.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/mux_vld.tdf            ;
+; Colon_mux.vhd                    ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Colon_mux.vhd             ;
+; db/mux_sld.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/mux_sld.tdf            ;
+; db/cntr_esi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_esi.tdf           ;
+; db/cntr_j7h.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_j7h.tdf           ;
 ; lpm_compare.tdf                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_compare.tdf         ;
 ; comptree.inc                     ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/comptree.inc            ;
-; db/cmpr_rci.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/cmpr_rci.tdf       ;
-; db/cntr_gsi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/cntr_gsi.tdf       ;
-; db/mux_h9c.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/mux_h9c.tdf        ;
+; db/cmpr_rci.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cmpr_rci.tdf           ;
+; db/cntr_gsi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_gsi.tdf           ;
+; db/mux_h9c.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/mux_h9c.tdf            ;
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+
 
 
@@ -540,7 +540,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
-    Info: Processing started: Mon Mar 11 17:22:23 2019
+    Info: Processing started: Mon Mar 18 08:37:27 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off robotmain -c robotmain
 Info: Found 2 design units, including 1 entities, in source file Display_mux.vhd
     Info: Found design unit 1: display_mux-SYN
@@ -572,6 +572,9 @@ Info: Found 2 design units, including 1 entities, in source file Seven_Seg_Drive
 Info: Found 2 design units, including 1 entities, in source file Servo.vhd
     Info: Found design unit 1: Servo-Struct
     Info: Found entity 1: Servo
+Info: Found 2 design units, including 1 entities, in source file obstacle_avoidance_FSM.vhd
+    Info: Found design unit 1: obstacle_avoidance_FSM-rtl
+    Info: Found entity 1: obstacle_avoidance_FSM
 Info: Elaborating entity "robotmain" for the top level hierarchy
 Warning: Pin "Blue_Tooth_TX_Out" is missing source
 Warning: Pin "LED_Blue" is missing source
@@ -684,8 +687,8 @@ Info: Implemented 176 device resources after synthesis - the final resource coun
     Info: Implemented 5 bidirectional pins
     Info: Implemented 139 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 29 warnings
-    Info: Allocated 276 megabytes of memory during processing
-    Info: Processing ended: Mon Mar 11 17:22:25 2019
-    Info: Elapsed time: 00:00:02
+    Info: Allocated 253 megabytes of memory during processing
+    Info: Processing ended: Mon Mar 18 08:37:43 2019
+    Info: Elapsed time: 00:00:16
 
 
