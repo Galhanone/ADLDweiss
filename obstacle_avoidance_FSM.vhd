@@ -3,11 +3,10 @@ use ieee.std_logic_1164.all;
 
 entity obstacle_avoidance_FSM is
 	port(
-		clk		 	 : in	std_logic;
-		go			 : in	std_logic;
-		front_close	 : in	std_logic;
-		done_turning : in	std_logic;
-		reset	 	 : in	std_logic);
+		clk		 	 		 : in	std_logic;
+		go, front_close	 	 : in	std_logic;
+		reset, done_turning	 : in	std_logic;
+		left_out, right_out	 : out	std_logic);
 end obstacle_avoidance_FSM;
 
 architecture rtl of obstacle_avoidance_FSM is
@@ -40,5 +39,21 @@ begin
 					end if;
 			end case;
 		end if;
+	end process;
+	
+	-- Output depends solely on the current state
+	process (state)
+	begin
+		case state is
+			when s0 =>
+				left_out  <= '0';
+				right_out <= '0';
+			when s1 =>
+				left_out  <= '1';
+				right_out <= '1';
+			when s2 =>
+				left_out  <= '1';
+				right_out <= '0';
+		end case;
 	end process;
 end rtl;
