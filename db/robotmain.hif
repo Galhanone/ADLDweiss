@@ -1597,7 +1597,7 @@ f172666ca13e5e31e17e3f6cb35af52
 8e8df160d449a63ec15dc86ecf2b373f
 }
 # hierarchies {
-octaveMux:inst10|lpm_mux:lpm_mux_component
+Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -1639,7 +1639,7 @@ data0
 3
 }
 # hierarchies {
-octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated
+Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2361,7 +2361,7 @@ e61874547688138e6fc0b49ff8760
 2251b94d26afaa53635df1aff6b6e7be
 }
 # hierarchies {
-noteCounter:inst29|lpm_counter:lpm_counter_component
+Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2403,7 +2403,7 @@ clock
 3
 }
 # hierarchies {
-noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated
+Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2436,7 +2436,7 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-Duration_ROM:inst6
+Music_Block:inst7|Duration_ROM:inst6
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
@@ -2469,7 +2469,7 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-Notes:inst7
+Music_Block:inst7|Notes:inst7
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
@@ -2575,7 +2575,7 @@ clock
 7f888b135ddf66f0653c44cb18ac5
 }
 # hierarchies {
-durCounter:inst31
+Music_Block:inst7|durCounter:inst31
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2741,7 +2741,7 @@ e61874547688138e6fc0b49ff8760
 2251b94d26afaa53635df1aff6b6e7be
 }
 # hierarchies {
-durCounter:inst31|lpm_counter:lpm_counter_component
+Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2807,7 +2807,7 @@ clock
 3
 }
 # hierarchies {
-durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated
+Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2853,7 +2853,7 @@ clock
 7f888b135ddf66f0653c44cb18ac5
 }
 # hierarchies {
-noteCounter:inst29
+Music_Block:inst7|noteCounter:inst29
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2911,7 +2911,7 @@ clock
 7f888b135ddf66f0653c44cb18ac5
 }
 # hierarchies {
-freqCounter:inst30
+Music_Block:inst7|freqCounter:inst30
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3089,7 +3089,7 @@ e61874547688138e6fc0b49ff8760
 2251b94d26afaa53635df1aff6b6e7be
 }
 # hierarchies {
-freqCounter:inst30|lpm_counter:lpm_counter_component
+Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3167,7 +3167,7 @@ clock
 3
 }
 # hierarchies {
-freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated
+Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3213,7 +3213,7 @@ data0
 c22bfd353214c01495b560fc34e47d79
 }
 # hierarchies {
-octaveMux:inst10
+Music_Block:inst7|octaveMux:inst10
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3253,7 +3253,7 @@ aneb
 aec4ea1b78f4cda1c3effe18f1abbf63
 }
 # hierarchies {
-restCompare:inst11
+Music_Block:inst7|restCompare:inst11
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3371,7 +3371,7 @@ f39123b8592ab2dac019716e56b3ec18
 da21447b8e66c26bd34c85b6cdda8169
 }
 # hierarchies {
-restCompare:inst11|lpm_compare:lpm_compare_component
+Music_Block:inst7|restCompare:inst11|lpm_compare:lpm_compare_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3407,7 +3407,7 @@ aneb
 3
 }
 # hierarchies {
-restCompare:inst11|lpm_compare:lpm_compare_component|cmpr_rci:auto_generated
+Music_Block:inst7|restCompare:inst11|lpm_compare:lpm_compare_component|cmpr_rci:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3440,11 +3440,523 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-Song_ROM:inst8
+Music_Block:inst7|Song_ROM:inst8
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
 9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+Music_Block
+# storage
+db|robotmain.(46).cnf
+db|robotmain.(46).cnf
+# case_insensitive
+# source_file
+Music_Block.bdf
+1f7944ac215b2401c59185e2b99492
+25
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Music_Block:inst7
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+reg8
+# storage
+db|robotmain.(48).cnf
+db|robotmain.(48).cnf
+# case_insensitive
+# source_file
+reg8.tdf
+3de03410d36ce777fb45b643836948d
+6
+# used_port {
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_ff.inc
+97d9d437829a4e214661a824cb57479
+}
+# hierarchies {
+IR_Sensor:inst14|reg8:inst12
+IR_Sensor:inst11|reg8:inst12
+IR_Sensor:inst13|reg8:inst12
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+lpm_ff
+# storage
+db|robotmain.(49).cnf
+db|robotmain.(49).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_ff.tdf
+b92fec1555765d1a72a2c337de2dc7e2
+6
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_FFTYPE
+DFF
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+MAX II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|aglobal72.inc
+f39123b8592ab2dac019716e56b3ec18
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_constant.inc
+dcde44eee59335c1e2fe75d574f9646
+}
+# hierarchies {
+IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component
+IR_Sensor:inst11|reg8:inst12|lpm_ff:lpm_ff_component
+IR_Sensor:inst13|reg8:inst12|lpm_ff:lpm_ff_component
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+bus_and
+# storage
+db|robotmain.(50).cnf
+db|robotmain.(50).cnf
+# case_insensitive
+# source_file
+bus_and.tdf
+c44747ce66e30cc7cc6dc967de79dfd
+6
+# used_port {
+result
+-1
+3
+data3_0
+-1
+3
+data2_0
+-1
+3
+data1_0
+-1
+3
+data0_0
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_and.inc
+102399e8b09987545b13639f1595ab7
+}
+# hierarchies {
+IR_Sensor:inst14|bus_and:inst7
+IR_Sensor:inst14|bus_and:inst6
+IR_Sensor:inst11|bus_and:inst7
+IR_Sensor:inst11|bus_and:inst6
+IR_Sensor:inst13|bus_and:inst7
+IR_Sensor:inst13|bus_and:inst6
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+lpm_and
+# storage
+db|robotmain.(51).cnf
+db|robotmain.(51).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_and.tdf
+48652854e4fad1a99ad278623ac8d
+6
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_UNKNOWN
+USR
+LPM_SIZE
+4
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+MAX II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result0
+-1
+3
+data3_0
+-1
+3
+data2_0
+-1
+3
+data1_0
+-1
+3
+data0_0
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|aglobal72.inc
+f39123b8592ab2dac019716e56b3ec18
+}
+# hierarchies {
+IR_Sensor:inst14|bus_and:inst7|lpm_and:lpm_and_component
+IR_Sensor:inst14|bus_and:inst6|lpm_and:lpm_and_component
+IR_Sensor:inst11|bus_and:inst7|lpm_and:lpm_and_component
+IR_Sensor:inst11|bus_and:inst6|lpm_and:lpm_and_component
+IR_Sensor:inst13|bus_and:inst7|lpm_and:lpm_and_component
+IR_Sensor:inst13|bus_and:inst6|lpm_and:lpm_and_component
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+Shift4
+# storage
+db|robotmain.(52).cnf
+db|robotmain.(52).cnf
+# case_insensitive
+# source_file
+Shift4.tdf
+e189092b6166d5ba68ce3dcee3f9f24
+6
+# used_port {
+shiftin
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_shiftreg.inc
+ab7419a3e1c1b11843b76ba93873576
+}
+# hierarchies {
+IR_Sensor:inst14|Shift4:inst4
+IR_Sensor:inst11|Shift4:inst4
+IR_Sensor:inst13|Shift4:inst4
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+lpm_shiftreg
+# storage
+db|robotmain.(53).cnf
+db|robotmain.(53).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_shiftreg.tdf
+d339473cf7488e9161e0e0a444354559
+6
+# user_parameter {
+LPM_WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+RIGHT
+PARAMETER_UNKNOWN
+USR
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+MAX II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+shiftin
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|aglobal72.inc
+f39123b8592ab2dac019716e56b3ec18
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_constant.inc
+dcde44eee59335c1e2fe75d574f9646
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|dffeea.inc
+55d29d20f7e852c37746bec4e2495ec
+}
+# hierarchies {
+IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
+IR_Sensor:inst11|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
+IR_Sensor:inst13|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+IR_Sensor
+# storage
+db|robotmain.(47).cnf
+db|robotmain.(47).cnf
+# case_insensitive
+# source_file
+IR_Sensor.bdf
+edee69f71206131a970d14f7d53f050
+25
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+IR_Sensor:inst14
+IR_Sensor:inst11
+IR_Sensor:inst13
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
 # macro_sequence
 
 # end
@@ -3456,7 +3968,7 @@ db|robotmain.(0).cnf
 # case_insensitive
 # source_file
 robotmain.bdf
-a3959ce6e6b3edf435d7aee64f5aac
+be416e9c826a3752f91854e728ec912
 25
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -3464,6 +3976,251 @@ AUTO
 }
 # hierarchies {
 |
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+BUSMUX
+# storage
+db|robotmain.(54).cnf
+db|robotmain.(54).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|BUSMUX.tdf
+13974729654bf41ec1e76f3ea92cadac
+6
+# user_parameter {
+WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sel
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_mux.inc
+c22bfd353214c01495b560fc34e47d79
+}
+# hierarchies {
+busmux:inst17
+busmux:inst16
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+LPM_MUX
+# storage
+db|robotmain.(55).cnf
+db|robotmain.(55).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|LPM_MUX.tdf
+fddaed7b19111715c8fd95855c55e7
+6
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+LPM_SIZE
+2
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHS
+1
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+mux_i9c
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+MAX II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sel0
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data1_3
+-1
+3
+data1_2
+-1
+3
+data1_1
+-1
+3
+data1_0
+-1
+3
+data0_3
+-1
+3
+data0_2
+-1
+3
+data0_1
+-1
+3
+data0_0
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|aglobal72.inc
+f39123b8592ab2dac019716e56b3ec18
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|muxlut.inc
+f172666ca13e5e31e17e3f6cb35af52
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|bypassff.inc
+8e8df160d449a63ec15dc86ecf2b373f
+}
+# hierarchies {
+busmux:inst17|lpm_mux:$00000
+busmux:inst16|lpm_mux:$00000
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+mux_i9c
+# storage
+db|robotmain.(56).cnf
+db|robotmain.(56).cnf
+# case_insensitive
+# source_file
+db|mux_i9c.tdf
+a0ef154acb2198cd5072fd38de05ee
+6
+# used_port {
+sel0
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+busmux:inst17|lpm_mux:$00000|mux_i9c:auto_generated
+busmux:inst16|lpm_mux:$00000|mux_i9c:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|

@@ -85,9 +85,9 @@ GND*                         : 15        :        :                   :         
 GND*                         : 16        :        :                   :         : 1         :                
 Hall                         : 17        : input  : 3.3V Schmitt Trigger Input :         : 1         : Y              
 GND*                         : 18        :        :                   :         : 1         :                
-BLeft_IR_Sensor              : 19        : bidir  : 3.3V Schmitt Trigger Input :         : 1         : Y              
+BLeft_IR_Sensor              : 19        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
 GND*                         : 20        :        :                   :         : 1         :                
-BRight_IR_Sensor             : 21        : bidir  : 3.3V Schmitt Trigger Input :         : 1         : Y              
+BRight_IR_Sensor             : 21        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
 TMS                          : 22        : input  :                   :         : 1         :                
 TDI                          : 23        : input  :                   :         : 1         :                
 TCK                          : 24        : input  :                   :         : 1         :                
@@ -114,9 +114,9 @@ Digit_1                      : 44        : output : 3.3-V LVTTL       :         
 VCCIO1                       : 45        : power  :                   : 3.3V    : 1         :                
 GNDIO                        : 46        : gnd    :                   :         :           :                
 Seg_B                        : 47        : output : 3.3-V LVTTL       :         : 1         : Y              
-Front_IR_Sensor              : 48        : bidir  : 3.3V Schmitt Trigger Input :         : 1         : Y              
-Right_IR_Sensor              : 49        : bidir  : 3.3V Schmitt Trigger Input :         : 1         : Y              
-Left_IR_Sensor               : 50        : bidir  : 3.3V Schmitt Trigger Input :         : 1         : Y              
+Front_IR_Sensor              : 48        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+Right_IR_Sensor              : 49        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+Left_IR_Sensor               : 50        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
 CDS_Cell                     : 51        : input  : 3.3V Schmitt Trigger Input :         : 1         : Y              
 BlueTooth_RCV_In             : 52        : input  : 3.3-V LVCMOS      :         : 2         : Y              
 GND*                         : 53        :        :                   :         : 2         :                

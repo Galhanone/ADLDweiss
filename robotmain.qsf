@@ -34,13 +34,13 @@ set_global_assignment -name DEVICE_FILTER_PACKAGE TQFP
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 100
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 5
 set_location_assignment PIN_19 -to BLeft_IR_Sensor
-set_instance_assignment -name IO_STANDARD "3.3V SCHMITT TRIGGER INPUT" -to BLeft_IR_Sensor
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BLeft_IR_Sensor
 set_location_assignment PIN_54 -to Blue_Tooth_TX_Out
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to Blue_Tooth_TX_Out
 set_location_assignment PIN_52 -to BlueTooth_RCV_In
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to BlueTooth_RCV_In
 set_location_assignment PIN_21 -to BRight_IR_Sensor
-set_instance_assignment -name IO_STANDARD "3.3V SCHMITT TRIGGER INPUT" -to BRight_IR_Sensor
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BRight_IR_Sensor
 set_location_assignment PIN_55 -to Bumper
 set_instance_assignment -name IO_STANDARD "3.3V SCHMITT TRIGGER INPUT" -to Bumper
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to Bumper
@@ -72,7 +72,7 @@ set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to Dip[0]
 set_location_assignment PIN_56 -to Extra_Pin
 set_instance_assignment -name IO_STANDARD "3.3V SCHMITT TRIGGER INPUT" -to Extra_Pin
 set_location_assignment PIN_48 -to Front_IR_Sensor
-set_instance_assignment -name IO_STANDARD "3.3V SCHMITT TRIGGER INPUT" -to Front_IR_Sensor
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Front_IR_Sensor
 set_location_assignment PIN_17 -to Hall
 set_instance_assignment -name IO_STANDARD "3.3V SCHMITT TRIGGER INPUT" -to Hall
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to Hall
@@ -83,11 +83,11 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED_Green
 set_location_assignment PIN_62 -to LED_RED
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED_RED
 set_location_assignment PIN_50 -to Left_IR_Sensor
-set_instance_assignment -name IO_STANDARD "3.3V SCHMITT TRIGGER INPUT" -to Left_IR_Sensor
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Left_IR_Sensor
 set_location_assignment PIN_30 -to Left_Servo
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Left_Servo
 set_location_assignment PIN_49 -to Right_IR_Sensor
-set_instance_assignment -name IO_STANDARD "3.3V SCHMITT TRIGGER INPUT" -to Right_IR_Sensor
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Right_IR_Sensor
 set_location_assignment PIN_33 -to Right_Servo
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Right_Servo
 set_location_assignment PIN_37 -to Seg_A
@@ -132,3 +132,5 @@ set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name VHDL_FILE Servo.vhd
 set_global_assignment -name VHDL_FILE obstacle_avoidance_FSM.vhd
+set_global_assignment -name BDF_FILE Music_Block.bdf
+set_global_assignment -name BDF_FILE IR_Sensor.bdf
