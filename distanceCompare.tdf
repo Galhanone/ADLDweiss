@@ -39,7 +39,7 @@ INCLUDE "lpm_compare.inc";
 SUBDESIGN distanceCompare
 (
 	dataa[3..0]	 : INPUT;
-	AleB	 : OUTPUT;
+	AlB	 : OUTPUT;
 )
 
 VARIABLE
@@ -53,9 +53,9 @@ VARIABLE
 
 BEGIN
 
-	AleB = lpm_compare_component.AleB;
+	AlB = lpm_compare_component.AlB;
 	lpm_compare_component.dataa[3..0] = dataa[3..0];
-	lpm_compare_component.datab[3..0] = 3;
+	lpm_compare_component.datab[3..0] = 1;
 END;
 
 
@@ -66,13 +66,13 @@ END;
 -- Retrieval info: PRIVATE: AeqB NUMERIC "0"
 -- Retrieval info: PRIVATE: AgeB NUMERIC "0"
 -- Retrieval info: PRIVATE: AgtB NUMERIC "0"
--- Retrieval info: PRIVATE: AleB NUMERIC "1"
--- Retrieval info: PRIVATE: AltB NUMERIC "0"
+-- Retrieval info: PRIVATE: AleB NUMERIC "0"
+-- Retrieval info: PRIVATE: AltB NUMERIC "1"
 -- Retrieval info: PRIVATE: AneB NUMERIC "0"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "MAX II"
 -- Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "0"
 -- Retrieval info: PRIVATE: Latency NUMERIC "0"
--- Retrieval info: PRIVATE: PortBValue NUMERIC "3"
+-- Retrieval info: PRIVATE: PortBValue NUMERIC "1"
 -- Retrieval info: PRIVATE: Radix NUMERIC "16"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: SignedCompare NUMERIC "0"
@@ -84,11 +84,11 @@ END;
 -- Retrieval info: CONSTANT: LPM_REPRESENTATION STRING "UNSIGNED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COMPARE"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "4"
--- Retrieval info: USED_PORT: AleB 0 0 0 0 OUTPUT NODEFVAL AleB
+-- Retrieval info: USED_PORT: AlB 0 0 0 0 OUTPUT NODEFVAL AlB
 -- Retrieval info: USED_PORT: dataa 0 0 4 0 INPUT NODEFVAL dataa[3..0]
--- Retrieval info: CONNECT: AleB 0 0 0 0 @AleB 0 0 0 0
+-- Retrieval info: CONNECT: AlB 0 0 0 0 @AlB 0 0 0 0
 -- Retrieval info: CONNECT: @dataa 0 0 4 0 dataa 0 0 4 0
--- Retrieval info: CONNECT: @datab 0 0 4 0 3 0 0 0 0
+-- Retrieval info: CONNECT: @datab 0 0 4 0 1 0 0 0 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL distanceCompare.tdf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL distanceCompare.inc TRUE

@@ -19,5 +19,5 @@ FUNCTION distanceCompare
 )
 
 RETURNS (
-	AleB
+	AlB
 );

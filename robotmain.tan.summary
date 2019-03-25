@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : -1.525 ns
-From           : Right_IR_Sensor
-To             : IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[3]
+Actual Time    : 2.429 ns
+From           : Dip[0]
+To             : obstacle_avoidance_FSM:inst37|state.s3
 From Clock     : --
 To Clock       : Clk_50MHZ
 Failed Paths   : 0
@@ -15,7 +15,7 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 39.519 ns
+Actual Time    : 40.725 ns
 From           : Music_Block:inst7|inst28
 To             : Speaker_74
 From Clock     : Clk_50MHZ
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 9.451 ns
-From           : CDS_Cell
-To             : Seg_Colon
+Actual Time    : 8.162 ns
+From           : Dip[2]
+To             : Speaker_74
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 13.340 ns
-From           : Button_2
-To             : inst18
+Actual Time    : 3.404 ns
+From           : Dip[0]
+To             : obstacle_avoidance_FSM:inst37|state.s2
 From Clock     : --
 To Clock       : Clk_50MHZ
 Failed Paths   : 0
@@ -45,7 +45,7 @@ Failed Paths   : 0
 Type           : Clock Setup: 'Clk_50MHZ'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 38.36 MHz ( period = 26.068 ns )
+Actual Time    : 40.13 MHz ( period = 24.918 ns )
 From           : Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|safe_q[0]
 To             : Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|safe_q[0]
 From Clock     : Clk_50MHZ
@@ -60,7 +60,7 @@ From           : Music_Block:inst7|inst28
 To             : Music_Block:inst7|inst28
 From Clock     : Clk_50MHZ
 To Clock       : Clk_50MHZ
-Failed Paths   : 141
+Failed Paths   : 135
 
 Type           : Total number of failed paths
 Slack          : 
@@ -70,7 +70,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 141
+Failed Paths   : 135
 
 --------------------------------------------------------------------------------------
 

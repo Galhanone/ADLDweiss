@@ -1,5 +1,5 @@
 Flow report for robotmain
-Mon Mar 18 17:19:02 2019
+Mon Mar 25 17:22:45 2019
 Quartus II Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +--------------------------+----------------------------------------------+
-; Flow Status              ; Successful - Mon Mar 18 17:19:02 2019        ;
+; Flow Status              ; Successful - Mon Mar 25 17:22:45 2019        ;
 ; Quartus II Version       ; 7.2 Build 207 03/18/2008 SP 3 SJ Web Edition ;
 ; Revision Name            ; robotmain                                    ;
 ; Top-level Entity Name    ; robotmain                                    ;
@@ -45,7 +45,7 @@ applicable agreement for further details.
 ; Device                   ; EPM240T100C5                                 ;
 ; Timing Models            ; Final                                        ;
 ; Met timing requirements  ; No                                           ;
-; Total logic elements     ; 176 / 240 ( 73 % )                           ;
+; Total logic elements     ; 194 / 240 ( 81 % )                           ;
 ; Total pins               ; 37 / 80 ( 46 % )                             ;
 ; Total virtual pins       ; 0                                            ;
 ; Total memory bits        ; 0                                            ;
@@ -61,7 +61,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/18/2019 17:18:55 ;
+; Start date & time ; 03/25/2019 17:22:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; robotmain           ;
 +-------------------+---------------------+
@@ -81,11 +81,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ;
 +-------------------------+--------------+-------------------------+
-; Analysis & Synthesis    ; 00:00:03     ; 1.0                     ;
-; Fitter                  ; 00:00:00     ; 1.0                     ;
+; Analysis & Synthesis    ; 00:00:04     ; 1.0                     ;
+; Fitter                  ; 00:00:01     ; 1.0                     ;
 ; Assembler               ; 00:00:01     ; 1.0                     ;
 ; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ;
-; Total                   ; 00:00:05     ; --                      ;
+; Total                   ; 00:00:07     ; --                      ;
 +-------------------------+--------------+-------------------------+
 
 

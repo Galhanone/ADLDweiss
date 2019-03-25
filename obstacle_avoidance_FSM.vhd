@@ -3,14 +3,17 @@ use ieee.std_logic_1164.all;
 
 entity obstacle_avoidance_FSM is
 	port(
-		clk		 	 		 : in	std_logic;
+		clk, right_left		 : in	std_logic;
 		go, front_close	 	 : in	std_logic;
+		side_close, side_far : in	std_logic;
 		reset, done_turning	 : in	std_logic;
-		left_out, right_out	 : out	std_logic);
+		left_go, right_go	 : out	std_logic;
+		left_fwd, right_fwd  : out	std_logic;
+		current_state		 : out	std_logic_vector(2 DOWNTO 0));
 end obstacle_avoidance_FSM;
 
 architecture rtl of obstacle_avoidance_FSM is
-	type state_type is (s0, s1, s2);
+	type state_type is (s0, s1, s2, s3, s4, s5);
 	signal state   : state_type;
 begin
 	process (clk, reset)
@@ -26,16 +29,66 @@ begin
 						state <= s0;
 					end if;
 				when s1=>	--Straight
-					if front_close = '1' then
-						state <= s2;
+					if right_left = '1' then
+						if front_close = '1' then
+							state <= s2;
+						elsif side_far = '1' then
+							state <= s3;
+						elsif side_close = '1' then
+							state <= s4;
+						else
+							state <= s1;
+						end if;
 					else
-						state <= s1;
+						if front_close = '1' then
+							state <= s5;
+						elsif side_far = '1' then
+							state <= s4;
+						elsif side_close = '1' then
+							state <= s3;
+						else
+							state <= s1;
+						end if;
 					end if;
-				when s2=>	--Spin
+				when s2=>	--Spin Right
 					if done_turning = '1' then
 						state <= s1;
 					else
 						state <= s2;
+					end if;
+				when s3=>	--Turn Right
+					if right_left = '1' then
+						if side_far = '0' then
+							state <= s1;
+						else
+							state <= s3;
+						end if;
+					else
+						if side_close = '0' then
+							state <= s1;
+						else
+							state <= s3;
+						end if;
+					end if;
+				when s4=>	--Turn Left
+					if right_left = '1' then
+						if side_close = '0' then
+							state <= s1;
+						else
+							state <= s4;
+						end if;
+					else
+						if side_far = '0' then
+							state <= s1;
+						else
+							state <= s4;
+						end if;
+					end if;
+				when s5=>	--Spin Left
+					if done_turning = '1' then
+						state <= s1;
+					else
+						state <= s5;
 					end if;
 			end case;
 		end if;
@@ -45,15 +98,38 @@ begin
 	process (state)
 	begin
 		case state is
-			when s0 =>
-				left_out  <= '0';
-				right_out <= '0';
-			when s1 =>
-				left_out  <= '1';
-				right_out <= '1';
-			when s2 =>
-				left_out  <= '1';
-				right_out <= '0';
+			when s0 =>		--Reset
+				current_state	<= "000";
+				left_go  		<= '0';
+				right_go 		<= '0';
+			when s1 =>		--Straight
+				current_state	<= "001";
+				left_go			<= '1';
+				left_fwd 		<= '1';
+				right_go 		<= '1';
+				right_fwd		<= '1';
+			when s2 =>		--Spin Right
+				current_state	<= "010";
+				left_go  		<= '1';
+				left_fwd 		<= '0';
+				right_go	 	<= '1';
+				right_fwd		<= '1';
+			when s3 =>		--Turn Right
+				current_state	<= "011";
+				left_go  		<= '1';
+				left_fwd 		<= '1';
+				right_go		<= '0';
+			when s4 => 		--Turn Left
+				current_state	<= "100";
+				left_go  		<= '0';
+				right_go		<= '1';
+				right_fwd		<= '1';
+			when s5 =>		--Spin Left
+				current_state	<= "101";
+				left_go  		<= '1';
+				left_fwd 		<= '1';
+				right_go	 	<= '1';
+				right_fwd		<= '0';
 		end case;
 	end process;
 end rtl;
