@@ -176,6 +176,7 @@ data0
 }
 # hierarchies {
 Digit_decode:inst26|lpm_decode:lpm_decode_component|decode_gpe:auto_generated
+LEDDecode:inst31|lpm_decode:lpm_decode_component|decode_gpe:auto_generated
 }
 # lmf
 c:|altera|72sp3|quartus|lmf|
@@ -1052,6 +1053,7 @@ dcde44eee59335c1e2fe75d574f9646
 }
 # hierarchies {
 Digit_decode:inst26|lpm_decode:lpm_decode_component
+LEDDecode:inst31|lpm_decode:lpm_decode_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3533,6 +3535,8 @@ clock
 IR_Sensor:inst13|reg8:inst12
 IR_Sensor:inst11|reg8:inst12
 IR_Sensor:inst14|reg8:inst12
+IR_Sensor:inst20|reg8:inst12
+IR_Sensor:inst21|reg8:inst12
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3655,6 +3659,8 @@ dcde44eee59335c1e2fe75d574f9646
 IR_Sensor:inst13|reg8:inst12|lpm_ff:lpm_ff_component
 IR_Sensor:inst11|reg8:inst12|lpm_ff:lpm_ff_component
 IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component
+IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component
+IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3700,7 +3706,10 @@ IR_Sensor:inst11|bus_and:inst7
 IR_Sensor:inst11|bus_and:inst6
 IR_Sensor:inst14|bus_and:inst7
 IR_Sensor:inst14|bus_and:inst6
-bus_and:inst6
+IR_Sensor:inst20|bus_and:inst7
+IR_Sensor:inst20|bus_and:inst6
+IR_Sensor:inst21|bus_and:inst7
+IR_Sensor:inst21|bus_and:inst6
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3788,7 +3797,10 @@ IR_Sensor:inst11|bus_and:inst7|lpm_and:lpm_and_component
 IR_Sensor:inst11|bus_and:inst6|lpm_and:lpm_and_component
 IR_Sensor:inst14|bus_and:inst7|lpm_and:lpm_and_component
 IR_Sensor:inst14|bus_and:inst6|lpm_and:lpm_and_component
-bus_and:inst6|lpm_and:lpm_and_component
+IR_Sensor:inst20|bus_and:inst7|lpm_and:lpm_and_component
+IR_Sensor:inst20|bus_and:inst6|lpm_and:lpm_and_component
+IR_Sensor:inst21|bus_and:inst7|lpm_and:lpm_and_component
+IR_Sensor:inst21|bus_and:inst6|lpm_and:lpm_and_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3834,6 +3846,8 @@ ab7419a3e1c1b11843b76ba93873576
 IR_Sensor:inst13|Shift4:inst4
 IR_Sensor:inst11|Shift4:inst4
 IR_Sensor:inst14|Shift4:inst4
+IR_Sensor:inst20|Shift4:inst4
+IR_Sensor:inst21|Shift4:inst4
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3921,6 +3935,8 @@ dcde44eee59335c1e2fe75d574f9646
 IR_Sensor:inst13|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
 IR_Sensor:inst11|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
 IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
+IR_Sensor:inst20|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
+IR_Sensor:inst21|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3946,6 +3962,8 @@ AUTO
 IR_Sensor:inst13
 IR_Sensor:inst11
 IR_Sensor:inst14
+IR_Sensor:inst20
+IR_Sensor:inst21
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -4182,6 +4200,7 @@ data0
 }
 # hierarchies {
 wallMux:inst18|lpm_mux:lpm_mux_component|mux_i9c:auto_generated
+wallMux:inst34|lpm_mux:lpm_mux_component|mux_i9c:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -4383,9 +4402,6 @@ clock
 ..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_counter.inc
 7f888b135ddf66f0653c44cb18ac5
 }
-# hierarchies {
-spinCount:inst32
-}
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
 d41d8cd98f0b24e980998ecf8427e
@@ -4522,9 +4538,6 @@ e61874547688138e6fc0b49ff8760
 ..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|alt_counter_stratix.inc
 2251b94d26afaa53635df1aff6b6e7be
 }
-# hierarchies {
-spinCount:inst32|lpm_counter:lpm_counter_component
-}
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
 d41d8cd98f0b24e980998ecf8427e
@@ -4560,9 +4573,6 @@ q0
 clock
 -1
 3
-}
-# hierarchies {
-spinCount:inst32|lpm_counter:lpm_counter_component|cntr_5mh:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -5552,6 +5562,9 @@ f39123b8592ab2dac019716e56b3ec18
 ..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|comptree.inc
 da21447b8e66c26bd34c85b6cdda8169
 }
+# hierarchies {
+veryFarCompare:inst29|lpm_compare:lpm_compare_component
+}
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
 d41d8cd98f0b24e980998ecf8427e
@@ -5599,6 +5612,8 @@ agb
 }
 # hierarchies {
 sideFarCompare:inst17|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated
+veryFarCompare:inst29|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated
+backFarCompare:inst33|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -5755,70 +5770,6 @@ d41d8cd98f0b24e980998ecf8427e
 
 # end
 # entity
-wallMux
-# storage
-db|robotmain.(80).cnf
-db|robotmain.(80).cnf
-# case_insensitive
-# source_file
-wallMux.tdf
-e2708bdc54abdf9e678ca0a6e5e4acbc
-6
-# used_port {
-sel
--1
-3
-result3
--1
-3
-result2
--1
-3
-result1
--1
-3
-result0
--1
-3
-data1x3
--1
-3
-data1x2
--1
-3
-data1x1
--1
-3
-data1x0
--1
-3
-data0x3
--1
-3
-data0x2
--1
-3
-data0x1
--1
-3
-data0x0
--1
-3
-}
-# include_file {
-..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_mux.inc
-c22bfd353214c01495b560fc34e47d79
-}
-# hierarchies {
-wallMux:inst18
-}
-# lmf
-..|..|..|..|..|altera|72sp3|quartus|lmf|
-d41d8cd98f0b24e980998ecf8427e
-# macro_sequence
-
-# end
-# entity
 lpm_mux
 # storage
 db|robotmain.(81).cnf
@@ -5923,6 +5874,7 @@ f172666ca13e5e31e17e3f6cb35af52
 }
 # hierarchies {
 wallMux:inst18|lpm_mux:lpm_mux_component
+wallMux:inst34|lpm_mux:lpm_mux_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -6482,9 +6434,6 @@ f172666ca13e5e31e17e3f6cb35af52
 ..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|bypassff.inc
 8e8df160d449a63ec15dc86ecf2b373f
 }
-# hierarchies {
-littleMux:inst35|lpm_mux:lpm_mux_component
-}
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
 d41d8cd98f0b24e980998ecf8427e
@@ -6514,9 +6463,6 @@ data1
 data0
 -1
 3
-}
-# hierarchies {
-littleMux:inst35|lpm_mux:lpm_mux_component|mux_e9c:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -6745,46 +6691,6 @@ d41d8cd98f0b24e980998ecf8427e
 
 # end
 # entity
-sideFarCompare
-# storage
-db|robotmain.(82).cnf
-db|robotmain.(82).cnf
-# case_insensitive
-# source_file
-sideFarCompare.tdf
-d3142d2c4dc47a2b65da4bc914273
-6
-# used_port {
-dataa3
--1
-3
-dataa2
--1
-3
-dataa1
--1
-3
-dataa0
--1
-3
-agb
--1
-3
-}
-# include_file {
-..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_compare.inc
-aec4ea1b78f4cda1c3effe18f1abbf63
-}
-# hierarchies {
-sideFarCompare:inst17
-}
-# lmf
-..|..|..|..|..|altera|72sp3|quartus|lmf|
-d41d8cd98f0b24e980998ecf8427e
-# macro_sequence
-
-# end
-# entity
 lpm_compare
 # storage
 db|robotmain.(92).cnf
@@ -6895,29 +6801,7 @@ da21447b8e66c26bd34c85b6cdda8169
 }
 # hierarchies {
 sideFarCompare:inst17|lpm_compare:lpm_compare_component
-}
-# lmf
-..|..|..|..|..|altera|72sp3|quartus|lmf|
-d41d8cd98f0b24e980998ecf8427e
-# macro_sequence
-
-# end
-# entity
-robotmain
-# storage
-db|robotmain.(0).cnf
-db|robotmain.(0).cnf
-# case_insensitive
-# source_file
-robotmain.bdf
-1f69ae883f9b7e341e75e3bf6ae92f2a
-25
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
+backFarCompare:inst33|lpm_compare:lpm_compare_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -6939,8 +6823,740 @@ littleMux.tdf
 ..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_mux.inc
 c22bfd353214c01495b560fc34e47d79
 }
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+sideCloseCompare
+# storage
+db|robotmain.(93).cnf
+db|robotmain.(93).cnf
+# case_insensitive
+# source_file
+sideCloseCompare.tdf
+3d60db9da1ffc5345f2a76bb8a7defd
+6
+# used_port {
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_compare.inc
+aec4ea1b78f4cda1c3effe18f1abbf63
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+distanceCompare
+# storage
+db|robotmain.(95).cnf
+db|robotmain.(95).cnf
+# case_insensitive
+# source_file
+distanceCompare.tdf
+818ee5f8d0ed3c603f2da881deefc0d3
+6
+# used_port {
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_compare.inc
+aec4ea1b78f4cda1c3effe18f1abbf63
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+LPM_MUX
+# storage
+db|robotmain.(96).cnf
+db|robotmain.(96).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|LPM_MUX.tdf
+fddaed7b19111715c8fd95855c55e7
+6
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_UNKNOWN
+USR
+LPM_SIZE
+2
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHS
+1
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+mux_e9c
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+MAX II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sel0
+-1
+3
+result0
+-1
+3
+data1_0
+-1
+3
+data0_0
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|aglobal72.inc
+f39123b8592ab2dac019716e56b3ec18
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|muxlut.inc
+f172666ca13e5e31e17e3f6cb35af52
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|bypassff.inc
+8e8df160d449a63ec15dc86ecf2b373f
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+lpm_mux
+# storage
+db|robotmain.(82).cnf
+db|robotmain.(82).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_mux.tdf
+fddaed7b19111715c8fd95855c55e7
+6
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+6
+PARAMETER_UNKNOWN
+USR
+LPM_SIZE
+2
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHS
+1
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+mux_j9c
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+MAX II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sel0
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data1_5
+-1
+3
+data1_4
+-1
+3
+data1_3
+-1
+3
+data1_2
+-1
+3
+data1_1
+-1
+3
+data1_0
+-1
+3
+data0_5
+-1
+3
+data0_4
+-1
+3
+data0_3
+-1
+3
+data0_2
+-1
+3
+data0_1
+-1
+3
+data0_0
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|aglobal72.inc
+f39123b8592ab2dac019716e56b3ec18
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|muxlut.inc
+f172666ca13e5e31e17e3f6cb35af52
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|bypassff.inc
+8e8df160d449a63ec15dc86ecf2b373f
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+mux_j9c
+# storage
+db|robotmain.(94).cnf
+db|robotmain.(94).cnf
+# case_insensitive
+# source_file
+db|mux_j9c.tdf
+4494242342481940e4273a3c7aa453e6
+6
+# used_port {
+sel0
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+lpm_compare
+# storage
+db|robotmain.(98).cnf
+db|robotmain.(98).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_compare.tdf
+1cd955d9bb33a2f8b2d6b7b74e26f66a
+6
+# user_parameter {
+lpm_width
+4
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CHAIN_SIZE
+8
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CASCADE_CHAIN_LENGTH
+2
+CASCADE_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+MAX II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+cmpr_bqi
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+agb
+-1
+3
+datab2
+-1
+1
+datab1
+-1
+1
+datab3
+-1
+2
+datab0
+-1
+2
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|aglobal72.inc
+f39123b8592ab2dac019716e56b3ec18
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|comptree.inc
+da21447b8e66c26bd34c85b6cdda8169
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+wallMux
+# storage
+db|robotmain.(80).cnf
+db|robotmain.(80).cnf
+# case_insensitive
+# source_file
+wallMux.tdf
+e2708bdc54abdf9e678ca0a6e5e4acbc
+6
+# used_port {
+sel
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data1x3
+-1
+3
+data1x2
+-1
+3
+data1x1
+-1
+3
+data1x0
+-1
+3
+data0x3
+-1
+3
+data0x2
+-1
+3
+data0x1
+-1
+3
+data0x0
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_mux.inc
+c22bfd353214c01495b560fc34e47d79
+}
 # hierarchies {
-littleMux:inst35
+wallMux:inst18
+wallMux:inst34
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+LEDDecode
+# storage
+db|robotmain.(66).cnf
+db|robotmain.(66).cnf
+# case_insensitive
+# source_file
+LEDDecode.tdf
+d34e5f25214aefd4123f3e82de0af
+6
+# used_port {
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_decode.inc
+bd0e2f5e01c1bd360461dceb53d48
+}
+# hierarchies {
+LEDDecode:inst31
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+sideFarCompare
+# storage
+db|robotmain.(99).cnf
+db|robotmain.(99).cnf
+# case_insensitive
+# source_file
+sideFarCompare.tdf
+d3142d2c4dc47a2b65da4bc914273
+6
+# used_port {
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+agb
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_compare.inc
+aec4ea1b78f4cda1c3effe18f1abbf63
+}
+# hierarchies {
+sideFarCompare:inst17
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+backFarCompare
+# storage
+db|robotmain.(102).cnf
+db|robotmain.(102).cnf
+# case_insensitive
+# source_file
+backFarCompare.tdf
+8dfbd54c5fe71420448f4ce770b3499
+6
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_compare.inc
+aec4ea1b78f4cda1c3effe18f1abbf63
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+backFarCompare
+# storage
+db|robotmain.(103).cnf
+db|robotmain.(103).cnf
+# case_insensitive
+# source_file
+backFarCompare.tdf
+8dfbd54c5fe71420448f4ce770b3499
+6
+# used_port {
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+agb
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_compare.inc
+aec4ea1b78f4cda1c3effe18f1abbf63
+}
+# hierarchies {
+backFarCompare:inst33
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+veryFarCompare
+# storage
+db|robotmain.(100).cnf
+db|robotmain.(100).cnf
+# case_insensitive
+# source_file
+veryFarCompare.tdf
+e6b9e4495025b7322c9435df4c471ad
+6
+# used_port {
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+agb
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_compare.inc
+aec4ea1b78f4cda1c3effe18f1abbf63
+}
+# hierarchies {
+veryFarCompare:inst29
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+robotmain
+# storage
+db|robotmain.(0).cnf
+db|robotmain.(0).cnf
+# case_insensitive
+# source_file
+robotmain.bdf
+e3c5eba6baf54a18eea1cd8d1f8cbba
+25
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -6951,8 +7567,8 @@ d41d8cd98f0b24e980998ecf8427e
 # entity
 obstacle_avoidance_FSM
 # storage
-db|robotmain.(66).cnf
-db|robotmain.(66).cnf
+db|robotmain.(97).cnf
+db|robotmain.(97).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -6960,7 +7576,7 @@ ON
 # case_insensitive
 # source_file
 obstacle_avoidance_FSM.vhd
-942dbf33326e05fe359c99fe5634179
+c5b13fb399477852852e918bc660c3
 4
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -6973,7 +7589,7 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-obstacle_avoidance_FSM:inst37
+obstacle_avoidance_FSM:inst36
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf

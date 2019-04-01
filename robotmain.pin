@@ -85,9 +85,9 @@ GND*                         : 15        :        :                   :         
 GND*                         : 16        :        :                   :         : 1         :                
 Hall                         : 17        : input  : 3.3V Schmitt Trigger Input :         : 1         : Y              
 GND*                         : 18        :        :                   :         : 1         :                
-BLeft_IR_Sensor              : 19        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+BRight_IR_Sensor             : 19        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
 GND*                         : 20        :        :                   :         : 1         :                
-BRight_IR_Sensor             : 21        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+BLeft_IR_Sensor              : 21        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
 TMS                          : 22        : input  :                   :         : 1         :                
 TDI                          : 23        : input  :                   :         : 1         :                
 TCK                          : 24        : input  :                   :         : 1         :                
@@ -128,13 +128,13 @@ GND*                         : 58        :        :                   :         
 VCCIO2                       : 59        : power  :                   : 3.3V    : 2         :                
 GNDIO                        : 60        : gnd    :                   :         :           :                
 GND*                         : 61        :        :                   :         : 2         :                
-LED_RED                      : 62        : output : 3.3-V LVTTL       :         : 2         : Y              
+LED_Blue                     : 62        : output : 3.3-V LVTTL       :         : 2         : Y              
 VCCINT                       : 63        : power  :                   : 3.3V    :           :                
 Clk_50MHZ                    : 64        : input  : 3.3-V LVTTL       :         : 2         : Y              
 GNDINT                       : 65        : gnd    :                   :         :           :                
 LED_Green                    : 66        : output : 3.3-V LVTTL       :         : 2         : Y              
 Dip[2]                       : 67        : input  : 3.3-V LVTTL       :         : 2         : Y              
-LED_Blue                     : 68        : output : 3.3-V LVTTL       :         : 2         : Y              
+LED_RED                      : 68        : output : 3.3-V LVTTL       :         : 2         : Y              
 Dip[1]                       : 69        : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 70        :        :                   :         : 2         :                
 Dip[0]                       : 71        : input  : 3.3-V LVTTL       :         : 2         : Y              
