@@ -5562,9 +5562,6 @@ f39123b8592ab2dac019716e56b3ec18
 ..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|comptree.inc
 da21447b8e66c26bd34c85b6cdda8169
 }
-# hierarchies {
-veryFarCompare:inst29|lpm_compare:lpm_compare_component
-}
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
 d41d8cd98f0b24e980998ecf8427e
@@ -6684,6 +6681,9 @@ f39123b8592ab2dac019716e56b3ec18
 ..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|comptree.inc
 da21447b8e66c26bd34c85b6cdda8169
 }
+# hierarchies {
+veryFarCompare:inst29|lpm_compare:lpm_compare_component
+}
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
 d41d8cd98f0b24e980998ecf8427e
@@ -7502,79 +7502,6 @@ d41d8cd98f0b24e980998ecf8427e
 
 # end
 # entity
-veryFarCompare
-# storage
-db|robotmain.(100).cnf
-db|robotmain.(100).cnf
-# case_insensitive
-# source_file
-veryFarCompare.tdf
-e6b9e4495025b7322c9435df4c471ad
-6
-# used_port {
-dataa3
--1
-3
-dataa2
--1
-3
-dataa1
--1
-3
-dataa0
--1
-3
-agb
--1
-3
-}
-# include_file {
-..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_compare.inc
-aec4ea1b78f4cda1c3effe18f1abbf63
-}
-# hierarchies {
-veryFarCompare:inst29
-}
-# lmf
-..|..|..|..|..|altera|72sp3|quartus|lmf|
-d41d8cd98f0b24e980998ecf8427e
-# macro_sequence
-
-# end
-# entity
-obstacle_avoidance_FSM
-# storage
-db|robotmain.(97).cnf
-db|robotmain.(97).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-obstacle_avoidance_FSM.vhd
-863d3301ea156394ffcdc3ff341b390
-4
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-obstacle_avoidance_FSM:inst1
-}
-# lmf
-..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
 wallMux
 # storage
 db|robotmain.(101).cnf
@@ -7633,6 +7560,79 @@ d41d8cd98f0b24e980998ecf8427e
 
 # end
 # entity
+veryFarCompare
+# storage
+db|robotmain.(100).cnf
+db|robotmain.(100).cnf
+# case_insensitive
+# source_file
+veryFarCompare.tdf
+98bcbbaa96931bccda2dd3e294902b47
+6
+# used_port {
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+agb
+-1
+3
+}
+# include_file {
+..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_compare.inc
+aec4ea1b78f4cda1c3effe18f1abbf63
+}
+# hierarchies {
+veryFarCompare:inst29
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+obstacle_avoidance_FSM
+# storage
+db|robotmain.(97).cnf
+db|robotmain.(97).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+obstacle_avoidance_FSM.vhd
+bdba78972fbd62553454f82371aeee4
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+obstacle_avoidance_FSM:inst28
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
 robotmain
 # storage
 db|robotmain.(0).cnf
@@ -7640,7 +7640,7 @@ db|robotmain.(0).cnf
 # case_insensitive
 # source_file
 robotmain.bdf
-af5d240ae5b8a991d8d76621163ee
+9a8890e5e2675f44e3526ce0b1e3a664
 25
 # internal_option {
 BLOCK_DESIGN_NAMING

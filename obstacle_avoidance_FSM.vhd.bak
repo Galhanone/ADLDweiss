@@ -42,6 +42,7 @@ begin
 						state <= s4;
 					else
 						state <= s1;
+					end if;
 				when s2=>	--Watch
 					if back_far = '1' then
 						state <= s6;
