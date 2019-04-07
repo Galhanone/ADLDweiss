@@ -7600,6 +7600,29 @@ d41d8cd98f0b24e980998ecf8427e
 
 # end
 # entity
+robotmain
+# storage
+db|robotmain.(0).cnf
+db|robotmain.(0).cnf
+# case_insensitive
+# source_file
+robotmain.bdf
+c89031acbca1ee75c2732a3b335dcc8
+25
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
 obstacle_avoidance_FSM
 # storage
 db|robotmain.(97).cnf
@@ -7611,7 +7634,7 @@ ON
 # case_insensitive
 # source_file
 obstacle_avoidance_FSM.vhd
-bdba78972fbd62553454f82371aeee4
+c0ef9fd8e55dcf03aa9bae1b9afe4c7
 4
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -7624,34 +7647,11 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-obstacle_avoidance_FSM:inst28
+obstacle_avoidance_FSM:inst1
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
 9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-robotmain
-# storage
-db|robotmain.(0).cnf
-db|robotmain.(0).cnf
-# case_insensitive
-# source_file
-robotmain.bdf
-9a8890e5e2675f44e3526ce0b1e3a664
-25
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# lmf
-..|..|..|..|..|altera|72sp3|quartus|lmf|
-d41d8cd98f0b24e980998ecf8427e
 # macro_sequence
 
 # end

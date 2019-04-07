@@ -56,7 +56,9 @@ begin
 						state <= s3;
 					end if;
 				when s4=>	--Correct Toward
-					if side_far = '0' then
+					if side_vfar = '1' then
+						state <= s2;
+					elsif side_far = '0' then
 						state <= s1;
 					else
 						state <= s4;

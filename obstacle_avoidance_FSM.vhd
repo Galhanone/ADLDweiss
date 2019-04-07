@@ -64,7 +64,7 @@ begin
 						state <= s4;
 					end if;
 				when s5=>	--Spin Away
-					if front_close = '0' then
+					if side_close = '0' then
 						state <= s1;
 					else
 						state <= s5;

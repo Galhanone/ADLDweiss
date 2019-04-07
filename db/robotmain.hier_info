@@ -7,7 +7,7 @@ Digit_3 <= Digit_decode:inst26.eq2
 Digit_4 <= Digit_decode:inst26.eq3
 LED_Blue <= LEDDecode:inst31.eq0
 Dip[0] => LEDDecode:inst31.data[0]
-Dip[0] => obstacle_avoidance_FSM:inst28.right_left
+Dip[0] => obstacle_avoidance_FSM:inst1.right_left
 Dip[0] => wallMux:inst38.sel
 Dip[0] => wallMux:inst34.sel
 Dip[1] => LEDDecode:inst31.data[1]
@@ -306,7 +306,7 @@ Go_Stop => Servo~7.OUTPUTSELECT
 Servo <= Servo~7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robotmain|obstacle_avoidance_FSM:inst28
+|robotmain|obstacle_avoidance_FSM:inst1
 clk => state~12.IN1
 go_stop => Selector2.IN6
 go_stop => state~11.DATAB
@@ -319,11 +319,13 @@ right_left => Selector8.IN1
 right_left => Selector1.IN1
 right_left => Selector10.IN2
 right_left => Selector9.IN2
+side_close => Selector6.IN3
 side_close => Selector4.IN3
 side_close => state~3.DATAA
 side_close => state~1.OUTPUTSELECT
 side_close => state~0.OUTPUTSELECT
 side_close => Selector2.IN3
+side_close => Selector2.IN4
 side_far => Selector7.IN2
 side_far => state~10.DATAA
 side_far => state~1.DATAA
@@ -338,12 +340,10 @@ side_vfar => state~8.OUTPUTSELECT
 side_vfar => state~7.OUTPUTSELECT
 side_vfar => state~6.OUTPUTSELECT
 side_vfar => state~5.OUTPUTSELECT
-front_close => Selector6.IN3
 front_close => state~8.DATAA
 front_close => state~4.OUTPUTSELECT
 front_close => state~3.OUTPUTSELECT
 front_close => state~2.OUTPUTSELECT
-front_close => Selector2.IN5
 back_far => Selector7.IN3
 back_far => Selector3.IN1
 l_go <= Selector9.DB_MAX_OUTPUT_PORT_TYPE
