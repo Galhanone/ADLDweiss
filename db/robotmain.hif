@@ -1632,7 +1632,7 @@ data0
 3
 }
 # hierarchies {
-Music_Block:inst4|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated
+Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2354,7 +2354,7 @@ e61874547688138e6fc0b49ff8760
 2251b94d26afaa53635df1aff6b6e7be
 }
 # hierarchies {
-Music_Block:inst4|noteCounter:inst29|lpm_counter:lpm_counter_component
+Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2396,7 +2396,7 @@ clock
 3
 }
 # hierarchies {
-Music_Block:inst4|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated
+Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2429,7 +2429,7 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-Music_Block:inst4|Duration_ROM:inst6
+Music_Block:inst7|Duration_ROM:inst6
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
@@ -2462,7 +2462,7 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-Music_Block:inst4|Notes:inst7
+Music_Block:inst7|Notes:inst7
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
@@ -2568,7 +2568,7 @@ clock
 7f888b135ddf66f0653c44cb18ac5
 }
 # hierarchies {
-Music_Block:inst4|durCounter:inst31
+Music_Block:inst7|durCounter:inst31
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2734,7 +2734,7 @@ e61874547688138e6fc0b49ff8760
 2251b94d26afaa53635df1aff6b6e7be
 }
 # hierarchies {
-Music_Block:inst4|durCounter:inst31|lpm_counter:lpm_counter_component
+Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2800,7 +2800,7 @@ clock
 3
 }
 # hierarchies {
-Music_Block:inst4|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated
+Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2846,7 +2846,7 @@ clock
 7f888b135ddf66f0653c44cb18ac5
 }
 # hierarchies {
-Music_Block:inst4|noteCounter:inst29
+Music_Block:inst7|noteCounter:inst29
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2904,7 +2904,7 @@ clock
 7f888b135ddf66f0653c44cb18ac5
 }
 # hierarchies {
-Music_Block:inst4|freqCounter:inst30
+Music_Block:inst7|freqCounter:inst30
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3082,7 +3082,7 @@ e61874547688138e6fc0b49ff8760
 2251b94d26afaa53635df1aff6b6e7be
 }
 # hierarchies {
-Music_Block:inst4|freqCounter:inst30|lpm_counter:lpm_counter_component
+Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3160,7 +3160,7 @@ clock
 3
 }
 # hierarchies {
-Music_Block:inst4|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated
+Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3206,7 +3206,7 @@ data0
 c22bfd353214c01495b560fc34e47d79
 }
 # hierarchies {
-Music_Block:inst4|octaveMux:inst10
+Music_Block:inst7|octaveMux:inst10
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3246,7 +3246,7 @@ aneb
 aec4ea1b78f4cda1c3effe18f1abbf63
 }
 # hierarchies {
-Music_Block:inst4|restCompare:inst11
+Music_Block:inst7|restCompare:inst11
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3364,7 +3364,7 @@ f39123b8592ab2dac019716e56b3ec18
 da21447b8e66c26bd34c85b6cdda8169
 }
 # hierarchies {
-Music_Block:inst4|restCompare:inst11|lpm_compare:lpm_compare_component
+Music_Block:inst7|restCompare:inst11|lpm_compare:lpm_compare_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3400,7 +3400,63 @@ aneb
 3
 }
 # hierarchies {
-Music_Block:inst4|restCompare:inst11|lpm_compare:lpm_compare_component|cmpr_rci:auto_generated
+Music_Block:inst7|restCompare:inst11|lpm_compare:lpm_compare_component|cmpr_rci:auto_generated
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+Song_ROM
+# storage
+db|robotmain.(35).cnf
+db|robotmain.(35).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+Song_ROM.vhd
+aa9e53fd65b70b17faa6f8153081bf
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Music_Block:inst7|Song_ROM:inst8
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+Music_Block
+# storage
+db|robotmain.(46).cnf
+db|robotmain.(46).cnf
+# case_insensitive
+# source_file
+Music_Block.bdf
+1f7944ac215b2401c59185e2b99492
+25
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Music_Block:inst7
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -6257,7 +6313,7 @@ f172666ca13e5e31e17e3f6cb35af52
 8e8df160d449a63ec15dc86ecf2b373f
 }
 # hierarchies {
-Music_Block:inst4|octaveMux:inst10|lpm_mux:lpm_mux_component
+Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -7584,7 +7640,7 @@ db|robotmain.(0).cnf
 # case_insensitive
 # source_file
 robotmain.bdf
-2327f459da7fe69b776dab4834755c
+ee7e96e2294cf758f7c429e0ec5fd751
 25
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -7596,62 +7652,6 @@ AUTO
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
 d41d8cd98f0b24e980998ecf8427e
-# macro_sequence
-
-# end
-# entity
-Music_Block
-# storage
-db|robotmain.(35).cnf
-db|robotmain.(35).cnf
-# case_insensitive
-# source_file
-Music_Block.bdf
-d5c874ac7e1a717291a893dad89a1d
-25
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-Music_Block:inst4
-}
-# lmf
-..|..|..|..|..|altera|72sp3|quartus|lmf|
-d41d8cd98f0b24e980998ecf8427e
-# macro_sequence
-
-# end
-# entity
-Song_ROM
-# storage
-db|robotmain.(46).cnf
-db|robotmain.(46).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-Song_ROM.vhd
-d4ded38dfdef1f2decc43f7ac71a22c
-4
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-Music_Block:inst4|Song_ROM:inst9
-}
-# lmf
-..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
 # macro_sequence
 
 # end
