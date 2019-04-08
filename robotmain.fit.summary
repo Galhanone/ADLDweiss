@@ -1,11 +1,11 @@
-Fitter Status : Successful - Mon Apr 08 14:28:23 2019
+Fitter Status : Successful - Mon Apr 08 14:39:21 2019
 Quartus II Version : 7.2 Build 207 03/18/2008 SP 3 SJ Web Edition
 Revision Name : robotmain
 Top-level Entity Name : robotmain
 Family : MAX II
 Device : EPM240T100C5
 Timing Models : Final
-Total logic elements : 217 / 240 ( 90 % )
+Total logic elements : 218 / 240 ( 91 % )
 Total pins : 37 / 80 ( 46 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )
