@@ -1,10 +1,11 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="robotmain">
-		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|LEDDecode:inst31|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_gpe.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Display_mux:inst24|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_vld.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_esi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|backFarCompare:inst33|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_bqi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|wallMux:inst34|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_i9c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|wallMux:inst38|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_i9c.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Colon_mux:inst25|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_sld.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_gsi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_j7h.tdf"/>
@@ -16,7 +17,5 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|veryFarCompare:inst29|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_bqi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|BigCount:inst23|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_49h.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Digit_decode:inst26|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_gpe.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Display_mux:inst24|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_vld.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|wallMux:inst38|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_i9c.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

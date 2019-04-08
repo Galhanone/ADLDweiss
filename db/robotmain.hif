@@ -176,7 +176,6 @@ data0
 }
 # hierarchies {
 Digit_decode:inst26|lpm_decode:lpm_decode_component|decode_gpe:auto_generated
-LEDDecode:inst31|lpm_decode:lpm_decode_component|decode_gpe:auto_generated
 }
 # lmf
 c:|altera|72sp3|quartus|lmf|
@@ -1053,7 +1052,6 @@ dcde44eee59335c1e2fe75d574f9646
 }
 # hierarchies {
 Digit_decode:inst26|lpm_decode:lpm_decode_component
-LEDDecode:inst31|lpm_decode:lpm_decode_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3532,9 +3530,9 @@ clock
 97d9d437829a4e214661a824cb57479
 }
 # hierarchies {
+IR_Sensor:inst13|reg8:inst12
 IR_Sensor:inst11|reg8:inst12
 IR_Sensor:inst14|reg8:inst12
-IR_Sensor:inst13|reg8:inst12
 IR_Sensor:inst20|reg8:inst12
 IR_Sensor:inst21|reg8:inst12
 }
@@ -3656,9 +3654,9 @@ f39123b8592ab2dac019716e56b3ec18
 dcde44eee59335c1e2fe75d574f9646
 }
 # hierarchies {
+IR_Sensor:inst13|reg8:inst12|lpm_ff:lpm_ff_component
 IR_Sensor:inst11|reg8:inst12|lpm_ff:lpm_ff_component
 IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component
-IR_Sensor:inst13|reg8:inst12|lpm_ff:lpm_ff_component
 IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component
 IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component
 }
@@ -3700,12 +3698,12 @@ data0_0
 102399e8b09987545b13639f1595ab7
 }
 # hierarchies {
+IR_Sensor:inst13|bus_and:inst7
+IR_Sensor:inst13|bus_and:inst6
 IR_Sensor:inst11|bus_and:inst7
 IR_Sensor:inst11|bus_and:inst6
 IR_Sensor:inst14|bus_and:inst7
 IR_Sensor:inst14|bus_and:inst6
-IR_Sensor:inst13|bus_and:inst7
-IR_Sensor:inst13|bus_and:inst6
 IR_Sensor:inst20|bus_and:inst7
 IR_Sensor:inst20|bus_and:inst6
 IR_Sensor:inst21|bus_and:inst7
@@ -3791,12 +3789,12 @@ data0_0
 f39123b8592ab2dac019716e56b3ec18
 }
 # hierarchies {
+IR_Sensor:inst13|bus_and:inst7|lpm_and:lpm_and_component
+IR_Sensor:inst13|bus_and:inst6|lpm_and:lpm_and_component
 IR_Sensor:inst11|bus_and:inst7|lpm_and:lpm_and_component
 IR_Sensor:inst11|bus_and:inst6|lpm_and:lpm_and_component
 IR_Sensor:inst14|bus_and:inst7|lpm_and:lpm_and_component
 IR_Sensor:inst14|bus_and:inst6|lpm_and:lpm_and_component
-IR_Sensor:inst13|bus_and:inst7|lpm_and:lpm_and_component
-IR_Sensor:inst13|bus_and:inst6|lpm_and:lpm_and_component
 IR_Sensor:inst20|bus_and:inst7|lpm_and:lpm_and_component
 IR_Sensor:inst20|bus_and:inst6|lpm_and:lpm_and_component
 IR_Sensor:inst21|bus_and:inst7|lpm_and:lpm_and_component
@@ -3843,9 +3841,9 @@ clock
 ab7419a3e1c1b11843b76ba93873576
 }
 # hierarchies {
+IR_Sensor:inst13|Shift4:inst4
 IR_Sensor:inst11|Shift4:inst4
 IR_Sensor:inst14|Shift4:inst4
-IR_Sensor:inst13|Shift4:inst4
 IR_Sensor:inst20|Shift4:inst4
 IR_Sensor:inst21|Shift4:inst4
 }
@@ -3932,9 +3930,9 @@ dcde44eee59335c1e2fe75d574f9646
 55d29d20f7e852c37746bec4e2495ec
 }
 # hierarchies {
+IR_Sensor:inst13|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
 IR_Sensor:inst11|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
 IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
-IR_Sensor:inst13|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
 IR_Sensor:inst20|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
 IR_Sensor:inst21|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
 }
@@ -3959,9 +3957,9 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
+IR_Sensor:inst13
 IR_Sensor:inst11
 IR_Sensor:inst14
-IR_Sensor:inst13
 IR_Sensor:inst20
 IR_Sensor:inst21
 }
@@ -5325,8 +5323,8 @@ alb
 3
 }
 # hierarchies {
-sideCloseCompare:inst16|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated
 distanceCompare:inst30|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated
+sideCloseCompare:inst16|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -5444,8 +5442,8 @@ f39123b8592ab2dac019716e56b3ec18
 da21447b8e66c26bd34c85b6cdda8169
 }
 # hierarchies {
-sideCloseCompare:inst16|lpm_compare:lpm_compare_component
 distanceCompare:inst30|lpm_compare:lpm_compare_component
+sideCloseCompare:inst16|lpm_compare:lpm_compare_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -7392,9 +7390,6 @@ data0
 ..|..|..|..|..|altera|72sp3|quartus|libraries|megafunctions|lpm_decode.inc
 bd0e2f5e01c1bd360461dceb53d48
 }
-# hierarchies {
-LEDDecode:inst31
-}
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
 d41d8cd98f0b24e980998ecf8427e
@@ -7640,7 +7635,7 @@ db|robotmain.(0).cnf
 # case_insensitive
 # source_file
 robotmain.bdf
-ee7e96e2294cf758f7c429e0ec5fd751
+ee976708321b23840a0e23bed34e1bb
 25
 # internal_option {
 BLOCK_DESIGN_NAMING

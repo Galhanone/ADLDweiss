@@ -1,5 +1,5 @@
 Assembler report for robotmain
-Mon Apr 08 14:28:34 2019
+Mon Apr 08 16:47:03 2019
 Quartus II Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Mainframe/Documents/GitHub/ADLDweiss/robotmain.pof
+  5. Assembler Device Options: C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/robotmain.pof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Apr 08 14:28:34 2019 ;
+; Assembler Status      ; Successful - Mon Apr 08 16:47:03 2019 ;
 ; Revision Name         ; robotmain                             ;
 ; Top-level Entity Name ; robotmain                             ;
 ; Family                ; MAX II                                ;
@@ -75,24 +75,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+-----------+---------------+
 
 
-+-------------------------------------------------------------+
-; Assembler Generated Files                                   ;
-+-------------------------------------------------------------+
-; File Name                                                   ;
-+-------------------------------------------------------------+
-; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/robotmain.pof ;
-+-------------------------------------------------------------+
++-----------------------------------------------------------------+
+; Assembler Generated Files                                       ;
++-----------------------------------------------------------------+
+; File Name                                                       ;
++-----------------------------------------------------------------+
+; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/robotmain.pof ;
++-----------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Mainframe/Documents/GitHub/ADLDweiss/robotmain.pof ;
-+----------------+----------------------------------------------------------------------+
-; Option         ; Setting                                                              ;
-+----------------+----------------------------------------------------------------------+
-; Device         ; EPM240T100C5                                                         ;
-; JTAG usercode  ; 0xFFFFFFFF                                                           ;
-; Checksum       ; 0x0016EEB7                                                           ;
-+----------------+----------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/robotmain.pof ;
++----------------+--------------------------------------------------------------------------+
+; Option         ; Setting                                                                  ;
++----------------+--------------------------------------------------------------------------+
+; Device         ; EPM240T100C5                                                             ;
+; JTAG usercode  ; 0xFFFFFFFF                                                               ;
+; Checksum       ; 0x001730D8                                                               ;
++----------------+--------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -101,13 +101,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
-    Info: Processing started: Mon Apr 08 14:28:31 2019
+    Info: Processing started: Mon Apr 08 16:47:03 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off robotmain -c robotmain
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Allocated 214 megabytes of memory during processing
-    Info: Processing ended: Mon Apr 08 14:28:34 2019
-    Info: Elapsed time: 00:00:03
+    Info: Allocated 237 megabytes of memory during processing
+    Info: Processing ended: Mon Apr 08 16:47:03 2019
+    Info: Elapsed time: 00:00:00
 
 
