@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 1.542 ns
+Actual Time    : 1.319 ns
 From           : Dip[0]
-To             : obstacle_avoidance_FSM:inst1|state.s2
+To             : obstacle_avoidance_FSM:inst1|state.s1
 From Clock     : --
 To Clock       : Clk_50MHZ
 Failed Paths   : 0
@@ -15,7 +15,7 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 41.510 ns
+Actual Time    : 40.154 ns
 From           : Music_Block:inst7|inst28
 To             : Speaker_74
 From Clock     : Clk_50MHZ
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 8.262 ns
+Actual Time    : 8.718 ns
 From           : Dip[0]
-To             : LED_RED
+To             : LED_Blue
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 19.372 ns
+Actual Time    : 12.287 ns
 From           : Dip[0]
-To             : obstacle_avoidance_FSM:inst1|l_fwd
+To             : obstacle_avoidance_FSM:inst1|r_fwd
 From Clock     : --
 To Clock       : Clk_50MHZ
 Failed Paths   : 0
@@ -45,7 +45,7 @@ Failed Paths   : 0
 Type           : Clock Setup: 'Clk_50MHZ'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 34.63 MHz ( period = 28.877 ns )
+Actual Time    : 38.45 MHz ( period = 26.011 ns )
 From           : Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|safe_q[0]
 To             : Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|safe_q[0]
 From Clock     : Clk_50MHZ

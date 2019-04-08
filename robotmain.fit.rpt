@@ -1,5 +1,5 @@
 Fitter report for robotmain
-Sun Apr 07 16:50:29 2019
+Mon Apr 08 14:28:23 2019
 Quartus II Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
 
 
@@ -55,14 +55,14 @@ applicable agreement for further details.
 +----------------------------------------------------------------------+
 ; Fitter Summary                                                       ;
 +-----------------------+----------------------------------------------+
-; Fitter Status         ; Successful - Sun Apr 07 16:50:29 2019        ;
+; Fitter Status         ; Successful - Mon Apr 08 14:28:23 2019        ;
 ; Quartus II Version    ; 7.2 Build 207 03/18/2008 SP 3 SJ Web Edition ;
 ; Revision Name         ; robotmain                                    ;
 ; Top-level Entity Name ; robotmain                                    ;
 ; Family                ; MAX II                                       ;
 ; Device                ; EPM240T100C5                                 ;
 ; Timing Models         ; Final                                        ;
-; Total logic elements  ; 216 / 240 ( 90 % )                           ;
+; Total logic elements  ; 217 / 240 ( 90 % )                           ;
 ; Total pins            ; 37 / 80 ( 46 % )                             ;
 ; Total virtual pins    ; 0                                            ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                                ;
@@ -125,24 +125,24 @@ The pin-out file can be found in C:/Users/Mainframe/Documents/GitHub/ADLDweiss/r
 +---------------------------------------------+----------------------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                                    ;
 +---------------------------------------------+----------------------------------------------------------------------------------------------------------+
-; Total logic elements                        ; 216 / 240 ( 90 % )                                                                                       ;
-;     -- Combinational with no register       ; 112                                                                                                      ;
+; Total logic elements                        ; 217 / 240 ( 90 % )                                                                                       ;
+;     -- Combinational with no register       ; 113                                                                                                      ;
 ;     -- Register only                        ; 22                                                                                                       ;
 ;     -- Combinational with a register        ; 82                                                                                                       ;
 ;                                             ;                                                                                                          ;
 ; Logic element usage by number of LUT inputs ;                                                                                                          ;
 ;     -- 4 input functions                    ; 98                                                                                                       ;
 ;     -- 3 input functions                    ; 20                                                                                                       ;
-;     -- 2 input functions                    ; 58                                                                                                       ;
-;     -- 1 input functions                    ; 21                                                                                                       ;
-;     -- 0 input functions                    ; 19                                                                                                       ;
+;     -- 2 input functions                    ; 59                                                                                                       ;
+;     -- 1 input functions                    ; 23                                                                                                       ;
+;     -- 0 input functions                    ; 17                                                                                                       ;
 ;                                             ;                                                                                                          ;
 ; Logic elements by mode                      ;                                                                                                          ;
-;     -- normal mode                          ; 176                                                                                                      ;
+;     -- normal mode                          ; 177                                                                                                      ;
 ;     -- arithmetic mode                      ; 40                                                                                                       ;
 ;     -- qfbk mode                            ; 21                                                                                                       ;
 ;     -- register cascade mode                ; 0                                                                                                        ;
-;     -- synchronous clear/load mode          ; 48                                                                                                       ;
+;     -- synchronous clear/load mode          ; 46                                                                                                       ;
 ;     -- asynchronous clear/load mode         ; 12                                                                                                       ;
 ;                                             ;                                                                                                          ;
 ; Total registers                             ; 104 / 240 ( 43 % )                                                                                       ;
@@ -155,14 +155,14 @@ The pin-out file can be found in C:/Users/Mainframe/Documents/GitHub/ADLDweiss/r
 ; Global signals                              ; 4                                                                                                        ;
 ; UFM blocks                                  ; 0 / 1 ( 0 % )                                                                                            ;
 ; Global clocks                               ; 4 / 4 ( 100 % )                                                                                          ;
-; Average interconnect usage                  ; 16%                                                                                                      ;
-; Peak interconnect usage                     ; 16%                                                                                                      ;
+; Average interconnect usage                  ; 18%                                                                                                      ;
+; Peak interconnect usage                     ; 18%                                                                                                      ;
 ; Maximum fan-out node                        ; Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated|safe_q[0] ;
 ; Maximum fan-out                             ; 32                                                                                                       ;
 ; Highest non-global fan-out signal           ; Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated|safe_q[0] ;
 ; Highest non-global fan-out                  ; 31                                                                                                       ;
-; Total fan-out                               ; 786                                                                                                      ;
-; Average fan-out                             ; 3.11                                                                                                     ;
+; Total fan-out                               ; 788                                                                                                      ;
+; Average fan-out                             ; 3.10                                                                                                     ;
 +---------------------------------------------+----------------------------------------------------------------------------------------------------------+
 
 
@@ -181,7 +181,7 @@ The pin-out file can be found in C:/Users/Mainframe/Documents/GitHub/ADLDweiss/r
 ; Dip[1]           ; 69    ; 2        ; 8            ; 3            ; 0           ; 3                     ; 0                  ; no     ; no              ; no       ; On           ; 3.3-V LVTTL                ; User                 ;
 ; Dip[2]           ; 67    ; 2        ; 8            ; 3            ; 2           ; 2                     ; 0                  ; no     ; no              ; no       ; On           ; 3.3-V LVTTL                ; User                 ;
 ; Extra_Pin        ; 56    ; 2        ; 8            ; 1            ; 0           ; 0                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3V Schmitt Trigger Input ; User                 ;
-; Hall             ; 17    ; 1        ; 1            ; 2            ; 3           ; 0                     ; 0                  ; no     ; no              ; no       ; On           ; 3.3V Schmitt Trigger Input ; User                 ;
+; Hall             ; 17    ; 1        ; 1            ; 2            ; 3           ; 1                     ; 0                  ; no     ; no              ; no       ; On           ; 3.3V Schmitt Trigger Input ; User                 ;
 +------------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+----------------------------+----------------------+
 
 
@@ -193,7 +193,7 @@ The pin-out file can be found in C:/Users/Mainframe/Documents/GitHub/ADLDweiss/r
 ; Blue_Tooth_TX_Out ; 54    ; 2        ; 8            ; 1            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVCMOS ; 8mA              ; no                     ; User                 ; 10 pF ;
 ; Digit_1           ; 44    ; 1        ; 6            ; 0            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ;
 ; Digit_2           ; 43    ; 1        ; 6            ; 0            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ;
-; Digit_3           ; 41    ; 1        ; 5            ; 0            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; User                 ; 10 pF ;
+; Digit_3           ; 41    ; 1        ; 5            ; 0            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ;
 ; Digit_4           ; 35    ; 1        ; 3            ; 0            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ;
 ; LED_Blue          ; 62    ; 2        ; 8            ; 2            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ;
 ; LED_Green         ; 66    ; 2        ; 8            ; 3            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ;
@@ -367,7 +367,7 @@ Note: User assignments will override these defaults. The user specified values a
 +------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                     ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                       ; Library Name ;
 +------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------+--------------+
-; |robotmain                                     ; 216 (1)     ; 104          ; 0          ; 37   ; 0            ; 112 (0)      ; 22 (0)            ; 82 (1)           ; 44 (0)          ; 21 (0)     ; |robotmain                                                                                                ; work         ;
+; |robotmain                                     ; 217 (2)     ; 104          ; 0          ; 37   ; 0            ; 113 (1)      ; 22 (0)            ; 82 (1)           ; 44 (0)          ; 21 (0)     ; |robotmain                                                                                                ; work         ;
 ;    |BigCount:inst23|                           ; 22 (0)      ; 22           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 22 (0)           ; 22 (0)          ; 0 (0)      ; |robotmain|BigCount:inst23                                                                                ; work         ;
 ;       |lpm_counter:lpm_counter_component|      ; 22 (0)      ; 22           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 22 (0)           ; 22 (0)          ; 0 (0)      ; |robotmain|BigCount:inst23|lpm_counter:lpm_counter_component                                              ; work         ;
 ;          |cntr_49h:auto_generated|             ; 22 (22)     ; 22           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 22 (22)          ; 22 (22)         ; 0 (0)      ; |robotmain|BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated                      ; work         ;
@@ -461,7 +461,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------+----------+---------------+
 ; Name              ; Pin Type ; Pad to Core 0 ;
 +-------------------+----------+---------------+
-; Hall              ; Input    ; 0             ;
 ; BlueTooth_RCV_In  ; Input    ; 0             ;
 ; Bumper            ; Input    ; 0             ;
 ; CDS_Cell          ; Input    ; 0             ;
@@ -470,6 +469,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Dip[1]            ; Input    ; 0             ;
 ; Dip[2]            ; Input    ; 0             ;
 ; Clk_50MHZ         ; Input    ; 0             ;
+; Hall              ; Input    ; 1             ;
 ; Button_2          ; Input    ; 1             ;
 ; Button_1          ; Input    ; 1             ;
 ; Blue_Tooth_TX_Out ; Output   ; --            ;
@@ -506,25 +506,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------------------------------+-------------+---------+-----------------------------+--------+----------------------+------------------+
 ; Name                                                                                                ; Location    ; Fan-Out ; Usage                       ; Global ; Global Resource Used ; Global Line Name ;
 +-----------------------------------------------------------------------------------------------------+-------------+---------+-----------------------------+--------+----------------------+------------------+
-; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[14]                ; LC_X3_Y3_N8 ; 19      ; Clock                       ; yes    ; Global Clock         ; GCLK0            ;
-; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[18]                ; LC_X4_Y3_N2 ; 22      ; Async. clear, Output enable ; no     ; --                   ; --               ;
-; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[21]                ; LC_X4_Y3_N5 ; 7       ; Clock                       ; no     ; --                   ; --               ;
-; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[7]                 ; LC_X3_Y3_N1 ; 22      ; Clock                       ; yes    ; Global Clock         ; GCLK1            ;
+; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[14]                ; LC_X4_Y3_N8 ; 19      ; Clock                       ; yes    ; Global Clock         ; GCLK0            ;
+; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[18]                ; LC_X5_Y3_N2 ; 22      ; Async. clear, Output enable ; no     ; --                   ; --               ;
+; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[21]                ; LC_X5_Y3_N5 ; 7       ; Clock                       ; no     ; --                   ; --               ;
+; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[7]                 ; LC_X4_Y3_N1 ; 22      ; Clock                       ; yes    ; Global Clock         ; GCLK1            ;
 ; Clk_50MHZ                                                                                           ; PIN_64      ; 22      ; Clock                       ; yes    ; Global Clock         ; GCLK3            ;
-; IR_Sensor:inst11|inst8                                                                              ; LC_X7_Y1_N8 ; 1       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst11|inst9                                                                              ; LC_X7_Y1_N4 ; 4       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst13|inst8                                                                              ; LC_X6_Y1_N8 ; 1       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst13|inst9                                                                              ; LC_X3_Y4_N9 ; 4       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst14|inst8                                                                              ; LC_X4_Y1_N4 ; 1       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst14|inst9                                                                              ; LC_X4_Y1_N6 ; 4       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst20|inst8                                                                              ; LC_X2_Y4_N5 ; 1       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst20|inst9                                                                              ; LC_X2_Y4_N6 ; 8       ; Clock                       ; yes    ; Global Clock         ; GCLK2            ;
-; IR_Sensor:inst21|inst8                                                                              ; LC_X4_Y3_N8 ; 1       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst21|inst9                                                                              ; LC_X4_Y3_N6 ; 8       ; Clock                       ; no     ; --                   ; --               ;
-; Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated|cout  ; LC_X2_Y2_N7 ; 14      ; Clock, Sync. load           ; no     ; --                   ; --               ;
-; Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|cout ; LC_X5_Y4_N8 ; 9       ; Clock, Sync. load           ; no     ; --                   ; --               ;
-; Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated|result_node[0]  ; LC_X5_Y4_N9 ; 8       ; Clock                       ; no     ; --                   ; --               ;
-; inst10                                                                                              ; LC_X2_Y1_N8 ; 8       ; Async. clear                ; no     ; --                   ; --               ;
+; IR_Sensor:inst11|inst8                                                                              ; LC_X6_Y3_N7 ; 1       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst11|inst9                                                                              ; LC_X7_Y4_N9 ; 4       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst13|inst8                                                                              ; LC_X6_Y3_N2 ; 1       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst13|inst9                                                                              ; LC_X7_Y3_N5 ; 4       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst14|inst8                                                                              ; LC_X5_Y4_N1 ; 1       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst14|inst9                                                                              ; LC_X5_Y4_N9 ; 4       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst20|inst8                                                                              ; LC_X3_Y2_N7 ; 1       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst20|inst9                                                                              ; LC_X3_Y2_N9 ; 8       ; Clock                       ; yes    ; Global Clock         ; GCLK2            ;
+; IR_Sensor:inst21|inst8                                                                              ; LC_X5_Y3_N7 ; 1       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst21|inst9                                                                              ; LC_X5_Y3_N9 ; 8       ; Clock                       ; no     ; --                   ; --               ;
+; Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated|cout  ; LC_X7_Y1_N7 ; 14      ; Clock, Sync. load           ; no     ; --                   ; --               ;
+; Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|cout ; LC_X2_Y3_N8 ; 9       ; Clock, Sync. load           ; no     ; --                   ; --               ;
+; Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated|result_node[0]  ; LC_X2_Y3_N9 ; 8       ; Clock                       ; no     ; --                   ; --               ;
+; inst2                                                                                               ; LC_X4_Y4_N8 ; 7       ; Async. clear                ; no     ; --                   ; --               ;
 ; obstacle_avoidance_FSM:inst1|state.s0                                                               ; LC_X4_Y4_N7 ; 5       ; Latch enable                ; no     ; --                   ; --               ;
 +-----------------------------------------------------------------------------------------------------+-------------+---------+-----------------------------+--------+----------------------+------------------+
 
@@ -534,10 +534,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------------+-------------+---------+----------------------+------------------+
 ; Name                                                                                 ; Location    ; Fan-Out ; Global Resource Used ; Global Line Name ;
 +--------------------------------------------------------------------------------------+-------------+---------+----------------------+------------------+
-; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[14] ; LC_X3_Y3_N8 ; 19      ; Global Clock         ; GCLK0            ;
-; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[7]  ; LC_X3_Y3_N1 ; 22      ; Global Clock         ; GCLK1            ;
+; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[14] ; LC_X4_Y3_N8 ; 19      ; Global Clock         ; GCLK0            ;
+; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[7]  ; LC_X4_Y3_N1 ; 22      ; Global Clock         ; GCLK1            ;
 ; Clk_50MHZ                                                                            ; PIN_64      ; 22      ; Global Clock         ; GCLK3            ;
-; IR_Sensor:inst20|inst9                                                               ; LC_X2_Y4_N6 ; 8       ; Global Clock         ; GCLK2            ;
+; IR_Sensor:inst20|inst9                                                               ; LC_X3_Y2_N9 ; 8       ; Global Clock         ; GCLK2            ;
 +--------------------------------------------------------------------------------------+-------------+---------+----------------------+------------------+
 
 
@@ -561,10 +561,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Music_Block:inst7|Song_ROM:inst8|Mux4~169                                                                          ; 8       ;
 ; Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated|result_node[0]                 ; 8       ;
 ; IR_Sensor:inst21|inst9                                                                                             ; 8       ;
-; inst10                                                                                                             ; 8       ;
 ; Music_Block:inst7|Song_ROM:inst8|Mux3~186                                                                          ; 8       ;
 ; Music_Block:inst7|Song_ROM:inst8|Mux5~161                                                                          ; 8       ;
 ; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[21]                               ; 7       ;
+; inst2                                                                                                              ; 7       ;
 ; obstacle_avoidance_FSM:inst1|Selector2~197                                                                         ; 7       ;
 ; Display_mux:inst24|lpm_mux:lpm_mux_component|mux_vld:auto_generated|result_node[3]~183                             ; 7       ;
 ; Display_mux:inst24|lpm_mux:lpm_mux_component|mux_vld:auto_generated|result_node[2]~181                             ; 7       ;
@@ -604,111 +604,111 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------+--------------------+
 ; Interconnect Resource Type ; Usage              ;
 +----------------------------+--------------------+
-; C4s                        ; 117 / 784 ( 15 % ) ;
+; C4s                        ; 113 / 784 ( 14 % ) ;
 ; Direct links               ; 41 / 888 ( 5 % )   ;
 ; Global clocks              ; 4 / 4 ( 100 % )    ;
-; LAB clocks                 ; 11 / 32 ( 34 % )   ;
-; LUT chains                 ; 20 / 216 ( 9 % )   ;
-; Local interconnects        ; 235 / 888 ( 26 % ) ;
-; R4s                        ; 117 / 704 ( 17 % ) ;
+; LAB clocks                 ; 12 / 32 ( 38 % )   ;
+; LUT chains                 ; 16 / 216 ( 7 % )   ;
+; Local interconnects        ; 234 / 888 ( 26 % ) ;
+; R4s                        ; 136 / 704 ( 19 % ) ;
 +----------------------------+--------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +--------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 9.00) ; Number of LABs  (Total = 24) ;
+; Number of Logic Elements  (Average = 9.04) ; Number of LABs  (Total = 24) ;
 +--------------------------------------------+------------------------------+
 ; 1                                          ; 0                            ;
 ; 2                                          ; 0                            ;
 ; 3                                          ; 0                            ;
-; 4                                          ; 0                            ;
+; 4                                          ; 1                            ;
 ; 5                                          ; 0                            ;
 ; 6                                          ; 2                            ;
-; 7                                          ; 4                            ;
-; 8                                          ; 1                            ;
-; 9                                          ; 2                            ;
-; 10                                         ; 15                           ;
+; 7                                          ; 0                            ;
+; 8                                          ; 2                            ;
+; 9                                          ; 5                            ;
+; 10                                         ; 14                           ;
 +--------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.83) ; Number of LABs  (Total = 24) ;
+; LAB-wide Signals  (Average = 0.88) ; Number of LABs  (Total = 24) ;
 +------------------------------------+------------------------------+
 ; 1 Async. clear                     ; 5                            ;
-; 1 Clock                            ; 9                            ;
-; 2 Clocks                           ; 6                            ;
+; 1 Clock                            ; 12                           ;
+; 2 Clocks                           ; 4                            ;
 +------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 9.29) ; Number of LABs  (Total = 24) ;
+; Number of Signals Sourced  (Average = 9.33) ; Number of LABs  (Total = 24) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
 ; 1                                           ; 0                            ;
 ; 2                                           ; 0                            ;
 ; 3                                           ; 0                            ;
-; 4                                           ; 0                            ;
+; 4                                           ; 1                            ;
 ; 5                                           ; 0                            ;
-; 6                                           ; 1                            ;
-; 7                                           ; 4                            ;
+; 6                                           ; 2                            ;
+; 7                                           ; 0                            ;
 ; 8                                           ; 2                            ;
-; 9                                           ; 2                            ;
-; 10                                          ; 13                           ;
-; 11                                          ; 0                            ;
-; 12                                          ; 1                            ;
-; 13                                          ; 1                            ;
+; 9                                           ; 4                            ;
+; 10                                          ; 11                           ;
+; 11                                          ; 2                            ;
+; 12                                          ; 2                            ;
 +---------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 4.50) ; Number of LABs  (Total = 24) ;
+; Number of Signals Sourced Out  (Average = 4.79) ; Number of LABs  (Total = 24) ;
 +-------------------------------------------------+------------------------------+
-; 0                                               ; 0                            ;
-; 1                                               ; 4                            ;
-; 2                                               ; 2                            ;
-; 3                                               ; 2                            ;
-; 4                                               ; 4                            ;
-; 5                                               ; 5                            ;
-; 6                                               ; 1                            ;
-; 7                                               ; 3                            ;
+; 0                                               ; 1                            ;
+; 1                                               ; 3                            ;
+; 2                                               ; 5                            ;
+; 3                                               ; 0                            ;
+; 4                                               ; 2                            ;
+; 5                                               ; 3                            ;
+; 6                                               ; 3                            ;
+; 7                                               ; 1                            ;
 ; 8                                               ; 2                            ;
-; 9                                               ; 0                            ;
-; 10                                              ; 1                            ;
+; 9                                               ; 2                            ;
+; 10                                              ; 2                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 8.13) ; Number of LABs  (Total = 24) ;
+; Number of Distinct Inputs  (Average = 8.00) ; Number of LABs  (Total = 24) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
-; 1                                           ; 1                            ;
-; 2                                           ; 1                            ;
+; 1                                           ; 2                            ;
+; 2                                           ; 2                            ;
 ; 3                                           ; 1                            ;
-; 4                                           ; 1                            ;
+; 4                                           ; 0                            ;
 ; 5                                           ; 2                            ;
-; 6                                           ; 5                            ;
-; 7                                           ; 0                            ;
+; 6                                           ; 3                            ;
+; 7                                           ; 1                            ;
 ; 8                                           ; 3                            ;
 ; 9                                           ; 1                            ;
-; 10                                          ; 2                            ;
-; 11                                          ; 3                            ;
-; 12                                          ; 2                            ;
+; 10                                          ; 3                            ;
+; 11                                          ; 2                            ;
+; 12                                          ; 1                            ;
 ; 13                                          ; 0                            ;
 ; 14                                          ; 0                            ;
-; 15                                          ; 0                            ;
+; 15                                          ; 1                            ;
 ; 16                                          ; 1                            ;
 ; 17                                          ; 0                            ;
 ; 18                                          ; 0                            ;
-; 19                                          ; 1                            ;
+; 19                                          ; 0                            ;
+; 20                                          ; 1                            ;
 +---------------------------------------------+------------------------------+
 
 
@@ -733,7 +733,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
-    Info: Processing started: Sun Apr 07 16:50:24 2019
+    Info: Processing started: Mon Apr 08 14:28:15 2019
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off robotmain -c robotmain
 Info: Selected device EPM240T100C5 for design "robotmain"
 Warning: The high junction temperature operating condition is not set. Assuming a default value of '85'.
@@ -796,12 +796,13 @@ Info: Estimated most critical path is register to pin delay of 5.303 ns
     Info: Total cell delay = 2.522 ns ( 47.56 % )
     Info: Total interconnect delay = 2.781 ns ( 52.44 % )
 Info: Fitter routing operations beginning
-Warning: 4 (of 639) connections in the design require a large routing delay to achieve hold requirements. Please check the circuit's timing constraints and clocking methodology, especially multicycles and gated clocks.
-    Info: Found 2 Registers with very high hold time requirements
+Warning: 5 (of 640) connections in the design require a large routing delay to achieve hold requirements. Please check the circuit's timing constraints and clocking methodology, especially multicycles and gated clocks.
+    Info: Found 3 Registers with very high hold time requirements
+        Info: Node "obstacle_avoidance_FSM:inst1|state.s0"
+        Info: Node "obstacle_avoidance_FSM:inst1|state.s6"
         Info: Node "obstacle_avoidance_FSM:inst1|state.s4"
-        Info: Node "obstacle_avoidance_FSM:inst1|state.s5"
-Info: Average interconnect usage is 16% of the available device resources
-    Info: Peak interconnect usage is 16% of the available device resources in the region that extends from location X0_Y0 to location X8_Y5
+Info: Average interconnect usage is 18% of the available device resources
+    Info: Peak interconnect usage is 18% of the available device resources in the region that extends from location X0_Y0 to location X8_Y5
 Info: Fitter routing operations ending: elapsed time is 00:00:01
 Info: The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info: Optimizations that may affect the design's routability were skipped
@@ -816,15 +817,15 @@ Warning: Following 7 pins have nothing, GND, or VCC driving datain port -- chang
     Info: Pin BLeft_IR_Sensor has VCC driving its datain port
 Info: Following groups of pins have the same output enable
     Info: Following pins have the same output enable: BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[18] (inverted)
+        Info: Type bidirectional pin Right_IR_Sensor uses the 3.3-V LVTTL I/O standard
+        Info: Type bidirectional pin BRight_IR_Sensor uses the 3.3-V LVTTL I/O standard
         Info: Type bidirectional pin Left_IR_Sensor uses the 3.3-V LVTTL I/O standard
         Info: Type bidirectional pin Front_IR_Sensor uses the 3.3-V LVTTL I/O standard
         Info: Type bidirectional pin BLeft_IR_Sensor uses the 3.3-V LVTTL I/O standard
-        Info: Type bidirectional pin Right_IR_Sensor uses the 3.3-V LVTTL I/O standard
-        Info: Type bidirectional pin BRight_IR_Sensor uses the 3.3-V LVTTL I/O standard
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info: Quartus II Fitter was successful. 0 errors, 10 warnings
-    Info: Allocated 276 megabytes of memory during processing
-    Info: Processing ended: Sun Apr 07 16:50:30 2019
-    Info: Elapsed time: 00:00:06
+    Info: Allocated 278 megabytes of memory during processing
+    Info: Processing ended: Mon Apr 08 14:28:23 2019
+    Info: Elapsed time: 00:00:08
 
 
