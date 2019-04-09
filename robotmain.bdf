@@ -311,7 +311,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1480 112 1656 128)
+	(rect 1216 120 1392 136)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "LED_Green" (rect 90 0 146 12)(font "Arial" ))
 	(pt 0 8)
@@ -929,7 +929,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1320 152 1368 184)
+	(rect 1360 152 1408 184)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst19" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -1126,7 +1126,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1408 144 1472 224)
+	(rect 1456 144 1520 224)
 	(text "JKFF" (rect 1 0 23 10)(font "Arial" (font_size 6)))
 	(text "inst10" (rect 3 68 32 80)(font "Arial" ))
 	(port
@@ -1184,7 +1184,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1320 184 1368 216)
+	(rect 1360 184 1408 216)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst15" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -2136,11 +2136,6 @@ applicable agreement for further details.
 	(pt 648 592)
 )
 (connector
-	(text "front_close" (rect 1150 24 1205 36)(font "Arial" ))
-	(pt 1184 40)
-	(pt 1144 40)
-)
-(connector
 	(text "Front[7..4]" (rect 968 16 1019 28)(font "Arial" ))
 	(pt 976 32)
 	(pt 1016 32)
@@ -2291,10 +2286,6 @@ applicable agreement for further details.
 	(pt 1312 80)
 )
 (connector
-	(pt 1384 72)
-	(pt 1400 72)
-)
-(connector
 	(pt 1400 56)
 	(pt 1392 56)
 )
@@ -2348,61 +2339,6 @@ applicable agreement for further details.
 	(pt 1680 72)
 )
 (connector
-	(text "Button_1" (rect 1272 152 1315 164)(font "Arial" ))
-	(pt 1264 168)
-	(pt 1320 168)
-)
-(connector
-	(text "Clk[14]" (rect 1376 168 1411 180)(font "Arial" ))
-	(pt 1408 184)
-	(pt 1376 184)
-)
-(connector
-	(pt 1408 200)
-	(pt 1368 200)
-)
-(connector
-	(text "Button_2" (rect 1272 184 1315 196)(font "Arial" ))
-	(pt 1320 200)
-	(pt 1264 200)
-)
-(connector
-	(pt 1680 168)
-	(pt 1472 168)
-)
-(connector
-	(pt 1680 72)
-	(pt 1680 168)
-)
-(connector
-	(pt 1376 168)
-	(pt 1376 120)
-)
-(connector
-	(pt 1368 168)
-	(pt 1376 168)
-)
-(connector
-	(pt 1376 168)
-	(pt 1408 168)
-)
-(connector
-	(pt 1432 112)
-	(pt 1432 120)
-)
-(connector
-	(pt 1432 120)
-	(pt 1432 128)
-)
-(connector
-	(pt 1376 120)
-	(pt 1432 120)
-)
-(connector
-	(pt 1432 120)
-	(pt 1480 120)
-)
-(connector
 	(pt 1688 56)
 	(pt 1624 56)
 )
@@ -2447,13 +2383,81 @@ applicable agreement for further details.
 	(pt 1552 48)
 	(pt 1560 48)
 )
+(connector
+	(text "front_close" (rect 1150 24 1205 36)(font "Arial" ))
+	(pt 1144 40)
+	(pt 1192 40)
+)
+(connector
+	(pt 1216 128)
+	(pt 1208 128)
+)
+(connector
+	(pt 1208 128)
+	(pt 1208 112)
+)
+(connector
+	(pt 1208 112)
+	(pt 1392 112)
+)
+(connector
+	(pt 1392 112)
+	(pt 1392 72)
+)
+(connector
+	(pt 1384 72)
+	(pt 1392 72)
+)
+(connector
+	(pt 1392 72)
+	(pt 1400 72)
+)
+(connector
+	(text "Clk[14]" (rect 1424 168 1459 180)(font "Arial" ))
+	(pt 1456 184)
+	(pt 1424 184)
+)
+(connector
+	(pt 1680 168)
+	(pt 1520 168)
+)
+(connector
+	(pt 1680 72)
+	(pt 1680 168)
+)
+(connector
+	(pt 1432 112)
+	(pt 1432 168)
+)
+(connector
+	(pt 1456 200)
+	(pt 1408 200)
+)
+(connector
+	(pt 1408 168)
+	(pt 1432 168)
+)
+(connector
+	(pt 1432 168)
+	(pt 1456 168)
+)
+(connector
+	(text "Button_1" (rect 1312 152 1355 164)(font "Arial" ))
+	(pt 1304 168)
+	(pt 1360 168)
+)
+(connector
+	(text "Button_2" (rect 1312 184 1355 196)(font "Arial" ))
+	(pt 1304 200)
+	(pt 1360 200)
+)
 (junction (pt 616 1088))
 (junction (pt 520 1088))
 (junction (pt 1120 784))
 (junction (pt 1120 888))
 (junction (pt 1120 984))
 (junction (pt 576 152))
-(junction (pt 1376 168))
-(junction (pt 1432 120))
 (junction (pt 1472 56))
 (junction (pt 1552 48))
+(junction (pt 1392 72))
+(junction (pt 1432 168))
