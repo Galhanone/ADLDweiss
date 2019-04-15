@@ -5,23 +5,20 @@ Clk_50MHZ => BigCount:inst23.clock
 Digit_2 <= Digit_decode:inst26.eq1
 Digit_3 <= Digit_decode:inst26.eq2
 Digit_4 <= Digit_decode:inst26.eq3
-LED_Blue <= inst28.DB_MAX_OUTPUT_PORT_TYPE
-Button_1 => inst19.IN0
-Hall => inst8.IN0
-Hall => inst35.IN0
-Front_IR_Sensor <= IR_Sensor:inst13.IR_BiDir
-LED_Green <= inst32.DB_MAX_OUTPUT_PORT_TYPE
 Left_Servo <= Servo:inst9.Servo
-Button_2 => inst15.IN0
-Dip[0] => obstacle_avoidance_FSM:inst1.right_left
-Dip[0] => wallMux:inst38.sel
-Dip[0] => wallMux:inst34.sel
+Button_1 => Movement_Block:inst4.Button_1
+Button_2 => Movement_Block:inst4.Button_2
+Button_2 => inst6.ACLR
+Button_2 => inst16.ACLR
+Hall => Movement_Block:inst4.Hall
+Dip[0] => Movement_Block:inst4.Right_Left
 Dip[1] => ~NO_FANOUT~
-Dip[2] => Music_Block:inst7.Button
-Left_IR_Sensor <= IR_Sensor:inst11.IR_BiDir
-Right_IR_Sensor <= IR_Sensor:inst14.IR_BiDir
+Dip[2] => ~NO_FANOUT~
 BRight_IR_Sensor <= IR_Sensor:inst20.IR_BiDir
 BLeft_IR_Sensor <= IR_Sensor:inst21.IR_BiDir
+Front_IR_Sensor <= IR_Sensor:inst13.IR_BiDir
+Left_IR_Sensor <= IR_Sensor:inst11.IR_BiDir
+Right_IR_Sensor <= IR_Sensor:inst14.IR_BiDir
 Right_Servo <= Servo:inst12.Servo
 Seg_A <= Seven_Seg_Driver:inst27.LED[6]
 Seg_B <= Seven_Seg_Driver:inst27.LED[5]
@@ -32,12 +29,15 @@ Seg_E <= Seven_Seg_Driver:inst27.LED[2]
 Seg_F <= Seven_Seg_Driver:inst27.LED[1]
 Seg_G <= Seven_Seg_Driver:inst27.LED[0]
 Spare_Servo <= <GND>
-Speaker_74 <= Music_Block:inst7.Speaker_A
-Speaker_82 <= Music_Block:inst7.Speaker_B
-LED_RED <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+Speaker_74 <= Music_Block:inst17.Speaker_A
+CDS_Cell => Music_Block:inst17.CDS_Cell
+CDS_Cell => inst8.IN0
+Speaker_82 <= Music_Block:inst17.Speaker_B
+LED_Blue <= <VCC>
+LED_RED <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+LED_Green <= <VCC>
 BlueTooth_RCV_In => ~NO_FANOUT~
 Bumper => ~NO_FANOUT~
-CDS_Cell => ~NO_FANOUT~
 Extra_Pin => ~NO_FANOUT~
 
 
@@ -239,209 +239,6 @@ q[23] <= counter_cella23.REGOUT
 q[24] <= counter_cella24.REGOUT
 
 
-|robotmain|distanceCompare:inst30
-dataa[0] => lpm_compare:lpm_compare_component.dataa[0]
-dataa[1] => lpm_compare:lpm_compare_component.dataa[1]
-dataa[2] => lpm_compare:lpm_compare_component.dataa[2]
-dataa[3] => lpm_compare:lpm_compare_component.dataa[3]
-alb <= lpm_compare:lpm_compare_component.alb
-
-
-|robotmain|distanceCompare:inst30|lpm_compare:lpm_compare_component
-dataa[0] => cmpr_gqi:auto_generated.dataa[0]
-dataa[1] => cmpr_gqi:auto_generated.dataa[1]
-dataa[2] => cmpr_gqi:auto_generated.dataa[2]
-dataa[3] => cmpr_gqi:auto_generated.dataa[3]
-datab[0] => cmpr_gqi:auto_generated.datab[0]
-datab[1] => cmpr_gqi:auto_generated.datab[1]
-datab[2] => cmpr_gqi:auto_generated.datab[2]
-datab[3] => cmpr_gqi:auto_generated.datab[3]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-alb <= cmpr_gqi:auto_generated.alb
-aeb <= <GND>
-agb <= <GND>
-aleb <= <GND>
-aneb <= <GND>
-ageb <= <GND>
-
-
-|robotmain|distanceCompare:inst30|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated
-alb <= alb_int.DB_MAX_OUTPUT_PORT_TYPE
-dataa[0] => op_1.IN7
-dataa[1] => op_1.IN5
-dataa[2] => op_1.IN3
-dataa[3] => op_1.IN1
-datab[0] => op_1.IN8
-datab[1] => op_1.IN6
-datab[2] => op_1.IN4
-datab[3] => op_1.IN2
-
-
-|robotmain|IR_Sensor:inst13
-Trigger_Test <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-IR_BiDir <= inst2
-Clk[0] => ~NO_FANOUT~
-Clk[1] => ~NO_FANOUT~
-Clk[2] => ~NO_FANOUT~
-Clk[3] => ~NO_FANOUT~
-Clk[4] => ~NO_FANOUT~
-Clk[5] => ~NO_FANOUT~
-Clk[6] => ~NO_FANOUT~
-Clk[7] => Shift4:inst4.clock
-Clk[8] => ~NO_FANOUT~
-Clk[9] => ~NO_FANOUT~
-Clk[10] => reg8:inst12.data[0]
-Clk[11] => reg8:inst12.data[1]
-Clk[12] => reg8:inst12.data[2]
-Clk[13] => reg8:inst12.data[3]
-Clk[14] => bus_and:inst7.data[0][0]
-Clk[14] => reg8:inst12.data[4]
-Clk[15] => bus_and:inst7.data[1][0]
-Clk[15] => reg8:inst12.data[5]
-Clk[16] => bus_and:inst7.data[2][0]
-Clk[16] => reg8:inst12.data[6]
-Clk[17] => bus_and:inst7.data[3][0]
-Clk[17] => reg8:inst12.data[7]
-Clk[18] => inst.IN0
-Clk[18] => inst9.ACLR
-Clk[19] => ~NO_FANOUT~
-Clk[20] => ~NO_FANOUT~
-Clk[21] => ~NO_FANOUT~
-Clk[22] => ~NO_FANOUT~
-Clk[23] => ~NO_FANOUT~
-Clk[24] => ~NO_FANOUT~
-Value[0] <= reg8:inst12.q[0]
-Value[1] <= reg8:inst12.q[1]
-Value[2] <= reg8:inst12.q[2]
-Value[3] <= reg8:inst12.q[3]
-Value[4] <= reg8:inst12.q[4]
-Value[5] <= reg8:inst12.q[5]
-Value[6] <= reg8:inst12.q[6]
-Value[7] <= reg8:inst12.q[7]
-
-
-|robotmain|IR_Sensor:inst13|reg8:inst12
-clock => lpm_ff:lpm_ff_component.clock
-data[0] => lpm_ff:lpm_ff_component.data[0]
-data[1] => lpm_ff:lpm_ff_component.data[1]
-data[2] => lpm_ff:lpm_ff_component.data[2]
-data[3] => lpm_ff:lpm_ff_component.data[3]
-data[4] => lpm_ff:lpm_ff_component.data[4]
-data[5] => lpm_ff:lpm_ff_component.data[5]
-data[6] => lpm_ff:lpm_ff_component.data[6]
-data[7] => lpm_ff:lpm_ff_component.data[7]
-q[0] <= lpm_ff:lpm_ff_component.q[0]
-q[1] <= lpm_ff:lpm_ff_component.q[1]
-q[2] <= lpm_ff:lpm_ff_component.q[2]
-q[3] <= lpm_ff:lpm_ff_component.q[3]
-q[4] <= lpm_ff:lpm_ff_component.q[4]
-q[5] <= lpm_ff:lpm_ff_component.q[5]
-q[6] <= lpm_ff:lpm_ff_component.q[6]
-q[7] <= lpm_ff:lpm_ff_component.q[7]
-
-
-|robotmain|IR_Sensor:inst13|reg8:inst12|lpm_ff:lpm_ff_component
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-data[2] => dffs[2].DATAIN
-data[3] => dffs[3].DATAIN
-data[4] => dffs[4].DATAIN
-data[5] => dffs[5].DATAIN
-data[6] => dffs[6].DATAIN
-data[7] => dffs[7].DATAIN
-clock => dffs[7].CLK
-clock => dffs[6].CLK
-clock => dffs[5].CLK
-clock => dffs[4].CLK
-clock => dffs[3].CLK
-clock => dffs[2].CLK
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[7].ENA
-enable => dffs[6].ENA
-enable => dffs[5].ENA
-enable => dffs[4].ENA
-enable => dffs[3].ENA
-enable => dffs[2].ENA
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
-q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|robotmain|IR_Sensor:inst13|bus_and:inst7
-data[0][0] => lpm_and:lpm_and_component.data[0][0]
-data[1][0] => lpm_and:lpm_and_component.data[1][0]
-data[2][0] => lpm_and:lpm_and_component.data[2][0]
-data[3][0] => lpm_and:lpm_and_component.data[3][0]
-result <= lpm_and:lpm_and_component.result[0]
-
-
-|robotmain|IR_Sensor:inst13|bus_and:inst7|lpm_and:lpm_and_component
-data[0][0] => and_node[0][1].IN1
-data[1][0] => and_node[0][1].IN0
-data[2][0] => and_node[0][2].IN0
-data[3][0] => and_node[0][3].IN0
-result[0] <= and_node[0][3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|robotmain|IR_Sensor:inst13|bus_and:inst6
-data[0][0] => lpm_and:lpm_and_component.data[0][0]
-data[1][0] => lpm_and:lpm_and_component.data[1][0]
-data[2][0] => lpm_and:lpm_and_component.data[2][0]
-data[3][0] => lpm_and:lpm_and_component.data[3][0]
-result <= lpm_and:lpm_and_component.result[0]
-
-
-|robotmain|IR_Sensor:inst13|bus_and:inst6|lpm_and:lpm_and_component
-data[0][0] => and_node[0][1].IN1
-data[1][0] => and_node[0][1].IN0
-data[2][0] => and_node[0][2].IN0
-data[3][0] => and_node[0][3].IN0
-result[0] <= and_node[0][3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|robotmain|IR_Sensor:inst13|Shift4:inst4
-clock => lpm_shiftreg:lpm_shiftreg_component.clock
-shiftin => lpm_shiftreg:lpm_shiftreg_component.shiftin
-q[0] <= lpm_shiftreg:lpm_shiftreg_component.q[0]
-q[1] <= lpm_shiftreg:lpm_shiftreg_component.q[1]
-q[2] <= lpm_shiftreg:lpm_shiftreg_component.q[2]
-q[3] <= lpm_shiftreg:lpm_shiftreg_component.q[3]
-
-
-|robotmain|IR_Sensor:inst13|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
-clock => dffs[3].CLK
-clock => dffs[2].CLK
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[3].ENA
-enable => dffs[2].ENA
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-shiftout <= shiftout~0.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |robotmain|Servo:inst9
 Clk[0] => ~NO_FANOUT~
 Clk[1] => ~NO_FANOUT~
@@ -476,7 +273,67 @@ Go_Stop => Servo~7.OUTPUTSELECT
 Servo <= Servo~7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robotmain|obstacle_avoidance_FSM:inst1
+|robotmain|Movement_Block:inst4
+left_go <= obstacle_avoidance_FSM:inst1.l_go
+Clk => obstacle_avoidance_FSM:inst1.clk
+Clk => inst10.CLK
+Hall => inst35.IN0
+Hall => inst8.IN0
+Front[0] => ~NO_FANOUT~
+Front[1] => ~NO_FANOUT~
+Front[2] => ~NO_FANOUT~
+Front[3] => ~NO_FANOUT~
+Front[4] => distanceCompare:inst30.dataa[0]
+Front[5] => distanceCompare:inst30.dataa[1]
+Front[6] => distanceCompare:inst30.dataa[2]
+Front[7] => distanceCompare:inst30.dataa[3]
+Button_2 => inst28.ACLR
+Button_2 => inst15.IN0
+Button_1 => inst19.IN0
+Right_Left => obstacle_avoidance_FSM:inst1.right_left
+Right_Left => wallMux:inst38.sel
+Right_Left => wallMux:inst34.sel
+Left[0] => ~NO_FANOUT~
+Left[1] => ~NO_FANOUT~
+Left[2] => ~NO_FANOUT~
+Left[3] => ~NO_FANOUT~
+Left[4] => wallMux:inst38.data0x[0]
+Left[5] => wallMux:inst38.data0x[1]
+Left[6] => wallMux:inst38.data0x[2]
+Left[7] => wallMux:inst38.data0x[3]
+Right[0] => ~NO_FANOUT~
+Right[1] => ~NO_FANOUT~
+Right[2] => ~NO_FANOUT~
+Right[3] => ~NO_FANOUT~
+Right[4] => wallMux:inst38.data1x[0]
+Right[5] => wallMux:inst38.data1x[1]
+Right[6] => wallMux:inst38.data1x[2]
+Right[7] => wallMux:inst38.data1x[3]
+BLeft[0] => ~NO_FANOUT~
+BLeft[1] => ~NO_FANOUT~
+BLeft[2] => ~NO_FANOUT~
+BLeft[3] => ~NO_FANOUT~
+BLeft[4] => wallMux:inst34.data0x[0]
+BLeft[5] => wallMux:inst34.data0x[1]
+BLeft[6] => wallMux:inst34.data0x[2]
+BLeft[7] => wallMux:inst34.data0x[3]
+BRight[0] => ~NO_FANOUT~
+BRight[1] => ~NO_FANOUT~
+BRight[2] => ~NO_FANOUT~
+BRight[3] => ~NO_FANOUT~
+BRight[4] => wallMux:inst34.data1x[0]
+BRight[5] => wallMux:inst34.data1x[1]
+BRight[6] => wallMux:inst34.data1x[2]
+BRight[7] => wallMux:inst34.data1x[3]
+right_go <= obstacle_avoidance_FSM:inst1.r_go
+left_fwd <= obstacle_avoidance_FSM:inst1.l_fwd
+right_fwd <= obstacle_avoidance_FSM:inst1.r_fwd
+state[0] <= obstacle_avoidance_FSM:inst1.current_state[0]
+state[1] <= obstacle_avoidance_FSM:inst1.current_state[1]
+state[2] <= obstacle_avoidance_FSM:inst1.current_state[2]
+
+
+|robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1
 clk => state~12.IN1
 go_stop => Selector2.IN6
 go_stop => state~11.DATAB
@@ -525,7 +382,7 @@ current_state[1] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 current_state[2] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robotmain|sideCloseCompare:inst16
+|robotmain|Movement_Block:inst4|distanceCompare:inst30
 dataa[0] => lpm_compare:lpm_compare_component.dataa[0]
 dataa[1] => lpm_compare:lpm_compare_component.dataa[1]
 dataa[2] => lpm_compare:lpm_compare_component.dataa[2]
@@ -533,7 +390,7 @@ dataa[3] => lpm_compare:lpm_compare_component.dataa[3]
 alb <= lpm_compare:lpm_compare_component.alb
 
 
-|robotmain|sideCloseCompare:inst16|lpm_compare:lpm_compare_component
+|robotmain|Movement_Block:inst4|distanceCompare:inst30|lpm_compare:lpm_compare_component
 dataa[0] => cmpr_gqi:auto_generated.dataa[0]
 dataa[1] => cmpr_gqi:auto_generated.dataa[1]
 dataa[2] => cmpr_gqi:auto_generated.dataa[2]
@@ -553,7 +410,7 @@ aneb <= <GND>
 ageb <= <GND>
 
 
-|robotmain|sideCloseCompare:inst16|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated
+|robotmain|Movement_Block:inst4|distanceCompare:inst30|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated
 alb <= alb_int.DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => op_1.IN7
 dataa[1] => op_1.IN5
@@ -565,7 +422,47 @@ datab[2] => op_1.IN4
 datab[3] => op_1.IN2
 
 
-|robotmain|wallMux:inst38
+|robotmain|Movement_Block:inst4|sideCloseCompare:inst16
+dataa[0] => lpm_compare:lpm_compare_component.dataa[0]
+dataa[1] => lpm_compare:lpm_compare_component.dataa[1]
+dataa[2] => lpm_compare:lpm_compare_component.dataa[2]
+dataa[3] => lpm_compare:lpm_compare_component.dataa[3]
+alb <= lpm_compare:lpm_compare_component.alb
+
+
+|robotmain|Movement_Block:inst4|sideCloseCompare:inst16|lpm_compare:lpm_compare_component
+dataa[0] => cmpr_gqi:auto_generated.dataa[0]
+dataa[1] => cmpr_gqi:auto_generated.dataa[1]
+dataa[2] => cmpr_gqi:auto_generated.dataa[2]
+dataa[3] => cmpr_gqi:auto_generated.dataa[3]
+datab[0] => cmpr_gqi:auto_generated.datab[0]
+datab[1] => cmpr_gqi:auto_generated.datab[1]
+datab[2] => cmpr_gqi:auto_generated.datab[2]
+datab[3] => cmpr_gqi:auto_generated.datab[3]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+alb <= cmpr_gqi:auto_generated.alb
+aeb <= <GND>
+agb <= <GND>
+aleb <= <GND>
+aneb <= <GND>
+ageb <= <GND>
+
+
+|robotmain|Movement_Block:inst4|sideCloseCompare:inst16|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated
+alb <= alb_int.DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => op_1.IN7
+dataa[1] => op_1.IN5
+dataa[2] => op_1.IN3
+dataa[3] => op_1.IN1
+datab[0] => op_1.IN8
+datab[1] => op_1.IN6
+datab[2] => op_1.IN4
+datab[3] => op_1.IN2
+
+
+|robotmain|Movement_Block:inst4|wallMux:inst38
 data0x[0] => lpm_mux:lpm_mux_component.data[0][0]
 data0x[1] => lpm_mux:lpm_mux_component.data[0][1]
 data0x[2] => lpm_mux:lpm_mux_component.data[0][2]
@@ -581,7 +478,7 @@ result[2] <= lpm_mux:lpm_mux_component.result[2]
 result[3] <= lpm_mux:lpm_mux_component.result[3]
 
 
-|robotmain|wallMux:inst38|lpm_mux:lpm_mux_component
+|robotmain|Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component
 data[0][0] => mux_i9c:auto_generated.data[0]
 data[0][1] => mux_i9c:auto_generated.data[1]
 data[0][2] => mux_i9c:auto_generated.data[2]
@@ -600,340 +497,14 @@ result[2] <= mux_i9c:auto_generated.result[2]
 result[3] <= mux_i9c:auto_generated.result[3]
 
 
-|robotmain|wallMux:inst38|lpm_mux:lpm_mux_component|mux_i9c:auto_generated
+|robotmain|Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component|mux_i9c:auto_generated
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robotmain|IR_Sensor:inst11
-Trigger_Test <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-IR_BiDir <= inst2
-Clk[0] => ~NO_FANOUT~
-Clk[1] => ~NO_FANOUT~
-Clk[2] => ~NO_FANOUT~
-Clk[3] => ~NO_FANOUT~
-Clk[4] => ~NO_FANOUT~
-Clk[5] => ~NO_FANOUT~
-Clk[6] => ~NO_FANOUT~
-Clk[7] => Shift4:inst4.clock
-Clk[8] => ~NO_FANOUT~
-Clk[9] => ~NO_FANOUT~
-Clk[10] => reg8:inst12.data[0]
-Clk[11] => reg8:inst12.data[1]
-Clk[12] => reg8:inst12.data[2]
-Clk[13] => reg8:inst12.data[3]
-Clk[14] => bus_and:inst7.data[0][0]
-Clk[14] => reg8:inst12.data[4]
-Clk[15] => bus_and:inst7.data[1][0]
-Clk[15] => reg8:inst12.data[5]
-Clk[16] => bus_and:inst7.data[2][0]
-Clk[16] => reg8:inst12.data[6]
-Clk[17] => bus_and:inst7.data[3][0]
-Clk[17] => reg8:inst12.data[7]
-Clk[18] => inst.IN0
-Clk[18] => inst9.ACLR
-Clk[19] => ~NO_FANOUT~
-Clk[20] => ~NO_FANOUT~
-Clk[21] => ~NO_FANOUT~
-Clk[22] => ~NO_FANOUT~
-Clk[23] => ~NO_FANOUT~
-Clk[24] => ~NO_FANOUT~
-Value[0] <= reg8:inst12.q[0]
-Value[1] <= reg8:inst12.q[1]
-Value[2] <= reg8:inst12.q[2]
-Value[3] <= reg8:inst12.q[3]
-Value[4] <= reg8:inst12.q[4]
-Value[5] <= reg8:inst12.q[5]
-Value[6] <= reg8:inst12.q[6]
-Value[7] <= reg8:inst12.q[7]
-
-
-|robotmain|IR_Sensor:inst11|reg8:inst12
-clock => lpm_ff:lpm_ff_component.clock
-data[0] => lpm_ff:lpm_ff_component.data[0]
-data[1] => lpm_ff:lpm_ff_component.data[1]
-data[2] => lpm_ff:lpm_ff_component.data[2]
-data[3] => lpm_ff:lpm_ff_component.data[3]
-data[4] => lpm_ff:lpm_ff_component.data[4]
-data[5] => lpm_ff:lpm_ff_component.data[5]
-data[6] => lpm_ff:lpm_ff_component.data[6]
-data[7] => lpm_ff:lpm_ff_component.data[7]
-q[0] <= lpm_ff:lpm_ff_component.q[0]
-q[1] <= lpm_ff:lpm_ff_component.q[1]
-q[2] <= lpm_ff:lpm_ff_component.q[2]
-q[3] <= lpm_ff:lpm_ff_component.q[3]
-q[4] <= lpm_ff:lpm_ff_component.q[4]
-q[5] <= lpm_ff:lpm_ff_component.q[5]
-q[6] <= lpm_ff:lpm_ff_component.q[6]
-q[7] <= lpm_ff:lpm_ff_component.q[7]
-
-
-|robotmain|IR_Sensor:inst11|reg8:inst12|lpm_ff:lpm_ff_component
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-data[2] => dffs[2].DATAIN
-data[3] => dffs[3].DATAIN
-data[4] => dffs[4].DATAIN
-data[5] => dffs[5].DATAIN
-data[6] => dffs[6].DATAIN
-data[7] => dffs[7].DATAIN
-clock => dffs[7].CLK
-clock => dffs[6].CLK
-clock => dffs[5].CLK
-clock => dffs[4].CLK
-clock => dffs[3].CLK
-clock => dffs[2].CLK
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[7].ENA
-enable => dffs[6].ENA
-enable => dffs[5].ENA
-enable => dffs[4].ENA
-enable => dffs[3].ENA
-enable => dffs[2].ENA
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
-q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|robotmain|IR_Sensor:inst11|bus_and:inst7
-data[0][0] => lpm_and:lpm_and_component.data[0][0]
-data[1][0] => lpm_and:lpm_and_component.data[1][0]
-data[2][0] => lpm_and:lpm_and_component.data[2][0]
-data[3][0] => lpm_and:lpm_and_component.data[3][0]
-result <= lpm_and:lpm_and_component.result[0]
-
-
-|robotmain|IR_Sensor:inst11|bus_and:inst7|lpm_and:lpm_and_component
-data[0][0] => and_node[0][1].IN1
-data[1][0] => and_node[0][1].IN0
-data[2][0] => and_node[0][2].IN0
-data[3][0] => and_node[0][3].IN0
-result[0] <= and_node[0][3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|robotmain|IR_Sensor:inst11|bus_and:inst6
-data[0][0] => lpm_and:lpm_and_component.data[0][0]
-data[1][0] => lpm_and:lpm_and_component.data[1][0]
-data[2][0] => lpm_and:lpm_and_component.data[2][0]
-data[3][0] => lpm_and:lpm_and_component.data[3][0]
-result <= lpm_and:lpm_and_component.result[0]
-
-
-|robotmain|IR_Sensor:inst11|bus_and:inst6|lpm_and:lpm_and_component
-data[0][0] => and_node[0][1].IN1
-data[1][0] => and_node[0][1].IN0
-data[2][0] => and_node[0][2].IN0
-data[3][0] => and_node[0][3].IN0
-result[0] <= and_node[0][3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|robotmain|IR_Sensor:inst11|Shift4:inst4
-clock => lpm_shiftreg:lpm_shiftreg_component.clock
-shiftin => lpm_shiftreg:lpm_shiftreg_component.shiftin
-q[0] <= lpm_shiftreg:lpm_shiftreg_component.q[0]
-q[1] <= lpm_shiftreg:lpm_shiftreg_component.q[1]
-q[2] <= lpm_shiftreg:lpm_shiftreg_component.q[2]
-q[3] <= lpm_shiftreg:lpm_shiftreg_component.q[3]
-
-
-|robotmain|IR_Sensor:inst11|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
-clock => dffs[3].CLK
-clock => dffs[2].CLK
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[3].ENA
-enable => dffs[2].ENA
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-shiftout <= shiftout~0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|robotmain|IR_Sensor:inst14
-Trigger_Test <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-IR_BiDir <= inst2
-Clk[0] => ~NO_FANOUT~
-Clk[1] => ~NO_FANOUT~
-Clk[2] => ~NO_FANOUT~
-Clk[3] => ~NO_FANOUT~
-Clk[4] => ~NO_FANOUT~
-Clk[5] => ~NO_FANOUT~
-Clk[6] => ~NO_FANOUT~
-Clk[7] => Shift4:inst4.clock
-Clk[8] => ~NO_FANOUT~
-Clk[9] => ~NO_FANOUT~
-Clk[10] => reg8:inst12.data[0]
-Clk[11] => reg8:inst12.data[1]
-Clk[12] => reg8:inst12.data[2]
-Clk[13] => reg8:inst12.data[3]
-Clk[14] => bus_and:inst7.data[0][0]
-Clk[14] => reg8:inst12.data[4]
-Clk[15] => bus_and:inst7.data[1][0]
-Clk[15] => reg8:inst12.data[5]
-Clk[16] => bus_and:inst7.data[2][0]
-Clk[16] => reg8:inst12.data[6]
-Clk[17] => bus_and:inst7.data[3][0]
-Clk[17] => reg8:inst12.data[7]
-Clk[18] => inst.IN0
-Clk[18] => inst9.ACLR
-Clk[19] => ~NO_FANOUT~
-Clk[20] => ~NO_FANOUT~
-Clk[21] => ~NO_FANOUT~
-Clk[22] => ~NO_FANOUT~
-Clk[23] => ~NO_FANOUT~
-Clk[24] => ~NO_FANOUT~
-Value[0] <= reg8:inst12.q[0]
-Value[1] <= reg8:inst12.q[1]
-Value[2] <= reg8:inst12.q[2]
-Value[3] <= reg8:inst12.q[3]
-Value[4] <= reg8:inst12.q[4]
-Value[5] <= reg8:inst12.q[5]
-Value[6] <= reg8:inst12.q[6]
-Value[7] <= reg8:inst12.q[7]
-
-
-|robotmain|IR_Sensor:inst14|reg8:inst12
-clock => lpm_ff:lpm_ff_component.clock
-data[0] => lpm_ff:lpm_ff_component.data[0]
-data[1] => lpm_ff:lpm_ff_component.data[1]
-data[2] => lpm_ff:lpm_ff_component.data[2]
-data[3] => lpm_ff:lpm_ff_component.data[3]
-data[4] => lpm_ff:lpm_ff_component.data[4]
-data[5] => lpm_ff:lpm_ff_component.data[5]
-data[6] => lpm_ff:lpm_ff_component.data[6]
-data[7] => lpm_ff:lpm_ff_component.data[7]
-q[0] <= lpm_ff:lpm_ff_component.q[0]
-q[1] <= lpm_ff:lpm_ff_component.q[1]
-q[2] <= lpm_ff:lpm_ff_component.q[2]
-q[3] <= lpm_ff:lpm_ff_component.q[3]
-q[4] <= lpm_ff:lpm_ff_component.q[4]
-q[5] <= lpm_ff:lpm_ff_component.q[5]
-q[6] <= lpm_ff:lpm_ff_component.q[6]
-q[7] <= lpm_ff:lpm_ff_component.q[7]
-
-
-|robotmain|IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-data[2] => dffs[2].DATAIN
-data[3] => dffs[3].DATAIN
-data[4] => dffs[4].DATAIN
-data[5] => dffs[5].DATAIN
-data[6] => dffs[6].DATAIN
-data[7] => dffs[7].DATAIN
-clock => dffs[7].CLK
-clock => dffs[6].CLK
-clock => dffs[5].CLK
-clock => dffs[4].CLK
-clock => dffs[3].CLK
-clock => dffs[2].CLK
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[7].ENA
-enable => dffs[6].ENA
-enable => dffs[5].ENA
-enable => dffs[4].ENA
-enable => dffs[3].ENA
-enable => dffs[2].ENA
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
-q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|robotmain|IR_Sensor:inst14|bus_and:inst7
-data[0][0] => lpm_and:lpm_and_component.data[0][0]
-data[1][0] => lpm_and:lpm_and_component.data[1][0]
-data[2][0] => lpm_and:lpm_and_component.data[2][0]
-data[3][0] => lpm_and:lpm_and_component.data[3][0]
-result <= lpm_and:lpm_and_component.result[0]
-
-
-|robotmain|IR_Sensor:inst14|bus_and:inst7|lpm_and:lpm_and_component
-data[0][0] => and_node[0][1].IN1
-data[1][0] => and_node[0][1].IN0
-data[2][0] => and_node[0][2].IN0
-data[3][0] => and_node[0][3].IN0
-result[0] <= and_node[0][3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|robotmain|IR_Sensor:inst14|bus_and:inst6
-data[0][0] => lpm_and:lpm_and_component.data[0][0]
-data[1][0] => lpm_and:lpm_and_component.data[1][0]
-data[2][0] => lpm_and:lpm_and_component.data[2][0]
-data[3][0] => lpm_and:lpm_and_component.data[3][0]
-result <= lpm_and:lpm_and_component.result[0]
-
-
-|robotmain|IR_Sensor:inst14|bus_and:inst6|lpm_and:lpm_and_component
-data[0][0] => and_node[0][1].IN1
-data[1][0] => and_node[0][1].IN0
-data[2][0] => and_node[0][2].IN0
-data[3][0] => and_node[0][3].IN0
-result[0] <= and_node[0][3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|robotmain|IR_Sensor:inst14|Shift4:inst4
-clock => lpm_shiftreg:lpm_shiftreg_component.clock
-shiftin => lpm_shiftreg:lpm_shiftreg_component.shiftin
-q[0] <= lpm_shiftreg:lpm_shiftreg_component.q[0]
-q[1] <= lpm_shiftreg:lpm_shiftreg_component.q[1]
-q[2] <= lpm_shiftreg:lpm_shiftreg_component.q[2]
-q[3] <= lpm_shiftreg:lpm_shiftreg_component.q[3]
-
-
-|robotmain|IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
-clock => dffs[3].CLK
-clock => dffs[2].CLK
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[3].ENA
-enable => dffs[2].ENA
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-shiftout <= shiftout~0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|robotmain|sideFarCompare:inst17
+|robotmain|Movement_Block:inst4|sideFarCompare:inst17
 dataa[0] => lpm_compare:lpm_compare_component.dataa[0]
 dataa[1] => lpm_compare:lpm_compare_component.dataa[1]
 dataa[2] => lpm_compare:lpm_compare_component.dataa[2]
@@ -941,7 +512,7 @@ dataa[3] => lpm_compare:lpm_compare_component.dataa[3]
 agb <= lpm_compare:lpm_compare_component.agb
 
 
-|robotmain|sideFarCompare:inst17|lpm_compare:lpm_compare_component
+|robotmain|Movement_Block:inst4|sideFarCompare:inst17|lpm_compare:lpm_compare_component
 dataa[0] => cmpr_bqi:auto_generated.dataa[0]
 dataa[1] => cmpr_bqi:auto_generated.dataa[1]
 dataa[2] => cmpr_bqi:auto_generated.dataa[2]
@@ -961,7 +532,7 @@ aneb <= <GND>
 ageb <= <GND>
 
 
-|robotmain|sideFarCompare:inst17|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated
+|robotmain|Movement_Block:inst4|sideFarCompare:inst17|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated
 agb <= agb_int.DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => op_1.IN8
 dataa[1] => op_1.IN6
@@ -973,7 +544,7 @@ datab[2] => op_1.IN3
 datab[3] => op_1.IN1
 
 
-|robotmain|veryFarCompare:inst29
+|robotmain|Movement_Block:inst4|veryFarCompare:inst29
 dataa[0] => lpm_compare:lpm_compare_component.dataa[0]
 dataa[1] => lpm_compare:lpm_compare_component.dataa[1]
 dataa[2] => lpm_compare:lpm_compare_component.dataa[2]
@@ -981,7 +552,7 @@ dataa[3] => lpm_compare:lpm_compare_component.dataa[3]
 agb <= lpm_compare:lpm_compare_component.agb
 
 
-|robotmain|veryFarCompare:inst29|lpm_compare:lpm_compare_component
+|robotmain|Movement_Block:inst4|veryFarCompare:inst29|lpm_compare:lpm_compare_component
 dataa[0] => cmpr_bqi:auto_generated.dataa[0]
 dataa[1] => cmpr_bqi:auto_generated.dataa[1]
 dataa[2] => cmpr_bqi:auto_generated.dataa[2]
@@ -1001,7 +572,7 @@ aneb <= <GND>
 ageb <= <GND>
 
 
-|robotmain|veryFarCompare:inst29|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated
+|robotmain|Movement_Block:inst4|veryFarCompare:inst29|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated
 agb <= agb_int.DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => op_1.IN8
 dataa[1] => op_1.IN6
@@ -1013,7 +584,7 @@ datab[2] => op_1.IN3
 datab[3] => op_1.IN1
 
 
-|robotmain|backFarCompare:inst33
+|robotmain|Movement_Block:inst4|backFarCompare:inst33
 dataa[0] => lpm_compare:lpm_compare_component.dataa[0]
 dataa[1] => lpm_compare:lpm_compare_component.dataa[1]
 dataa[2] => lpm_compare:lpm_compare_component.dataa[2]
@@ -1021,7 +592,7 @@ dataa[3] => lpm_compare:lpm_compare_component.dataa[3]
 agb <= lpm_compare:lpm_compare_component.agb
 
 
-|robotmain|backFarCompare:inst33|lpm_compare:lpm_compare_component
+|robotmain|Movement_Block:inst4|backFarCompare:inst33|lpm_compare:lpm_compare_component
 dataa[0] => cmpr_bqi:auto_generated.dataa[0]
 dataa[1] => cmpr_bqi:auto_generated.dataa[1]
 dataa[2] => cmpr_bqi:auto_generated.dataa[2]
@@ -1041,7 +612,7 @@ aneb <= <GND>
 ageb <= <GND>
 
 
-|robotmain|backFarCompare:inst33|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated
+|robotmain|Movement_Block:inst4|backFarCompare:inst33|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated
 agb <= agb_int.DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => op_1.IN8
 dataa[1] => op_1.IN6
@@ -1053,7 +624,7 @@ datab[2] => op_1.IN3
 datab[3] => op_1.IN1
 
 
-|robotmain|wallMux:inst34
+|robotmain|Movement_Block:inst4|wallMux:inst34
 data0x[0] => lpm_mux:lpm_mux_component.data[0][0]
 data0x[1] => lpm_mux:lpm_mux_component.data[0][1]
 data0x[2] => lpm_mux:lpm_mux_component.data[0][2]
@@ -1069,7 +640,7 @@ result[2] <= lpm_mux:lpm_mux_component.result[2]
 result[3] <= lpm_mux:lpm_mux_component.result[3]
 
 
-|robotmain|wallMux:inst34|lpm_mux:lpm_mux_component
+|robotmain|Movement_Block:inst4|wallMux:inst34|lpm_mux:lpm_mux_component
 data[0][0] => mux_i9c:auto_generated.data[0]
 data[0][1] => mux_i9c:auto_generated.data[1]
 data[0][2] => mux_i9c:auto_generated.data[2]
@@ -1088,7 +659,7 @@ result[2] <= mux_i9c:auto_generated.result[2]
 result[3] <= mux_i9c:auto_generated.result[3]
 
 
-|robotmain|wallMux:inst34|lpm_mux:lpm_mux_component|mux_i9c:auto_generated
+|robotmain|Movement_Block:inst4|wallMux:inst34|lpm_mux:lpm_mux_component|mux_i9c:auto_generated
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -1421,6 +992,495 @@ q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 shiftout <= shiftout~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|robotmain|IR_Sensor:inst13
+Trigger_Test <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+IR_BiDir <= inst2
+Clk[0] => ~NO_FANOUT~
+Clk[1] => ~NO_FANOUT~
+Clk[2] => ~NO_FANOUT~
+Clk[3] => ~NO_FANOUT~
+Clk[4] => ~NO_FANOUT~
+Clk[5] => ~NO_FANOUT~
+Clk[6] => ~NO_FANOUT~
+Clk[7] => Shift4:inst4.clock
+Clk[8] => ~NO_FANOUT~
+Clk[9] => ~NO_FANOUT~
+Clk[10] => reg8:inst12.data[0]
+Clk[11] => reg8:inst12.data[1]
+Clk[12] => reg8:inst12.data[2]
+Clk[13] => reg8:inst12.data[3]
+Clk[14] => bus_and:inst7.data[0][0]
+Clk[14] => reg8:inst12.data[4]
+Clk[15] => bus_and:inst7.data[1][0]
+Clk[15] => reg8:inst12.data[5]
+Clk[16] => bus_and:inst7.data[2][0]
+Clk[16] => reg8:inst12.data[6]
+Clk[17] => bus_and:inst7.data[3][0]
+Clk[17] => reg8:inst12.data[7]
+Clk[18] => inst.IN0
+Clk[18] => inst9.ACLR
+Clk[19] => ~NO_FANOUT~
+Clk[20] => ~NO_FANOUT~
+Clk[21] => ~NO_FANOUT~
+Clk[22] => ~NO_FANOUT~
+Clk[23] => ~NO_FANOUT~
+Clk[24] => ~NO_FANOUT~
+Value[0] <= reg8:inst12.q[0]
+Value[1] <= reg8:inst12.q[1]
+Value[2] <= reg8:inst12.q[2]
+Value[3] <= reg8:inst12.q[3]
+Value[4] <= reg8:inst12.q[4]
+Value[5] <= reg8:inst12.q[5]
+Value[6] <= reg8:inst12.q[6]
+Value[7] <= reg8:inst12.q[7]
+
+
+|robotmain|IR_Sensor:inst13|reg8:inst12
+clock => lpm_ff:lpm_ff_component.clock
+data[0] => lpm_ff:lpm_ff_component.data[0]
+data[1] => lpm_ff:lpm_ff_component.data[1]
+data[2] => lpm_ff:lpm_ff_component.data[2]
+data[3] => lpm_ff:lpm_ff_component.data[3]
+data[4] => lpm_ff:lpm_ff_component.data[4]
+data[5] => lpm_ff:lpm_ff_component.data[5]
+data[6] => lpm_ff:lpm_ff_component.data[6]
+data[7] => lpm_ff:lpm_ff_component.data[7]
+q[0] <= lpm_ff:lpm_ff_component.q[0]
+q[1] <= lpm_ff:lpm_ff_component.q[1]
+q[2] <= lpm_ff:lpm_ff_component.q[2]
+q[3] <= lpm_ff:lpm_ff_component.q[3]
+q[4] <= lpm_ff:lpm_ff_component.q[4]
+q[5] <= lpm_ff:lpm_ff_component.q[5]
+q[6] <= lpm_ff:lpm_ff_component.q[6]
+q[7] <= lpm_ff:lpm_ff_component.q[7]
+
+
+|robotmain|IR_Sensor:inst13|reg8:inst12|lpm_ff:lpm_ff_component
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robotmain|IR_Sensor:inst13|bus_and:inst7
+data[0][0] => lpm_and:lpm_and_component.data[0][0]
+data[1][0] => lpm_and:lpm_and_component.data[1][0]
+data[2][0] => lpm_and:lpm_and_component.data[2][0]
+data[3][0] => lpm_and:lpm_and_component.data[3][0]
+result <= lpm_and:lpm_and_component.result[0]
+
+
+|robotmain|IR_Sensor:inst13|bus_and:inst7|lpm_and:lpm_and_component
+data[0][0] => and_node[0][1].IN1
+data[1][0] => and_node[0][1].IN0
+data[2][0] => and_node[0][2].IN0
+data[3][0] => and_node[0][3].IN0
+result[0] <= and_node[0][3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robotmain|IR_Sensor:inst13|bus_and:inst6
+data[0][0] => lpm_and:lpm_and_component.data[0][0]
+data[1][0] => lpm_and:lpm_and_component.data[1][0]
+data[2][0] => lpm_and:lpm_and_component.data[2][0]
+data[3][0] => lpm_and:lpm_and_component.data[3][0]
+result <= lpm_and:lpm_and_component.result[0]
+
+
+|robotmain|IR_Sensor:inst13|bus_and:inst6|lpm_and:lpm_and_component
+data[0][0] => and_node[0][1].IN1
+data[1][0] => and_node[0][1].IN0
+data[2][0] => and_node[0][2].IN0
+data[3][0] => and_node[0][3].IN0
+result[0] <= and_node[0][3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robotmain|IR_Sensor:inst13|Shift4:inst4
+clock => lpm_shiftreg:lpm_shiftreg_component.clock
+shiftin => lpm_shiftreg:lpm_shiftreg_component.shiftin
+q[0] <= lpm_shiftreg:lpm_shiftreg_component.q[0]
+q[1] <= lpm_shiftreg:lpm_shiftreg_component.q[1]
+q[2] <= lpm_shiftreg:lpm_shiftreg_component.q[2]
+q[3] <= lpm_shiftreg:lpm_shiftreg_component.q[3]
+
+
+|robotmain|IR_Sensor:inst13|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+shiftout <= shiftout~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robotmain|IR_Sensor:inst11
+Trigger_Test <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+IR_BiDir <= inst2
+Clk[0] => ~NO_FANOUT~
+Clk[1] => ~NO_FANOUT~
+Clk[2] => ~NO_FANOUT~
+Clk[3] => ~NO_FANOUT~
+Clk[4] => ~NO_FANOUT~
+Clk[5] => ~NO_FANOUT~
+Clk[6] => ~NO_FANOUT~
+Clk[7] => Shift4:inst4.clock
+Clk[8] => ~NO_FANOUT~
+Clk[9] => ~NO_FANOUT~
+Clk[10] => reg8:inst12.data[0]
+Clk[11] => reg8:inst12.data[1]
+Clk[12] => reg8:inst12.data[2]
+Clk[13] => reg8:inst12.data[3]
+Clk[14] => bus_and:inst7.data[0][0]
+Clk[14] => reg8:inst12.data[4]
+Clk[15] => bus_and:inst7.data[1][0]
+Clk[15] => reg8:inst12.data[5]
+Clk[16] => bus_and:inst7.data[2][0]
+Clk[16] => reg8:inst12.data[6]
+Clk[17] => bus_and:inst7.data[3][0]
+Clk[17] => reg8:inst12.data[7]
+Clk[18] => inst.IN0
+Clk[18] => inst9.ACLR
+Clk[19] => ~NO_FANOUT~
+Clk[20] => ~NO_FANOUT~
+Clk[21] => ~NO_FANOUT~
+Clk[22] => ~NO_FANOUT~
+Clk[23] => ~NO_FANOUT~
+Clk[24] => ~NO_FANOUT~
+Value[0] <= reg8:inst12.q[0]
+Value[1] <= reg8:inst12.q[1]
+Value[2] <= reg8:inst12.q[2]
+Value[3] <= reg8:inst12.q[3]
+Value[4] <= reg8:inst12.q[4]
+Value[5] <= reg8:inst12.q[5]
+Value[6] <= reg8:inst12.q[6]
+Value[7] <= reg8:inst12.q[7]
+
+
+|robotmain|IR_Sensor:inst11|reg8:inst12
+clock => lpm_ff:lpm_ff_component.clock
+data[0] => lpm_ff:lpm_ff_component.data[0]
+data[1] => lpm_ff:lpm_ff_component.data[1]
+data[2] => lpm_ff:lpm_ff_component.data[2]
+data[3] => lpm_ff:lpm_ff_component.data[3]
+data[4] => lpm_ff:lpm_ff_component.data[4]
+data[5] => lpm_ff:lpm_ff_component.data[5]
+data[6] => lpm_ff:lpm_ff_component.data[6]
+data[7] => lpm_ff:lpm_ff_component.data[7]
+q[0] <= lpm_ff:lpm_ff_component.q[0]
+q[1] <= lpm_ff:lpm_ff_component.q[1]
+q[2] <= lpm_ff:lpm_ff_component.q[2]
+q[3] <= lpm_ff:lpm_ff_component.q[3]
+q[4] <= lpm_ff:lpm_ff_component.q[4]
+q[5] <= lpm_ff:lpm_ff_component.q[5]
+q[6] <= lpm_ff:lpm_ff_component.q[6]
+q[7] <= lpm_ff:lpm_ff_component.q[7]
+
+
+|robotmain|IR_Sensor:inst11|reg8:inst12|lpm_ff:lpm_ff_component
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robotmain|IR_Sensor:inst11|bus_and:inst7
+data[0][0] => lpm_and:lpm_and_component.data[0][0]
+data[1][0] => lpm_and:lpm_and_component.data[1][0]
+data[2][0] => lpm_and:lpm_and_component.data[2][0]
+data[3][0] => lpm_and:lpm_and_component.data[3][0]
+result <= lpm_and:lpm_and_component.result[0]
+
+
+|robotmain|IR_Sensor:inst11|bus_and:inst7|lpm_and:lpm_and_component
+data[0][0] => and_node[0][1].IN1
+data[1][0] => and_node[0][1].IN0
+data[2][0] => and_node[0][2].IN0
+data[3][0] => and_node[0][3].IN0
+result[0] <= and_node[0][3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robotmain|IR_Sensor:inst11|bus_and:inst6
+data[0][0] => lpm_and:lpm_and_component.data[0][0]
+data[1][0] => lpm_and:lpm_and_component.data[1][0]
+data[2][0] => lpm_and:lpm_and_component.data[2][0]
+data[3][0] => lpm_and:lpm_and_component.data[3][0]
+result <= lpm_and:lpm_and_component.result[0]
+
+
+|robotmain|IR_Sensor:inst11|bus_and:inst6|lpm_and:lpm_and_component
+data[0][0] => and_node[0][1].IN1
+data[1][0] => and_node[0][1].IN0
+data[2][0] => and_node[0][2].IN0
+data[3][0] => and_node[0][3].IN0
+result[0] <= and_node[0][3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robotmain|IR_Sensor:inst11|Shift4:inst4
+clock => lpm_shiftreg:lpm_shiftreg_component.clock
+shiftin => lpm_shiftreg:lpm_shiftreg_component.shiftin
+q[0] <= lpm_shiftreg:lpm_shiftreg_component.q[0]
+q[1] <= lpm_shiftreg:lpm_shiftreg_component.q[1]
+q[2] <= lpm_shiftreg:lpm_shiftreg_component.q[2]
+q[3] <= lpm_shiftreg:lpm_shiftreg_component.q[3]
+
+
+|robotmain|IR_Sensor:inst11|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+shiftout <= shiftout~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robotmain|IR_Sensor:inst14
+Trigger_Test <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+IR_BiDir <= inst2
+Clk[0] => ~NO_FANOUT~
+Clk[1] => ~NO_FANOUT~
+Clk[2] => ~NO_FANOUT~
+Clk[3] => ~NO_FANOUT~
+Clk[4] => ~NO_FANOUT~
+Clk[5] => ~NO_FANOUT~
+Clk[6] => ~NO_FANOUT~
+Clk[7] => Shift4:inst4.clock
+Clk[8] => ~NO_FANOUT~
+Clk[9] => ~NO_FANOUT~
+Clk[10] => reg8:inst12.data[0]
+Clk[11] => reg8:inst12.data[1]
+Clk[12] => reg8:inst12.data[2]
+Clk[13] => reg8:inst12.data[3]
+Clk[14] => bus_and:inst7.data[0][0]
+Clk[14] => reg8:inst12.data[4]
+Clk[15] => bus_and:inst7.data[1][0]
+Clk[15] => reg8:inst12.data[5]
+Clk[16] => bus_and:inst7.data[2][0]
+Clk[16] => reg8:inst12.data[6]
+Clk[17] => bus_and:inst7.data[3][0]
+Clk[17] => reg8:inst12.data[7]
+Clk[18] => inst.IN0
+Clk[18] => inst9.ACLR
+Clk[19] => ~NO_FANOUT~
+Clk[20] => ~NO_FANOUT~
+Clk[21] => ~NO_FANOUT~
+Clk[22] => ~NO_FANOUT~
+Clk[23] => ~NO_FANOUT~
+Clk[24] => ~NO_FANOUT~
+Value[0] <= reg8:inst12.q[0]
+Value[1] <= reg8:inst12.q[1]
+Value[2] <= reg8:inst12.q[2]
+Value[3] <= reg8:inst12.q[3]
+Value[4] <= reg8:inst12.q[4]
+Value[5] <= reg8:inst12.q[5]
+Value[6] <= reg8:inst12.q[6]
+Value[7] <= reg8:inst12.q[7]
+
+
+|robotmain|IR_Sensor:inst14|reg8:inst12
+clock => lpm_ff:lpm_ff_component.clock
+data[0] => lpm_ff:lpm_ff_component.data[0]
+data[1] => lpm_ff:lpm_ff_component.data[1]
+data[2] => lpm_ff:lpm_ff_component.data[2]
+data[3] => lpm_ff:lpm_ff_component.data[3]
+data[4] => lpm_ff:lpm_ff_component.data[4]
+data[5] => lpm_ff:lpm_ff_component.data[5]
+data[6] => lpm_ff:lpm_ff_component.data[6]
+data[7] => lpm_ff:lpm_ff_component.data[7]
+q[0] <= lpm_ff:lpm_ff_component.q[0]
+q[1] <= lpm_ff:lpm_ff_component.q[1]
+q[2] <= lpm_ff:lpm_ff_component.q[2]
+q[3] <= lpm_ff:lpm_ff_component.q[3]
+q[4] <= lpm_ff:lpm_ff_component.q[4]
+q[5] <= lpm_ff:lpm_ff_component.q[5]
+q[6] <= lpm_ff:lpm_ff_component.q[6]
+q[7] <= lpm_ff:lpm_ff_component.q[7]
+
+
+|robotmain|IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robotmain|IR_Sensor:inst14|bus_and:inst7
+data[0][0] => lpm_and:lpm_and_component.data[0][0]
+data[1][0] => lpm_and:lpm_and_component.data[1][0]
+data[2][0] => lpm_and:lpm_and_component.data[2][0]
+data[3][0] => lpm_and:lpm_and_component.data[3][0]
+result <= lpm_and:lpm_and_component.result[0]
+
+
+|robotmain|IR_Sensor:inst14|bus_and:inst7|lpm_and:lpm_and_component
+data[0][0] => and_node[0][1].IN1
+data[1][0] => and_node[0][1].IN0
+data[2][0] => and_node[0][2].IN0
+data[3][0] => and_node[0][3].IN0
+result[0] <= and_node[0][3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robotmain|IR_Sensor:inst14|bus_and:inst6
+data[0][0] => lpm_and:lpm_and_component.data[0][0]
+data[1][0] => lpm_and:lpm_and_component.data[1][0]
+data[2][0] => lpm_and:lpm_and_component.data[2][0]
+data[3][0] => lpm_and:lpm_and_component.data[3][0]
+result <= lpm_and:lpm_and_component.result[0]
+
+
+|robotmain|IR_Sensor:inst14|bus_and:inst6|lpm_and:lpm_and_component
+data[0][0] => and_node[0][1].IN1
+data[1][0] => and_node[0][1].IN0
+data[2][0] => and_node[0][2].IN0
+data[3][0] => and_node[0][3].IN0
+result[0] <= and_node[0][3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robotmain|IR_Sensor:inst14|Shift4:inst4
+clock => lpm_shiftreg:lpm_shiftreg_component.clock
+shiftin => lpm_shiftreg:lpm_shiftreg_component.shiftin
+q[0] <= lpm_shiftreg:lpm_shiftreg_component.q[0]
+q[1] <= lpm_shiftreg:lpm_shiftreg_component.q[1]
+q[2] <= lpm_shiftreg:lpm_shiftreg_component.q[2]
+q[3] <= lpm_shiftreg:lpm_shiftreg_component.q[3]
+
+
+|robotmain|IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+shiftout <= shiftout~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |robotmain|Servo:inst12
 Clk[0] => ~NO_FANOUT~
 Clk[1] => ~NO_FANOUT~
@@ -1580,7 +1640,7 @@ result[0] <= mux_sld:auto_generated.result[0]
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robotmain|Music_Block:inst7
+|robotmain|Music_Block:inst17
 Speaker_A <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Clk[0] => ~NO_FANOUT~
 Clk[1] => ~NO_FANOUT~
@@ -1607,11 +1667,11 @@ Clk[21] => durCounter:inst31.clock
 Clk[22] => ~NO_FANOUT~
 Clk[23] => ~NO_FANOUT~
 Clk[24] => ~NO_FANOUT~
-Button => inst1.IN1
+CDS_Cell => inst5.IN0
 Speaker_B <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robotmain|Music_Block:inst7|durCounter:inst31
+|robotmain|Music_Block:inst17|durCounter:inst31
 clock => lpm_counter:lpm_counter_component.clock
 data[0] => lpm_counter:lpm_counter_component.data[0]
 data[1] => lpm_counter:lpm_counter_component.data[1]
@@ -1629,7 +1689,7 @@ q[4] <= lpm_counter:lpm_counter_component.q[4]
 q[5] <= lpm_counter:lpm_counter_component.q[5]
 
 
-|robotmain|Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component
+|robotmain|Music_Block:inst17|durCounter:inst31|lpm_counter:lpm_counter_component
 clock => cntr_esi:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
@@ -1674,7 +1734,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|robotmain|Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated
+|robotmain|Music_Block:inst17|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated
 clock => counter_cella0.CLK
 clock => counter_cella1.CLK
 clock => counter_cella2.CLK
@@ -1702,7 +1762,7 @@ sload => counter_cella4.SLOAD
 sload => counter_cella5.SLOAD
 
 
-|robotmain|Music_Block:inst7|Duration_ROM:inst6
+|robotmain|Music_Block:inst17|Duration_ROM:inst6
 Data_in[0] => Mux5.IN10
 Data_in[0] => Mux4.IN5
 Data_in[0] => Mux3.IN10
@@ -1727,7 +1787,7 @@ Dur[4] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 Dur[5] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robotmain|Music_Block:inst7|Song_ROM:inst8
+|robotmain|Music_Block:inst17|Song_ROM:inst8
 Note_Num[0] => Mux8.IN69
 Note_Num[0] => Mux7.IN69
 Note_Num[0] => Mux6.IN69
@@ -1793,7 +1853,7 @@ Duration[1] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
 Duration[2] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robotmain|Music_Block:inst7|noteCounter:inst29
+|robotmain|Music_Block:inst17|noteCounter:inst29
 clock => lpm_counter:lpm_counter_component.clock
 q[0] <= lpm_counter:lpm_counter_component.q[0]
 q[1] <= lpm_counter:lpm_counter_component.q[1]
@@ -1803,7 +1863,7 @@ q[4] <= lpm_counter:lpm_counter_component.q[4]
 q[5] <= lpm_counter:lpm_counter_component.q[5]
 
 
-|robotmain|Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component
+|robotmain|Music_Block:inst17|noteCounter:inst29|lpm_counter:lpm_counter_component
 clock => cntr_j7h:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
@@ -1848,7 +1908,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|robotmain|Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated
+|robotmain|Music_Block:inst17|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated
 clock => counter_cella0.CLK
 clock => counter_cella1.CLK
 clock => counter_cella2.CLK
@@ -1863,7 +1923,7 @@ q[4] <= counter_cella4.REGOUT
 q[5] <= counter_cella5.REGOUT
 
 
-|robotmain|Music_Block:inst7|restCompare:inst11
+|robotmain|Music_Block:inst17|restCompare:inst11
 dataa[0] => lpm_compare:lpm_compare_component.dataa[0]
 dataa[1] => lpm_compare:lpm_compare_component.dataa[1]
 dataa[2] => lpm_compare:lpm_compare_component.dataa[2]
@@ -1871,7 +1931,7 @@ dataa[3] => lpm_compare:lpm_compare_component.dataa[3]
 aneb <= lpm_compare:lpm_compare_component.aneb
 
 
-|robotmain|Music_Block:inst7|restCompare:inst11|lpm_compare:lpm_compare_component
+|robotmain|Music_Block:inst17|restCompare:inst11|lpm_compare:lpm_compare_component
 dataa[0] => cmpr_rci:auto_generated.dataa[0]
 dataa[1] => cmpr_rci:auto_generated.dataa[1]
 dataa[2] => cmpr_rci:auto_generated.dataa[2]
@@ -1891,10 +1951,10 @@ aneb <= cmpr_rci:auto_generated.aneb
 ageb <= <GND>
 
 
-|robotmain|Music_Block:inst7|restCompare:inst11|lpm_compare:lpm_compare_component|cmpr_rci:auto_generated
+|robotmain|Music_Block:inst17|restCompare:inst11|lpm_compare:lpm_compare_component|cmpr_rci:auto_generated
 
 
-|robotmain|Music_Block:inst7|freqCounter:inst30
+|robotmain|Music_Block:inst17|freqCounter:inst30
 clock => lpm_counter:lpm_counter_component.clock
 data[0] => lpm_counter:lpm_counter_component.data[0]
 data[1] => lpm_counter:lpm_counter_component.data[1]
@@ -1916,7 +1976,7 @@ q[6] <= lpm_counter:lpm_counter_component.q[6]
 q[7] <= lpm_counter:lpm_counter_component.q[7]
 
 
-|robotmain|Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component
+|robotmain|Music_Block:inst17|freqCounter:inst30|lpm_counter:lpm_counter_component
 clock => cntr_gsi:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
@@ -1965,7 +2025,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|robotmain|Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated
+|robotmain|Music_Block:inst17|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated
 clock => counter_cella0.CLK
 clock => counter_cella1.CLK
 clock => counter_cella2.CLK
@@ -2001,7 +2061,7 @@ sload => counter_cella6.SLOAD
 sload => counter_cella7.SLOAD
 
 
-|robotmain|Music_Block:inst7|octaveMux:inst10
+|robotmain|Music_Block:inst17|octaveMux:inst10
 data0 => lpm_mux:lpm_mux_component.data[0][0]
 data1 => lpm_mux:lpm_mux_component.data[1][0]
 data2 => lpm_mux:lpm_mux_component.data[2][0]
@@ -2011,7 +2071,7 @@ sel[1] => lpm_mux:lpm_mux_component.sel[1]
 result <= lpm_mux:lpm_mux_component.result[0]
 
 
-|robotmain|Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component
+|robotmain|Music_Block:inst17|octaveMux:inst10|lpm_mux:lpm_mux_component
 data[0][0] => mux_h9c:auto_generated.data[0]
 data[1][0] => mux_h9c:auto_generated.data[1]
 data[2][0] => mux_h9c:auto_generated.data[2]
@@ -2024,11 +2084,11 @@ clken => ~NO_FANOUT~
 result[0] <= mux_h9c:auto_generated.result[0]
 
 
-|robotmain|Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated
+|robotmain|Music_Block:inst17|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robotmain|Music_Block:inst7|Notes:inst7
+|robotmain|Music_Block:inst17|Notes:inst7
 Data_in[0] => Mux6.IN19
 Data_in[0] => Mux5.IN19
 Data_in[0] => Mux4.IN19
