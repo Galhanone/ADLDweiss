@@ -1263,7 +1263,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 328 472 496 568)
+	(rect 992 528 1160 624)
 	(text "Music_Block" (rect 5 0 75 14)(font "Arial" (font_size 8)))
 	(text "inst7" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -1503,7 +1503,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 648 528 848 720)
+	(rect 552 328 752 520)
 	(text "obstacle_avoidance_FSM" (rect 5 0 131 12)(font "Arial" ))
 	(text "inst1" (rect 8 176 31 188)(font "Arial" ))
 	(port
@@ -1851,11 +1851,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Clk[14]" (rect 600 544 635 556)(font "Arial" ))
-	(pt 648 560)
-	(pt 592 560)
-)
-(connector
 	(pt 848 760)
 	(pt 816 760)
 )
@@ -2010,27 +2005,6 @@ applicable agreement for further details.
 	(pt 1064 424)
 )
 (connector
-	(text "Speaker_74" (rect 504 488 561 500)(font "Arial" ))
-	(pt 552 504)
-	(pt 496 504)
-)
-(connector
-	(text "Speaker_82" (rect 504 504 561 516)(font "Arial" ))
-	(pt 496 520)
-	(pt 552 520)
-)
-(connector
-	(text "Clk[24..0]" (rect 280 488 328 500)(font "Arial" ))
-	(pt 328 504)
-	(pt 272 504)
-	(bus)
-)
-(connector
-	(text "Dip[2]" (rect 273 504 302 516)(font "Arial" ))
-	(pt 328 520)
-	(pt 272 520)
-)
-(connector
 	(text "BLeft[7..0]" (rect 1312 1000 1365 1012)(font "Arial" ))
 	(pt 1304 1016)
 	(pt 1360 1016)
@@ -2103,37 +2077,6 @@ applicable agreement for further details.
 	(pt 1120 888)
 	(pt 1128 888)
 	(bus)
-)
-(connector
-	(text "left_go" (rect 856 544 890 556)(font "Arial" ))
-	(pt 848 560)
-	(pt 880 560)
-)
-(connector
-	(text "right_go" (rect 856 560 894 572)(font "Arial" ))
-	(pt 848 576)
-	(pt 880 576)
-)
-(connector
-	(text "left_fwd" (rect 856 576 896 588)(font "Arial" ))
-	(pt 848 592)
-	(pt 880 592)
-)
-(connector
-	(text "right_fwd" (rect 856 592 900 604)(font "Arial" ))
-	(pt 848 608)
-	(pt 880 608)
-)
-(connector
-	(text "state[2..0]" (rect 856 608 906 620)(font "Arial" ))
-	(pt 848 624)
-	(pt 880 624)
-	(bus)
-)
-(connector
-	(text "right_left" (rect 604 576 647 588)(font "Arial" ))
-	(pt 592 592)
-	(pt 648 592)
 )
 (connector
 	(text "Front[7..4]" (rect 968 16 1019 28)(font "Arial" ))
@@ -2230,26 +2173,6 @@ applicable agreement for further details.
 	(pt 760 256)
 )
 (connector
-	(text "back_far" (rect 600 656 643 668)(font "Arial" ))
-	(pt 648 672)
-	(pt 592 672)
-)
-(connector
-	(text "Go/Stop" (rect 600 560 640 572)(font "Arial" ))
-	(pt 648 576)
-	(pt 592 576)
-)
-(connector
-	(text "side_vfar" (rect 600 624 647 636)(font "Arial" ))
-	(pt 648 640)
-	(pt 592 640)
-)
-(connector
-	(text "side_close" (rect 600 592 651 604)(font "Arial" ))
-	(pt 648 608)
-	(pt 592 608)
-)
-(connector
 	(pt 504 184)
 	(pt 504 208)
 )
@@ -2257,16 +2180,6 @@ applicable agreement for further details.
 	(text "right_left" (rect 453 192 496 204)(font "Arial" ))
 	(pt 448 208)
 	(pt 504 208)
-)
-(connector
-	(text "front_close" (rect 592 640 647 652)(font "Arial" ))
-	(pt 648 656)
-	(pt 592 656)
-)
-(connector
-	(text "side_far" (rect 599 608 639 620)(font "Arial" ))
-	(pt 648 624)
-	(pt 592 624)
 )
 (connector
 	(text "hall" (rect 1271 464 1287 476)(font "Arial" ))
@@ -2450,6 +2363,93 @@ applicable agreement for further details.
 	(text "Button_2" (rect 1312 184 1355 196)(font "Arial" ))
 	(pt 1304 200)
 	(pt 1360 200)
+)
+(connector
+	(text "Speaker_74" (rect 1168 544 1225 556)(font "Arial" ))
+	(pt 1216 560)
+	(pt 1160 560)
+)
+(connector
+	(text "Speaker_82" (rect 1168 560 1225 572)(font "Arial" ))
+	(pt 1160 576)
+	(pt 1216 576)
+)
+(connector
+	(text "Clk[24..0]" (rect 944 544 992 556)(font "Arial" ))
+	(pt 992 560)
+	(pt 936 560)
+	(bus)
+)
+(connector
+	(text "Dip[2]" (rect 937 560 966 572)(font "Arial" ))
+	(pt 992 576)
+	(pt 936 576)
+)
+(connector
+	(text "Clk[14]" (rect 504 344 539 356)(font "Arial" ))
+	(pt 552 360)
+	(pt 496 360)
+)
+(connector
+	(text "left_go" (rect 760 344 794 356)(font "Arial" ))
+	(pt 752 360)
+	(pt 784 360)
+)
+(connector
+	(text "right_go" (rect 760 360 798 372)(font "Arial" ))
+	(pt 752 376)
+	(pt 784 376)
+)
+(connector
+	(text "left_fwd" (rect 760 376 800 388)(font "Arial" ))
+	(pt 752 392)
+	(pt 784 392)
+)
+(connector
+	(text "right_fwd" (rect 760 392 804 404)(font "Arial" ))
+	(pt 752 408)
+	(pt 784 408)
+)
+(connector
+	(text "state[2..0]" (rect 760 408 810 420)(font "Arial" ))
+	(pt 752 424)
+	(pt 784 424)
+	(bus)
+)
+(connector
+	(text "right_left" (rect 508 376 551 388)(font "Arial" ))
+	(pt 496 392)
+	(pt 552 392)
+)
+(connector
+	(text "back_far" (rect 504 456 547 468)(font "Arial" ))
+	(pt 552 472)
+	(pt 496 472)
+)
+(connector
+	(text "Go/Stop" (rect 504 360 544 372)(font "Arial" ))
+	(pt 552 376)
+	(pt 496 376)
+)
+(connector
+	(text "side_vfar" (rect 504 424 551 436)(font "Arial" ))
+	(pt 552 440)
+	(pt 496 440)
+)
+(connector
+	(text "side_close" (rect 504 392 555 404)(font "Arial" ))
+	(pt 552 408)
+	(pt 496 408)
+)
+(connector
+	(text "front_close" (rect 496 440 551 452)(font "Arial" ))
+	(pt 552 456)
+	(pt 496 456)
+)
+(connector
+	(text "side_far" (rect 503 408 543 420)(font "Arial" ))
+	(pt 552 424)
+	(pt 496 424)
 )
 (junction (pt 616 1088))
 (junction (pt 520 1088))
