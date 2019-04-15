@@ -1259,9 +1259,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1912 768 1976 848)
+	(rect 1832 768 1896 848)
 	(text "TFF" (rect 1 0 18 10)(font "Arial" (font_size 6)))
-	(text "inst6" (rect 3 68 26 80)(font "Arial" ))
+	(text "inst10" (rect 3 68 32 80)(font "Arial" ))
 	(port
 		(pt 32 0)
 		(input)
@@ -1309,9 +1309,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1704 792 1752 824)
+	(rect 1624 792 1672 824)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst8" (rect 3 21 26 33)(font "Arial" ))
+	(text "inst15" (rect 3 21 32 33)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -1334,34 +1334,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 2000 776 2048 808)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst10" (rect 3 21 32 33)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16)(line_width 1))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16)(line_width 1))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7)(line_width 1))
-		(line (pt 13 7)(pt 31 16)(line_width 1))
-		(line (pt 13 25)(pt 31 16)(line_width 1))
-		(circle (rect 31 12 39 20)(line_width 1))
-	)
-)
-(symbol
-	(rect 1776 784 1840 864)
+	(rect 1696 784 1760 864)
 	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
-	(text "inst16" (rect 3 68 32 80)(font "Arial" ))
+	(text "inst17" (rect 3 68 32 80)(font "Arial" ))
 	(port
 		(pt 32 80)
 		(input)
@@ -1409,9 +1384,49 @@ applicable agreement for further details.
 	)
 )
 (symbol
+	(rect 1792 768 1824 784)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst18" (rect 3 5 32 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8)(line_width 1))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8)(line_width 1))
+	)
+)
+(symbol
+	(rect 1904 776 1952 808)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst29" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16)(line_width 1))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16)(line_width 1))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7)(line_width 1))
+		(line (pt 13 7)(pt 31 16)(line_width 1))
+		(line (pt 13 25)(pt 31 16)(line_width 1))
+		(circle (rect 31 12 39 20)(line_width 1))
+	)
+)
+(symbol
 	(rect 976 792 1144 888)
 	(text "Music_Block" (rect 5 0 75 14)(font "Arial" (font_size 8)))
-	(text "inst17" (rect 8 80 37 92)(font "Arial" ))
+	(text "inst31" (rect 8 80 37 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1790,62 +1805,66 @@ applicable agreement for further details.
 	(pt 1312 384)
 )
 (connector
-	(text "LED_RED" (rect 2056 776 2106 788)(font "Arial" ))
-	(pt 2048 792)
-	(pt 2064 792)
-)
-(connector
-	(pt 1976 792)
-	(pt 2000 792)
-)
-(connector
-	(text "H" (rect 1872 776 1880 788)(font "Arial" ))
-	(pt 1864 792)
-	(pt 1912 792)
-)
-(connector
-	(pt 1912 808)
-	(pt 1840 808)
-)
-(connector
-	(text "CDS_Cell" (rect 1648 792 1696 804)(font "Arial" ))
-	(pt 1704 808)
-	(pt 1640 808)
-)
-(connector
-	(pt 1752 808)
-	(pt 1776 808)
-)
-(connector
-	(text "Clk[14]" (rect 1648 808 1683 820)(font "Arial" ))
-	(pt 1776 824)
-	(pt 1640 824)
-)
-(connector
-	(pt 1808 864)
-	(pt 1808 872)
-)
-(connector
-	(pt 1944 848)
-	(pt 1944 872)
-)
-(connector
-	(text "Button_2" (rect 1714 856 1757 868)(font "Arial" ))
-	(pt 1712 872)
-	(pt 1808 872)
-)
-(connector
-	(pt 1808 872)
-	(pt 1944 872)
-)
-(connector
 	(text "CDS_Cell" (rect 923 824 971 836)(font "Arial" ))
 	(pt 976 840)
 	(pt 920 840)
+)
+(connector
+	(pt 1832 808)
+	(pt 1760 808)
+)
+(connector
+	(text "CDS_Cell" (rect 1568 792 1616 804)(font "Arial" ))
+	(pt 1624 808)
+	(pt 1560 808)
+)
+(connector
+	(pt 1672 808)
+	(pt 1696 808)
+)
+(connector
+	(pt 1728 864)
+	(pt 1728 872)
+)
+(connector
+	(pt 1864 848)
+	(pt 1864 872)
+)
+(connector
+	(text "Clk[14]" (rect 1568 808 1603 820)(font "Arial" ))
+	(pt 1560 824)
+	(pt 1696 824)
+)
+(connector
+	(pt 1832 792)
+	(pt 1808 792)
+)
+(connector
+	(pt 1808 792)
+	(pt 1808 784)
+)
+(connector
+	(text "Button_2" (rect 1634 856 1677 868)(font "Arial" ))
+	(pt 1632 872)
+	(pt 1728 872)
+)
+(connector
+	(pt 1728 872)
+	(pt 1864 872)
+)
+(connector
+	(text "LED_RED" (rect 1960 776 2010 788)(font "Arial" ))
+	(pt 1952 792)
+	(pt 1976 792)
+)
+(connector
+	(text "<<__$DEF_ALIAS3032>>" (rect 1872 776 1995 788)(font "Arial" )(invisible))
+	(pt 1896 792)
+	(pt 1904 792)
 )
 (junction (pt 1592 568))
 (junction (pt 1592 472))
 (junction (pt 816 816))
 (junction (pt 720 816))
 (junction (pt 1592 376))
-(junction (pt 1808 872))
+(junction (pt 1728 872))

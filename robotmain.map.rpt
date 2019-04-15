@@ -1,5 +1,5 @@
 Analysis & Synthesis report for robotmain
-Mon Apr 15 16:14:25 2019
+Mon Apr 15 16:33:11 2019
 Quartus II Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
 
 
@@ -18,9 +18,9 @@ Quartus II Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
  10. General Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
  12. Source assignments for BigCount:inst23|lpm_counter:lpm_counter_component
- 13. Source assignments for Music_Block:inst17|durCounter:inst31|lpm_counter:lpm_counter_component
- 14. Source assignments for Music_Block:inst17|noteCounter:inst29|lpm_counter:lpm_counter_component
- 15. Source assignments for Music_Block:inst17|freqCounter:inst30|lpm_counter:lpm_counter_component
+ 13. Source assignments for Music_Block:inst31|durCounter:inst31|lpm_counter:lpm_counter_component
+ 14. Source assignments for Music_Block:inst31|noteCounter:inst29|lpm_counter:lpm_counter_component
+ 15. Source assignments for Music_Block:inst31|freqCounter:inst30|lpm_counter:lpm_counter_component
  16. Parameter Settings for User Entity Instance: Digit_decode:inst26|lpm_decode:lpm_decode_component
  17. Parameter Settings for User Entity Instance: BigCount:inst23|lpm_counter:lpm_counter_component
  18. Parameter Settings for User Entity Instance: Movement_Block:inst4|distanceCompare:inst30|lpm_compare:lpm_compare_component
@@ -52,11 +52,11 @@ Quartus II Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
  44. Parameter Settings for User Entity Instance: IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
  45. Parameter Settings for User Entity Instance: Display_mux:inst24|lpm_mux:lpm_mux_component
  46. Parameter Settings for User Entity Instance: Colon_mux:inst25|lpm_mux:lpm_mux_component
- 47. Parameter Settings for User Entity Instance: Music_Block:inst17|durCounter:inst31|lpm_counter:lpm_counter_component
- 48. Parameter Settings for User Entity Instance: Music_Block:inst17|noteCounter:inst29|lpm_counter:lpm_counter_component
- 49. Parameter Settings for User Entity Instance: Music_Block:inst17|restCompare:inst11|lpm_compare:lpm_compare_component
- 50. Parameter Settings for User Entity Instance: Music_Block:inst17|freqCounter:inst30|lpm_counter:lpm_counter_component
- 51. Parameter Settings for User Entity Instance: Music_Block:inst17|octaveMux:inst10|lpm_mux:lpm_mux_component
+ 47. Parameter Settings for User Entity Instance: Music_Block:inst31|durCounter:inst31|lpm_counter:lpm_counter_component
+ 48. Parameter Settings for User Entity Instance: Music_Block:inst31|noteCounter:inst29|lpm_counter:lpm_counter_component
+ 49. Parameter Settings for User Entity Instance: Music_Block:inst31|restCompare:inst11|lpm_compare:lpm_compare_component
+ 50. Parameter Settings for User Entity Instance: Music_Block:inst31|freqCounter:inst30|lpm_counter:lpm_counter_component
+ 51. Parameter Settings for User Entity Instance: Music_Block:inst31|octaveMux:inst10|lpm_mux:lpm_mux_component
  52. lpm_shiftreg Parameter Settings by Entity Instance
  53. Analysis & Synthesis Messages
 
@@ -84,7 +84,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Apr 15 16:14:25 2019        ;
+; Analysis & Synthesis Status ; Successful - Mon Apr 15 16:33:11 2019        ;
 ; Quartus II Version          ; 7.2 Build 207 03/18/2008 SP 3 SJ Web Edition ;
 ; Revision Name               ; robotmain                                    ;
 ; Top-level Entity Name       ; robotmain                                    ;
@@ -263,7 +263,7 @@ applicable agreement for further details.
 ; Total registers                             ; 95                                                                                                        ;
 ; Total logic cells in carry chains           ; 44                                                                                                        ;
 ; I/O pins                                    ; 37                                                                                                        ;
-; Maximum fan-out node                        ; Music_Block:inst17|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated|safe_q[0] ;
+; Maximum fan-out node                        ; Music_Block:inst31|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated|safe_q[0] ;
 ; Maximum fan-out                             ; 32                                                                                                        ;
 ; Total fan-out                               ; 707                                                                                                       ;
 ; Average fan-out                             ; 2.84                                                                                                      ;
@@ -339,22 +339,22 @@ applicable agreement for further details.
 ;       |wallMux:inst38|                         ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|wallMux:inst38                                                                    ; work         ;
 ;          |lpm_mux:lpm_mux_component|           ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component                                          ; work         ;
 ;             |mux_i9c:auto_generated|           ; 2 (2)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component|mux_i9c:auto_generated                   ; work         ;
-;    |Music_Block:inst17|                        ; 93 (4)      ; 21           ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 72 (3)       ; 0 (0)             ; 21 (1)           ; 22 (0)          ; 0 (0)      ; |robotmain|Music_Block:inst17                                                                                     ; work         ;
-;       |Duration_ROM:inst6|                     ; 7 (7)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst17|Duration_ROM:inst6                                                                  ; work         ;
-;       |Notes:inst7|                            ; 7 (7)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst17|Notes:inst7                                                                         ; work         ;
-;       |Song_ROM:inst8|                         ; 51 (51)     ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 51 (51)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst17|Song_ROM:inst8                                                                      ; work         ;
-;       |durCounter:inst31|                      ; 7 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 6 (0)            ; 7 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst17|durCounter:inst31                                                                   ; work         ;
-;          |lpm_counter:lpm_counter_component|   ; 7 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 6 (0)            ; 7 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst17|durCounter:inst31|lpm_counter:lpm_counter_component                                 ; work         ;
-;             |cntr_esi:auto_generated|          ; 7 (7)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 6 (6)            ; 7 (7)           ; 0 (0)      ; |robotmain|Music_Block:inst17|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated         ; work         ;
-;       |freqCounter:inst30|                     ; 9 (0)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 8 (0)            ; 9 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst17|freqCounter:inst30                                                                  ; work         ;
-;          |lpm_counter:lpm_counter_component|   ; 9 (0)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 8 (0)            ; 9 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst17|freqCounter:inst30|lpm_counter:lpm_counter_component                                ; work         ;
-;             |cntr_gsi:auto_generated|          ; 9 (9)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 8 (8)            ; 9 (9)           ; 0 (0)      ; |robotmain|Music_Block:inst17|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated        ; work         ;
-;       |noteCounter:inst29|                     ; 6 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (0)            ; 6 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst17|noteCounter:inst29                                                                  ; work         ;
-;          |lpm_counter:lpm_counter_component|   ; 6 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (0)            ; 6 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst17|noteCounter:inst29|lpm_counter:lpm_counter_component                                ; work         ;
-;             |cntr_j7h:auto_generated|          ; 6 (6)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (6)            ; 6 (6)           ; 0 (0)      ; |robotmain|Music_Block:inst17|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated        ; work         ;
-;       |octaveMux:inst10|                       ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst17|octaveMux:inst10                                                                    ; work         ;
-;          |lpm_mux:lpm_mux_component|           ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst17|octaveMux:inst10|lpm_mux:lpm_mux_component                                          ; work         ;
-;             |mux_h9c:auto_generated|           ; 2 (2)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst17|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated                   ; work         ;
+;    |Music_Block:inst31|                        ; 93 (4)      ; 21           ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 72 (3)       ; 0 (0)             ; 21 (1)           ; 22 (0)          ; 0 (0)      ; |robotmain|Music_Block:inst31                                                                                     ; work         ;
+;       |Duration_ROM:inst6|                     ; 7 (7)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst31|Duration_ROM:inst6                                                                  ; work         ;
+;       |Notes:inst7|                            ; 7 (7)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst31|Notes:inst7                                                                         ; work         ;
+;       |Song_ROM:inst8|                         ; 51 (51)     ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 51 (51)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst31|Song_ROM:inst8                                                                      ; work         ;
+;       |durCounter:inst31|                      ; 7 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 6 (0)            ; 7 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst31|durCounter:inst31                                                                   ; work         ;
+;          |lpm_counter:lpm_counter_component|   ; 7 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 6 (0)            ; 7 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst31|durCounter:inst31|lpm_counter:lpm_counter_component                                 ; work         ;
+;             |cntr_esi:auto_generated|          ; 7 (7)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 6 (6)            ; 7 (7)           ; 0 (0)      ; |robotmain|Music_Block:inst31|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated         ; work         ;
+;       |freqCounter:inst30|                     ; 9 (0)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 8 (0)            ; 9 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst31|freqCounter:inst30                                                                  ; work         ;
+;          |lpm_counter:lpm_counter_component|   ; 9 (0)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 8 (0)            ; 9 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst31|freqCounter:inst30|lpm_counter:lpm_counter_component                                ; work         ;
+;             |cntr_gsi:auto_generated|          ; 9 (9)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 8 (8)            ; 9 (9)           ; 0 (0)      ; |robotmain|Music_Block:inst31|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated        ; work         ;
+;       |noteCounter:inst29|                     ; 6 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (0)            ; 6 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst31|noteCounter:inst29                                                                  ; work         ;
+;          |lpm_counter:lpm_counter_component|   ; 6 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (0)            ; 6 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst31|noteCounter:inst29|lpm_counter:lpm_counter_component                                ; work         ;
+;             |cntr_j7h:auto_generated|          ; 6 (6)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (6)            ; 6 (6)           ; 0 (0)      ; |robotmain|Music_Block:inst31|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated        ; work         ;
+;       |octaveMux:inst10|                       ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst31|octaveMux:inst10                                                                    ; work         ;
+;          |lpm_mux:lpm_mux_component|           ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst31|octaveMux:inst10|lpm_mux:lpm_mux_component                                          ; work         ;
+;             |mux_h9c:auto_generated|           ; 2 (2)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst31|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated                   ; work         ;
 ;    |Servo:inst12|                              ; 3 (3)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Servo:inst12                                                                                           ; work         ;
 ;    |Servo:inst9|                               ; 2 (2)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Servo:inst9                                                                                            ; work         ;
 +------------------------------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------------------------------------+--------------+
@@ -423,9 +423,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |robotmain|Music_Block:inst17|Song_ROM:inst8|Mux1                      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |robotmain|Music_Block:inst31|Song_ROM:inst8|Mux1                      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1|Selector1 ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |robotmain|Music_Block:inst17|Song_ROM:inst8|Mux0                      ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |robotmain|Music_Block:inst31|Song_ROM:inst8|Mux0                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
 
 
@@ -441,7 +441,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +-----------------------------------------------------------------------------------------------+
-; Source assignments for Music_Block:inst17|durCounter:inst31|lpm_counter:lpm_counter_component ;
+; Source assignments for Music_Block:inst31|durCounter:inst31|lpm_counter:lpm_counter_component ;
 +---------------------------+-------+------+----------------------------------------------------+
 ; Assignment                ; Value ; From ; To                                                 ;
 +---------------------------+-------+------+----------------------------------------------------+
@@ -452,7 +452,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +------------------------------------------------------------------------------------------------+
-; Source assignments for Music_Block:inst17|noteCounter:inst29|lpm_counter:lpm_counter_component ;
+; Source assignments for Music_Block:inst31|noteCounter:inst29|lpm_counter:lpm_counter_component ;
 +---------------------------+-------+------+-----------------------------------------------------+
 ; Assignment                ; Value ; From ; To                                                  ;
 +---------------------------+-------+------+-----------------------------------------------------+
@@ -463,7 +463,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +------------------------------------------------------------------------------------------------+
-; Source assignments for Music_Block:inst17|freqCounter:inst30|lpm_counter:lpm_counter_component ;
+; Source assignments for Music_Block:inst31|freqCounter:inst30|lpm_counter:lpm_counter_component ;
 +---------------------------+-------+------+-----------------------------------------------------+
 ; Assignment                ; Value ; From ; To                                                  ;
 +---------------------------+-------+------+-----------------------------------------------------+
@@ -1091,7 +1091,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Music_Block:inst17|durCounter:inst31|lpm_counter:lpm_counter_component ;
+; Parameter Settings for User Entity Instance: Music_Block:inst31|durCounter:inst31|lpm_counter:lpm_counter_component ;
 +------------------------+-------------+------------------------------------------------------------------------------+
 ; Parameter Name         ; Value       ; Type                                                                         ;
 +------------------------+-------------+------------------------------------------------------------------------------+
@@ -1118,7 +1118,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Music_Block:inst17|noteCounter:inst29|lpm_counter:lpm_counter_component ;
+; Parameter Settings for User Entity Instance: Music_Block:inst31|noteCounter:inst29|lpm_counter:lpm_counter_component ;
 +------------------------+-------------+-------------------------------------------------------------------------------+
 ; Parameter Name         ; Value       ; Type                                                                          ;
 +------------------------+-------------+-------------------------------------------------------------------------------+
@@ -1145,7 +1145,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Music_Block:inst17|restCompare:inst11|lpm_compare:lpm_compare_component ;
+; Parameter Settings for User Entity Instance: Music_Block:inst31|restCompare:inst11|lpm_compare:lpm_compare_component ;
 +------------------------+----------+----------------------------------------------------------------------------------+
 ; Parameter Name         ; Value    ; Type                                                                             ;
 +------------------------+----------+----------------------------------------------------------------------------------+
@@ -1169,7 +1169,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Music_Block:inst17|freqCounter:inst30|lpm_counter:lpm_counter_component ;
+; Parameter Settings for User Entity Instance: Music_Block:inst31|freqCounter:inst30|lpm_counter:lpm_counter_component ;
 +------------------------+-------------+-------------------------------------------------------------------------------+
 ; Parameter Name         ; Value       ; Type                                                                          ;
 +------------------------+-------------+-------------------------------------------------------------------------------+
@@ -1196,7 +1196,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Music_Block:inst17|octaveMux:inst10|lpm_mux:lpm_mux_component ;
+; Parameter Settings for User Entity Instance: Music_Block:inst31|octaveMux:inst10|lpm_mux:lpm_mux_component ;
 +------------------------+---------+-------------------------------------------------------------------------+
 ; Parameter Name         ; Value   ; Type                                                                    ;
 +------------------------+---------+-------------------------------------------------------------------------+
@@ -1244,7 +1244,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
-    Info: Processing started: Mon Apr 15 16:14:22 2019
+    Info: Processing started: Mon Apr 15 16:33:08 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off robotmain -c robotmain
 Info: Found 2 design units, including 1 entities, in source file Display_mux.vhd
     Info: Found design unit 1: display_mux-SYN
@@ -1408,40 +1408,40 @@ Info: Elaborated megafunction instantiation "Colon_mux:inst25|lpm_mux:lpm_mux_co
 Info: Found 1 design units, including 1 entities, in source file db/mux_sld.tdf
     Info: Found entity 1: mux_sld
 Info: Elaborating entity "mux_sld" for hierarchy "Colon_mux:inst25|lpm_mux:lpm_mux_component|mux_sld:auto_generated"
-Info: Elaborating entity "Music_Block" for hierarchy "Music_Block:inst17"
-Info: Elaborating entity "durCounter" for hierarchy "Music_Block:inst17|durCounter:inst31"
-Info: Elaborating entity "lpm_counter" for hierarchy "Music_Block:inst17|durCounter:inst31|lpm_counter:lpm_counter_component"
-Info: Elaborated megafunction instantiation "Music_Block:inst17|durCounter:inst31|lpm_counter:lpm_counter_component"
+Info: Elaborating entity "Music_Block" for hierarchy "Music_Block:inst31"
+Info: Elaborating entity "durCounter" for hierarchy "Music_Block:inst31|durCounter:inst31"
+Info: Elaborating entity "lpm_counter" for hierarchy "Music_Block:inst31|durCounter:inst31|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "Music_Block:inst31|durCounter:inst31|lpm_counter:lpm_counter_component"
 Info: Found 1 design units, including 1 entities, in source file db/cntr_esi.tdf
     Info: Found entity 1: cntr_esi
-Info: Elaborating entity "cntr_esi" for hierarchy "Music_Block:inst17|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated"
-Info: Elaborating entity "Duration_ROM" for hierarchy "Music_Block:inst17|Duration_ROM:inst6"
-Info: Elaborating entity "Song_ROM" for hierarchy "Music_Block:inst17|Song_ROM:inst8"
-Info: Elaborating entity "noteCounter" for hierarchy "Music_Block:inst17|noteCounter:inst29"
-Info: Elaborating entity "lpm_counter" for hierarchy "Music_Block:inst17|noteCounter:inst29|lpm_counter:lpm_counter_component"
-Info: Elaborated megafunction instantiation "Music_Block:inst17|noteCounter:inst29|lpm_counter:lpm_counter_component"
+Info: Elaborating entity "cntr_esi" for hierarchy "Music_Block:inst31|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated"
+Info: Elaborating entity "Duration_ROM" for hierarchy "Music_Block:inst31|Duration_ROM:inst6"
+Info: Elaborating entity "Song_ROM" for hierarchy "Music_Block:inst31|Song_ROM:inst8"
+Info: Elaborating entity "noteCounter" for hierarchy "Music_Block:inst31|noteCounter:inst29"
+Info: Elaborating entity "lpm_counter" for hierarchy "Music_Block:inst31|noteCounter:inst29|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "Music_Block:inst31|noteCounter:inst29|lpm_counter:lpm_counter_component"
 Info: Found 1 design units, including 1 entities, in source file db/cntr_j7h.tdf
     Info: Found entity 1: cntr_j7h
-Info: Elaborating entity "cntr_j7h" for hierarchy "Music_Block:inst17|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated"
-Info: Elaborating entity "restCompare" for hierarchy "Music_Block:inst17|restCompare:inst11"
-Info: Elaborating entity "lpm_compare" for hierarchy "Music_Block:inst17|restCompare:inst11|lpm_compare:lpm_compare_component"
-Info: Elaborated megafunction instantiation "Music_Block:inst17|restCompare:inst11|lpm_compare:lpm_compare_component"
+Info: Elaborating entity "cntr_j7h" for hierarchy "Music_Block:inst31|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated"
+Info: Elaborating entity "restCompare" for hierarchy "Music_Block:inst31|restCompare:inst11"
+Info: Elaborating entity "lpm_compare" for hierarchy "Music_Block:inst31|restCompare:inst11|lpm_compare:lpm_compare_component"
+Info: Elaborated megafunction instantiation "Music_Block:inst31|restCompare:inst11|lpm_compare:lpm_compare_component"
 Info: Found 1 design units, including 1 entities, in source file db/cmpr_rci.tdf
     Info: Found entity 1: cmpr_rci
-Info: Elaborating entity "cmpr_rci" for hierarchy "Music_Block:inst17|restCompare:inst11|lpm_compare:lpm_compare_component|cmpr_rci:auto_generated"
-Info: Elaborating entity "freqCounter" for hierarchy "Music_Block:inst17|freqCounter:inst30"
-Info: Elaborating entity "lpm_counter" for hierarchy "Music_Block:inst17|freqCounter:inst30|lpm_counter:lpm_counter_component"
-Info: Elaborated megafunction instantiation "Music_Block:inst17|freqCounter:inst30|lpm_counter:lpm_counter_component"
+Info: Elaborating entity "cmpr_rci" for hierarchy "Music_Block:inst31|restCompare:inst11|lpm_compare:lpm_compare_component|cmpr_rci:auto_generated"
+Info: Elaborating entity "freqCounter" for hierarchy "Music_Block:inst31|freqCounter:inst30"
+Info: Elaborating entity "lpm_counter" for hierarchy "Music_Block:inst31|freqCounter:inst30|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "Music_Block:inst31|freqCounter:inst30|lpm_counter:lpm_counter_component"
 Info: Found 1 design units, including 1 entities, in source file db/cntr_gsi.tdf
     Info: Found entity 1: cntr_gsi
-Info: Elaborating entity "cntr_gsi" for hierarchy "Music_Block:inst17|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated"
-Info: Elaborating entity "octaveMux" for hierarchy "Music_Block:inst17|octaveMux:inst10"
-Info: Elaborating entity "lpm_mux" for hierarchy "Music_Block:inst17|octaveMux:inst10|lpm_mux:lpm_mux_component"
-Info: Elaborated megafunction instantiation "Music_Block:inst17|octaveMux:inst10|lpm_mux:lpm_mux_component"
+Info: Elaborating entity "cntr_gsi" for hierarchy "Music_Block:inst31|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated"
+Info: Elaborating entity "octaveMux" for hierarchy "Music_Block:inst31|octaveMux:inst10"
+Info: Elaborating entity "lpm_mux" for hierarchy "Music_Block:inst31|octaveMux:inst10|lpm_mux:lpm_mux_component"
+Info: Elaborated megafunction instantiation "Music_Block:inst31|octaveMux:inst10|lpm_mux:lpm_mux_component"
 Info: Found 1 design units, including 1 entities, in source file db/mux_h9c.tdf
     Info: Found entity 1: mux_h9c
-Info: Elaborating entity "mux_h9c" for hierarchy "Music_Block:inst17|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated"
-Info: Elaborating entity "Notes" for hierarchy "Music_Block:inst17|Notes:inst7"
+Info: Elaborating entity "mux_h9c" for hierarchy "Music_Block:inst31|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated"
+Info: Elaborating entity "Notes" for hierarchy "Music_Block:inst31|Notes:inst7"
 Info: Clock multiplexers have been protected
 Info: Clock multiplexers have been protected
 Info: State machine "|robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state" contains 7 states
@@ -1496,7 +1496,7 @@ Info: Implemented 249 device resources after synthesis - the final resource coun
     Info: Implemented 212 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 48 warnings
     Info: Allocated 279 megabytes of memory during processing
-    Info: Processing ended: Mon Apr 15 16:14:25 2019
+    Info: Processing ended: Mon Apr 15 16:33:11 2019
     Info: Elapsed time: 00:00:03
 
 

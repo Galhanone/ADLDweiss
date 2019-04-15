@@ -16,7 +16,7 @@ Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
 Actual Time    : 43.645 ns
-From           : Music_Block:inst17|inst28
+From           : Music_Block:inst31|inst28
 To             : Speaker_74
 From Clock     : Clk_50MHZ
 To Clock       : --
@@ -46,8 +46,8 @@ Type           : Clock Setup: 'Clk_50MHZ'
 Slack          : N/A
 Required Time  : None
 Actual Time    : 35.66 MHz ( period = 28.046 ns )
-From           : Music_Block:inst17|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|safe_q[0]
-To             : Music_Block:inst17|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|safe_q[0]
+From           : Music_Block:inst31|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|safe_q[0]
+To             : Music_Block:inst31|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|safe_q[0]
 From Clock     : Clk_50MHZ
 To Clock       : Clk_50MHZ
 Failed Paths   : 0
@@ -66,8 +66,8 @@ Type           : Clock Hold: 'Clk_50MHZ'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : Music_Block:inst17|inst28
-To             : Music_Block:inst17|inst28
+From           : Music_Block:inst31|inst28
+To             : Music_Block:inst31|inst28
 From Clock     : Clk_50MHZ
 To Clock       : Clk_50MHZ
 Failed Paths   : 134

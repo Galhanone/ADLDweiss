@@ -8,8 +8,8 @@ Digit_4 <= Digit_decode:inst26.eq3
 Left_Servo <= Servo:inst9.Servo
 Button_1 => Movement_Block:inst4.Button_1
 Button_2 => Movement_Block:inst4.Button_2
-Button_2 => inst6.ACLR
-Button_2 => inst16.ACLR
+Button_2 => inst10.ACLR
+Button_2 => inst17.ACLR
 Hall => Movement_Block:inst4.Hall
 Dip[0] => Movement_Block:inst4.Right_Left
 Dip[1] => ~NO_FANOUT~
@@ -29,12 +29,12 @@ Seg_E <= Seven_Seg_Driver:inst27.LED[2]
 Seg_F <= Seven_Seg_Driver:inst27.LED[1]
 Seg_G <= Seven_Seg_Driver:inst27.LED[0]
 Spare_Servo <= <GND>
-Speaker_74 <= Music_Block:inst17.Speaker_A
-CDS_Cell => Music_Block:inst17.CDS_Cell
-CDS_Cell => inst8.IN0
-Speaker_82 <= Music_Block:inst17.Speaker_B
+Speaker_74 <= Music_Block:inst31.Speaker_A
+CDS_Cell => Music_Block:inst31.CDS_Cell
+CDS_Cell => inst15.IN0
+Speaker_82 <= Music_Block:inst31.Speaker_B
 LED_Blue <= <VCC>
-LED_RED <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+LED_RED <= inst29.DB_MAX_OUTPUT_PORT_TYPE
 LED_Green <= <VCC>
 BlueTooth_RCV_In => ~NO_FANOUT~
 Bumper => ~NO_FANOUT~
@@ -1640,8 +1640,9 @@ result[0] <= mux_sld:auto_generated.result[0]
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robotmain|Music_Block:inst17
+|robotmain|Music_Block:inst31
 Speaker_A <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+CDS_Cell => inst5.IN0
 Clk[0] => ~NO_FANOUT~
 Clk[1] => ~NO_FANOUT~
 Clk[2] => ~NO_FANOUT~
@@ -1667,11 +1668,10 @@ Clk[21] => durCounter:inst31.clock
 Clk[22] => ~NO_FANOUT~
 Clk[23] => ~NO_FANOUT~
 Clk[24] => ~NO_FANOUT~
-CDS_Cell => inst5.IN0
 Speaker_B <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robotmain|Music_Block:inst17|durCounter:inst31
+|robotmain|Music_Block:inst31|durCounter:inst31
 clock => lpm_counter:lpm_counter_component.clock
 data[0] => lpm_counter:lpm_counter_component.data[0]
 data[1] => lpm_counter:lpm_counter_component.data[1]
@@ -1689,7 +1689,7 @@ q[4] <= lpm_counter:lpm_counter_component.q[4]
 q[5] <= lpm_counter:lpm_counter_component.q[5]
 
 
-|robotmain|Music_Block:inst17|durCounter:inst31|lpm_counter:lpm_counter_component
+|robotmain|Music_Block:inst31|durCounter:inst31|lpm_counter:lpm_counter_component
 clock => cntr_esi:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
@@ -1734,7 +1734,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|robotmain|Music_Block:inst17|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated
+|robotmain|Music_Block:inst31|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated
 clock => counter_cella0.CLK
 clock => counter_cella1.CLK
 clock => counter_cella2.CLK
@@ -1762,7 +1762,7 @@ sload => counter_cella4.SLOAD
 sload => counter_cella5.SLOAD
 
 
-|robotmain|Music_Block:inst17|Duration_ROM:inst6
+|robotmain|Music_Block:inst31|Duration_ROM:inst6
 Data_in[0] => Mux5.IN10
 Data_in[0] => Mux4.IN5
 Data_in[0] => Mux3.IN10
@@ -1787,7 +1787,7 @@ Dur[4] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 Dur[5] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robotmain|Music_Block:inst17|Song_ROM:inst8
+|robotmain|Music_Block:inst31|Song_ROM:inst8
 Note_Num[0] => Mux8.IN69
 Note_Num[0] => Mux7.IN69
 Note_Num[0] => Mux6.IN69
@@ -1853,7 +1853,7 @@ Duration[1] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
 Duration[2] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robotmain|Music_Block:inst17|noteCounter:inst29
+|robotmain|Music_Block:inst31|noteCounter:inst29
 clock => lpm_counter:lpm_counter_component.clock
 q[0] <= lpm_counter:lpm_counter_component.q[0]
 q[1] <= lpm_counter:lpm_counter_component.q[1]
@@ -1863,7 +1863,7 @@ q[4] <= lpm_counter:lpm_counter_component.q[4]
 q[5] <= lpm_counter:lpm_counter_component.q[5]
 
 
-|robotmain|Music_Block:inst17|noteCounter:inst29|lpm_counter:lpm_counter_component
+|robotmain|Music_Block:inst31|noteCounter:inst29|lpm_counter:lpm_counter_component
 clock => cntr_j7h:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
@@ -1908,7 +1908,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|robotmain|Music_Block:inst17|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated
+|robotmain|Music_Block:inst31|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated
 clock => counter_cella0.CLK
 clock => counter_cella1.CLK
 clock => counter_cella2.CLK
@@ -1923,7 +1923,7 @@ q[4] <= counter_cella4.REGOUT
 q[5] <= counter_cella5.REGOUT
 
 
-|robotmain|Music_Block:inst17|restCompare:inst11
+|robotmain|Music_Block:inst31|restCompare:inst11
 dataa[0] => lpm_compare:lpm_compare_component.dataa[0]
 dataa[1] => lpm_compare:lpm_compare_component.dataa[1]
 dataa[2] => lpm_compare:lpm_compare_component.dataa[2]
@@ -1931,7 +1931,7 @@ dataa[3] => lpm_compare:lpm_compare_component.dataa[3]
 aneb <= lpm_compare:lpm_compare_component.aneb
 
 
-|robotmain|Music_Block:inst17|restCompare:inst11|lpm_compare:lpm_compare_component
+|robotmain|Music_Block:inst31|restCompare:inst11|lpm_compare:lpm_compare_component
 dataa[0] => cmpr_rci:auto_generated.dataa[0]
 dataa[1] => cmpr_rci:auto_generated.dataa[1]
 dataa[2] => cmpr_rci:auto_generated.dataa[2]
@@ -1951,10 +1951,10 @@ aneb <= cmpr_rci:auto_generated.aneb
 ageb <= <GND>
 
 
-|robotmain|Music_Block:inst17|restCompare:inst11|lpm_compare:lpm_compare_component|cmpr_rci:auto_generated
+|robotmain|Music_Block:inst31|restCompare:inst11|lpm_compare:lpm_compare_component|cmpr_rci:auto_generated
 
 
-|robotmain|Music_Block:inst17|freqCounter:inst30
+|robotmain|Music_Block:inst31|freqCounter:inst30
 clock => lpm_counter:lpm_counter_component.clock
 data[0] => lpm_counter:lpm_counter_component.data[0]
 data[1] => lpm_counter:lpm_counter_component.data[1]
@@ -1976,7 +1976,7 @@ q[6] <= lpm_counter:lpm_counter_component.q[6]
 q[7] <= lpm_counter:lpm_counter_component.q[7]
 
 
-|robotmain|Music_Block:inst17|freqCounter:inst30|lpm_counter:lpm_counter_component
+|robotmain|Music_Block:inst31|freqCounter:inst30|lpm_counter:lpm_counter_component
 clock => cntr_gsi:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
@@ -2025,7 +2025,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|robotmain|Music_Block:inst17|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated
+|robotmain|Music_Block:inst31|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated
 clock => counter_cella0.CLK
 clock => counter_cella1.CLK
 clock => counter_cella2.CLK
@@ -2061,7 +2061,7 @@ sload => counter_cella6.SLOAD
 sload => counter_cella7.SLOAD
 
 
-|robotmain|Music_Block:inst17|octaveMux:inst10
+|robotmain|Music_Block:inst31|octaveMux:inst10
 data0 => lpm_mux:lpm_mux_component.data[0][0]
 data1 => lpm_mux:lpm_mux_component.data[1][0]
 data2 => lpm_mux:lpm_mux_component.data[2][0]
@@ -2071,7 +2071,7 @@ sel[1] => lpm_mux:lpm_mux_component.sel[1]
 result <= lpm_mux:lpm_mux_component.result[0]
 
 
-|robotmain|Music_Block:inst17|octaveMux:inst10|lpm_mux:lpm_mux_component
+|robotmain|Music_Block:inst31|octaveMux:inst10|lpm_mux:lpm_mux_component
 data[0][0] => mux_h9c:auto_generated.data[0]
 data[1][0] => mux_h9c:auto_generated.data[1]
 data[2][0] => mux_h9c:auto_generated.data[2]
@@ -2084,11 +2084,11 @@ clken => ~NO_FANOUT~
 result[0] <= mux_h9c:auto_generated.result[0]
 
 
-|robotmain|Music_Block:inst17|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated
+|robotmain|Music_Block:inst31|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robotmain|Music_Block:inst17|Notes:inst7
+|robotmain|Music_Block:inst31|Notes:inst7
 Data_in[0] => Mux6.IN19
 Data_in[0] => Mux5.IN19
 Data_in[0] => Mux4.IN19
