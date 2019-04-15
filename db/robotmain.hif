@@ -3407,39 +3407,6 @@ d41d8cd98f0b24e980998ecf8427e
 
 # end
 # entity
-Song_ROM
-# storage
-db|robotmain.(35).cnf
-db|robotmain.(35).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-Song_ROM.vhd
-aa9e53fd65b70b17faa6f8153081bf
-4
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-Music_Block:inst31|Song_ROM:inst8
-}
-# lmf
-..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
 reg8
 # storage
 db|robotmain.(48).cnf
@@ -7670,6 +7637,39 @@ Music_Block:inst31
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
 d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+Song_ROM
+# storage
+db|robotmain.(35).cnf
+db|robotmain.(35).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+Song_ROM.vhd
+aa9e53fd65b70b17faa6f8153081bf
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Music_Block:inst31|Song_ROM:inst8
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
 # macro_sequence
 
 # end
