@@ -40,7 +40,7 @@ applicable agreement for further details.
 	(input)
 	(rect 376 272 544 288)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "CDS_Cell" (rect 5 0 53 12)(font "Arial" ))
+	(text "Home" (rect 5 0 34 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -525,31 +525,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 544 264 592 296)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst5" (rect 3 21 26 33)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16)(line_width 1))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16)(line_width 1))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7)(line_width 1))
-		(line (pt 13 7)(pt 31 16)(line_width 1))
-		(line (pt 13 25)(pt 31 16)(line_width 1))
-		(circle (rect 31 12 39 20)(line_width 1))
-	)
-)
-(symbol
 	(rect 672 600 736 648)
 	(text "AND3" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst17" (rect 3 37 32 49)(font "Arial" ))
@@ -828,11 +803,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "dark" (rect 600 264 621 276)(font "Arial" ))
-	(pt 592 280)
-	(pt 616 280)
-)
-(connector
 	(pt 756 520)
 	(pt 756 552)
 )
@@ -873,11 +843,6 @@ applicable agreement for further details.
 	(pt 836 624)
 )
 (connector
-	(text "dark" (rect 641 600 662 612)(font "Arial" ))
-	(pt 672 616)
-	(pt 640 616)
-)
-(connector
 	(pt 672 632)
 	(pt 544 632)
 )
@@ -908,6 +873,16 @@ applicable agreement for further details.
 (connector
 	(pt 632 608)
 	(pt 632 624)
+)
+(connector
+	(text "home" (rect 641 600 668 612)(font "Arial" ))
+	(pt 672 616)
+	(pt 640 616)
+)
+(connector
+	(text "home" (rect 552 264 579 276)(font "Arial" ))
+	(pt 544 280)
+	(pt 568 280)
 )
 (junction (pt 756 552))
 (junction (pt 1220 416))
