@@ -1472,7 +1472,7 @@ applicable agreement for further details.
 (symbol
 	(rect 984 912 1152 1008)
 	(text "Music_Block" (rect 5 0 75 14)(font "Arial" (font_size 8)))
-	(text "inst7" (rect 8 80 31 92)(font "Arial" ))
+	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1488,6 +1488,13 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
+		(pt 0 64)
+		(input)
+		(text "Start" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Start" (rect 21 59 48 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
 		(pt 168 32)
 		(output)
 		(text "Speaker_A" (rect 0 0 63 14)(font "Arial" (font_size 8)))
@@ -1497,9 +1504,16 @@ applicable agreement for further details.
 	(port
 		(pt 168 48)
 		(output)
-		(text "Speaker_B" (rect 0 0 62 14)(font "Arial" (font_size 8)))
-		(text "Speaker_B" (rect 85 43 147 57)(font "Arial" (font_size 8)))
+		(text "Done" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "Done" (rect 118 43 147 57)(font "Arial" (font_size 8)))
 		(line (pt 168 48)(pt 152 48)(line_width 1))
+	)
+	(port
+		(pt 168 64)
+		(output)
+		(text "Speaker_B" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "Speaker_B" (rect 85 59 147 73)(font "Arial" (font_size 8)))
+		(line (pt 168 64)(pt 152 64)(line_width 1))
 	)
 	(drawing
 		(rectangle (rect 16 16 152 80)(line_width 1))
@@ -1824,11 +1838,6 @@ applicable agreement for further details.
 	(pt 1208 944)
 )
 (connector
-	(text "Speaker_82" (rect 1160 944 1217 956)(font "Arial" ))
-	(pt 1152 960)
-	(pt 1208 960)
-)
-(connector
 	(text "LED_RED" (rect 2008 928 2058 940)(font "Arial" ))
 	(pt 2000 944)
 	(pt 2024 944)
@@ -1977,6 +1986,21 @@ applicable agreement for further details.
 	(text "location[0]" (rect 931 944 981 956)(font "Arial" ))
 	(pt 984 960)
 	(pt 928 960)
+)
+(connector
+	(text "Speaker_82" (rect 1160 960 1217 972)(font "Arial" ))
+	(pt 1152 976)
+	(pt 1208 976)
+)
+(connector
+	(text "done" (rect 1160 944 1183 956)(font "Arial" ))
+	(pt 1152 960)
+	(pt 1208 960)
+)
+(connector
+	(text "Dip[1]" (rect 736 960 765 972)(font "Arial" ))
+	(pt 984 976)
+	(pt 728 976)
 )
 (junction (pt 1592 568))
 (junction (pt 1592 472))

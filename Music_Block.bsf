@@ -38,6 +38,13 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
+		(pt 0 64)
+		(input)
+		(text "Start" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Start" (rect 21 59 48 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
 		(pt 168 32)
 		(output)
 		(text "Speaker_A" (rect 0 0 63 14)(font "Arial" (font_size 8)))
@@ -47,9 +54,16 @@ applicable agreement for further details.
 	(port
 		(pt 168 48)
 		(output)
-		(text "Speaker_B" (rect 0 0 62 14)(font "Arial" (font_size 8)))
-		(text "Speaker_B" (rect 85 43 147 57)(font "Arial" (font_size 8)))
+		(text "Done" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "Done" (rect 118 43 147 57)(font "Arial" (font_size 8)))
 		(line (pt 168 48)(pt 152 48)(line_width 1))
+	)
+	(port
+		(pt 168 64)
+		(output)
+		(text "Speaker_B" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "Speaker_B" (rect 85 59 147 73)(font "Arial" (font_size 8)))
+		(line (pt 168 64)(pt 152 64)(line_width 1))
 	)
 	(drawing
 		(rectangle (rect 16 16 152 80)(line_width 1))

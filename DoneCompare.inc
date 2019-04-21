@@ -13,12 +13,11 @@
 --applicable agreement for further details.
 
 
-FUNCTION noteCounter 
+FUNCTION DoneCompare 
 (
-	aclr,
-	clock
+	dataa[1..0]
 )
 
 RETURNS (
-	q[4..0]
+	AeB
 );

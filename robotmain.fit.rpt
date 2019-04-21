@@ -1,5 +1,5 @@
 Fitter report for robotmain
-Fri Apr 19 21:35:19 2019
+Sat Apr 20 22:30:30 2019
 Quartus II Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
 
 
@@ -55,14 +55,14 @@ applicable agreement for further details.
 +----------------------------------------------------------------------+
 ; Fitter Summary                                                       ;
 +-----------------------+----------------------------------------------+
-; Fitter Status         ; Successful - Fri Apr 19 21:35:19 2019        ;
+; Fitter Status         ; Successful - Sat Apr 20 22:30:30 2019        ;
 ; Quartus II Version    ; 7.2 Build 207 03/18/2008 SP 3 SJ Web Edition ;
 ; Revision Name         ; robotmain                                    ;
 ; Top-level Entity Name ; robotmain                                    ;
 ; Family                ; MAX II                                       ;
 ; Device                ; EPM240T100C5                                 ;
 ; Timing Models         ; Final                                        ;
-; Total logic elements  ; 199 / 240 ( 83 % )                           ;
+; Total logic elements  ; 184 / 240 ( 77 % )                           ;
 ; Total pins            ; 37 / 80 ( 46 % )                             ;
 ; Total virtual pins    ; 0                                            ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                                ;
@@ -125,29 +125,29 @@ The pin-out file can be found in C:/Users/Mainframe/Documents/GitHub/ADLDweiss/r
 +---------------------------------------------+----------------------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                                    ;
 +---------------------------------------------+----------------------------------------------------------------------------------------------------------+
-; Total logic elements                        ; 199 / 240 ( 83 % )                                                                                       ;
-;     -- Combinational with no register       ; 103                                                                                                      ;
+; Total logic elements                        ; 184 / 240 ( 77 % )                                                                                       ;
+;     -- Combinational with no register       ; 89                                                                                                       ;
 ;     -- Register only                        ; 18                                                                                                       ;
-;     -- Combinational with a register        ; 78                                                                                                       ;
+;     -- Combinational with a register        ; 77                                                                                                       ;
 ;                                             ;                                                                                                          ;
 ; Logic element usage by number of LUT inputs ;                                                                                                          ;
-;     -- 4 input functions                    ; 84                                                                                                       ;
-;     -- 3 input functions                    ; 20                                                                                                       ;
-;     -- 2 input functions                    ; 56                                                                                                       ;
-;     -- 1 input functions                    ; 24                                                                                                       ;
-;     -- 0 input functions                    ; 15                                                                                                       ;
+;     -- 4 input functions                    ; 59                                                                                                       ;
+;     -- 3 input functions                    ; 27                                                                                                       ;
+;     -- 2 input functions                    ; 59                                                                                                       ;
+;     -- 1 input functions                    ; 21                                                                                                       ;
+;     -- 0 input functions                    ; 18                                                                                                       ;
 ;                                             ;                                                                                                          ;
 ; Logic elements by mode                      ;                                                                                                          ;
-;     -- normal mode                          ; 159                                                                                                      ;
-;     -- arithmetic mode                      ; 40                                                                                                       ;
+;     -- normal mode                          ; 145                                                                                                      ;
+;     -- arithmetic mode                      ; 39                                                                                                       ;
 ;     -- qfbk mode                            ; 14                                                                                                       ;
 ;     -- register cascade mode                ; 0                                                                                                        ;
-;     -- synchronous clear/load mode          ; 35                                                                                                       ;
-;     -- asynchronous clear/load mode         ; 16                                                                                                       ;
+;     -- synchronous clear/load mode          ; 38                                                                                                       ;
+;     -- asynchronous clear/load mode         ; 21                                                                                                       ;
 ;                                             ;                                                                                                          ;
-; Total registers                             ; 96 / 240 ( 40 % )                                                                                        ;
-; Total LABs                                  ; 21 / 24 ( 88 % )                                                                                         ;
-; Logic elements in carry chains              ; 44                                                                                                       ;
+; Total registers                             ; 95 / 240 ( 40 % )                                                                                        ;
+; Total LABs                                  ; 24 / 24 ( 100 % )                                                                                        ;
+; Logic elements in carry chains              ; 43                                                                                                       ;
 ; User inserted logic elements                ; 0                                                                                                        ;
 ; Virtual pins                                ; 0                                                                                                        ;
 ; I/O pins                                    ; 37 / 80 ( 46 % )                                                                                         ;
@@ -155,14 +155,14 @@ The pin-out file can be found in C:/Users/Mainframe/Documents/GitHub/ADLDweiss/r
 ; Global signals                              ; 4                                                                                                        ;
 ; UFM blocks                                  ; 0 / 1 ( 0 % )                                                                                            ;
 ; Global clocks                               ; 4 / 4 ( 100 % )                                                                                          ;
-; Average interconnect usage                  ; 16%                                                                                                      ;
-; Peak interconnect usage                     ; 16%                                                                                                      ;
-; Maximum fan-out node                        ; Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated|safe_q[0] ;
-; Maximum fan-out                             ; 32                                                                                                       ;
-; Highest non-global fan-out signal           ; Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated|safe_q[0] ;
-; Highest non-global fan-out                  ; 31                                                                                                       ;
-; Total fan-out                               ; 711                                                                                                      ;
-; Average fan-out                             ; 3.01                                                                                                     ;
+; Average interconnect usage                  ; 14%                                                                                                      ;
+; Peak interconnect usage                     ; 14%                                                                                                      ;
+; Maximum fan-out node                        ; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[7]                      ;
+; Maximum fan-out                             ; 23                                                                                                       ;
+; Highest non-global fan-out signal           ; Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated|safe_q[1] ;
+; Highest non-global fan-out                  ; 21                                                                                                       ;
+; Total fan-out                               ; 641                                                                                                      ;
+; Average fan-out                             ; 2.90                                                                                                     ;
 +---------------------------------------------+----------------------------------------------------------------------------------------------------------+
 
 
@@ -178,7 +178,7 @@ The pin-out file can be found in C:/Users/Mainframe/Documents/GitHub/ADLDweiss/r
 ; CDS_Cell         ; 51    ; 1        ; 7            ; 0            ; 0           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3V Schmitt Trigger Input ; User                 ;
 ; Clk_50MHZ        ; 64    ; 2        ; 8            ; 3            ; 4           ; 22                    ; 0                  ; yes    ; no              ; no       ; Off          ; 3.3-V LVTTL                ; User                 ;
 ; Dip[0]           ; 71    ; 2        ; 8            ; 4            ; 3           ; 10                    ; 0                  ; no     ; no              ; no       ; On           ; 3.3-V LVTTL                ; User                 ;
-; Dip[1]           ; 69    ; 2        ; 8            ; 3            ; 0           ; 0                     ; 0                  ; no     ; no              ; no       ; On           ; 3.3-V LVTTL                ; User                 ;
+; Dip[1]           ; 69    ; 2        ; 8            ; 3            ; 0           ; 5                     ; 0                  ; no     ; no              ; no       ; On           ; 3.3-V LVTTL                ; User                 ;
 ; Dip[2]           ; 67    ; 2        ; 8            ; 3            ; 2           ; 0                     ; 0                  ; no     ; no              ; no       ; On           ; 3.3-V LVTTL                ; User                 ;
 ; Extra_Pin        ; 56    ; 2        ; 8            ; 1            ; 0           ; 0                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3V Schmitt Trigger Input ; User                 ;
 ; Hall             ; 17    ; 1        ; 1            ; 2            ; 3           ; 2                     ; 0                  ; no     ; no              ; no       ; On           ; 3.3V Schmitt Trigger Input ; User                 ;
@@ -367,7 +367,7 @@ Note: User assignments will override these defaults. The user specified values a
 +------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                     ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                               ; Library Name ;
 +------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------------------------------------+--------------+
-; |robotmain                                     ; 199 (2)     ; 96           ; 0          ; 37   ; 0            ; 103 (0)      ; 18 (1)            ; 78 (1)           ; 44 (0)          ; 14 (0)     ; |robotmain                                                                                                        ; work         ;
+; |robotmain                                     ; 184 (2)     ; 95           ; 0          ; 37   ; 0            ; 89 (0)       ; 18 (1)            ; 77 (1)           ; 43 (0)          ; 14 (0)     ; |robotmain                                                                                                        ; work         ;
 ;    |BigCount:inst23|                           ; 22 (0)      ; 22           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 22 (0)           ; 22 (0)          ; 0 (0)      ; |robotmain|BigCount:inst23                                                                                        ; work         ;
 ;       |lpm_counter:lpm_counter_component|      ; 22 (0)      ; 22           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 22 (0)           ; 22 (0)          ; 0 (0)      ; |robotmain|BigCount:inst23|lpm_counter:lpm_counter_component                                                      ; work         ;
 ;          |cntr_49h:auto_generated|             ; 22 (22)     ; 22           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 22 (22)          ; 22 (22)         ; 0 (0)      ; |robotmain|BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated                              ; work         ;
@@ -377,13 +377,13 @@ Note: User assignments will override these defaults. The user specified values a
 ;    |Digit_decode:inst26|                       ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Digit_decode:inst26                                                                                    ; work         ;
 ;       |lpm_decode:lpm_decode_component|        ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Digit_decode:inst26|lpm_decode:lpm_decode_component                                                    ; work         ;
 ;          |decode_gpe:auto_generated|           ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Digit_decode:inst26|lpm_decode:lpm_decode_component|decode_gpe:auto_generated                          ; work         ;
-;    |IR_Sensor:inst11|                          ; 10 (2)      ; 9            ; 0          ; 0    ; 0            ; 1 (1)        ; 3 (0)             ; 6 (1)            ; 0 (0)           ; 1 (0)      ; |robotmain|IR_Sensor:inst11                                                                                       ; work         ;
+;    |IR_Sensor:inst11|                          ; 10 (2)      ; 9            ; 0          ; 0    ; 0            ; 1 (1)        ; 4 (0)             ; 5 (1)            ; 0 (0)           ; 1 (0)      ; |robotmain|IR_Sensor:inst11                                                                                       ; work         ;
 ;       |Shift4:inst4|                           ; 4 (0)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst11|Shift4:inst4                                                                          ; work         ;
 ;          |lpm_shiftreg:lpm_shiftreg_component| ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst11|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component                                      ; work         ;
 ;       |bus_and:inst6|                          ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 1 (0)      ; |robotmain|IR_Sensor:inst11|bus_and:inst6                                                                         ; work         ;
 ;          |lpm_and:lpm_and_component|           ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 1 (1)      ; |robotmain|IR_Sensor:inst11|bus_and:inst6|lpm_and:lpm_and_component                                               ; work         ;
-;       |reg8:inst12|                            ; 4 (0)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst11|reg8:inst12                                                                           ; work         ;
-;          |lpm_ff:lpm_ff_component|             ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst11|reg8:inst12|lpm_ff:lpm_ff_component                                                   ; work         ;
+;       |reg8:inst12|                            ; 4 (0)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst11|reg8:inst12                                                                           ; work         ;
+;          |lpm_ff:lpm_ff_component|             ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst11|reg8:inst12|lpm_ff:lpm_ff_component                                                   ; work         ;
 ;    |IR_Sensor:inst13|                          ; 11 (2)      ; 9            ; 0          ; 0    ; 0            ; 2 (1)        ; 5 (0)             ; 4 (1)            ; 0 (0)           ; 1 (0)      ; |robotmain|IR_Sensor:inst13                                                                                       ; work         ;
 ;       |Shift4:inst4|                           ; 4 (0)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst13|Shift4:inst4                                                                          ; work         ;
 ;          |lpm_shiftreg:lpm_shiftreg_component| ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst13|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component                                      ; work         ;
@@ -393,13 +393,13 @@ Note: User assignments will override these defaults. The user specified values a
 ;          |lpm_and:lpm_and_component|           ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst13|bus_and:inst7|lpm_and:lpm_and_component                                               ; work         ;
 ;       |reg8:inst12|                            ; 4 (0)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 3 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst13|reg8:inst12                                                                           ; work         ;
 ;          |lpm_ff:lpm_ff_component|             ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst13|reg8:inst12|lpm_ff:lpm_ff_component                                                   ; work         ;
-;    |IR_Sensor:inst14|                          ; 10 (2)      ; 9            ; 0          ; 0    ; 0            ; 1 (1)        ; 3 (0)             ; 6 (1)            ; 0 (0)           ; 1 (0)      ; |robotmain|IR_Sensor:inst14                                                                                       ; work         ;
+;    |IR_Sensor:inst14|                          ; 10 (2)      ; 9            ; 0          ; 0    ; 0            ; 1 (1)        ; 2 (0)             ; 7 (1)            ; 0 (0)           ; 1 (0)      ; |robotmain|IR_Sensor:inst14                                                                                       ; work         ;
 ;       |Shift4:inst4|                           ; 4 (0)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst14|Shift4:inst4                                                                          ; work         ;
 ;          |lpm_shiftreg:lpm_shiftreg_component| ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component                                      ; work         ;
 ;       |bus_and:inst6|                          ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 1 (0)      ; |robotmain|IR_Sensor:inst14|bus_and:inst6                                                                         ; work         ;
 ;          |lpm_and:lpm_and_component|           ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 1 (1)      ; |robotmain|IR_Sensor:inst14|bus_and:inst6|lpm_and:lpm_and_component                                               ; work         ;
-;       |reg8:inst12|                            ; 4 (0)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst14|reg8:inst12                                                                           ; work         ;
-;          |lpm_ff:lpm_ff_component|             ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component                                                   ; work         ;
+;       |reg8:inst12|                            ; 4 (0)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst14|reg8:inst12                                                                           ; work         ;
+;          |lpm_ff:lpm_ff_component|             ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component                                                   ; work         ;
 ;    |IR_Sensor:inst20|                          ; 8 (2)       ; 7            ; 0          ; 0    ; 0            ; 1 (1)        ; 3 (0)             ; 4 (1)            ; 0 (0)           ; 1 (0)      ; |robotmain|IR_Sensor:inst20                                                                                       ; work         ;
 ;       |Shift4:inst4|                           ; 4 (0)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst20|Shift4:inst4                                                                          ; work         ;
 ;          |lpm_shiftreg:lpm_shiftreg_component| ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst20|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component                                      ; work         ;
@@ -414,42 +414,42 @@ Note: User assignments will override these defaults. The user specified values a
 ;          |lpm_and:lpm_and_component|           ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 1 (1)      ; |robotmain|IR_Sensor:inst21|bus_and:inst6|lpm_and:lpm_and_component                                               ; work         ;
 ;       |reg8:inst12|                            ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst21|reg8:inst12                                                                           ; work         ;
 ;          |lpm_ff:lpm_ff_component|             ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component                                                   ; work         ;
-;    |Movement_Block:inst4|                      ; 21 (4)      ; 9            ; 0          ; 0    ; 0            ; 12 (2)       ; 0 (0)             ; 9 (2)            ; 0 (0)           ; 9 (0)      ; |robotmain|Movement_Block:inst4                                                                                   ; work         ;
+;    |Movement_Block:inst4|                      ; 23 (4)      ; 9            ; 0          ; 0    ; 0            ; 14 (2)       ; 0 (0)             ; 9 (2)            ; 0 (0)           ; 9 (0)      ; |robotmain|Movement_Block:inst4                                                                                   ; work         ;
 ;       |backFarCompare:inst33|                  ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 2 (0)      ; |robotmain|Movement_Block:inst4|backFarCompare:inst33                                                             ; work         ;
 ;          |lpm_compare:lpm_compare_component|   ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 2 (0)      ; |robotmain|Movement_Block:inst4|backFarCompare:inst33|lpm_compare:lpm_compare_component                           ; work         ;
 ;             |cmpr_bqi:auto_generated|          ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 2 (2)      ; |robotmain|Movement_Block:inst4|backFarCompare:inst33|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated   ; work         ;
 ;       |distanceCompare:inst30|                 ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 1 (0)      ; |robotmain|Movement_Block:inst4|distanceCompare:inst30                                                            ; work         ;
 ;          |lpm_compare:lpm_compare_component|   ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 1 (0)      ; |robotmain|Movement_Block:inst4|distanceCompare:inst30|lpm_compare:lpm_compare_component                          ; work         ;
 ;             |cmpr_gqi:auto_generated|          ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 1 (1)      ; |robotmain|Movement_Block:inst4|distanceCompare:inst30|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated  ; work         ;
-;       |obstacle_avoidance_FSM:inst1|           ; 17 (17)     ; 7            ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 7 (7)            ; 0 (0)           ; 1 (1)      ; |robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1                                                      ; work         ;
-;       |sideCloseCompare:inst16|                ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 2 (0)      ; |robotmain|Movement_Block:inst4|sideCloseCompare:inst16                                                           ; work         ;
-;          |lpm_compare:lpm_compare_component|   ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 2 (0)      ; |robotmain|Movement_Block:inst4|sideCloseCompare:inst16|lpm_compare:lpm_compare_component                         ; work         ;
-;             |cmpr_gqi:auto_generated|          ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 2 (2)      ; |robotmain|Movement_Block:inst4|sideCloseCompare:inst16|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated ; work         ;
-;       |veryFarCompare:inst29|                  ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 1 (0)      ; |robotmain|Movement_Block:inst4|veryFarCompare:inst29                                                             ; work         ;
-;          |lpm_compare:lpm_compare_component|   ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 1 (0)      ; |robotmain|Movement_Block:inst4|veryFarCompare:inst29|lpm_compare:lpm_compare_component                           ; work         ;
-;             |cmpr_bqi:auto_generated|          ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 1 (1)      ; |robotmain|Movement_Block:inst4|veryFarCompare:inst29|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated   ; work         ;
+;       |obstacle_avoidance_FSM:inst1|           ; 18 (18)     ; 7            ; 0          ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 7 (7)            ; 0 (0)           ; 1 (1)      ; |robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1                                                      ; work         ;
+;       |sideCloseCompare:inst16|                ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 3 (0)      ; |robotmain|Movement_Block:inst4|sideCloseCompare:inst16                                                           ; work         ;
+;          |lpm_compare:lpm_compare_component|   ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 3 (0)      ; |robotmain|Movement_Block:inst4|sideCloseCompare:inst16|lpm_compare:lpm_compare_component                         ; work         ;
+;             |cmpr_gqi:auto_generated|          ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 3 (3)      ; |robotmain|Movement_Block:inst4|sideCloseCompare:inst16|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated ; work         ;
+;       |veryFarCompare:inst29|                  ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|veryFarCompare:inst29                                                             ; work         ;
+;          |lpm_compare:lpm_compare_component|   ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|veryFarCompare:inst29|lpm_compare:lpm_compare_component                           ; work         ;
+;             |cmpr_bqi:auto_generated|          ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|veryFarCompare:inst29|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated   ; work         ;
 ;       |wallMux:inst38|                         ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 2 (0)      ; |robotmain|Movement_Block:inst4|wallMux:inst38                                                                    ; work         ;
 ;          |lpm_mux:lpm_mux_component|           ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 2 (0)      ; |robotmain|Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component                                          ; work         ;
 ;             |mux_i9c:auto_generated|           ; 0 (0)       ; 0            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 2 (2)      ; |robotmain|Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component|mux_i9c:auto_generated                   ; work         ;
 ;    |MusicCounter:inst6|                        ; 1 (0)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|MusicCounter:inst6                                                                                     ; work         ;
 ;       |lpm_counter:lpm_counter_component|      ; 1 (0)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component                                                   ; work         ;
 ;          |cntr_hlh:auto_generated|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_hlh:auto_generated                           ; work         ;
-;    |Music_Block:inst7|                         ; 93 (4)      ; 21           ; 0          ; 0    ; 0            ; 72 (3)       ; 0 (0)             ; 21 (1)           ; 22 (0)          ; 0 (0)      ; |robotmain|Music_Block:inst7                                                                                      ; work         ;
-;       |Duration_ROM:inst6|                     ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst7|Duration_ROM:inst6                                                                   ; work         ;
-;       |Notes:inst7|                            ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst7|Notes:inst7                                                                          ; work         ;
-;       |Song_ROM:inst8|                         ; 51 (51)     ; 0            ; 0          ; 0    ; 0            ; 51 (51)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst7|Song_ROM:inst8                                                                       ; work         ;
-;       |durCounter:inst31|                      ; 7 (0)       ; 6            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 6 (0)            ; 7 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst7|durCounter:inst31                                                                    ; work         ;
-;          |lpm_counter:lpm_counter_component|   ; 7 (0)       ; 6            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 6 (0)            ; 7 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component                                  ; work         ;
-;             |cntr_esi:auto_generated|          ; 7 (7)       ; 6            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 6 (6)            ; 7 (7)           ; 0 (0)      ; |robotmain|Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated          ; work         ;
-;       |freqCounter:inst30|                     ; 9 (0)       ; 8            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 8 (0)            ; 9 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst7|freqCounter:inst30                                                                   ; work         ;
-;          |lpm_counter:lpm_counter_component|   ; 9 (0)       ; 8            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 8 (0)            ; 9 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component                                 ; work         ;
-;             |cntr_gsi:auto_generated|          ; 9 (9)       ; 8            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 8 (8)            ; 9 (9)           ; 0 (0)      ; |robotmain|Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated         ; work         ;
-;       |noteCounter:inst29|                     ; 6 (0)       ; 6            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (0)            ; 6 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst7|noteCounter:inst29                                                                   ; work         ;
-;          |lpm_counter:lpm_counter_component|   ; 6 (0)       ; 6            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (0)            ; 6 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component                                 ; work         ;
-;             |cntr_j7h:auto_generated|          ; 6 (6)       ; 6            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (6)            ; 6 (6)           ; 0 (0)      ; |robotmain|Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated         ; work         ;
-;       |octaveMux:inst10|                       ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst7|octaveMux:inst10                                                                     ; work         ;
-;          |lpm_mux:lpm_mux_component|           ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component                                           ; work         ;
-;             |mux_h9c:auto_generated|           ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated                    ; work         ;
+;    |Music_Block:inst1|                         ; 76 (4)      ; 20           ; 0          ; 0    ; 0            ; 56 (3)       ; 0 (0)             ; 20 (1)           ; 21 (0)          ; 0 (0)      ; |robotmain|Music_Block:inst1                                                                                      ; work         ;
+;       |Duration_ROM:inst6|                     ; 9 (9)       ; 0            ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|Duration_ROM:inst6                                                                   ; work         ;
+;       |Notes:inst7|                            ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|Notes:inst7                                                                          ; work         ;
+;       |Song_ROM:inst1|                         ; 33 (33)     ; 0            ; 0          ; 0    ; 0            ; 33 (33)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|Song_ROM:inst1                                                                       ; work         ;
+;       |durCounter:inst31|                      ; 7 (0)       ; 6            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 6 (0)            ; 7 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|durCounter:inst31                                                                    ; work         ;
+;          |lpm_counter:lpm_counter_component|   ; 7 (0)       ; 6            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 6 (0)            ; 7 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|durCounter:inst31|lpm_counter:lpm_counter_component                                  ; work         ;
+;             |cntr_esi:auto_generated|          ; 7 (7)       ; 6            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 6 (6)            ; 7 (7)           ; 0 (0)      ; |robotmain|Music_Block:inst1|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated          ; work         ;
+;       |freqCounter:inst30|                     ; 9 (0)       ; 8            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 8 (0)            ; 9 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|freqCounter:inst30                                                                   ; work         ;
+;          |lpm_counter:lpm_counter_component|   ; 9 (0)       ; 8            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 8 (0)            ; 9 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|freqCounter:inst30|lpm_counter:lpm_counter_component                                 ; work         ;
+;             |cntr_gsi:auto_generated|          ; 9 (9)       ; 8            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 8 (8)            ; 9 (9)           ; 0 (0)      ; |robotmain|Music_Block:inst1|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated         ; work         ;
+;       |noteCounter:inst29|                     ; 5 (0)       ; 5            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (0)            ; 5 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|noteCounter:inst29                                                                   ; work         ;
+;          |lpm_counter:lpm_counter_component|   ; 5 (0)       ; 5            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (0)            ; 5 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component                                 ; work         ;
+;             |cntr_klh:auto_generated|          ; 5 (5)       ; 5            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (5)            ; 5 (5)           ; 0 (0)      ; |robotmain|Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated         ; work         ;
+;       |octaveMux:inst10|                       ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|octaveMux:inst10                                                                     ; work         ;
+;          |lpm_mux:lpm_mux_component|           ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|octaveMux:inst10|lpm_mux:lpm_mux_component                                           ; work         ;
+;             |mux_h9c:auto_generated|           ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated                    ; work         ;
 ;    |Servo:inst12|                              ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Servo:inst12                                                                                           ; work         ;
 ;    |Servo:inst9|                               ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Servo:inst9                                                                                            ; work         ;
 +------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------------------------------------+--------------+
@@ -462,7 +462,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name              ; Pin Type ; Pad to Core 0 ;
 +-------------------+----------+---------------+
 ; Dip[2]            ; Input    ; 0             ;
-; Dip[1]            ; Input    ; 0             ;
 ; BlueTooth_RCV_In  ; Input    ; 0             ;
 ; Bumper            ; Input    ; 0             ;
 ; Extra_Pin         ; Input    ; 0             ;
@@ -470,6 +469,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Clk_50MHZ         ; Input    ; 0             ;
 ; Hall              ; Input    ; 1             ;
 ; Button_2          ; Input    ; 1             ;
+; Dip[1]            ; Input    ; 1             ;
 ; Button_1          ; Input    ; 1             ;
 ; CDS_Cell          ; Input    ; 0             ;
 ; Blue_Tooth_TX_Out ; Output   ; --            ;
@@ -506,31 +506,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------------------------------+-------------+---------+-----------------------------+--------+----------------------+------------------+
 ; Name                                                                                                ; Location    ; Fan-Out ; Usage                       ; Global ; Global Resource Used ; Global Line Name ;
 +-----------------------------------------------------------------------------------------------------+-------------+---------+-----------------------------+--------+----------------------+------------------+
-; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[14]                ; LC_X5_Y3_N8 ; 17      ; Clock                       ; yes    ; Global Clock         ; GCLK2            ;
-; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[18]                ; LC_X6_Y3_N2 ; 18      ; Async. clear, Output enable ; no     ; --                   ; --               ;
-; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[20]                ; LC_X6_Y3_N4 ; 2       ; Clock                       ; no     ; --                   ; --               ;
-; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[21]                ; LC_X6_Y3_N5 ; 7       ; Clock                       ; no     ; --                   ; --               ;
-; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[7]                 ; LC_X5_Y3_N1 ; 22      ; Clock                       ; yes    ; Global Clock         ; GCLK1            ;
+; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[14]                ; LC_X3_Y3_N8 ; 17      ; Clock                       ; yes    ; Global Clock         ; GCLK2            ;
+; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[18]                ; LC_X4_Y3_N2 ; 18      ; Async. clear, Output enable ; no     ; --                   ; --               ;
+; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[20]                ; LC_X4_Y3_N4 ; 2       ; Clock                       ; no     ; --                   ; --               ;
+; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[21]                ; LC_X4_Y3_N5 ; 7       ; Clock                       ; no     ; --                   ; --               ;
+; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[7]                 ; LC_X3_Y3_N1 ; 22      ; Clock                       ; yes    ; Global Clock         ; GCLK0            ;
 ; Button_2                                                                                            ; PIN_28      ; 4       ; Async. clear                ; no     ; --                   ; --               ;
 ; CDS_Cell                                                                                            ; PIN_51      ; 1       ; Clock                       ; no     ; --                   ; --               ;
 ; Clk_50MHZ                                                                                           ; PIN_64      ; 22      ; Clock                       ; yes    ; Global Clock         ; GCLK3            ;
-; IR_Sensor:inst11|inst8                                                                              ; LC_X2_Y3_N6 ; 1       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst11|inst9                                                                              ; LC_X2_Y3_N7 ; 4       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst13|inst8                                                                              ; LC_X4_Y1_N3 ; 1       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst13|inst9                                                                              ; LC_X5_Y1_N5 ; 4       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst14|inst8                                                                              ; LC_X4_Y2_N6 ; 1       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst14|inst9                                                                              ; LC_X4_Y2_N4 ; 4       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst20|inst8                                                                              ; LC_X3_Y3_N5 ; 1       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst20|inst9                                                                              ; LC_X3_Y3_N4 ; 2       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst21|inst8                                                                              ; LC_X6_Y1_N3 ; 1       ; Clock                       ; no     ; --                   ; --               ;
-; IR_Sensor:inst21|inst9                                                                              ; LC_X6_Y1_N1 ; 2       ; Clock                       ; no     ; --                   ; --               ;
-; Movement_Block:inst4|inst18~42                                                                      ; LC_X5_Y1_N7 ; 7       ; Async. clear                ; no     ; --                   ; --               ;
-; Movement_Block:inst4|inst32                                                                         ; LC_X5_Y1_N2 ; 1       ; Async. load                 ; no     ; --                   ; --               ;
-; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s0                                          ; LC_X7_Y1_N2 ; 5       ; Latch enable                ; no     ; --                   ; --               ;
-; Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated|cout  ; LC_X3_Y1_N7 ; 14      ; Clock, Sync. load           ; no     ; --                   ; --               ;
-; Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|cout ; LC_X5_Y4_N8 ; 9       ; Clock, Sync. load           ; no     ; --                   ; --               ;
-; Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated|result_node[0]  ; LC_X4_Y3_N1 ; 8       ; Clock                       ; yes    ; Global Clock         ; GCLK0            ;
-; inst19                                                                                              ; LC_X4_Y4_N2 ; 3       ; Async. clear, Clock         ; no     ; --                   ; --               ;
+; Dip[1]                                                                                              ; PIN_69      ; 5       ; Async. clear                ; no     ; --                   ; --               ;
+; IR_Sensor:inst11|inst8                                                                              ; LC_X4_Y4_N7 ; 1       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst11|inst9                                                                              ; LC_X5_Y3_N6 ; 4       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst13|inst8                                                                              ; LC_X3_Y1_N6 ; 1       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst13|inst9                                                                              ; LC_X3_Y1_N7 ; 4       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst14|inst8                                                                              ; LC_X4_Y4_N9 ; 1       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst14|inst9                                                                              ; LC_X4_Y4_N0 ; 4       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst20|inst8                                                                              ; LC_X3_Y4_N4 ; 1       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst20|inst9                                                                              ; LC_X3_Y4_N8 ; 2       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst21|inst8                                                                              ; LC_X3_Y1_N1 ; 1       ; Clock                       ; no     ; --                   ; --               ;
+; IR_Sensor:inst21|inst9                                                                              ; LC_X4_Y1_N5 ; 2       ; Clock                       ; no     ; --                   ; --               ;
+; Movement_Block:inst4|inst18~42                                                                      ; LC_X3_Y2_N9 ; 7       ; Async. clear                ; no     ; --                   ; --               ;
+; Movement_Block:inst4|inst32                                                                         ; LC_X3_Y2_N4 ; 1       ; Async. load                 ; no     ; --                   ; --               ;
+; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s0                                          ; LC_X3_Y2_N2 ; 5       ; Latch enable                ; no     ; --                   ; --               ;
+; Music_Block:inst1|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated|cout  ; LC_X7_Y1_N7 ; 13      ; Clock, Sync. load           ; no     ; --                   ; --               ;
+; Music_Block:inst1|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|cout ; LC_X2_Y4_N8 ; 9       ; Clock, Sync. load           ; no     ; --                   ; --               ;
+; Music_Block:inst1|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated|result_node[0]  ; LC_X6_Y3_N7 ; 8       ; Clock                       ; yes    ; Global Clock         ; GCLK1            ;
+; inst19                                                                                              ; LC_X5_Y1_N4 ; 3       ; Async. clear, Clock         ; no     ; --                   ; --               ;
 +-----------------------------------------------------------------------------------------------------+-------------+---------+-----------------------------+--------+----------------------+------------------+
 
 
@@ -539,10 +540,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------------------+-------------+---------+----------------------+------------------+
 ; Name                                                                                               ; Location    ; Fan-Out ; Global Resource Used ; Global Line Name ;
 +----------------------------------------------------------------------------------------------------+-------------+---------+----------------------+------------------+
-; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[14]               ; LC_X5_Y3_N8 ; 17      ; Global Clock         ; GCLK2            ;
-; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[7]                ; LC_X5_Y3_N1 ; 22      ; Global Clock         ; GCLK1            ;
+; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[14]               ; LC_X3_Y3_N8 ; 17      ; Global Clock         ; GCLK2            ;
+; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[7]                ; LC_X3_Y3_N1 ; 22      ; Global Clock         ; GCLK0            ;
 ; Clk_50MHZ                                                                                          ; PIN_64      ; 22      ; Global Clock         ; GCLK3            ;
-; Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated|result_node[0] ; LC_X4_Y3_N1 ; 8       ; Global Clock         ; GCLK0            ;
+; Music_Block:inst1|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated|result_node[0] ; LC_X6_Y3_N7 ; 8       ; Global Clock         ; GCLK1            ;
 +----------------------------------------------------------------------------------------------------+-------------+---------+----------------------+------------------+
 
 
@@ -551,21 +552,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------------------------------------------+---------+
 ; Name                                                                                                               ; Fan-Out ;
 +--------------------------------------------------------------------------------------------------------------------+---------+
-; Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated|safe_q[0]           ; 31      ;
-; Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated|safe_q[2]           ; 29      ;
-; Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated|safe_q[1]           ; 24      ;
-; Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated|safe_q[4]           ; 21      ;
-; Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated|safe_q[3]           ; 20      ;
+; Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated|safe_q[1]           ; 21      ;
+; Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated|safe_q[2]           ; 20      ;
+; Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated|safe_q[3]           ; 19      ;
+; Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated|safe_q[0]           ; 18      ;
 ; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[18]                               ; 18      ;
 ; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[17]                               ; 18      ;
-; Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_j7h:auto_generated|safe_q[5]           ; 17      ;
-; Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated|cout                 ; 14      ;
+; Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated|safe_q[4]           ; 16      ;
+; Music_Block:inst1|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated|cout                 ; 13      ;
 ; Dip[0]                                                                                                             ; 10      ;
-; Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|cout                ; 9       ;
-; Music_Block:inst7|Song_ROM:inst8|Mux2~160                                                                          ; 9       ;
-; Music_Block:inst7|Song_ROM:inst8|Mux4~169                                                                          ; 8       ;
-; Music_Block:inst7|Song_ROM:inst8|Mux3~186                                                                          ; 8       ;
-; Music_Block:inst7|Song_ROM:inst8|Mux5~161                                                                          ; 8       ;
+; Music_Block:inst1|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|cout                ; 9       ;
+; Music_Block:inst1|Song_ROM:inst1|Mux2~73                                                                           ; 9       ;
+; Music_Block:inst1|Song_ROM:inst1|Mux3~82                                                                           ; 8       ;
+; Music_Block:inst1|Song_ROM:inst1|Mux4~63                                                                           ; 8       ;
+; Music_Block:inst1|Song_ROM:inst1|Mux5~63                                                                           ; 8       ;
 ; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[21]                               ; 7       ;
 ; Movement_Block:inst4|inst18~42                                                                                     ; 7       ;
 ; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|Selector2~197                                                    ; 7       ;
@@ -573,34 +573,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[16]                               ; 7       ;
 ; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s3                                                         ; 6       ;
 ; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s4                                                         ; 6       ;
+; Dip[1]                                                                                                             ; 5       ;
 ; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|counter_cella0~COUT                      ; 5       ;
 ; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|counter_cella5~COUT                      ; 5       ;
 ; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|counter_cella10~COUT                     ; 5       ;
-; Music_Block:inst7|Song_ROM:inst8|Mux8~295                                                                          ; 5       ;
-; Music_Block:inst7|Song_ROM:inst8|Mux8~292                                                                          ; 5       ;
-; Movement_Block:inst4|sideCloseCompare:inst16|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated|op_1~148    ; 5       ;
+; Movement_Block:inst4|distanceCompare:inst30|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated|op_1~63      ; 5       ;
+; Music_Block:inst1|Song_ROM:inst1|Mux2~71                                                                           ; 5       ;
+; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s1                                                         ; 5       ;
 ; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s5                                                         ; 5       ;
 ; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s6                                                         ; 5       ;
 ; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|counter_cella15~COUT                     ; 5       ;
 ; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[15]                               ; 5       ;
 ; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s0                                                         ; 5       ;
 ; Button_2                                                                                                           ; 4       ;
-; Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|counter_cella4~COUT ; 4       ;
-; Music_Block:inst7|Song_ROM:inst8|Mux1~227                                                                          ; 4       ;
-; Music_Block:inst7|Song_ROM:inst8|Mux7~253                                                                          ; 4       ;
-; Music_Block:inst7|Song_ROM:inst8|Mux6~255                                                                          ; 4       ;
+; Music_Block:inst1|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|counter_cella4~COUT ; 4       ;
 ; IR_Sensor:inst13|inst9                                                                                             ; 4       ;
-; IR_Sensor:inst14|inst9                                                                                             ; 4       ;
 ; IR_Sensor:inst11|inst9                                                                                             ; 4       ;
-; Movement_Block:inst4|distanceCompare:inst30|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated|op_1~63      ; 4       ;
-; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s1                                                         ; 4       ;
-; Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated|counter_cella3~COUT  ; 3       ;
-; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|Selector2~198                                                    ; 3       ;
-; Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component|mux_i9c:auto_generated|result_node[2]~86             ; 3       ;
-; Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component|mux_i9c:auto_generated|result_node[3]~85             ; 3       ;
+; IR_Sensor:inst14|inst9                                                                                             ; 4       ;
+; Movement_Block:inst4|sideCloseCompare:inst16|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated|op_1~149    ; 4       ;
+; Music_Block:inst1|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated|counter_cella3~COUT  ; 3       ;
+; Music_Block:inst1|Song_ROM:inst1|Mux6~58                                                                           ; 3       ;
+; Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component|mux_i9c:auto_generated|result_node[3]~86             ; 3       ;
+; Movement_Block:inst4|veryFarCompare:inst29|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated|op_1~83       ; 3       ;
+; Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component|mux_i9c:auto_generated|result_node[2]~85             ; 3       ;
 ; inst19                                                                                                             ; 3       ;
-; Music_Block:inst7|inst28                                                                                           ; 3       ;
+; Music_Block:inst1|inst28                                                                                           ; 3       ;
 ; MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_hlh:auto_generated|safe_q[0]                             ; 3       ;
+; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s2                                                         ; 3       ;
+; Hall                                                                                                               ; 2       ;
+; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|r_fwd                                                            ; 2       ;
 +--------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -609,81 +610,82 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------+--------------------+
 ; Interconnect Resource Type ; Usage              ;
 +----------------------------+--------------------+
-; C4s                        ; 110 / 784 ( 14 % ) ;
-; Direct links               ; 47 / 888 ( 5 % )   ;
+; C4s                        ; 115 / 784 ( 15 % ) ;
+; Direct links               ; 37 / 888 ( 4 % )   ;
 ; Global clocks              ; 4 / 4 ( 100 % )    ;
 ; LAB clocks                 ; 11 / 32 ( 34 % )   ;
-; LUT chains                 ; 17 / 216 ( 8 % )   ;
-; Local interconnects        ; 232 / 888 ( 26 % ) ;
-; R4s                        ; 137 / 704 ( 19 % ) ;
+; LUT chains                 ; 18 / 216 ( 8 % )   ;
+; Local interconnects        ; 205 / 888 ( 23 % ) ;
+; R4s                        ; 105 / 704 ( 15 % ) ;
 +----------------------------+--------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +--------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 9.48) ; Number of LABs  (Total = 21) ;
+; Number of Logic Elements  (Average = 7.67) ; Number of LABs  (Total = 24) ;
 +--------------------------------------------+------------------------------+
-; 1                                          ; 0                            ;
-; 2                                          ; 0                            ;
-; 3                                          ; 0                            ;
-; 4                                          ; 1                            ;
+; 1                                          ; 2                            ;
+; 2                                          ; 3                            ;
+; 3                                          ; 1                            ;
+; 4                                          ; 0                            ;
 ; 5                                          ; 0                            ;
-; 6                                          ; 0                            ;
-; 7                                          ; 0                            ;
-; 8                                          ; 2                            ;
-; 9                                          ; 1                            ;
-; 10                                         ; 17                           ;
+; 6                                          ; 1                            ;
+; 7                                          ; 1                            ;
+; 8                                          ; 0                            ;
+; 9                                          ; 0                            ;
+; 10                                         ; 16                           ;
 +--------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.24) ; Number of LABs  (Total = 21) ;
+; LAB-wide Signals  (Average = 1.25) ; Number of LABs  (Total = 24) ;
 +------------------------------------+------------------------------+
 ; 1 Async. clear                     ; 9                            ;
 ; 1 Async. load                      ; 1                            ;
-; 1 Clock                            ; 13                           ;
-; 2 Clocks                           ; 3                            ;
+; 1 Clock                            ; 16                           ;
+; 2 Clocks                           ; 4                            ;
 +------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 9.67) ; Number of LABs  (Total = 21) ;
+; Number of Signals Sourced  (Average = 7.83) ; Number of LABs  (Total = 24) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
-; 1                                           ; 0                            ;
-; 2                                           ; 0                            ;
-; 3                                           ; 0                            ;
-; 4                                           ; 1                            ;
+; 1                                           ; 2                            ;
+; 2                                           ; 3                            ;
+; 3                                           ; 1                            ;
+; 4                                           ; 0                            ;
 ; 5                                           ; 0                            ;
-; 6                                           ; 0                            ;
-; 7                                           ; 0                            ;
-; 8                                           ; 1                            ;
+; 6                                           ; 1                            ;
+; 7                                           ; 1                            ;
+; 8                                           ; 0                            ;
 ; 9                                           ; 0                            ;
-; 10                                          ; 18                           ;
-; 11                                          ; 1                            ;
+; 10                                          ; 13                           ;
+; 11                                          ; 2                            ;
+; 12                                          ; 1                            ;
 +---------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 4.71) ; Number of LABs  (Total = 21) ;
+; Number of Signals Sourced Out  (Average = 4.08) ; Number of LABs  (Total = 24) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 4                            ;
-; 2                                               ; 1                            ;
-; 3                                               ; 2                            ;
-; 4                                               ; 1                            ;
-; 5                                               ; 4                            ;
+; 1                                               ; 8                            ;
+; 2                                               ; 3                            ;
+; 3                                               ; 1                            ;
+; 4                                               ; 0                            ;
+; 5                                               ; 3                            ;
 ; 6                                               ; 4                            ;
-; 7                                               ; 3                            ;
-; 8                                               ; 1                            ;
-; 9                                               ; 0                            ;
+; 7                                               ; 1                            ;
+; 8                                               ; 2                            ;
+; 9                                               ; 1                            ;
 ; 10                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
@@ -691,28 +693,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 9.14) ; Number of LABs  (Total = 21) ;
+; Number of Distinct Inputs  (Average = 7.46) ; Number of LABs  (Total = 24) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
-; 1                                           ; 1                            ;
-; 2                                           ; 1                            ;
-; 3                                           ; 0                            ;
-; 4                                           ; 1                            ;
-; 5                                           ; 0                            ;
+; 1                                           ; 0                            ;
+; 2                                           ; 5                            ;
+; 3                                           ; 2                            ;
+; 4                                           ; 2                            ;
+; 5                                           ; 3                            ;
 ; 6                                           ; 1                            ;
 ; 7                                           ; 2                            ;
-; 8                                           ; 5                            ;
-; 9                                           ; 2                            ;
-; 10                                          ; 1                            ;
-; 11                                          ; 3                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 1                            ;
+; 10                                          ; 0                            ;
+; 11                                          ; 2                            ;
 ; 12                                          ; 0                            ;
 ; 13                                          ; 1                            ;
-; 14                                          ; 0                            ;
-; 15                                          ; 1                            ;
+; 14                                          ; 2                            ;
+; 15                                          ; 2                            ;
 ; 16                                          ; 0                            ;
-; 17                                          ; 1                            ;
-; 18                                          ; 0                            ;
-; 19                                          ; 1                            ;
+; 17                                          ; 0                            ;
+; 18                                          ; 1                            ;
 +---------------------------------------------+------------------------------+
 
 
@@ -737,7 +738,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
-    Info: Processing started: Fri Apr 19 21:35:15 2019
+    Info: Processing started: Sat Apr 20 22:30:27 2019
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off robotmain -c robotmain
 Info: Selected device EPM240T100C5 for design "robotmain"
 Warning: The high junction temperature operating condition is not set. Assuming a default value of '85'.
@@ -762,18 +763,18 @@ Info: Completed User Assigned Global Signals Promotion Operation
 Info: Automatically promoted signal "Clk_50MHZ" to use Global clock in PIN 64
 Info: Automatically promoted some destinations of signal "BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[7]" to use Global clock
     Info: Destination "BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|counter_cella7" may be non-global or may not use global clock
-    Info: Destination "Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated|result_node[0]" may be non-global or may not use global clock
+    Info: Destination "Music_Block:inst1|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated|result_node[0]" may be non-global or may not use global clock
 Info: Automatically promoted some destinations of signal "BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[14]" to use Global clock
     Info: Destination "BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|counter_cella14" may be non-global or may not use global clock
-    Info: Destination "IR_Sensor:inst11|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4]" may be non-global or may not use global clock
     Info: Destination "IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4]" may be non-global or may not use global clock
+    Info: Destination "IR_Sensor:inst11|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4]" may be non-global or may not use global clock
     Info: Destination "IR_Sensor:inst13|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4]" may be non-global or may not use global clock
-    Info: Destination "IR_Sensor:inst11|inst8" may be non-global or may not use global clock
     Info: Destination "IR_Sensor:inst14|inst8" may be non-global or may not use global clock
+    Info: Destination "IR_Sensor:inst11|inst8" may be non-global or may not use global clock
     Info: Destination "IR_Sensor:inst13|inst8" may be non-global or may not use global clock
     Info: Destination "IR_Sensor:inst21|inst8" may be non-global or may not use global clock
     Info: Destination "IR_Sensor:inst20|inst8" may be non-global or may not use global clock
-Info: Automatically promoted signal "Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated|result_node[0]" to use Global clock
+Info: Automatically promoted signal "Music_Block:inst1|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated|result_node[0]" to use Global clock
 Info: Completed Auto Global Promotion Operation
 Info: Starting register packing
 Info: Fitter is using Normal packing mode for logic elements with Auto setting for Auto Packed Registers logic option
@@ -787,23 +788,23 @@ Warning: Ignored I/O standard assignments to the following nodes
 Warning: Ignored locations or region assignments to the following nodes
     Warning: Node "Blue_Tooth_TX_out" is assigned to location or region, but does not exist in design
 Info: Fitter placement preparation operations beginning
-Info: Fitter placement preparation operations ending: elapsed time is 00:00:01
+Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
 Info: Fitter placement was successful
 Info: Fitter placement operations ending: elapsed time is 00:00:00
 Info: Estimated most critical path is register to pin delay of 5.303 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X6_Y4; Fanout = 3; REG Node = 'Music_Block:inst7|inst28'
-    Info: 2: + IC(1.156 ns) + CELL(0.200 ns) = 1.356 ns; Loc. = LAB_X6_Y4; Fanout = 1; COMB Node = 'Music_Block:inst7|inst3'
+    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X6_Y4; Fanout = 3; REG Node = 'Music_Block:inst1|inst28'
+    Info: 2: + IC(1.156 ns) + CELL(0.200 ns) = 1.356 ns; Loc. = LAB_X6_Y4; Fanout = 1; COMB Node = 'Music_Block:inst1|inst3'
     Info: 3: + IC(1.625 ns) + CELL(2.322 ns) = 5.303 ns; Loc. = PIN_74; Fanout = 0; PIN Node = 'Speaker_74'
     Info: Total cell delay = 2.522 ns ( 47.56 % )
     Info: Total interconnect delay = 2.781 ns ( 52.44 % )
 Info: Fitter routing operations beginning
-Warning: 4 (of 571) connections in the design require a large routing delay to achieve hold requirements. Please check the circuit's timing constraints and clocking methodology, especially multicycles and gated clocks.
+Warning: 4 (of 502) connections in the design require a large routing delay to achieve hold requirements. Please check the circuit's timing constraints and clocking methodology, especially multicycles and gated clocks.
     Info: Found 2 Registers with very high hold time requirements
-        Info: Node "Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s2"
+        Info: Node "Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s1"
         Info: Node "Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s4"
-Info: Average interconnect usage is 16% of the available device resources
-    Info: Peak interconnect usage is 16% of the available device resources in the region that extends from location X0_Y0 to location X8_Y5
+Info: Average interconnect usage is 14% of the available device resources
+    Info: Peak interconnect usage is 14% of the available device resources in the region that extends from location X0_Y0 to location X8_Y5
 Info: Fitter routing operations ending: elapsed time is 00:00:01
 Info: The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info: Optimizations that may affect the design's routability were skipped
@@ -827,15 +828,15 @@ Warning: Following 16 pins have nothing, GND, or VCC driving datain port -- chan
     Info: Pin Right_IR_Sensor has VCC driving its datain port
 Info: Following groups of pins have the same output enable
     Info: Following pins have the same output enable: BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[18] (inverted)
+        Info: Type bidirectional pin BLeft_IR_Sensor uses the 3.3-V LVTTL I/O standard
+        Info: Type bidirectional pin Left_IR_Sensor uses the 3.3-V LVTTL I/O standard
         Info: Type bidirectional pin BRight_IR_Sensor uses the 3.3-V LVTTL I/O standard
         Info: Type bidirectional pin Front_IR_Sensor uses the 3.3-V LVTTL I/O standard
         Info: Type bidirectional pin Right_IR_Sensor uses the 3.3-V LVTTL I/O standard
-        Info: Type bidirectional pin BLeft_IR_Sensor uses the 3.3-V LVTTL I/O standard
-        Info: Type bidirectional pin Left_IR_Sensor uses the 3.3-V LVTTL I/O standard
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info: Quartus II Fitter was successful. 0 errors, 10 warnings
-    Info: Allocated 278 megabytes of memory during processing
-    Info: Processing ended: Fri Apr 19 21:35:19 2019
-    Info: Elapsed time: 00:00:04
+    Info: Allocated 277 megabytes of memory during processing
+    Info: Processing ended: Sat Apr 20 22:30:30 2019
+    Info: Elapsed time: 00:00:03
 
 
