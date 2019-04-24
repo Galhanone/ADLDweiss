@@ -1630,7 +1630,7 @@ data0
 3
 }
 # hierarchies {
-Music_Block:inst1|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated
+Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2381,7 +2381,7 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-Music_Block:inst1|Duration_ROM:inst6
+Music_Block:inst7|Duration_ROM:inst6
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
@@ -2414,7 +2414,7 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-Music_Block:inst1|Notes:inst7
+Music_Block:inst7|Notes:inst7
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
@@ -2500,7 +2500,7 @@ clock
 7f888b135ddf66f0653c44cb18ac5
 }
 # hierarchies {
-Music_Block:inst1|durCounter:inst31
+Music_Block:inst7|durCounter:inst31
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2666,7 +2666,7 @@ e61874547688138e6fc0b49ff8760
 2251b94d26afaa53635df1aff6b6e7be
 }
 # hierarchies {
-Music_Block:inst1|durCounter:inst31|lpm_counter:lpm_counter_component
+Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2732,7 +2732,7 @@ clock
 3
 }
 # hierarchies {
-Music_Block:inst1|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated
+Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2790,7 +2790,7 @@ clock
 7f888b135ddf66f0653c44cb18ac5
 }
 # hierarchies {
-Music_Block:inst1|freqCounter:inst30
+Music_Block:inst7|freqCounter:inst30
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -2968,7 +2968,7 @@ e61874547688138e6fc0b49ff8760
 2251b94d26afaa53635df1aff6b6e7be
 }
 # hierarchies {
-Music_Block:inst1|freqCounter:inst30|lpm_counter:lpm_counter_component
+Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3046,7 +3046,7 @@ clock
 3
 }
 # hierarchies {
-Music_Block:inst1|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated
+Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3092,7 +3092,7 @@ data0
 c22bfd353214c01495b560fc34e47d79
 }
 # hierarchies {
-Music_Block:inst1|octaveMux:inst10
+Music_Block:inst7|octaveMux:inst10
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3132,7 +3132,7 @@ aneb
 aec4ea1b78f4cda1c3effe18f1abbf63
 }
 # hierarchies {
-Music_Block:inst1|restCompare:inst11
+Music_Block:inst7|restCompare:inst11
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3250,7 +3250,7 @@ f39123b8592ab2dac019716e56b3ec18
 da21447b8e66c26bd34c85b6cdda8169
 }
 # hierarchies {
-Music_Block:inst1|restCompare:inst11|lpm_compare:lpm_compare_component
+Music_Block:inst7|restCompare:inst11|lpm_compare:lpm_compare_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -3286,7 +3286,7 @@ aneb
 3
 }
 # hierarchies {
-Music_Block:inst1|restCompare:inst11|lpm_compare:lpm_compare_component|cmpr_rci:auto_generated
+Music_Block:inst7|restCompare:inst11|lpm_compare:lpm_compare_component|cmpr_rci:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -4029,8 +4029,8 @@ data0
 3
 }
 # hierarchies {
-Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component|mux_i9c:auto_generated
-Movement_Block:inst4|wallMux:inst34|lpm_mux:lpm_mux_component|mux_i9c:auto_generated
+Movement_Block:inst3|wallMux:inst38|lpm_mux:lpm_mux_component|mux_i9c:auto_generated
+Movement_Block:inst3|wallMux:inst34|lpm_mux:lpm_mux_component|mux_i9c:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -5155,8 +5155,8 @@ alb
 3
 }
 # hierarchies {
-Movement_Block:inst4|distanceCompare:inst30|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated
-Movement_Block:inst4|sideCloseCompare:inst16|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated
+Movement_Block:inst3|distanceCompare:inst30|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated
+Movement_Block:inst3|sideCloseCompare:inst16|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -5274,8 +5274,8 @@ f39123b8592ab2dac019716e56b3ec18
 da21447b8e66c26bd34c85b6cdda8169
 }
 # hierarchies {
-Movement_Block:inst4|distanceCompare:inst30|lpm_compare:lpm_compare_component
-Movement_Block:inst4|sideCloseCompare:inst16|lpm_compare:lpm_compare_component
+Movement_Block:inst3|distanceCompare:inst30|lpm_compare:lpm_compare_component
+Movement_Block:inst3|sideCloseCompare:inst16|lpm_compare:lpm_compare_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -5438,9 +5438,9 @@ agb
 3
 }
 # hierarchies {
-Movement_Block:inst4|sideFarCompare:inst17|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated
-Movement_Block:inst4|veryFarCompare:inst29|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated
-Movement_Block:inst4|backFarCompare:inst33|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated
+Movement_Block:inst3|sideFarCompare:inst17|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated
+Movement_Block:inst3|veryFarCompare:inst29|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated
+Movement_Block:inst3|backFarCompare:inst33|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -5700,8 +5700,8 @@ f172666ca13e5e31e17e3f6cb35af52
 8e8df160d449a63ec15dc86ecf2b373f
 }
 # hierarchies {
-Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component
-Movement_Block:inst4|wallMux:inst34|lpm_mux:lpm_mux_component
+Movement_Block:inst3|wallMux:inst38|lpm_mux:lpm_mux_component
+Movement_Block:inst3|wallMux:inst34|lpm_mux:lpm_mux_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -6143,7 +6143,7 @@ f172666ca13e5e31e17e3f6cb35af52
 8e8df160d449a63ec15dc86ecf2b373f
 }
 # hierarchies {
-Music_Block:inst1|octaveMux:inst10|lpm_mux:lpm_mux_component
+Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -6329,7 +6329,7 @@ alb
 aec4ea1b78f4cda1c3effe18f1abbf63
 }
 # hierarchies {
-Movement_Block:inst4|sideCloseCompare:inst16
+Movement_Block:inst3|sideCloseCompare:inst16
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -6394,7 +6394,7 @@ alb
 aec4ea1b78f4cda1c3effe18f1abbf63
 }
 # hierarchies {
-Movement_Block:inst4|distanceCompare:inst30
+Movement_Block:inst3|distanceCompare:inst30
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -6512,7 +6512,7 @@ f39123b8592ab2dac019716e56b3ec18
 da21447b8e66c26bd34c85b6cdda8169
 }
 # hierarchies {
-Movement_Block:inst4|veryFarCompare:inst29|lpm_compare:lpm_compare_component
+Movement_Block:inst3|veryFarCompare:inst29|lpm_compare:lpm_compare_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -6630,8 +6630,8 @@ f39123b8592ab2dac019716e56b3ec18
 da21447b8e66c26bd34c85b6cdda8169
 }
 # hierarchies {
-Movement_Block:inst4|sideFarCompare:inst17|lpm_compare:lpm_compare_component
-Movement_Block:inst4|backFarCompare:inst33|lpm_compare:lpm_compare_component
+Movement_Block:inst3|sideFarCompare:inst17|lpm_compare:lpm_compare_component
+Movement_Block:inst3|backFarCompare:inst33|lpm_compare:lpm_compare_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -7182,8 +7182,8 @@ data0x0
 c22bfd353214c01495b560fc34e47d79
 }
 # hierarchies {
-Movement_Block:inst4|wallMux:inst38
-Movement_Block:inst4|wallMux:inst34
+Movement_Block:inst3|wallMux:inst38
+Movement_Block:inst3|wallMux:inst34
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -7260,7 +7260,7 @@ agb
 aec4ea1b78f4cda1c3effe18f1abbf63
 }
 # hierarchies {
-Movement_Block:inst4|sideFarCompare:inst17
+Movement_Block:inst3|sideFarCompare:inst17
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -7320,7 +7320,7 @@ agb
 aec4ea1b78f4cda1c3effe18f1abbf63
 }
 # hierarchies {
-Movement_Block:inst4|backFarCompare:inst33
+Movement_Block:inst3|backFarCompare:inst33
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -7418,7 +7418,7 @@ agb
 aec4ea1b78f4cda1c3effe18f1abbf63
 }
 # hierarchies {
-Movement_Block:inst4|veryFarCompare:inst29
+Movement_Block:inst3|veryFarCompare:inst29
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -7451,34 +7451,11 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-Movement_Block:inst4|obstacle_avoidance_FSM:inst1
+Movement_Block:inst3|obstacle_avoidance_FSM:inst1
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
 9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-Movement_Block
-# storage
-db|robotmain.(46).cnf
-db|robotmain.(46).cnf
-# case_insensitive
-# source_file
-Movement_Block.bdf
-b4533f7e1642f5c7d9e06a1c287df2
-25
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-Movement_Block:inst4
-}
-# lmf
-..|..|..|..|..|altera|72sp3|quartus|lmf|
-d41d8cd98f0b24e980998ecf8427e
 # macro_sequence
 
 # end
@@ -7682,29 +7659,6 @@ d41d8cd98f0b24e980998ecf8427e
 
 # end
 # entity
-Music_Block
-# storage
-db|robotmain.(30).cnf
-db|robotmain.(30).cnf
-# case_insensitive
-# source_file
-Music_Block.bdf
-70ba9a65d93f5ee773a7b1f9a6d389e0
-25
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-Music_Block:inst1
-}
-# lmf
-..|..|..|..|..|altera|72sp3|quartus|lmf|
-d41d8cd98f0b24e980998ecf8427e
-# macro_sequence
-
-# end
-# entity
 Song_ROM
 # storage
 db|robotmain.(35).cnf
@@ -7729,7 +7683,7 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-Music_Block:inst1|Song_ROM:inst1
+Music_Block:inst7|Song_ROM:inst1
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
@@ -7775,7 +7729,7 @@ aclr
 7f888b135ddf66f0653c44cb18ac5
 }
 # hierarchies {
-Music_Block:inst1|noteCounter:inst29
+Music_Block:inst7|noteCounter:inst29
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -7917,7 +7871,7 @@ e61874547688138e6fc0b49ff8760
 2251b94d26afaa53635df1aff6b6e7be
 }
 # hierarchies {
-Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component
+Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -7959,7 +7913,7 @@ aclr
 3
 }
 # hierarchies {
-Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated
+Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -7993,7 +7947,7 @@ aeb
 aec4ea1b78f4cda1c3effe18f1abbf63
 }
 # hierarchies {
-Music_Block:inst1|DoneCompare:inst8
+Music_Block:inst7|DoneCompare:inst8
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -8099,7 +8053,7 @@ f39123b8592ab2dac019716e56b3ec18
 da21447b8e66c26bd34c85b6cdda8169
 }
 # hierarchies {
-Music_Block:inst1|DoneCompare:inst8|lpm_compare:lpm_compare_component
+Music_Block:inst7|DoneCompare:inst8|lpm_compare:lpm_compare_component
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -8135,7 +8089,7 @@ aeb
 3
 }
 # hierarchies {
-Music_Block:inst1|DoneCompare:inst8|lpm_compare:lpm_compare_component|cmpr_7qi:auto_generated
+Music_Block:inst7|DoneCompare:inst8|lpm_compare:lpm_compare_component|cmpr_7qi:auto_generated
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
@@ -8151,7 +8105,7 @@ db|robotmain.(0).cnf
 # case_insensitive
 # source_file
 robotmain.bdf
-bbd0218b7088fe6e47135b1472ebb5b
+80b826c6e41989f6aedc1784e8da7ef7
 25
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -8159,6 +8113,85 @@ AUTO
 }
 # hierarchies {
 |
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+Movement_Block
+# storage
+db|robotmain.(30).cnf
+db|robotmain.(30).cnf
+# case_insensitive
+# source_file
+Movement_Block.bdf
+fbc48c6b2e6fdf4604c7d1d32843125
+25
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Movement_Block:inst3
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+dark_spot
+# storage
+db|robotmain.(46).cnf
+db|robotmain.(46).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+dark_spot.vhd
+66e072908d4ddd62f31fe4c7aa723a
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+dark_spot:inst4
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+Music_Block
+# storage
+db|robotmain.(111).cnf
+db|robotmain.(111).cnf
+# case_insensitive
+# source_file
+Music_Block.bdf
+1df741ad158ccdc98235dda3d9aff
+25
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Music_Block:inst7
 }
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|

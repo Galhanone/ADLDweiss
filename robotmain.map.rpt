@@ -1,5 +1,5 @@
 Analysis & Synthesis report for robotmain
-Wed Apr 24 16:29:05 2019
+Wed Apr 24 17:06:56 2019
 Quartus II Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
 
 
@@ -12,56 +12,57 @@ Quartus II Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
   4. Analysis & Synthesis Source Files Read
   5. Analysis & Synthesis Resource Usage Summary
   6. Analysis & Synthesis Resource Utilization by Entity
-  7. State Machine - |robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state
+  7. State Machine - |robotmain|Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state
   8. User-Specified and Inferred Latches
   9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Source assignments for BigCount:inst23|lpm_counter:lpm_counter_component
- 13. Source assignments for Music_Block:inst1|durCounter:inst31|lpm_counter:lpm_counter_component
- 14. Source assignments for Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component
- 15. Source assignments for Music_Block:inst1|freqCounter:inst30|lpm_counter:lpm_counter_component
- 16. Source assignments for MusicCounter:inst6|lpm_counter:lpm_counter_component
- 17. Parameter Settings for User Entity Instance: Digit_decode:inst26|lpm_decode:lpm_decode_component
- 18. Parameter Settings for User Entity Instance: BigCount:inst23|lpm_counter:lpm_counter_component
- 19. Parameter Settings for User Entity Instance: Movement_Block:inst4|distanceCompare:inst30|lpm_compare:lpm_compare_component
- 20. Parameter Settings for User Entity Instance: Movement_Block:inst4|sideCloseCompare:inst16|lpm_compare:lpm_compare_component
- 21. Parameter Settings for User Entity Instance: Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component
- 22. Parameter Settings for User Entity Instance: Movement_Block:inst4|sideFarCompare:inst17|lpm_compare:lpm_compare_component
- 23. Parameter Settings for User Entity Instance: Movement_Block:inst4|veryFarCompare:inst29|lpm_compare:lpm_compare_component
- 24. Parameter Settings for User Entity Instance: Movement_Block:inst4|backFarCompare:inst33|lpm_compare:lpm_compare_component
- 25. Parameter Settings for User Entity Instance: Movement_Block:inst4|wallMux:inst34|lpm_mux:lpm_mux_component
- 26. Parameter Settings for User Entity Instance: IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component
- 27. Parameter Settings for User Entity Instance: IR_Sensor:inst20|bus_and:inst7|lpm_and:lpm_and_component
- 28. Parameter Settings for User Entity Instance: IR_Sensor:inst20|bus_and:inst6|lpm_and:lpm_and_component
- 29. Parameter Settings for User Entity Instance: IR_Sensor:inst20|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
- 30. Parameter Settings for User Entity Instance: IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component
- 31. Parameter Settings for User Entity Instance: IR_Sensor:inst21|bus_and:inst7|lpm_and:lpm_and_component
- 32. Parameter Settings for User Entity Instance: IR_Sensor:inst21|bus_and:inst6|lpm_and:lpm_and_component
- 33. Parameter Settings for User Entity Instance: IR_Sensor:inst21|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
- 34. Parameter Settings for User Entity Instance: IR_Sensor:inst13|reg8:inst12|lpm_ff:lpm_ff_component
- 35. Parameter Settings for User Entity Instance: IR_Sensor:inst13|bus_and:inst7|lpm_and:lpm_and_component
- 36. Parameter Settings for User Entity Instance: IR_Sensor:inst13|bus_and:inst6|lpm_and:lpm_and_component
- 37. Parameter Settings for User Entity Instance: IR_Sensor:inst13|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
- 38. Parameter Settings for User Entity Instance: IR_Sensor:inst11|reg8:inst12|lpm_ff:lpm_ff_component
- 39. Parameter Settings for User Entity Instance: IR_Sensor:inst11|bus_and:inst7|lpm_and:lpm_and_component
- 40. Parameter Settings for User Entity Instance: IR_Sensor:inst11|bus_and:inst6|lpm_and:lpm_and_component
- 41. Parameter Settings for User Entity Instance: IR_Sensor:inst11|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
- 42. Parameter Settings for User Entity Instance: IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component
- 43. Parameter Settings for User Entity Instance: IR_Sensor:inst14|bus_and:inst7|lpm_and:lpm_and_component
- 44. Parameter Settings for User Entity Instance: IR_Sensor:inst14|bus_and:inst6|lpm_and:lpm_and_component
- 45. Parameter Settings for User Entity Instance: IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
- 46. Parameter Settings for User Entity Instance: Display_mux:inst24|lpm_mux:lpm_mux_component
- 47. Parameter Settings for User Entity Instance: Colon_mux:inst25|lpm_mux:lpm_mux_component
- 48. Parameter Settings for User Entity Instance: Music_Block:inst1|durCounter:inst31|lpm_counter:lpm_counter_component
- 49. Parameter Settings for User Entity Instance: Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component
- 50. Parameter Settings for User Entity Instance: Music_Block:inst1|restCompare:inst11|lpm_compare:lpm_compare_component
- 51. Parameter Settings for User Entity Instance: Music_Block:inst1|freqCounter:inst30|lpm_counter:lpm_counter_component
- 52. Parameter Settings for User Entity Instance: Music_Block:inst1|octaveMux:inst10|lpm_mux:lpm_mux_component
- 53. Parameter Settings for User Entity Instance: Music_Block:inst1|DoneCompare:inst8|lpm_compare:lpm_compare_component
- 54. Parameter Settings for User Entity Instance: MusicCounter:inst6|lpm_counter:lpm_counter_component
- 55. lpm_shiftreg Parameter Settings by Entity Instance
- 56. Analysis & Synthesis Messages
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for BigCount:inst23|lpm_counter:lpm_counter_component
+ 14. Source assignments for Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component
+ 15. Source assignments for Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component
+ 16. Source assignments for Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component
+ 17. Source assignments for MusicCounter:inst6|lpm_counter:lpm_counter_component
+ 18. Parameter Settings for User Entity Instance: Digit_decode:inst26|lpm_decode:lpm_decode_component
+ 19. Parameter Settings for User Entity Instance: BigCount:inst23|lpm_counter:lpm_counter_component
+ 20. Parameter Settings for User Entity Instance: Movement_Block:inst3|distanceCompare:inst30|lpm_compare:lpm_compare_component
+ 21. Parameter Settings for User Entity Instance: Movement_Block:inst3|sideCloseCompare:inst16|lpm_compare:lpm_compare_component
+ 22. Parameter Settings for User Entity Instance: Movement_Block:inst3|wallMux:inst38|lpm_mux:lpm_mux_component
+ 23. Parameter Settings for User Entity Instance: Movement_Block:inst3|sideFarCompare:inst17|lpm_compare:lpm_compare_component
+ 24. Parameter Settings for User Entity Instance: Movement_Block:inst3|veryFarCompare:inst29|lpm_compare:lpm_compare_component
+ 25. Parameter Settings for User Entity Instance: Movement_Block:inst3|backFarCompare:inst33|lpm_compare:lpm_compare_component
+ 26. Parameter Settings for User Entity Instance: Movement_Block:inst3|wallMux:inst34|lpm_mux:lpm_mux_component
+ 27. Parameter Settings for User Entity Instance: Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component
+ 28. Parameter Settings for User Entity Instance: Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component
+ 29. Parameter Settings for User Entity Instance: Music_Block:inst7|restCompare:inst11|lpm_compare:lpm_compare_component
+ 30. Parameter Settings for User Entity Instance: Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component
+ 31. Parameter Settings for User Entity Instance: Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component
+ 32. Parameter Settings for User Entity Instance: Music_Block:inst7|DoneCompare:inst8|lpm_compare:lpm_compare_component
+ 33. Parameter Settings for User Entity Instance: MusicCounter:inst6|lpm_counter:lpm_counter_component
+ 34. Parameter Settings for User Entity Instance: IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component
+ 35. Parameter Settings for User Entity Instance: IR_Sensor:inst20|bus_and:inst7|lpm_and:lpm_and_component
+ 36. Parameter Settings for User Entity Instance: IR_Sensor:inst20|bus_and:inst6|lpm_and:lpm_and_component
+ 37. Parameter Settings for User Entity Instance: IR_Sensor:inst20|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
+ 38. Parameter Settings for User Entity Instance: IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component
+ 39. Parameter Settings for User Entity Instance: IR_Sensor:inst21|bus_and:inst7|lpm_and:lpm_and_component
+ 40. Parameter Settings for User Entity Instance: IR_Sensor:inst21|bus_and:inst6|lpm_and:lpm_and_component
+ 41. Parameter Settings for User Entity Instance: IR_Sensor:inst21|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
+ 42. Parameter Settings for User Entity Instance: IR_Sensor:inst13|reg8:inst12|lpm_ff:lpm_ff_component
+ 43. Parameter Settings for User Entity Instance: IR_Sensor:inst13|bus_and:inst7|lpm_and:lpm_and_component
+ 44. Parameter Settings for User Entity Instance: IR_Sensor:inst13|bus_and:inst6|lpm_and:lpm_and_component
+ 45. Parameter Settings for User Entity Instance: IR_Sensor:inst13|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
+ 46. Parameter Settings for User Entity Instance: IR_Sensor:inst11|reg8:inst12|lpm_ff:lpm_ff_component
+ 47. Parameter Settings for User Entity Instance: IR_Sensor:inst11|bus_and:inst7|lpm_and:lpm_and_component
+ 48. Parameter Settings for User Entity Instance: IR_Sensor:inst11|bus_and:inst6|lpm_and:lpm_and_component
+ 49. Parameter Settings for User Entity Instance: IR_Sensor:inst11|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
+ 50. Parameter Settings for User Entity Instance: IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component
+ 51. Parameter Settings for User Entity Instance: IR_Sensor:inst14|bus_and:inst7|lpm_and:lpm_and_component
+ 52. Parameter Settings for User Entity Instance: IR_Sensor:inst14|bus_and:inst6|lpm_and:lpm_and_component
+ 53. Parameter Settings for User Entity Instance: IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component
+ 54. Parameter Settings for User Entity Instance: Display_mux:inst24|lpm_mux:lpm_mux_component
+ 55. Parameter Settings for User Entity Instance: Colon_mux:inst25|lpm_mux:lpm_mux_component
+ 56. lpm_shiftreg Parameter Settings by Entity Instance
+ 57. Analysis & Synthesis Messages
 
 
 
@@ -87,12 +88,12 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Apr 24 16:29:05 2019        ;
+; Analysis & Synthesis Status ; Successful - Wed Apr 24 17:06:56 2019        ;
 ; Quartus II Version          ; 7.2 Build 207 03/18/2008 SP 3 SJ Web Edition ;
 ; Revision Name               ; robotmain                                    ;
 ; Top-level Entity Name       ; robotmain                                    ;
 ; Family                      ; MAX II                                       ;
-; Total logic elements        ; 198                                          ;
+; Total logic elements        ; 149                                          ;
 ; Total pins                  ; 37                                           ;
 ; Total virtual pins          ; 0                                            ;
 ; Total memory bits           ; 0                                            ;
@@ -183,6 +184,7 @@ applicable agreement for further details.
 ; Music_Block.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Music_Block.bdf            ;
 ; IR_Sensor.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/IR_Sensor.bdf              ;
 ; Movement_Block.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Movement_Block.bdf         ;
+; dark_spot.vhd                    ; yes             ; User VHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/dark_spot.vhd              ;
 ; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_counter.inc          ;
 ; lpm_mux.inc                      ; yes             ; Other                              ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_mux.inc              ;
 ; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_compare.inc          ;
@@ -218,6 +220,15 @@ applicable agreement for further details.
 ; db/cmpr_bqi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cmpr_bqi.tdf            ;
 ; veryFarCompare.tdf               ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/veryFarCompare.tdf         ;
 ; backFarCompare.tdf               ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/backFarCompare.tdf         ;
+; db/cntr_esi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_esi.tdf            ;
+; db/cntr_klh.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_klh.tdf            ;
+; db/cmpr_rci.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cmpr_rci.tdf            ;
+; db/cntr_gsi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_gsi.tdf            ;
+; db/mux_h9c.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/mux_h9c.tdf             ;
+; DoneCompare.tdf                  ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/DoneCompare.tdf            ;
+; db/cmpr_7qi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cmpr_7qi.tdf            ;
+; MusicCounter.vhd                 ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/MusicCounter.vhd           ;
+; db/cntr_hlh.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_hlh.tdf            ;
 ; reg8.tdf                         ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/reg8.tdf                   ;
 ; lpm_ff.inc                       ; yes             ; Other                              ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_ff.inc               ;
 ; lpm_ff.tdf                       ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_ff.tdf               ;
@@ -230,15 +241,6 @@ applicable agreement for further details.
 ; db/mux_vld.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/mux_vld.tdf             ;
 ; Colon_mux.vhd                    ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Colon_mux.vhd              ;
 ; db/mux_sld.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/mux_sld.tdf             ;
-; db/cntr_esi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_esi.tdf            ;
-; db/cntr_klh.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_klh.tdf            ;
-; db/cmpr_rci.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cmpr_rci.tdf            ;
-; db/cntr_gsi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_gsi.tdf            ;
-; db/mux_h9c.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/mux_h9c.tdf             ;
-; DoneCompare.tdf                  ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/DoneCompare.tdf            ;
-; db/cmpr_7qi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cmpr_7qi.tdf            ;
-; MusicCounter.vhd                 ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/MusicCounter.vhd           ;
-; db/cntr_hlh.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_hlh.tdf            ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+
 
 
@@ -247,33 +249,33 @@ applicable agreement for further details.
 +---------------------------------------------+-------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                               ;
 +---------------------------------------------+-------------------------------------------------------------------------------------+
-; Total logic elements                        ; 198                                                                                 ;
-;     -- Combinational with no register       ; 103                                                                                 ;
+; Total logic elements                        ; 149                                                                                 ;
+;     -- Combinational with no register       ; 58                                                                                  ;
 ;     -- Register only                        ; 32                                                                                  ;
-;     -- Combinational with a register        ; 63                                                                                  ;
+;     -- Combinational with a register        ; 59                                                                                  ;
 ;                                             ;                                                                                     ;
 ; Logic element usage by number of LUT inputs ;                                                                                     ;
-;     -- 4 input functions                    ; 59                                                                                  ;
-;     -- 3 input functions                    ; 27                                                                                  ;
-;     -- 2 input functions                    ; 59                                                                                  ;
-;     -- 1 input functions                    ; 13                                                                                  ;
-;     -- 0 input functions                    ; 8                                                                                   ;
+;     -- 4 input functions                    ; 30                                                                                  ;
+;     -- 3 input functions                    ; 15                                                                                  ;
+;     -- 2 input functions                    ; 51                                                                                  ;
+;     -- 1 input functions                    ; 12                                                                                  ;
+;     -- 0 input functions                    ; 9                                                                                   ;
 ;                                             ;                                                                                     ;
 ; Logic elements by mode                      ;                                                                                     ;
-;     -- normal mode                          ; 159                                                                                 ;
-;     -- arithmetic mode                      ; 39                                                                                  ;
+;     -- normal mode                          ; 113                                                                                 ;
+;     -- arithmetic mode                      ; 36                                                                                  ;
 ;     -- qfbk mode                            ; 0                                                                                   ;
 ;     -- register cascade mode                ; 0                                                                                   ;
 ;     -- synchronous clear/load mode          ; 14                                                                                  ;
-;     -- asynchronous clear/load mode         ; 21                                                                                  ;
+;     -- asynchronous clear/load mode         ; 17                                                                                  ;
 ;                                             ;                                                                                     ;
-; Total registers                             ; 95                                                                                  ;
-; Total logic cells in carry chains           ; 43                                                                                  ;
+; Total registers                             ; 91                                                                                  ;
+; Total logic cells in carry chains           ; 40                                                                                  ;
 ; I/O pins                                    ; 37                                                                                  ;
 ; Maximum fan-out node                        ; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[7] ;
-; Maximum fan-out                             ; 23                                                                                  ;
-; Total fan-out                               ; 639                                                                                 ;
-; Average fan-out                             ; 2.72                                                                                ;
+; Maximum fan-out                             ; 22                                                                                  ;
+; Total fan-out                               ; 454                                                                                 ;
+; Average fan-out                             ; 2.44                                                                                ;
 +---------------------------------------------+-------------------------------------------------------------------------------------+
 
 
@@ -282,7 +284,7 @@ applicable agreement for further details.
 +------------------------------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                     ; Logic Cells ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                               ; Library Name ;
 +------------------------------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------------------------------------+--------------+
-; |robotmain                                     ; 198 (2)     ; 95           ; 0           ; 0            ; 0       ; 0         ; 0         ; 37   ; 0            ; 103 (0)      ; 32 (1)            ; 63 (1)           ; 43 (0)          ; 0 (0)      ; |robotmain                                                                                                        ; work         ;
+; |robotmain                                     ; 149 (3)     ; 91           ; 0           ; 0            ; 0       ; 0         ; 0         ; 37   ; 0            ; 58 (1)       ; 32 (1)            ; 59 (1)           ; 40 (0)          ; 0 (0)      ; |robotmain                                                                                                        ; work         ;
 ;    |BigCount:inst23|                           ; 22 (0)      ; 22           ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 22 (0)           ; 22 (0)          ; 0 (0)      ; |robotmain|BigCount:inst23                                                                                        ; work         ;
 ;       |lpm_counter:lpm_counter_component|      ; 22 (0)      ; 22           ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 22 (0)           ; 22 (0)          ; 0 (0)      ; |robotmain|BigCount:inst23|lpm_counter:lpm_counter_component                                                      ; work         ;
 ;          |cntr_49h:auto_generated|             ; 22 (22)     ; 22           ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 22 (22)          ; 22 (22)         ; 0 (0)      ; |robotmain|BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated                              ; work         ;
@@ -329,51 +331,40 @@ applicable agreement for further details.
 ;          |lpm_and:lpm_and_component|           ; 1 (1)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst21|bus_and:inst6|lpm_and:lpm_and_component                                               ; work         ;
 ;       |reg8:inst12|                            ; 2 (0)       ; 2            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst21|reg8:inst12                                                                           ; work         ;
 ;          |lpm_ff:lpm_ff_component|             ; 2 (2)       ; 2            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component                                                   ; work         ;
-;    |Movement_Block:inst4|                      ; 32 (4)      ; 9            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 23 (2)       ; 0 (0)             ; 9 (2)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4                                                                                   ; work         ;
-;       |backFarCompare:inst33|                  ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|backFarCompare:inst33                                                             ; work         ;
-;          |lpm_compare:lpm_compare_component|   ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|backFarCompare:inst33|lpm_compare:lpm_compare_component                           ; work         ;
-;             |cmpr_bqi:auto_generated|          ; 2 (2)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|backFarCompare:inst33|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated   ; work         ;
-;       |distanceCompare:inst30|                 ; 1 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|distanceCompare:inst30                                                            ; work         ;
-;          |lpm_compare:lpm_compare_component|   ; 1 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|distanceCompare:inst30|lpm_compare:lpm_compare_component                          ; work         ;
-;             |cmpr_gqi:auto_generated|          ; 1 (1)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|distanceCompare:inst30|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated  ; work         ;
-;       |obstacle_avoidance_FSM:inst1|           ; 19 (19)     ; 7            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1                                                      ; work         ;
-;       |sideCloseCompare:inst16|                ; 3 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|sideCloseCompare:inst16                                                           ; work         ;
-;          |lpm_compare:lpm_compare_component|   ; 3 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|sideCloseCompare:inst16|lpm_compare:lpm_compare_component                         ; work         ;
-;             |cmpr_gqi:auto_generated|          ; 3 (3)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|sideCloseCompare:inst16|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated ; work         ;
-;       |veryFarCompare:inst29|                  ; 1 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|veryFarCompare:inst29                                                             ; work         ;
-;          |lpm_compare:lpm_compare_component|   ; 1 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|veryFarCompare:inst29|lpm_compare:lpm_compare_component                           ; work         ;
-;             |cmpr_bqi:auto_generated|          ; 1 (1)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|veryFarCompare:inst29|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated   ; work         ;
-;       |wallMux:inst38|                         ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|wallMux:inst38                                                                    ; work         ;
-;          |lpm_mux:lpm_mux_component|           ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component                                          ; work         ;
-;             |mux_i9c:auto_generated|           ; 2 (2)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component|mux_i9c:auto_generated                   ; work         ;
-;    |MusicCounter:inst6|                        ; 1 (0)       ; 1            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|MusicCounter:inst6                                                                                     ; work         ;
-;       |lpm_counter:lpm_counter_component|      ; 1 (0)       ; 1            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component                                                   ; work         ;
-;          |cntr_hlh:auto_generated|             ; 1 (1)       ; 1            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_hlh:auto_generated                           ; work         ;
-;    |Music_Block:inst1|                         ; 76 (4)      ; 20           ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 56 (3)       ; 0 (0)             ; 20 (1)           ; 21 (0)          ; 0 (0)      ; |robotmain|Music_Block:inst1                                                                                      ; work         ;
-;       |Duration_ROM:inst6|                     ; 9 (9)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|Duration_ROM:inst6                                                                   ; work         ;
-;       |Notes:inst7|                            ; 7 (7)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|Notes:inst7                                                                          ; work         ;
-;       |Song_ROM:inst1|                         ; 33 (33)     ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 33 (33)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|Song_ROM:inst1                                                                       ; work         ;
-;       |durCounter:inst31|                      ; 7 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 6 (0)            ; 7 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|durCounter:inst31                                                                    ; work         ;
-;          |lpm_counter:lpm_counter_component|   ; 7 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 6 (0)            ; 7 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|durCounter:inst31|lpm_counter:lpm_counter_component                                  ; work         ;
-;             |cntr_esi:auto_generated|          ; 7 (7)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 6 (6)            ; 7 (7)           ; 0 (0)      ; |robotmain|Music_Block:inst1|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated          ; work         ;
-;       |freqCounter:inst30|                     ; 9 (0)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 8 (0)            ; 9 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|freqCounter:inst30                                                                   ; work         ;
-;          |lpm_counter:lpm_counter_component|   ; 9 (0)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 8 (0)            ; 9 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|freqCounter:inst30|lpm_counter:lpm_counter_component                                 ; work         ;
-;             |cntr_gsi:auto_generated|          ; 9 (9)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 8 (8)            ; 9 (9)           ; 0 (0)      ; |robotmain|Music_Block:inst1|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated         ; work         ;
-;       |noteCounter:inst29|                     ; 5 (0)       ; 5            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (0)            ; 5 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|noteCounter:inst29                                                                   ; work         ;
-;          |lpm_counter:lpm_counter_component|   ; 5 (0)       ; 5            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (0)            ; 5 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component                                 ; work         ;
-;             |cntr_klh:auto_generated|          ; 5 (5)       ; 5            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (5)            ; 5 (5)           ; 0 (0)      ; |robotmain|Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated         ; work         ;
-;       |octaveMux:inst10|                       ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|octaveMux:inst10                                                                     ; work         ;
-;          |lpm_mux:lpm_mux_component|           ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|octaveMux:inst10|lpm_mux:lpm_mux_component                                           ; work         ;
-;             |mux_h9c:auto_generated|           ; 2 (2)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst1|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated                    ; work         ;
+;    |Movement_Block:inst3|                      ; 32 (5)      ; 9            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 23 (3)       ; 0 (0)             ; 9 (2)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst3                                                                                   ; work         ;
+;       |backFarCompare:inst33|                  ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst3|backFarCompare:inst33                                                             ; work         ;
+;          |lpm_compare:lpm_compare_component|   ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst3|backFarCompare:inst33|lpm_compare:lpm_compare_component                           ; work         ;
+;             |cmpr_bqi:auto_generated|          ; 2 (2)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst3|backFarCompare:inst33|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated   ; work         ;
+;       |distanceCompare:inst30|                 ; 1 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst3|distanceCompare:inst30                                                            ; work         ;
+;          |lpm_compare:lpm_compare_component|   ; 1 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst3|distanceCompare:inst30|lpm_compare:lpm_compare_component                          ; work         ;
+;             |cmpr_gqi:auto_generated|          ; 1 (1)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst3|distanceCompare:inst30|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated  ; work         ;
+;       |obstacle_avoidance_FSM:inst1|           ; 18 (18)     ; 7            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst3|obstacle_avoidance_FSM:inst1                                                      ; work         ;
+;       |sideCloseCompare:inst16|                ; 4 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst3|sideCloseCompare:inst16                                                           ; work         ;
+;          |lpm_compare:lpm_compare_component|   ; 4 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst3|sideCloseCompare:inst16|lpm_compare:lpm_compare_component                         ; work         ;
+;             |cmpr_gqi:auto_generated|          ; 4 (4)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst3|sideCloseCompare:inst16|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated ; work         ;
+;       |wallMux:inst38|                         ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst3|wallMux:inst38                                                                    ; work         ;
+;          |lpm_mux:lpm_mux_component|           ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst3|wallMux:inst38|lpm_mux:lpm_mux_component                                          ; work         ;
+;             |mux_i9c:auto_generated|           ; 2 (2)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Movement_Block:inst3|wallMux:inst38|lpm_mux:lpm_mux_component|mux_i9c:auto_generated                   ; work         ;
+;    |MusicCounter:inst6|                        ; 2 (0)       ; 2            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |robotmain|MusicCounter:inst6                                                                                     ; work         ;
+;       |lpm_counter:lpm_counter_component|      ; 2 (0)       ; 2            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component                                                   ; work         ;
+;          |cntr_hlh:auto_generated|             ; 2 (2)       ; 2            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 2 (2)           ; 0 (0)      ; |robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_hlh:auto_generated                           ; work         ;
+;    |Music_Block:inst7|                         ; 19 (3)      ; 15           ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 4 (2)        ; 0 (0)             ; 15 (1)           ; 16 (0)          ; 0 (0)      ; |robotmain|Music_Block:inst7                                                                                      ; work         ;
+;       |durCounter:inst31|                      ; 7 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 6 (0)            ; 7 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst7|durCounter:inst31                                                                    ; work         ;
+;          |lpm_counter:lpm_counter_component|   ; 7 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 6 (0)            ; 7 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component                                  ; work         ;
+;             |cntr_esi:auto_generated|          ; 7 (7)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 6 (6)            ; 7 (7)           ; 0 (0)      ; |robotmain|Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated          ; work         ;
+;       |freqCounter:inst30|                     ; 9 (0)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 8 (0)            ; 9 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst7|freqCounter:inst30                                                                   ; work         ;
+;          |lpm_counter:lpm_counter_component|   ; 9 (0)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 8 (0)            ; 9 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component                                 ; work         ;
+;             |cntr_gsi:auto_generated|          ; 9 (9)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 8 (8)            ; 9 (9)           ; 0 (0)      ; |robotmain|Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated         ; work         ;
 ;    |Servo:inst12|                              ; 3 (3)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Servo:inst12                                                                                           ; work         ;
 ;    |Servo:inst9|                               ; 2 (2)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Servo:inst9                                                                                            ; work         ;
+;    |dark_spot:inst4|                           ; 6 (6)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|dark_spot:inst4                                                                                        ; work         ;
 +------------------------------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
 +---------------------------------------------------------------------------------------+
-; State Machine - |robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state    ;
+; State Machine - |robotmain|Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state    ;
 +----------+----------+----------+----------+----------+----------+----------+----------+
 ; Name     ; state.s6 ; state.s5 ; state.s4 ; state.s3 ; state.s2 ; state.s1 ; state.s0 ;
 +----------+----------+----------+----------+----------+----------+----------+----------+
@@ -392,26 +383,40 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------+------------------------------------------------------------+------------------------+
 ; Latch Name                                              ; Latch Enable Signal                                        ; Free of Timing Hazards ;
 +---------------------------------------------------------+------------------------------------------------------------+------------------------+
-; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|l_fwd ; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s0 ; yes                    ;
-; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|r_fwd ; Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s0 ; yes                    ;
-; Number of user-specified and inferred latches = 2       ;                                                            ;                        ;
+; dark_spot:inst4|right_left                              ; GND                                                        ; yes                    ;
+; Movement_Block:inst3|obstacle_avoidance_FSM:inst1|l_fwd ; Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s0 ; yes                    ;
+; Movement_Block:inst3|obstacle_avoidance_FSM:inst1|r_fwd ; Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s0 ; yes                    ;
+; dark_spot:inst4|dark_go                                 ; GND                                                        ; yes                    ;
+; Number of user-specified and inferred latches = 4       ;                                                            ;                        ;
 +---------------------------------------------------------+------------------------------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                            ;
-+------------------------------------------------------------------------------------------+--------------------+
-; Register name                                                                            ; Reason for Removal ;
-+------------------------------------------------------------------------------------------+--------------------+
-; MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_hlh:auto_generated|safe_q[1]   ; Lost fanout        ;
-; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[22..24] ; Lost fanout        ;
-; IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4]                             ; Lost fanout        ;
-; IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4]                             ; Lost fanout        ;
-; IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component|dffs[5]                             ; Lost fanout        ;
-; IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component|dffs[5]                             ; Lost fanout        ;
-; Total Number of Removed Registers = 8                                                    ;                    ;
-+------------------------------------------------------------------------------------------+--------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                   ;
++-------------------------------------------------------------------------------------------------------------+----------------------------------------+
+; Register name                                                                                               ; Reason for Removal                     ;
++-------------------------------------------------------------------------------------------------------------+----------------------------------------+
+; Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated|safe_q[0..4] ; Stuck at GND due to stuck port reg_out ;
+; BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[22..24]                    ; Lost fanout                            ;
+; IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4]                                                ; Lost fanout                            ;
+; IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4]                                                ; Lost fanout                            ;
+; IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component|dffs[5]                                                ; Lost fanout                            ;
+; IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component|dffs[5]                                                ; Lost fanout                            ;
+; Total Number of Removed Registers = 12                                                                      ;                                        ;
++-------------------------------------------------------------------------------------------------------------+----------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                                      ;
++----------------------------------------------------------------------------------------------------------+---------------------------+-----------------------------------------------------------------------------------------------------------+
+; Register name                                                                                            ; Reason for Removal        ; Registers Removed due to This Register                                                                    ;
++----------------------------------------------------------------------------------------------------------+---------------------------+-----------------------------------------------------------------------------------------------------------+
+; Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated|safe_q[0] ; Stuck at GND              ; Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated|safe_q[1], ;
+;                                                                                                          ; due to stuck port reg_out ; Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated|safe_q[2], ;
+;                                                                                                          ;                           ; Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated|safe_q[3], ;
+;                                                                                                          ;                           ; Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated|safe_q[4]  ;
++----------------------------------------------------------------------------------------------------------+---------------------------+-----------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -419,10 +424,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 95    ;
+; Total registers                              ; 91    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 14    ;
-; Number of registers using Asynchronous Clear ; 21    ;
+; Number of registers using Asynchronous Clear ; 17    ;
 ; Number of registers using Asynchronous Load  ; 1     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -434,7 +439,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1|Selector1 ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |robotmain|Movement_Block:inst3|obstacle_avoidance_FSM:inst1|Selector1 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
 
 
@@ -450,7 +455,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +----------------------------------------------------------------------------------------------+
-; Source assignments for Music_Block:inst1|durCounter:inst31|lpm_counter:lpm_counter_component ;
+; Source assignments for Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component ;
 +---------------------------+-------+------+---------------------------------------------------+
 ; Assignment                ; Value ; From ; To                                                ;
 +---------------------------+-------+------+---------------------------------------------------+
@@ -461,7 +466,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +-----------------------------------------------------------------------------------------------+
-; Source assignments for Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component ;
+; Source assignments for Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component ;
 +---------------------------+-------+------+----------------------------------------------------+
 ; Assignment                ; Value ; From ; To                                                 ;
 +---------------------------+-------+------+----------------------------------------------------+
@@ -472,7 +477,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +-----------------------------------------------------------------------------------------------+
-; Source assignments for Music_Block:inst1|freqCounter:inst30|lpm_counter:lpm_counter_component ;
+; Source assignments for Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component ;
 +---------------------------+-------+------+----------------------------------------------------+
 ; Assignment                ; Value ; From ; To                                                 ;
 +---------------------------+-------+------+----------------------------------------------------+
@@ -540,7 +545,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Movement_Block:inst4|distanceCompare:inst30|lpm_compare:lpm_compare_component ;
+; Parameter Settings for User Entity Instance: Movement_Block:inst3|distanceCompare:inst30|lpm_compare:lpm_compare_component ;
 +------------------------+----------+----------------------------------------------------------------------------------------+
 ; Parameter Name         ; Value    ; Type                                                                                   ;
 +------------------------+----------+----------------------------------------------------------------------------------------+
@@ -564,7 +569,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Movement_Block:inst4|sideCloseCompare:inst16|lpm_compare:lpm_compare_component ;
+; Parameter Settings for User Entity Instance: Movement_Block:inst3|sideCloseCompare:inst16|lpm_compare:lpm_compare_component ;
 +------------------------+----------+-----------------------------------------------------------------------------------------+
 ; Parameter Name         ; Value    ; Type                                                                                    ;
 +------------------------+----------+-----------------------------------------------------------------------------------------+
@@ -588,7 +593,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component ;
+; Parameter Settings for User Entity Instance: Movement_Block:inst3|wallMux:inst38|lpm_mux:lpm_mux_component ;
 +------------------------+---------+-------------------------------------------------------------------------+
 ; Parameter Name         ; Value   ; Type                                                                    ;
 +------------------------+---------+-------------------------------------------------------------------------+
@@ -607,7 +612,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Movement_Block:inst4|sideFarCompare:inst17|lpm_compare:lpm_compare_component ;
+; Parameter Settings for User Entity Instance: Movement_Block:inst3|sideFarCompare:inst17|lpm_compare:lpm_compare_component ;
 +------------------------+----------+---------------------------------------------------------------------------------------+
 ; Parameter Name         ; Value    ; Type                                                                                  ;
 +------------------------+----------+---------------------------------------------------------------------------------------+
@@ -631,7 +636,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Movement_Block:inst4|veryFarCompare:inst29|lpm_compare:lpm_compare_component ;
+; Parameter Settings for User Entity Instance: Movement_Block:inst3|veryFarCompare:inst29|lpm_compare:lpm_compare_component ;
 +------------------------+----------+---------------------------------------------------------------------------------------+
 ; Parameter Name         ; Value    ; Type                                                                                  ;
 +------------------------+----------+---------------------------------------------------------------------------------------+
@@ -655,7 +660,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Movement_Block:inst4|backFarCompare:inst33|lpm_compare:lpm_compare_component ;
+; Parameter Settings for User Entity Instance: Movement_Block:inst3|backFarCompare:inst33|lpm_compare:lpm_compare_component ;
 +------------------------+----------+---------------------------------------------------------------------------------------+
 ; Parameter Name         ; Value    ; Type                                                                                  ;
 +------------------------+----------+---------------------------------------------------------------------------------------+
@@ -679,7 +684,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Movement_Block:inst4|wallMux:inst34|lpm_mux:lpm_mux_component ;
+; Parameter Settings for User Entity Instance: Movement_Block:inst3|wallMux:inst34|lpm_mux:lpm_mux_component ;
 +------------------------+---------+-------------------------------------------------------------------------+
 ; Parameter Name         ; Value   ; Type                                                                    ;
 +------------------------+---------+-------------------------------------------------------------------------+
@@ -694,6 +699,181 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CBXI_PARAMETER         ; mux_i9c ; Untyped                                                                 ;
 ; DEVICE_FAMILY          ; MAX II  ; Untyped                                                                 ;
 +------------------------+---------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component ;
++------------------------+-------------+-----------------------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                                        ;
++------------------------+-------------+-----------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                                ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                                ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                              ;
+; LPM_WIDTH              ; 6           ; Untyped                                                                     ;
+; LPM_DIRECTION          ; DOWN        ; Untyped                                                                     ;
+; LPM_MODULUS            ; 0           ; Untyped                                                                     ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                                     ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                                                     ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                                     ;
+; DEVICE_FAMILY          ; MAX II      ; Untyped                                                                     ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                     ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                          ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                                          ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                                     ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                                     ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                                     ;
+; CBXI_PARAMETER         ; cntr_esi    ; Untyped                                                                     ;
++------------------------+-------------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component ;
++------------------------+-------------+------------------------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                                         ;
++------------------------+-------------+------------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                                 ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                               ;
+; LPM_WIDTH              ; 5           ; Untyped                                                                      ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                                      ;
+; LPM_MODULUS            ; 0           ; Untyped                                                                      ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                                      ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                                                      ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                                      ;
+; DEVICE_FAMILY          ; MAX II      ; Untyped                                                                      ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                      ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                           ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                                           ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                                      ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                                      ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                                      ;
+; CBXI_PARAMETER         ; cntr_klh    ; Untyped                                                                      ;
++------------------------+-------------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Music_Block:inst7|restCompare:inst11|lpm_compare:lpm_compare_component ;
++------------------------+----------+---------------------------------------------------------------------------------+
+; Parameter Name         ; Value    ; Type                                                                            ;
++------------------------+----------+---------------------------------------------------------------------------------+
+; lpm_width              ; 4        ; Untyped                                                                         ;
+; LPM_REPRESENTATION     ; UNSIGNED ; Untyped                                                                         ;
+; LPM_PIPELINE           ; 0        ; Untyped                                                                         ;
+; CHAIN_SIZE             ; 8        ; Untyped                                                                         ;
+; ONE_INPUT_IS_CONSTANT  ; YES      ; Untyped                                                                         ;
+; CARRY_CHAIN            ; MANUAL   ; Untyped                                                                         ;
+; CASCADE_CHAIN          ; MANUAL   ; Untyped                                                                         ;
+; CARRY_CHAIN_LENGTH     ; 48       ; CARRY_CHAIN_LENGTH                                                              ;
+; CASCADE_CHAIN_LENGTH   ; 2        ; CASCADE_CHAIN_LENGTH                                                            ;
+; DEVICE_FAMILY          ; MAX II   ; Untyped                                                                         ;
+; CBXI_PARAMETER         ; cmpr_rci ; Untyped                                                                         ;
+; AUTO_CARRY_CHAINS      ; ON       ; AUTO_CARRY                                                                      ;
+; IGNORE_CARRY_BUFFERS   ; OFF      ; IGNORE_CARRY                                                                    ;
+; AUTO_CASCADE_CHAINS    ; ON       ; AUTO_CASCADE                                                                    ;
+; IGNORE_CASCADE_BUFFERS ; OFF      ; IGNORE_CASCADE                                                                  ;
++------------------------+----------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component ;
++------------------------+-------------+------------------------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                                         ;
++------------------------+-------------+------------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                                 ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                               ;
+; LPM_WIDTH              ; 8           ; Untyped                                                                      ;
+; LPM_DIRECTION          ; DOWN        ; Untyped                                                                      ;
+; LPM_MODULUS            ; 0           ; Untyped                                                                      ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                                      ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                                                      ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                                      ;
+; DEVICE_FAMILY          ; MAX II      ; Untyped                                                                      ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                      ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                           ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                                           ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                                      ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                                      ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                                      ;
+; CBXI_PARAMETER         ; cntr_gsi    ; Untyped                                                                      ;
++------------------------+-------------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component ;
++------------------------+---------+------------------------------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                                                   ;
++------------------------+---------+------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                                           ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                                         ;
+; LPM_WIDTH              ; 1       ; Untyped                                                                ;
+; LPM_SIZE               ; 4       ; Untyped                                                                ;
+; LPM_WIDTHS             ; 2       ; Untyped                                                                ;
+; LPM_PIPELINE           ; 0       ; Untyped                                                                ;
+; CBXI_PARAMETER         ; mux_h9c ; Untyped                                                                ;
+; DEVICE_FAMILY          ; MAX II  ; Untyped                                                                ;
++------------------------+---------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Music_Block:inst7|DoneCompare:inst8|lpm_compare:lpm_compare_component ;
++------------------------+----------+--------------------------------------------------------------------------------+
+; Parameter Name         ; Value    ; Type                                                                           ;
++------------------------+----------+--------------------------------------------------------------------------------+
+; lpm_width              ; 2        ; Untyped                                                                        ;
+; LPM_REPRESENTATION     ; UNSIGNED ; Untyped                                                                        ;
+; LPM_PIPELINE           ; 0        ; Untyped                                                                        ;
+; CHAIN_SIZE             ; 8        ; Untyped                                                                        ;
+; ONE_INPUT_IS_CONSTANT  ; YES      ; Untyped                                                                        ;
+; CARRY_CHAIN            ; MANUAL   ; Untyped                                                                        ;
+; CASCADE_CHAIN          ; MANUAL   ; Untyped                                                                        ;
+; CARRY_CHAIN_LENGTH     ; 48       ; CARRY_CHAIN_LENGTH                                                             ;
+; CASCADE_CHAIN_LENGTH   ; 2        ; CASCADE_CHAIN_LENGTH                                                           ;
+; DEVICE_FAMILY          ; MAX II   ; Untyped                                                                        ;
+; CBXI_PARAMETER         ; cmpr_7qi ; Untyped                                                                        ;
+; AUTO_CARRY_CHAINS      ; ON       ; AUTO_CARRY                                                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF      ; IGNORE_CARRY                                                                   ;
+; AUTO_CASCADE_CHAINS    ; ON       ; AUTO_CASCADE                                                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF      ; IGNORE_CASCADE                                                                 ;
++------------------------+----------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MusicCounter:inst6|lpm_counter:lpm_counter_component ;
++------------------------+-------------+------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                       ;
++------------------------+-------------+------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                 ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                               ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                               ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                             ;
+; LPM_WIDTH              ; 2           ; Signed Integer                                             ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                    ;
+; LPM_MODULUS            ; 0           ; Untyped                                                    ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                    ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                                    ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                    ;
+; DEVICE_FAMILY          ; MAX II      ; Untyped                                                    ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                    ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                         ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                         ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                    ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                    ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                    ;
+; CBXI_PARAMETER         ; cntr_hlh    ; Untyped                                                    ;
++------------------------+-------------+------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1110,181 +1290,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Music_Block:inst1|durCounter:inst31|lpm_counter:lpm_counter_component ;
-+------------------------+-------------+-----------------------------------------------------------------------------+
-; Parameter Name         ; Value       ; Type                                                                        ;
-+------------------------+-------------+-----------------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                                ;
-; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                                ;
-; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                              ;
-; LPM_WIDTH              ; 6           ; Untyped                                                                     ;
-; LPM_DIRECTION          ; DOWN        ; Untyped                                                                     ;
-; LPM_MODULUS            ; 0           ; Untyped                                                                     ;
-; LPM_AVALUE             ; UNUSED      ; Untyped                                                                     ;
-; LPM_SVALUE             ; UNUSED      ; Untyped                                                                     ;
-; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                                     ;
-; DEVICE_FAMILY          ; MAX II      ; Untyped                                                                     ;
-; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                     ;
-; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                          ;
-; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                                          ;
-; CARRY_CNT_EN           ; SMART       ; Untyped                                                                     ;
-; LABWIDE_SCLR           ; ON          ; Untyped                                                                     ;
-; USE_NEW_VERSION        ; TRUE        ; Untyped                                                                     ;
-; CBXI_PARAMETER         ; cntr_esi    ; Untyped                                                                     ;
-+------------------------+-------------+-----------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component ;
-+------------------------+-------------+------------------------------------------------------------------------------+
-; Parameter Name         ; Value       ; Type                                                                         ;
-+------------------------+-------------+------------------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                                   ;
-; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                                 ;
-; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                                 ;
-; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                               ;
-; LPM_WIDTH              ; 5           ; Untyped                                                                      ;
-; LPM_DIRECTION          ; UP          ; Untyped                                                                      ;
-; LPM_MODULUS            ; 0           ; Untyped                                                                      ;
-; LPM_AVALUE             ; UNUSED      ; Untyped                                                                      ;
-; LPM_SVALUE             ; UNUSED      ; Untyped                                                                      ;
-; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                                      ;
-; DEVICE_FAMILY          ; MAX II      ; Untyped                                                                      ;
-; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                      ;
-; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                           ;
-; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                                           ;
-; CARRY_CNT_EN           ; SMART       ; Untyped                                                                      ;
-; LABWIDE_SCLR           ; ON          ; Untyped                                                                      ;
-; USE_NEW_VERSION        ; TRUE        ; Untyped                                                                      ;
-; CBXI_PARAMETER         ; cntr_klh    ; Untyped                                                                      ;
-+------------------------+-------------+------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Music_Block:inst1|restCompare:inst11|lpm_compare:lpm_compare_component ;
-+------------------------+----------+---------------------------------------------------------------------------------+
-; Parameter Name         ; Value    ; Type                                                                            ;
-+------------------------+----------+---------------------------------------------------------------------------------+
-; lpm_width              ; 4        ; Untyped                                                                         ;
-; LPM_REPRESENTATION     ; UNSIGNED ; Untyped                                                                         ;
-; LPM_PIPELINE           ; 0        ; Untyped                                                                         ;
-; CHAIN_SIZE             ; 8        ; Untyped                                                                         ;
-; ONE_INPUT_IS_CONSTANT  ; YES      ; Untyped                                                                         ;
-; CARRY_CHAIN            ; MANUAL   ; Untyped                                                                         ;
-; CASCADE_CHAIN          ; MANUAL   ; Untyped                                                                         ;
-; CARRY_CHAIN_LENGTH     ; 48       ; CARRY_CHAIN_LENGTH                                                              ;
-; CASCADE_CHAIN_LENGTH   ; 2        ; CASCADE_CHAIN_LENGTH                                                            ;
-; DEVICE_FAMILY          ; MAX II   ; Untyped                                                                         ;
-; CBXI_PARAMETER         ; cmpr_rci ; Untyped                                                                         ;
-; AUTO_CARRY_CHAINS      ; ON       ; AUTO_CARRY                                                                      ;
-; IGNORE_CARRY_BUFFERS   ; OFF      ; IGNORE_CARRY                                                                    ;
-; AUTO_CASCADE_CHAINS    ; ON       ; AUTO_CASCADE                                                                    ;
-; IGNORE_CASCADE_BUFFERS ; OFF      ; IGNORE_CASCADE                                                                  ;
-+------------------------+----------+---------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Music_Block:inst1|freqCounter:inst30|lpm_counter:lpm_counter_component ;
-+------------------------+-------------+------------------------------------------------------------------------------+
-; Parameter Name         ; Value       ; Type                                                                         ;
-+------------------------+-------------+------------------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                                   ;
-; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                                 ;
-; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                                 ;
-; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                               ;
-; LPM_WIDTH              ; 8           ; Untyped                                                                      ;
-; LPM_DIRECTION          ; DOWN        ; Untyped                                                                      ;
-; LPM_MODULUS            ; 0           ; Untyped                                                                      ;
-; LPM_AVALUE             ; UNUSED      ; Untyped                                                                      ;
-; LPM_SVALUE             ; UNUSED      ; Untyped                                                                      ;
-; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                                      ;
-; DEVICE_FAMILY          ; MAX II      ; Untyped                                                                      ;
-; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                      ;
-; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                           ;
-; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                                           ;
-; CARRY_CNT_EN           ; SMART       ; Untyped                                                                      ;
-; LABWIDE_SCLR           ; ON          ; Untyped                                                                      ;
-; USE_NEW_VERSION        ; TRUE        ; Untyped                                                                      ;
-; CBXI_PARAMETER         ; cntr_gsi    ; Untyped                                                                      ;
-+------------------------+-------------+------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Music_Block:inst1|octaveMux:inst10|lpm_mux:lpm_mux_component ;
-+------------------------+---------+------------------------------------------------------------------------+
-; Parameter Name         ; Value   ; Type                                                                   ;
-+------------------------+---------+------------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                                             ;
-; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                                           ;
-; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                                           ;
-; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                                         ;
-; LPM_WIDTH              ; 1       ; Untyped                                                                ;
-; LPM_SIZE               ; 4       ; Untyped                                                                ;
-; LPM_WIDTHS             ; 2       ; Untyped                                                                ;
-; LPM_PIPELINE           ; 0       ; Untyped                                                                ;
-; CBXI_PARAMETER         ; mux_h9c ; Untyped                                                                ;
-; DEVICE_FAMILY          ; MAX II  ; Untyped                                                                ;
-+------------------------+---------+------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Music_Block:inst1|DoneCompare:inst8|lpm_compare:lpm_compare_component ;
-+------------------------+----------+--------------------------------------------------------------------------------+
-; Parameter Name         ; Value    ; Type                                                                           ;
-+------------------------+----------+--------------------------------------------------------------------------------+
-; lpm_width              ; 2        ; Untyped                                                                        ;
-; LPM_REPRESENTATION     ; UNSIGNED ; Untyped                                                                        ;
-; LPM_PIPELINE           ; 0        ; Untyped                                                                        ;
-; CHAIN_SIZE             ; 8        ; Untyped                                                                        ;
-; ONE_INPUT_IS_CONSTANT  ; YES      ; Untyped                                                                        ;
-; CARRY_CHAIN            ; MANUAL   ; Untyped                                                                        ;
-; CASCADE_CHAIN          ; MANUAL   ; Untyped                                                                        ;
-; CARRY_CHAIN_LENGTH     ; 48       ; CARRY_CHAIN_LENGTH                                                             ;
-; CASCADE_CHAIN_LENGTH   ; 2        ; CASCADE_CHAIN_LENGTH                                                           ;
-; DEVICE_FAMILY          ; MAX II   ; Untyped                                                                        ;
-; CBXI_PARAMETER         ; cmpr_7qi ; Untyped                                                                        ;
-; AUTO_CARRY_CHAINS      ; ON       ; AUTO_CARRY                                                                     ;
-; IGNORE_CARRY_BUFFERS   ; OFF      ; IGNORE_CARRY                                                                   ;
-; AUTO_CASCADE_CHAINS    ; ON       ; AUTO_CASCADE                                                                   ;
-; IGNORE_CASCADE_BUFFERS ; OFF      ; IGNORE_CASCADE                                                                 ;
-+------------------------+----------+--------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MusicCounter:inst6|lpm_counter:lpm_counter_component ;
-+------------------------+-------------+------------------------------------------------------------+
-; Parameter Name         ; Value       ; Type                                                       ;
-+------------------------+-------------+------------------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                               ;
-; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                               ;
-; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                             ;
-; LPM_WIDTH              ; 2           ; Signed Integer                                             ;
-; LPM_DIRECTION          ; UP          ; Untyped                                                    ;
-; LPM_MODULUS            ; 0           ; Untyped                                                    ;
-; LPM_AVALUE             ; UNUSED      ; Untyped                                                    ;
-; LPM_SVALUE             ; UNUSED      ; Untyped                                                    ;
-; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                    ;
-; DEVICE_FAMILY          ; MAX II      ; Untyped                                                    ;
-; CARRY_CHAIN            ; MANUAL      ; Untyped                                                    ;
-; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                         ;
-; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                         ;
-; CARRY_CNT_EN           ; SMART       ; Untyped                                                    ;
-; LABWIDE_SCLR           ; ON          ; Untyped                                                    ;
-; USE_NEW_VERSION        ; TRUE        ; Untyped                                                    ;
-; CBXI_PARAMETER         ; cntr_hlh    ; Untyped                                                    ;
-+------------------------+-------------+------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +------------------------------------------------------------------------------------------------+
 ; lpm_shiftreg Parameter Settings by Entity Instance                                             ;
 +----------------------------+-------------------------------------------------------------------+
@@ -1315,7 +1320,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
-    Info: Processing started: Wed Apr 24 16:28:37 2019
+    Info: Processing started: Wed Apr 24 17:06:39 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off robotmain -c robotmain
 Info: Found 2 design units, including 1 entities, in source file Display_mux.vhd
     Info: Found design unit 1: display_mux-SYN
@@ -1365,6 +1370,7 @@ Warning: Pin "Spare_Servo" is missing source
 Warning: Pin "BlueTooth_RCV_In" not connected
 Warning: Pin "Bumper" not connected
 Warning: Pin "Extra_Pin" not connected
+Warning: Pin "Dip" not connected
 Warning: Primitive "GND" of instance "inst22" not used
 Warning: Using design file Digit_decode.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info: Found design unit 1: digit_decode-SYN
@@ -1391,8 +1397,8 @@ Info: Elaborating entity "cntr_49h" for hierarchy "BigCount:inst23|lpm_counter:l
 Info: Elaborating entity "Servo" for hierarchy "Servo:inst9"
 Warning (10492): VHDL Process Statement warning at Servo.vhd(16): signal "Go_Stop" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at Servo.vhd(18): signal "For_Rev" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info: Elaborating entity "Movement_Block" for hierarchy "Movement_Block:inst4"
-Info: Elaborating entity "obstacle_avoidance_FSM" for hierarchy "Movement_Block:inst4|obstacle_avoidance_FSM:inst1"
+Info: Elaborating entity "Movement_Block" for hierarchy "Movement_Block:inst3"
+Info: Elaborating entity "obstacle_avoidance_FSM" for hierarchy "Movement_Block:inst3|obstacle_avoidance_FSM:inst1"
 Warning (10492): VHDL Process Statement warning at obstacle_avoidance_FSM.vhd(104): signal "right_left" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at obstacle_avoidance_FSM.vhd(106): signal "right_left" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at obstacle_avoidance_FSM.vhd(110): signal "right_left" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -1407,43 +1413,103 @@ Info (10041): Inferred latch for "r_fwd" at obstacle_avoidance_FSM.vhd(83)
 Info (10041): Inferred latch for "l_fwd" at obstacle_avoidance_FSM.vhd(83)
 Warning: Using design file distanceCompare.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: distanceCompare
-Info: Elaborating entity "distanceCompare" for hierarchy "Movement_Block:inst4|distanceCompare:inst30"
+Info: Elaborating entity "distanceCompare" for hierarchy "Movement_Block:inst3|distanceCompare:inst30"
 Info: Found 1 design units, including 1 entities, in source file ../../../../../altera/72sp3/quartus/libraries/megafunctions/lpm_compare.tdf
     Info: Found entity 1: lpm_compare
-Info: Elaborating entity "lpm_compare" for hierarchy "Movement_Block:inst4|distanceCompare:inst30|lpm_compare:lpm_compare_component"
-Info: Elaborated megafunction instantiation "Movement_Block:inst4|distanceCompare:inst30|lpm_compare:lpm_compare_component"
+Info: Elaborating entity "lpm_compare" for hierarchy "Movement_Block:inst3|distanceCompare:inst30|lpm_compare:lpm_compare_component"
+Info: Elaborated megafunction instantiation "Movement_Block:inst3|distanceCompare:inst30|lpm_compare:lpm_compare_component"
 Info: Found 1 design units, including 1 entities, in source file db/cmpr_gqi.tdf
     Info: Found entity 1: cmpr_gqi
-Info: Elaborating entity "cmpr_gqi" for hierarchy "Movement_Block:inst4|distanceCompare:inst30|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated"
+Info: Elaborating entity "cmpr_gqi" for hierarchy "Movement_Block:inst3|distanceCompare:inst30|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated"
 Warning: Using design file sideCloseCompare.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: sideCloseCompare
-Info: Elaborating entity "sideCloseCompare" for hierarchy "Movement_Block:inst4|sideCloseCompare:inst16"
+Info: Elaborating entity "sideCloseCompare" for hierarchy "Movement_Block:inst3|sideCloseCompare:inst16"
 Warning: Using design file wallMux.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: wallMux
-Info: Elaborating entity "wallMux" for hierarchy "Movement_Block:inst4|wallMux:inst38"
+Info: Elaborating entity "wallMux" for hierarchy "Movement_Block:inst3|wallMux:inst38"
 Info: Found 1 design units, including 1 entities, in source file ../../../../../altera/72sp3/quartus/libraries/megafunctions/lpm_mux.tdf
     Info: Found entity 1: lpm_mux
-Info: Elaborating entity "lpm_mux" for hierarchy "Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component"
-Info: Elaborated megafunction instantiation "Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component"
+Info: Elaborating entity "lpm_mux" for hierarchy "Movement_Block:inst3|wallMux:inst38|lpm_mux:lpm_mux_component"
+Info: Elaborated megafunction instantiation "Movement_Block:inst3|wallMux:inst38|lpm_mux:lpm_mux_component"
 Info: Found 1 design units, including 1 entities, in source file db/mux_i9c.tdf
     Info: Found entity 1: mux_i9c
-Info: Elaborating entity "mux_i9c" for hierarchy "Movement_Block:inst4|wallMux:inst38|lpm_mux:lpm_mux_component|mux_i9c:auto_generated"
+Info: Elaborating entity "mux_i9c" for hierarchy "Movement_Block:inst3|wallMux:inst38|lpm_mux:lpm_mux_component|mux_i9c:auto_generated"
 Warning: Using design file sideFarCompare.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: sideFarCompare
-Info: Elaborating entity "sideFarCompare" for hierarchy "Movement_Block:inst4|sideFarCompare:inst17"
-Info: Elaborating entity "lpm_compare" for hierarchy "Movement_Block:inst4|sideFarCompare:inst17|lpm_compare:lpm_compare_component"
-Info: Elaborated megafunction instantiation "Movement_Block:inst4|sideFarCompare:inst17|lpm_compare:lpm_compare_component"
+Info: Elaborating entity "sideFarCompare" for hierarchy "Movement_Block:inst3|sideFarCompare:inst17"
+Info: Elaborating entity "lpm_compare" for hierarchy "Movement_Block:inst3|sideFarCompare:inst17|lpm_compare:lpm_compare_component"
+Info: Elaborated megafunction instantiation "Movement_Block:inst3|sideFarCompare:inst17|lpm_compare:lpm_compare_component"
 Info: Found 1 design units, including 1 entities, in source file db/cmpr_bqi.tdf
     Info: Found entity 1: cmpr_bqi
-Info: Elaborating entity "cmpr_bqi" for hierarchy "Movement_Block:inst4|sideFarCompare:inst17|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated"
+Info: Elaborating entity "cmpr_bqi" for hierarchy "Movement_Block:inst3|sideFarCompare:inst17|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated"
 Warning: Using design file veryFarCompare.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: veryFarCompare
-Info: Elaborating entity "veryFarCompare" for hierarchy "Movement_Block:inst4|veryFarCompare:inst29"
-Info: Elaborating entity "lpm_compare" for hierarchy "Movement_Block:inst4|veryFarCompare:inst29|lpm_compare:lpm_compare_component"
-Info: Elaborated megafunction instantiation "Movement_Block:inst4|veryFarCompare:inst29|lpm_compare:lpm_compare_component"
+Info: Elaborating entity "veryFarCompare" for hierarchy "Movement_Block:inst3|veryFarCompare:inst29"
+Info: Elaborating entity "lpm_compare" for hierarchy "Movement_Block:inst3|veryFarCompare:inst29|lpm_compare:lpm_compare_component"
+Info: Elaborated megafunction instantiation "Movement_Block:inst3|veryFarCompare:inst29|lpm_compare:lpm_compare_component"
 Warning: Using design file backFarCompare.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: backFarCompare
-Info: Elaborating entity "backFarCompare" for hierarchy "Movement_Block:inst4|backFarCompare:inst33"
+Info: Elaborating entity "backFarCompare" for hierarchy "Movement_Block:inst3|backFarCompare:inst33"
+Info: Elaborating entity "dark_spot" for hierarchy "dark_spot:inst4"
+Warning (10631): VHDL Process Statement warning at dark_spot.vhd(17): inferring latch(es) for signal or variable "reset_music", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at dark_spot.vhd(17): inferring latch(es) for signal or variable "dark_go", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at dark_spot.vhd(17): inferring latch(es) for signal or variable "right_left", which holds its previous value in one or more paths through the process
+Warning (10492): VHDL Process Statement warning at dark_spot.vhd(43): signal "location" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at dark_spot.vhd(50): signal "location" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (10041): Inferred latch for "right_left" at dark_spot.vhd(17)
+Info (10041): Inferred latch for "dark_go" at dark_spot.vhd(17)
+Info (10041): Inferred latch for "reset_music" at dark_spot.vhd(17)
+Info: Elaborating entity "Music_Block" for hierarchy "Music_Block:inst7"
+Info: Elaborating entity "durCounter" for hierarchy "Music_Block:inst7|durCounter:inst31"
+Info: Elaborating entity "lpm_counter" for hierarchy "Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_esi.tdf
+    Info: Found entity 1: cntr_esi
+Info: Elaborating entity "cntr_esi" for hierarchy "Music_Block:inst7|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated"
+Info: Elaborating entity "Duration_ROM" for hierarchy "Music_Block:inst7|Duration_ROM:inst6"
+Info: Elaborating entity "Song_ROM" for hierarchy "Music_Block:inst7|Song_ROM:inst1"
+Info: Elaborating entity "noteCounter" for hierarchy "Music_Block:inst7|noteCounter:inst29"
+Info: Elaborating entity "lpm_counter" for hierarchy "Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_klh.tdf
+    Info: Found entity 1: cntr_klh
+Info: Elaborating entity "cntr_klh" for hierarchy "Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated"
+Info: Elaborating entity "restCompare" for hierarchy "Music_Block:inst7|restCompare:inst11"
+Info: Elaborating entity "lpm_compare" for hierarchy "Music_Block:inst7|restCompare:inst11|lpm_compare:lpm_compare_component"
+Info: Elaborated megafunction instantiation "Music_Block:inst7|restCompare:inst11|lpm_compare:lpm_compare_component"
+Info: Found 1 design units, including 1 entities, in source file db/cmpr_rci.tdf
+    Info: Found entity 1: cmpr_rci
+Info: Elaborating entity "cmpr_rci" for hierarchy "Music_Block:inst7|restCompare:inst11|lpm_compare:lpm_compare_component|cmpr_rci:auto_generated"
+Info: Elaborating entity "freqCounter" for hierarchy "Music_Block:inst7|freqCounter:inst30"
+Info: Elaborating entity "lpm_counter" for hierarchy "Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_gsi.tdf
+    Info: Found entity 1: cntr_gsi
+Info: Elaborating entity "cntr_gsi" for hierarchy "Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated"
+Info: Elaborating entity "octaveMux" for hierarchy "Music_Block:inst7|octaveMux:inst10"
+Info: Elaborating entity "lpm_mux" for hierarchy "Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component"
+Info: Elaborated megafunction instantiation "Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component"
+Info: Found 1 design units, including 1 entities, in source file db/mux_h9c.tdf
+    Info: Found entity 1: mux_h9c
+Info: Elaborating entity "mux_h9c" for hierarchy "Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated"
+Info: Elaborating entity "Notes" for hierarchy "Music_Block:inst7|Notes:inst7"
+Warning: Using design file DoneCompare.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: DoneCompare
+Info: Elaborating entity "DoneCompare" for hierarchy "Music_Block:inst7|DoneCompare:inst8"
+Info: Elaborating entity "lpm_compare" for hierarchy "Music_Block:inst7|DoneCompare:inst8|lpm_compare:lpm_compare_component"
+Info: Elaborated megafunction instantiation "Music_Block:inst7|DoneCompare:inst8|lpm_compare:lpm_compare_component"
+Info: Found 1 design units, including 1 entities, in source file db/cmpr_7qi.tdf
+    Info: Found entity 1: cmpr_7qi
+Info: Elaborating entity "cmpr_7qi" for hierarchy "Music_Block:inst7|DoneCompare:inst8|lpm_compare:lpm_compare_component|cmpr_7qi:auto_generated"
+Warning: Using design file MusicCounter.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: musiccounter-SYN
+    Info: Found entity 1: MusicCounter
+Info: Elaborating entity "MusicCounter" for hierarchy "MusicCounter:inst6"
+Info: Elaborating entity "lpm_counter" for hierarchy "MusicCounter:inst6|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "MusicCounter:inst6|lpm_counter:lpm_counter_component"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_hlh.tdf
+    Info: Found entity 1: cntr_hlh
+Info: Elaborating entity "cntr_hlh" for hierarchy "MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_hlh:auto_generated"
 Info: Elaborating entity "IR_Sensor" for hierarchy "IR_Sensor:inst20"
 Warning: Using design file reg8.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: reg8
@@ -1482,78 +1548,24 @@ Info: Elaborated megafunction instantiation "Colon_mux:inst25|lpm_mux:lpm_mux_co
 Info: Found 1 design units, including 1 entities, in source file db/mux_sld.tdf
     Info: Found entity 1: mux_sld
 Info: Elaborating entity "mux_sld" for hierarchy "Colon_mux:inst25|lpm_mux:lpm_mux_component|mux_sld:auto_generated"
-Info: Elaborating entity "Music_Block" for hierarchy "Music_Block:inst1"
-Info: Elaborating entity "durCounter" for hierarchy "Music_Block:inst1|durCounter:inst31"
-Info: Elaborating entity "lpm_counter" for hierarchy "Music_Block:inst1|durCounter:inst31|lpm_counter:lpm_counter_component"
-Info: Elaborated megafunction instantiation "Music_Block:inst1|durCounter:inst31|lpm_counter:lpm_counter_component"
-Info: Found 1 design units, including 1 entities, in source file db/cntr_esi.tdf
-    Info: Found entity 1: cntr_esi
-Info: Elaborating entity "cntr_esi" for hierarchy "Music_Block:inst1|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated"
-Info: Elaborating entity "Duration_ROM" for hierarchy "Music_Block:inst1|Duration_ROM:inst6"
-Info: Elaborating entity "Song_ROM" for hierarchy "Music_Block:inst1|Song_ROM:inst1"
-Info: Elaborating entity "noteCounter" for hierarchy "Music_Block:inst1|noteCounter:inst29"
-Info: Elaborating entity "lpm_counter" for hierarchy "Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component"
-Info: Elaborated megafunction instantiation "Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component"
-Info: Found 1 design units, including 1 entities, in source file db/cntr_klh.tdf
-    Info: Found entity 1: cntr_klh
-Info: Elaborating entity "cntr_klh" for hierarchy "Music_Block:inst1|noteCounter:inst29|lpm_counter:lpm_counter_component|cntr_klh:auto_generated"
-Info: Elaborating entity "restCompare" for hierarchy "Music_Block:inst1|restCompare:inst11"
-Info: Elaborating entity "lpm_compare" for hierarchy "Music_Block:inst1|restCompare:inst11|lpm_compare:lpm_compare_component"
-Info: Elaborated megafunction instantiation "Music_Block:inst1|restCompare:inst11|lpm_compare:lpm_compare_component"
-Info: Found 1 design units, including 1 entities, in source file db/cmpr_rci.tdf
-    Info: Found entity 1: cmpr_rci
-Info: Elaborating entity "cmpr_rci" for hierarchy "Music_Block:inst1|restCompare:inst11|lpm_compare:lpm_compare_component|cmpr_rci:auto_generated"
-Info: Elaborating entity "freqCounter" for hierarchy "Music_Block:inst1|freqCounter:inst30"
-Info: Elaborating entity "lpm_counter" for hierarchy "Music_Block:inst1|freqCounter:inst30|lpm_counter:lpm_counter_component"
-Info: Elaborated megafunction instantiation "Music_Block:inst1|freqCounter:inst30|lpm_counter:lpm_counter_component"
-Info: Found 1 design units, including 1 entities, in source file db/cntr_gsi.tdf
-    Info: Found entity 1: cntr_gsi
-Info: Elaborating entity "cntr_gsi" for hierarchy "Music_Block:inst1|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated"
-Info: Elaborating entity "octaveMux" for hierarchy "Music_Block:inst1|octaveMux:inst10"
-Info: Elaborating entity "lpm_mux" for hierarchy "Music_Block:inst1|octaveMux:inst10|lpm_mux:lpm_mux_component"
-Info: Elaborated megafunction instantiation "Music_Block:inst1|octaveMux:inst10|lpm_mux:lpm_mux_component"
-Info: Found 1 design units, including 1 entities, in source file db/mux_h9c.tdf
-    Info: Found entity 1: mux_h9c
-Info: Elaborating entity "mux_h9c" for hierarchy "Music_Block:inst1|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated"
-Info: Elaborating entity "Notes" for hierarchy "Music_Block:inst1|Notes:inst7"
-Warning: Using design file DoneCompare.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info: Found entity 1: DoneCompare
-Info: Elaborating entity "DoneCompare" for hierarchy "Music_Block:inst1|DoneCompare:inst8"
-Info: Elaborating entity "lpm_compare" for hierarchy "Music_Block:inst1|DoneCompare:inst8|lpm_compare:lpm_compare_component"
-Info: Elaborated megafunction instantiation "Music_Block:inst1|DoneCompare:inst8|lpm_compare:lpm_compare_component"
-Info: Found 1 design units, including 1 entities, in source file db/cmpr_7qi.tdf
-    Info: Found entity 1: cmpr_7qi
-Info: Elaborating entity "cmpr_7qi" for hierarchy "Music_Block:inst1|DoneCompare:inst8|lpm_compare:lpm_compare_component|cmpr_7qi:auto_generated"
-Warning: Using design file MusicCounter.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info: Found design unit 1: musiccounter-SYN
-    Info: Found entity 1: MusicCounter
-Info: Elaborating entity "MusicCounter" for hierarchy "MusicCounter:inst6"
-Info: Elaborating entity "lpm_counter" for hierarchy "MusicCounter:inst6|lpm_counter:lpm_counter_component"
-Info: Elaborated megafunction instantiation "MusicCounter:inst6|lpm_counter:lpm_counter_component"
-Info: Found 1 design units, including 1 entities, in source file db/cntr_hlh.tdf
-    Info: Found entity 1: cntr_hlh
-Info: Elaborating entity "cntr_hlh" for hierarchy "MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_hlh:auto_generated"
-Info: Clock multiplexers have been protected
-Info: Clock multiplexers have been protected
-Info: State machine "|robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state" contains 7 states
-Info: Selected Auto state machine encoding method for state machine "|robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state"
-Info: Encoding result for state machine "|robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state"
+Info: State machine "|robotmain|Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state" contains 7 states
+Info: Selected Auto state machine encoding method for state machine "|robotmain|Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state"
+Info: Encoding result for state machine "|robotmain|Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state"
     Info: Completed encoding using 7 state bits
-        Info: Encoded state bit "Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s6"
-        Info: Encoded state bit "Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s5"
-        Info: Encoded state bit "Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s4"
-        Info: Encoded state bit "Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s3"
-        Info: Encoded state bit "Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s2"
-        Info: Encoded state bit "Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s1"
-        Info: Encoded state bit "Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s0"
-    Info: State "|robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s0" uses code string "0000000"
-    Info: State "|robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s1" uses code string "0000011"
-    Info: State "|robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s2" uses code string "0000101"
-    Info: State "|robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s3" uses code string "0001001"
-    Info: State "|robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s4" uses code string "0010001"
-    Info: State "|robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s5" uses code string "0100001"
-    Info: State "|robotmain|Movement_Block:inst4|obstacle_avoidance_FSM:inst1|state.s6" uses code string "1000001"
-Info: Clock multiplexers have been protected
+        Info: Encoded state bit "Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s6"
+        Info: Encoded state bit "Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s5"
+        Info: Encoded state bit "Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s4"
+        Info: Encoded state bit "Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s3"
+        Info: Encoded state bit "Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s2"
+        Info: Encoded state bit "Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s1"
+        Info: Encoded state bit "Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s0"
+    Info: State "|robotmain|Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s0" uses code string "0000000"
+    Info: State "|robotmain|Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s1" uses code string "0000011"
+    Info: State "|robotmain|Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s2" uses code string "0000101"
+    Info: State "|robotmain|Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s3" uses code string "0001001"
+    Info: State "|robotmain|Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s4" uses code string "0010001"
+    Info: State "|robotmain|Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s5" uses code string "0100001"
+    Info: State "|robotmain|Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s6" uses code string "1000001"
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "Blue_Tooth_TX_Out" stuck at GND
     Warning (13410): Pin "Seg_A" stuck at VCC
@@ -1566,8 +1578,7 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "Spare_Servo" stuck at GND
     Warning (13410): Pin "LED_Blue" stuck at VCC
     Warning (13410): Pin "LED_Green" stuck at VCC
-Info: 8 registers lost all their fanouts during netlist optimizations. The first 8 are displayed below.
-    Info: Register "MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_hlh:auto_generated|safe_q[1]" lost all its fanouts during netlist optimizations.
+Info: 7 registers lost all their fanouts during netlist optimizations. The first 7 are displayed below.
     Info: Register "BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[22]" lost all its fanouts during netlist optimizations.
     Info: Register "BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[23]" lost all its fanouts during netlist optimizations.
     Info: Register "BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated|safe_q[24]" lost all its fanouts during netlist optimizations.
@@ -1575,19 +1586,21 @@ Info: 8 registers lost all their fanouts during netlist optimizations. The first
     Info: Register "IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4]" lost all its fanouts during netlist optimizations.
     Info: Register "IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component|dffs[5]" lost all its fanouts during netlist optimizations.
     Info: Register "IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component|dffs[5]" lost all its fanouts during netlist optimizations.
-Warning: Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Dip[2]"
+Warning: Design contains 6 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "BlueTooth_RCV_In"
     Warning (15610): No output dependent on input pin "Bumper"
     Warning (15610): No output dependent on input pin "Extra_Pin"
-Info: Implemented 235 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "Dip[2]"
+    Warning (15610): No output dependent on input pin "Dip[1]"
+    Warning (15610): No output dependent on input pin "Dip[0]"
+Info: Implemented 186 device resources after synthesis - the final resource count might be different
     Info: Implemented 11 input pins
     Info: Implemented 21 output pins
     Info: Implemented 5 bidirectional pins
-    Info: Implemented 198 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 49 warnings
-    Info: Allocated 255 megabytes of memory during processing
-    Info: Processing ended: Wed Apr 24 16:29:05 2019
-    Info: Elapsed time: 00:00:28
+    Info: Implemented 149 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 57 warnings
+    Info: Allocated 256 megabytes of memory during processing
+    Info: Processing ended: Wed Apr 24 17:06:57 2019
+    Info: Elapsed time: 00:00:18
 
 
