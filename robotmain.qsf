@@ -136,3 +136,4 @@ set_global_assignment -name BDF_FILE Music_Block.bdf
 set_global_assignment -name BDF_FILE IR_Sensor.bdf
 set_global_assignment -name BDF_FILE Movement_Block.bdf
 set_global_assignment -name VHDL_FILE dark_spot.vhd
+set_global_assignment -name VHDL_FILE exit_dark_spot.vhd

@@ -5,7 +5,7 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : -0.750 ns
+Actual Time    : -0.741 ns
 From           : BRight_IR_Sensor
 To             : IR_Sensor:inst20|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[3]
 From Clock     : --
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 19.495 ns
-From           : Movement_Block:inst3|obstacle_avoidance_FSM:inst1|l_fwd
-To             : Left_Servo
+Actual Time    : 19.779 ns
+From           : obstacle_avoidance_FSM:inst41|r_fwd
+To             : Right_Servo
 From Clock     : Clk_50MHZ
 To Clock       : --
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'Clk_50MHZ'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 59.64 MHz ( period = 16.768 ns )
+Actual Time    : 58.65 MHz ( period = 17.050 ns )
 From           : IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component|dffs[6]
-To             : Movement_Block:inst3|obstacle_avoidance_FSM:inst1|state.s1
+To             : obstacle_avoidance_FSM:inst41|state.s1
 From Clock     : Clk_50MHZ
 To Clock       : Clk_50MHZ
 Failed Paths   : 0

@@ -33,16 +33,9 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "exit_dark" (rect 0 0 44 12)(font "Arial" ))
-		(text "exit_dark" (rect 21 43 65 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 0 64)
-		(input)
 		(text "done" (rect 0 0 23 12)(font "Arial" ))
-		(text "done" (rect 21 59 44 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
+		(text "done" (rect 21 43 44 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
 		(pt 176 32)

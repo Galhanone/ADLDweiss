@@ -4,7 +4,6 @@ use ieee.std_logic_1164.all;
 entity dark_spot is
 	port(
 		location 	: in  std_logic_vector(1 DOWNTO 0);
-		exit_dark	: in std_logic;
 		done		: in  std_logic;
 		reset_music	: out std_logic;
 		dark_go		: out std_logic;
@@ -35,22 +34,6 @@ begin
 			while done = '0' loop
 			end loop;
 			reset_music <= '1';
-		end if;
-	end process;
-	
-	process(exit_dark)
-	begin
-		if location = "01" then		--Friend
-			--stop
-			--turn left
-			--wait until side_close*
-			--go forward ignoring wall
-			--wait until front_close*
-			--carry on with left wall follow
-		elsif location = "10" then	--Tunnel
-			--ignore sides and go straight
-			--wait until front_close*
-			--carry on with right wall follow
 		end if;
 	end process;
 end rtl;
