@@ -535,7 +535,7 @@ location[1] => Equal1.IN1
 location[1] => Equal2.IN1
 done => ~NO_FANOUT~
 reset_music <= <VCC>
-dark_go <= dark_go$latch.DB_MAX_OUTPUT_PORT_TYPE
+dark_go <= dark_go~1.DB_MAX_OUTPUT_PORT_TYPE
 right_left <= right_left$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1052,14 +1052,15 @@ aclr => lpm_counter:lpm_counter_component.aclr
 clock => lpm_counter:lpm_counter_component.clock
 q[0] <= lpm_counter:lpm_counter_component.q[0]
 q[1] <= lpm_counter:lpm_counter_component.q[1]
+q[2] <= lpm_counter:lpm_counter_component.q[2]
 
 
 |robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component
-clock => cntr_hlh:auto_generated.clock
+clock => cntr_ilh:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
 updown => ~NO_FANOUT~
-aclr => cntr_hlh:auto_generated.aclr
+aclr => cntr_ilh:auto_generated.aclr
 aset => ~NO_FANOUT~
 aconst => ~NO_FANOUT~
 aload => ~NO_FANOUT~
@@ -1069,9 +1070,11 @@ sconst => ~NO_FANOUT~
 sload => ~NO_FANOUT~
 data[0] => ~NO_FANOUT~
 data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_hlh:auto_generated.q[0]
-q[1] <= cntr_hlh:auto_generated.q[1]
+q[0] <= cntr_ilh:auto_generated.q[0]
+q[1] <= cntr_ilh:auto_generated.q[1]
+q[2] <= cntr_ilh:auto_generated.q[2]
 cout <= <GND>
 eq[0] <= <GND>
 eq[1] <= <GND>
@@ -1091,13 +1094,16 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_hlh:auto_generated
+|robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_ilh:auto_generated
 aclr => counter_cella0.ACLR
 aclr => counter_cella1.ACLR
+aclr => counter_cella2.ACLR
 clock => counter_cella0.CLK
 clock => counter_cella1.CLK
+clock => counter_cella2.CLK
 q[0] <= counter_cella0.REGOUT
 q[1] <= counter_cella1.REGOUT
+q[2] <= counter_cella2.REGOUT
 
 
 |robotmain|sideCloseCompare:inst16
@@ -2153,15 +2159,5 @@ result[0] <= mux_sld:auto_generated.result[0]
 
 |robotmain|Colon_mux:inst25|lpm_mux:lpm_mux_component|mux_sld:auto_generated
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|robotmain|exit_dark_spot:inst43
-location => right_left.DATAIN
-exit_dark => ~NO_FANOUT~
-side_vfar => ~NO_FANOUT~
-front_close => ~NO_FANOUT~
-left_go <= <VCC>
-right_go <= <VCC>
-right_left <= location.DB_MAX_OUTPUT_PORT_TYPE
 
 

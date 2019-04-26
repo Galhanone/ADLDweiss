@@ -4,12 +4,7 @@ use ieee.std_logic_1164.all;
 entity dark_spot is
 	port(
 		location 	: in  std_logic_vector(1 DOWNTO 0);
-		exit_dark	: in  std_logic;
 		done		: in  std_logic;
-		side_vfar	: in  std_logic;
-		front_close	: in  std_logic;
-		--left_go	: out std_logic;
-		--right_go	: out std_logic;
 		reset_music	: out std_logic;
 		dark_go		: out std_logic;
 		right_left	: out std_logic);
@@ -17,7 +12,9 @@ end dark_spot;
 
 architecture rtl of dark_spot is
 begin
-	--TODO: Does right_left need to be initialized???
+	reset_music <= '0';
+	dark_go <= '1';
+	right_left <= '0';
 	process(location)
 	begin
 		if location = "01" then		--Friend

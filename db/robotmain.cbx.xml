@@ -5,7 +5,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|backFarCompare:inst33|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_bqi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|wallMux:inst34|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_i9c.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Colon_mux:inst25|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_sld.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_hlh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_ilh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Music_Block:inst7|freqCounter:inst30|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_gsi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Music_Block:inst7|noteCounter:inst29|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_klh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Music_Block:inst7|octaveMux:inst10|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_h9c.tdf"/>

@@ -12,7 +12,6 @@ end dark_spot;
 
 architecture rtl of dark_spot is
 begin
-	--TODO: Does right_left need to be initialized???
 	process(location)
 	begin
 		if location = "01" then		--Friend
@@ -34,6 +33,9 @@ begin
 			while done = '0' loop
 			end loop;
 			reset_music <= '1';
+		else
+			right_left <= '0';
+			dark_go <= '1';
 		end if;
 	end process;
 end rtl;
