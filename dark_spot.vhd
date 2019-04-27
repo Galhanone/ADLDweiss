@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity dark_spot is
 	port(
-		location 	: in  std_logic_vector(1 DOWNTO 0);
+		location 	: in  std_logic_vector(2 DOWNTO 0);
 		done		: in  std_logic;
 		reset_music	: out std_logic;
 		dark_go		: out std_logic;
@@ -14,7 +14,7 @@ architecture rtl of dark_spot is
 begin
 	process(location)
 	begin
-		if location = "01" then		--Friend
+		if location = "001" then	--Friend In
 			reset_music <= '1';
 			dark_go <= '0';
 			reset_music <= '0';
@@ -23,10 +23,14 @@ begin
 			reset_music <= '1';
 			dark_go <= '1';
 			right_left <= '0';
-		elsif location = "10" then	--Tunnel
+		elsif location = "010" then	--Friend Out
+			
+		elsif location = "011" then	--Tunnel In
 			dark_go <= '1';
 			right_left <= '1';
-		elsif location = "11" then	--Church
+		elsif location = "100" then	--Tunnel Out
+			
+		elsif location = "101" then	--Church In
 			reset_music <= '1';
 			dark_go <= '0';
 			reset_music <= '0';

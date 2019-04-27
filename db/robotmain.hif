@@ -8146,62 +8146,6 @@ ON
 
 # end
 # entity
-robotmain
-# storage
-db|robotmain.(0).cnf
-db|robotmain.(0).cnf
-# case_insensitive
-# source_file
-robotmain.bdf
-ce1e8e1e078ca87457fe7ea919bffbe
-25
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# lmf
-..|..|..|..|..|altera|72sp3|quartus|lmf|
-d41d8cd98f0b24e980998ecf8427e
-# macro_sequence
-
-# end
-# entity
-dark_spot
-# storage
-db|robotmain.(46).cnf
-db|robotmain.(46).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-dark_spot.vhd
-b0dfdec2aea981b98223f26952b9c6b
-4
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-dark_spot:inst4
-}
-# lmf
-..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
 MusicCounter
 # storage
 db|robotmain.(105).cnf
@@ -8403,6 +8347,62 @@ MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_ilh:auto_generated
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|
 d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+robotmain
+# storage
+db|robotmain.(0).cnf
+db|robotmain.(0).cnf
+# case_insensitive
+# source_file
+robotmain.bdf
+71697257584221e533352c1e188cdb84
+25
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
+dark_spot
+# storage
+db|robotmain.(46).cnf
+db|robotmain.(46).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+dark_spot.vhd
+64e3af3d1bfbb6bd23475c6226173b3
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+dark_spot:inst3
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
 # macro_sequence
 
 # end

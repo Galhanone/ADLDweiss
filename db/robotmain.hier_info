@@ -526,16 +526,25 @@ q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 shiftout <= shiftout~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robotmain|dark_spot:inst4
-location[0] => Equal0.IN1
+|robotmain|dark_spot:inst3
+location[0] => Equal0.IN2
 location[0] => Equal1.IN0
-location[0] => Equal2.IN0
+location[0] => Equal2.IN1
+location[0] => Equal3.IN0
+location[0] => Equal4.IN1
 location[1] => Equal0.IN0
-location[1] => Equal1.IN1
-location[1] => Equal2.IN1
+location[1] => Equal1.IN2
+location[1] => Equal2.IN2
+location[1] => Equal3.IN1
+location[1] => Equal4.IN0
+location[2] => Equal0.IN1
+location[2] => Equal1.IN1
+location[2] => Equal2.IN0
+location[2] => Equal3.IN2
+location[2] => Equal4.IN2
 done => ~NO_FANOUT~
 reset_music <= <VCC>
-dark_go <= dark_go~1.DB_MAX_OUTPUT_PORT_TYPE
+dark_go <= dark_go$latch.DB_MAX_OUTPUT_PORT_TYPE
 right_left <= right_left$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
