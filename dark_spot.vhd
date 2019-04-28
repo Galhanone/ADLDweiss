@@ -12,31 +12,27 @@ end dark_spot;
 
 architecture rtl of dark_spot is
 begin
-	process(location)
+	process(location, done)
 	begin
-		if location = "001" then	--Friend In
-			reset_music <= '1';
-			dark_go <= '0';
-			reset_music <= '0';
-			while done = '0' loop
-			end loop;
+		if done = '1' AND location = "001" then
 			reset_music <= '1';
 			dark_go <= '1';
 			right_left <= '0';
-		elsif location = "010" then	--Friend Out
+		elsif location = "001" then	--Friend In
+			dark_go <= '0';
+			reset_music <= '0';
+		--elsif location = "010" then	--Friend Out
 			
 		elsif location = "011" then	--Tunnel In
 			dark_go <= '1';
 			right_left <= '1';
-		elsif location = "100" then	--Tunnel Out
+		--elsif location = "100" then	--Tunnel Out
 			
-		elsif location = "101" then	--Church In
+		elsif done = '1' AND location >= "101" then
 			reset_music <= '1';
+		elsif location >= "101" then	--Church In
 			dark_go <= '0';
 			reset_music <= '0';
-			while done = '0' loop
-			end loop;
-			reset_music <= '1';
 		else
 			right_left <= '0';
 			dark_go <= '1';
