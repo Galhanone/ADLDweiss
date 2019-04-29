@@ -44,14 +44,14 @@ ENTITY MusicCounter IS
 	(
 		aclr		: IN STD_LOGIC ;
 		clock		: IN STD_LOGIC ;
-		q		: OUT STD_LOGIC_VECTOR (2 DOWNTO 0)
+		q		: OUT STD_LOGIC_VECTOR (1 DOWNTO 0)
 	);
 END MusicCounter;
 
 
 ARCHITECTURE SYN OF musiccounter IS
 
-	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (2 DOWNTO 0);
+	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (1 DOWNTO 0);
 
 
 
@@ -65,19 +65,19 @@ ARCHITECTURE SYN OF musiccounter IS
 	PORT (
 			aclr	: IN STD_LOGIC ;
 			clock	: IN STD_LOGIC ;
-			q	: OUT STD_LOGIC_VECTOR (2 DOWNTO 0)
+			q	: OUT STD_LOGIC_VECTOR (1 DOWNTO 0)
 	);
 	END COMPONENT;
 
 BEGIN
-	q    <= sub_wire0(2 DOWNTO 0);
+	q    <= sub_wire0(1 DOWNTO 0);
 
 	lpm_counter_component : lpm_counter
 	GENERIC MAP (
 		lpm_direction => "UP",
 		lpm_port_updown => "PORT_UNUSED",
 		lpm_type => "LPM_COUNTER",
-		lpm_width => 3
+		lpm_width => 2
 	)
 	PORT MAP (
 		aclr => aclr,
@@ -109,16 +109,16 @@ END SYN;
 -- Retrieval info: PRIVATE: SSET NUMERIC "0"
 -- Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
--- Retrieval info: PRIVATE: nBit NUMERIC "3"
+-- Retrieval info: PRIVATE: nBit NUMERIC "2"
 -- Retrieval info: CONSTANT: LPM_DIRECTION STRING "UP"
 -- Retrieval info: CONSTANT: LPM_PORT_UPDOWN STRING "PORT_UNUSED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COUNTER"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "3"
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "2"
 -- Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT NODEFVAL aclr
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
--- Retrieval info: USED_PORT: q 0 0 3 0 OUTPUT NODEFVAL q[2..0]
+-- Retrieval info: USED_PORT: q 0 0 2 0 OUTPUT NODEFVAL q[1..0]
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
--- Retrieval info: CONNECT: q 0 0 3 0 @q 0 0 3 0
+-- Retrieval info: CONNECT: q 0 0 2 0 @q 0 0 2 0
 -- Retrieval info: CONNECT: @aclr 0 0 0 0 aclr 0 0 0 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL MusicCounter.vhd TRUE

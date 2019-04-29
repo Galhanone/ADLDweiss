@@ -5,8 +5,8 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 0.139 ns
-From           : Button_1
+Actual Time    : -0.143 ns
+From           : Button_2
 To             : inst10
 From Clock     : --
 To Clock       : Clk_50MHZ
@@ -15,7 +15,7 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 40.233 ns
+Actual Time    : 37.574 ns
 From           : Music_Block:inst54|inst28
 To             : Speaker_74
 From Clock     : Clk_50MHZ
@@ -25,7 +25,7 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 2.632 ns
+Actual Time    : 3.424 ns
 From           : BRight_IR_Sensor
 To             : IR_Sensor:inst20|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[3]
 From Clock     : --
@@ -35,7 +35,7 @@ Failed Paths   : 0
 Type           : Clock Setup: 'Clk_50MHZ'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 39.20 MHz ( period = 25.513 ns )
+Actual Time    : 42.74 MHz ( period = 23.395 ns )
 From           : Music_Block:inst54|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|safe_q[0]
 To             : Music_Block:inst54|freqCounter:inst30|lpm_counter:lpm_counter_component|cntr_gsi:auto_generated|safe_q[0]
 From Clock     : Clk_50MHZ
@@ -50,7 +50,7 @@ From           : Music_Block:inst54|inst28
 To             : Music_Block:inst54|inst28
 From Clock     : Clk_50MHZ
 To Clock       : Clk_50MHZ
-Failed Paths   : 125
+Failed Paths   : 121
 
 Type           : Total number of failed paths
 Slack          : 
@@ -60,7 +60,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 125
+Failed Paths   : 121
 
 --------------------------------------------------------------------------------------
 

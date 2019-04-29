@@ -1,5 +1,5 @@
 Analysis & Synthesis report for robotmain
-Sun Apr 28 23:56:34 2019
+Mon Apr 29 02:11:02 2019
 Quartus II Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
 
 
@@ -15,8 +15,8 @@ Quartus II Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
   7. State Machine - |robotmain|obstacle_avoidance_FSM:inst41|state
   8. User-Specified and Inferred Latches
   9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
  12. Source assignments for BigCount:inst23|lpm_counter:lpm_counter_component
  13. Source assignments for Music_Block:inst54|durCounter:inst31|lpm_counter:lpm_counter_component
  14. Source assignments for Music_Block:inst54|noteCounter:inst29|lpm_counter:lpm_counter_component
@@ -49,7 +49,7 @@ Quartus II Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
  41. Parameter Settings for User Entity Instance: sideFarCompare:inst18|lpm_compare:lpm_compare_component
  42. Parameter Settings for User Entity Instance: veryFarCompare:inst30|lpm_compare:lpm_compare_component
  43. Parameter Settings for User Entity Instance: backFarCompare:inst33|lpm_compare:lpm_compare_component
- 44. Parameter Settings for User Entity Instance: wallMux:inst34|lpm_mux:lpm_mux_component
+ 44. Parameter Settings for User Entity Instance: smallMux:inst7|lpm_mux:lpm_mux_component
  45. Parameter Settings for User Entity Instance: IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component
  46. Parameter Settings for User Entity Instance: IR_Sensor:inst20|bus_and:inst7|lpm_and:lpm_and_component
  47. Parameter Settings for User Entity Instance: IR_Sensor:inst20|bus_and:inst6|lpm_and:lpm_and_component
@@ -87,12 +87,12 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sun Apr 28 23:56:34 2019        ;
+; Analysis & Synthesis Status ; Successful - Mon Apr 29 02:11:01 2019        ;
 ; Quartus II Version          ; 7.2 Build 207 03/18/2008 SP 3 SJ Web Edition ;
 ; Revision Name               ; robotmain                                    ;
 ; Top-level Entity Name       ; robotmain                                    ;
 ; Family                      ; MAX II                                       ;
-; Total logic elements        ; 224                                          ;
+; Total logic elements        ; 191                                          ;
 ; Total pins                  ; 37                                           ;
 ; Total virtual pins          ; 0                                            ;
 ; Total memory bits           ; 0                                            ;
@@ -162,84 +162,88 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                 ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+
-; Display_mux.vhd                  ; yes             ; User VHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Display_mux.vhd            ;
-; Duration_ROM.vhd                 ; yes             ; User VHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Duration_ROM.vhd           ;
-; durCounter.tdf                   ; yes             ; User AHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/durCounter.tdf             ;
-; freqCounter.tdf                  ; yes             ; User AHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/freqCounter.tdf            ;
-; noteCounter.tdf                  ; yes             ; User AHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/noteCounter.tdf            ;
-; Notes.vhd                        ; yes             ; User VHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Notes.vhd                  ;
-; octaveMux.tdf                    ; yes             ; User AHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/octaveMux.tdf              ;
-; restCompare.tdf                  ; yes             ; User AHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/restCompare.tdf            ;
-; Song_ROM.vhd                     ; yes             ; User VHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Song_ROM.vhd               ;
-; robotmain.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/robotmain.bdf              ;
-; Seven_Seg_Driver.vhd             ; yes             ; User VHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Seven_Seg_Driver.vhd       ;
-; Servo.vhd                        ; yes             ; User VHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Servo.vhd                  ;
-; obstacle_avoidance_FSM.vhd       ; yes             ; User VHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/obstacle_avoidance_FSM.vhd ;
-; Music_Block.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Music_Block.bdf            ;
-; IR_Sensor.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/IR_Sensor.bdf              ;
-; dark_spot.vhd                    ; yes             ; User VHDL File                     ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/dark_spot.vhd              ;
-; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_counter.inc              ;
-; lpm_mux.inc                      ; yes             ; Other                              ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_mux.inc                  ;
-; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_compare.inc              ;
-; Digit_decode.vhd                 ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Digit_decode.vhd           ;
-; lpm_decode.tdf                   ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_decode.tdf               ;
-; declut.inc                       ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/declut.inc                   ;
-; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/altshift.inc                 ;
-; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_constant.inc             ;
-; aglobal72.inc                    ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/aglobal72.inc                ;
-; db/decode_gpe.tdf                ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/decode_gpe.tdf          ;
-; BigCount.vhd                     ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/BigCount.vhd               ;
-; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_counter.tdf              ;
-; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_decode.inc               ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_add_sub.inc              ;
-; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/cmpconst.inc                 ;
-; dffeea.inc                       ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/dffeea.inc                   ;
-; alt_synch_counter.inc            ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/alt_synch_counter.inc        ;
-; alt_synch_counter_f.inc          ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/alt_synch_counter_f.inc      ;
-; alt_counter_f10ke.inc            ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/alt_counter_f10ke.inc        ;
-; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/alt_counter_stratix.inc      ;
-; db/cntr_49h.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/cntr_49h.tdf            ;
-; distanceCompare.tdf              ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/distanceCompare.tdf        ;
-; lpm_compare.tdf                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_compare.tdf              ;
-; comptree.inc                     ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/comptree.inc                 ;
-; db/cmpr_gqi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/cmpr_gqi.tdf            ;
-; reg8.tdf                         ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/reg8.tdf                   ;
-; lpm_ff.inc                       ; yes             ; Other                              ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_ff.inc                   ;
-; lpm_ff.tdf                       ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_ff.tdf                   ;
-; bus_and.tdf                      ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/bus_and.tdf                ;
-; lpm_and.inc                      ; yes             ; Other                              ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_and.inc                  ;
-; lpm_and.tdf                      ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_and.tdf                  ;
-; Shift4.tdf                       ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Shift4.tdf                 ;
-; lpm_shiftreg.inc                 ; yes             ; Other                              ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_shiftreg.inc             ;
-; lpm_shiftreg.tdf                 ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_shiftreg.tdf             ;
-; doneCompare.tdf                  ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/doneCompare.tdf            ;
-; db/cmpr_fti.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/cmpr_fti.tdf            ;
-; db/cntr_esi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/cntr_esi.tdf            ;
-; db/cntr_klh.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/cntr_klh.tdf            ;
-; db/cmpr_rci.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/cmpr_rci.tdf            ;
-; db/cntr_gsi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/cntr_gsi.tdf            ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_mux.tdf                  ;
-; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/muxlut.inc                   ;
-; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/bypassff.inc                 ;
-; db/mux_h9c.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/mux_h9c.tdf             ;
-; MusicCounter.vhd                 ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/MusicCounter.vhd           ;
-; db/cntr_ilh.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/cntr_ilh.tdf            ;
-; sideCloseCompare.tdf             ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/sideCloseCompare.tdf       ;
-; wallMux.tdf                      ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/wallMux.tdf                ;
-; db/mux_i9c.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/mux_i9c.tdf             ;
-; sideFarCompare.tdf               ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/sideFarCompare.tdf         ;
-; db/cmpr_bqi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/cmpr_bqi.tdf            ;
-; veryFarCompare.tdf               ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/veryFarCompare.tdf         ;
-; backFarCompare.tdf               ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/backFarCompare.tdf         ;
-; db/mux_vld.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/mux_vld.tdf             ;
-; Colon_mux.vhd                    ; yes             ; Other                              ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/Colon_mux.vhd              ;
-; db/mux_sld.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/db/mux_sld.tdf             ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                             ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                             ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+
+; Display_mux.vhd                  ; yes             ; User VHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Display_mux.vhd            ;
+; Duration_ROM.vhd                 ; yes             ; User VHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Duration_ROM.vhd           ;
+; durCounter.tdf                   ; yes             ; User AHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/durCounter.tdf             ;
+; freqCounter.tdf                  ; yes             ; User AHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/freqCounter.tdf            ;
+; noteCounter.tdf                  ; yes             ; User AHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/noteCounter.tdf            ;
+; Notes.vhd                        ; yes             ; User VHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Notes.vhd                  ;
+; octaveMux.tdf                    ; yes             ; User AHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/octaveMux.tdf              ;
+; restCompare.tdf                  ; yes             ; User AHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/restCompare.tdf            ;
+; Song_ROM.vhd                     ; yes             ; User VHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Song_ROM.vhd               ;
+; robotmain.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/robotmain.bdf              ;
+; Seven_Seg_Driver.vhd             ; yes             ; User VHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Seven_Seg_Driver.vhd       ;
+; Servo.vhd                        ; yes             ; User VHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Servo.vhd                  ;
+; obstacle_avoidance_FSM.vhd       ; yes             ; User VHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/obstacle_avoidance_FSM.vhd ;
+; Music_Block.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Music_Block.bdf            ;
+; IR_Sensor.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/IR_Sensor.bdf              ;
+; dark_spot.vhd                    ; yes             ; User VHDL File                     ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/dark_spot.vhd              ;
+; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_counter.inc          ;
+; lpm_mux.inc                      ; yes             ; Other                              ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_mux.inc              ;
+; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_compare.inc          ;
+; Digit_decode.vhd                 ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Digit_decode.vhd           ;
+; lpm_decode.tdf                   ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_decode.tdf           ;
+; declut.inc                       ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/declut.inc               ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/altshift.inc             ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_constant.inc         ;
+; aglobal72.inc                    ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/aglobal72.inc            ;
+; db/decode_gpe.tdf                ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/decode_gpe.tdf          ;
+; BigCount.vhd                     ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/BigCount.vhd               ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_counter.tdf          ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_decode.inc           ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_add_sub.inc          ;
+; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/cmpconst.inc             ;
+; dffeea.inc                       ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/dffeea.inc               ;
+; alt_synch_counter.inc            ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/alt_synch_counter.inc    ;
+; alt_synch_counter_f.inc          ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/alt_synch_counter_f.inc  ;
+; alt_counter_f10ke.inc            ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/alt_counter_f10ke.inc    ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/alt_counter_stratix.inc  ;
+; db/cntr_49h.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_49h.tdf            ;
+; distanceCompare.tdf              ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/distanceCompare.tdf        ;
+; lpm_compare.tdf                  ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_compare.tdf          ;
+; comptree.inc                     ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/comptree.inc             ;
+; db/cmpr_gqi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cmpr_gqi.tdf            ;
+; reg8.tdf                         ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/reg8.tdf                   ;
+; lpm_ff.inc                       ; yes             ; Other                              ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_ff.inc               ;
+; lpm_ff.tdf                       ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_ff.tdf               ;
+; bus_and.tdf                      ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/bus_and.tdf                ;
+; lpm_and.inc                      ; yes             ; Other                              ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_and.inc              ;
+; lpm_and.tdf                      ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_and.tdf              ;
+; Shift4.tdf                       ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Shift4.tdf                 ;
+; lpm_shiftreg.inc                 ; yes             ; Other                              ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_shiftreg.inc         ;
+; lpm_shiftreg.tdf                 ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_shiftreg.tdf         ;
+; doneCompare.tdf                  ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/doneCompare.tdf            ;
+; db/cmpr_fti.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cmpr_fti.tdf            ;
+; db/cntr_esi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_esi.tdf            ;
+; db/cntr_klh.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_klh.tdf            ;
+; db/cmpr_rci.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cmpr_rci.tdf            ;
+; db/cntr_gsi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_gsi.tdf            ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/lpm_mux.tdf              ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/muxlut.inc               ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/72sp3/quartus/libraries/megafunctions/bypassff.inc             ;
+; db/mux_h9c.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/mux_h9c.tdf             ;
+; MusicCounter.vhd                 ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/MusicCounter.vhd           ;
+; db/cntr_hlh.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cntr_hlh.tdf            ;
+; sideCloseCompare.tdf             ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/sideCloseCompare.tdf       ;
+; db/cmpr_kqi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cmpr_kqi.tdf            ;
+; wallMux.tdf                      ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/wallMux.tdf                ;
+; db/mux_l9c.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/mux_l9c.tdf             ;
+; sideFarCompare.tdf               ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/sideFarCompare.tdf         ;
+; db/cmpr_fqi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cmpr_fqi.tdf            ;
+; veryFarCompare.tdf               ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/veryFarCompare.tdf         ;
+; backFarCompare.tdf               ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/backFarCompare.tdf         ;
+; db/cmpr_bqi.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/cmpr_bqi.tdf            ;
+; smallMux.tdf                     ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/smallMux.tdf               ;
+; db/mux_i9c.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/mux_i9c.tdf             ;
+; db/mux_vld.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/mux_vld.tdf             ;
+; Colon_mux.vhd                    ; yes             ; Other                              ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/Colon_mux.vhd              ;
+; db/mux_sld.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mainframe/Documents/GitHub/ADLDweiss/db/mux_sld.tdf             ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------+
@@ -247,33 +251,33 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Total logic elements                        ; 224       ;
-;     -- Combinational with no register       ; 123       ;
-;     -- Register only                        ; 32        ;
-;     -- Combinational with a register        ; 69        ;
+; Total logic elements                        ; 191       ;
+;     -- Combinational with no register       ; 103       ;
+;     -- Register only                        ; 24        ;
+;     -- Combinational with a register        ; 64        ;
 ;                                             ;           ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 77        ;
-;     -- 3 input functions                    ; 30        ;
-;     -- 2 input functions                    ; 63        ;
-;     -- 1 input functions                    ; 13        ;
-;     -- 0 input functions                    ; 9         ;
+;     -- 4 input functions                    ; 56        ;
+;     -- 3 input functions                    ; 28        ;
+;     -- 2 input functions                    ; 65        ;
+;     -- 1 input functions                    ; 11        ;
+;     -- 0 input functions                    ; 7         ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 180       ;
-;     -- arithmetic mode                      ; 44        ;
+;     -- normal mode                          ; 148       ;
+;     -- arithmetic mode                      ; 43        ;
 ;     -- qfbk mode                            ; 0         ;
 ;     -- register cascade mode                ; 0         ;
 ;     -- synchronous clear/load mode          ; 14        ;
-;     -- asynchronous clear/load mode         ; 24        ;
+;     -- asynchronous clear/load mode         ; 21        ;
 ;                                             ;           ;
-; Total registers                             ; 101       ;
-; Total logic cells in carry chains           ; 49        ;
+; Total registers                             ; 88        ;
+; Total logic cells in carry chains           ; 48        ;
 ; I/O pins                                    ; 37        ;
 ; Maximum fan-out node                        ; Clk_50MHZ ;
 ; Maximum fan-out                             ; 25        ;
-; Total fan-out                               ; 744       ;
-; Average fan-out                             ; 2.85      ;
+; Total fan-out                               ; 630       ;
+; Average fan-out                             ; 2.76      ;
 +---------------------------------------------+-----------+
 
 
@@ -282,23 +286,23 @@ applicable agreement for further details.
 +------------------------------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                     ; Logic Cells ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                        ; Library Name ;
 +------------------------------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------+--------------+
-; |robotmain                                     ; 224 (9)     ; 101          ; 0           ; 0            ; 0       ; 0         ; 0         ; 37   ; 0            ; 123 (4)      ; 32 (1)            ; 69 (4)           ; 49 (0)          ; 0 (0)      ; |robotmain                                                                                                 ; work         ;
+; |robotmain                                     ; 191 (8)     ; 88           ; 0           ; 0            ; 0       ; 0         ; 0         ; 37   ; 0            ; 103 (3)      ; 24 (1)            ; 64 (4)           ; 48 (0)          ; 0 (0)      ; |robotmain                                                                                                 ; work         ;
 ;    |BigCount:inst23|                           ; 25 (0)      ; 25           ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 25 (0)           ; 25 (0)          ; 0 (0)      ; |robotmain|BigCount:inst23                                                                                 ; work         ;
 ;       |lpm_counter:lpm_counter_component|      ; 25 (0)      ; 25           ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 25 (0)           ; 25 (0)          ; 0 (0)      ; |robotmain|BigCount:inst23|lpm_counter:lpm_counter_component                                               ; work         ;
 ;          |cntr_49h:auto_generated|             ; 25 (25)     ; 25           ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 25 (25)          ; 25 (25)         ; 0 (0)      ; |robotmain|BigCount:inst23|lpm_counter:lpm_counter_component|cntr_49h:auto_generated                       ; work         ;
-;    |Colon_mux:inst25|                          ; 4 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Colon_mux:inst25                                                                                ; work         ;
-;       |lpm_mux:lpm_mux_component|              ; 4 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Colon_mux:inst25|lpm_mux:lpm_mux_component                                                      ; work         ;
-;          |mux_sld:auto_generated|              ; 4 (4)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Colon_mux:inst25|lpm_mux:lpm_mux_component|mux_sld:auto_generated                               ; work         ;
 ;    |Digit_decode:inst26|                       ; 3 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Digit_decode:inst26                                                                             ; work         ;
 ;       |lpm_decode:lpm_decode_component|        ; 3 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Digit_decode:inst26|lpm_decode:lpm_decode_component                                             ; work         ;
 ;          |decode_gpe:auto_generated|           ; 3 (3)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Digit_decode:inst26|lpm_decode:lpm_decode_component|decode_gpe:auto_generated                   ; work         ;
-;    |IR_Sensor:inst11|                          ; 11 (2)      ; 9            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (1)        ; 7 (0)             ; 2 (1)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst11                                                                                ; work         ;
+;    |Display_mux:inst24|                        ; 3 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Display_mux:inst24                                                                              ; work         ;
+;       |lpm_mux:lpm_mux_component|              ; 3 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Display_mux:inst24|lpm_mux:lpm_mux_component                                                    ; work         ;
+;          |mux_vld:auto_generated|              ; 3 (3)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Display_mux:inst24|lpm_mux:lpm_mux_component|mux_vld:auto_generated                             ; work         ;
+;    |IR_Sensor:inst11|                          ; 15 (2)      ; 13           ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (1)        ; 11 (0)            ; 2 (1)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst11                                                                                ; work         ;
 ;       |Shift4:inst4|                           ; 4 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst11|Shift4:inst4                                                                   ; work         ;
 ;          |lpm_shiftreg:lpm_shiftreg_component| ; 4 (4)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst11|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component                               ; work         ;
 ;       |bus_and:inst6|                          ; 1 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst11|bus_and:inst6                                                                  ; work         ;
 ;          |lpm_and:lpm_and_component|           ; 1 (1)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst11|bus_and:inst6|lpm_and:lpm_and_component                                        ; work         ;
-;       |reg8:inst12|                            ; 4 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst11|reg8:inst12                                                                    ; work         ;
-;          |lpm_ff:lpm_ff_component|             ; 4 (4)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst11|reg8:inst12|lpm_ff:lpm_ff_component                                            ; work         ;
+;       |reg8:inst12|                            ; 8 (0)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst11|reg8:inst12                                                                    ; work         ;
+;          |lpm_ff:lpm_ff_component|             ; 8 (8)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst11|reg8:inst12|lpm_ff:lpm_ff_component                                            ; work         ;
 ;    |IR_Sensor:inst13|                          ; 12 (2)      ; 9            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (1)        ; 7 (0)             ; 2 (1)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst13                                                                                ; work         ;
 ;       |Shift4:inst4|                           ; 4 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst13|Shift4:inst4                                                                   ; work         ;
 ;          |lpm_shiftreg:lpm_shiftreg_component| ; 4 (4)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst13|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component                               ; work         ;
@@ -308,13 +312,6 @@ applicable agreement for further details.
 ;          |lpm_and:lpm_and_component|           ; 1 (1)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst13|bus_and:inst7|lpm_and:lpm_and_component                                        ; work         ;
 ;       |reg8:inst12|                            ; 4 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst13|reg8:inst12                                                                    ; work         ;
 ;          |lpm_ff:lpm_ff_component|             ; 4 (4)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst13|reg8:inst12|lpm_ff:lpm_ff_component                                            ; work         ;
-;    |IR_Sensor:inst14|                          ; 11 (2)      ; 9            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (1)        ; 7 (0)             ; 2 (1)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst14                                                                                ; work         ;
-;       |Shift4:inst4|                           ; 4 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst14|Shift4:inst4                                                                   ; work         ;
-;          |lpm_shiftreg:lpm_shiftreg_component| ; 4 (4)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component                               ; work         ;
-;       |bus_and:inst6|                          ; 1 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst14|bus_and:inst6                                                                  ; work         ;
-;          |lpm_and:lpm_and_component|           ; 1 (1)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst14|bus_and:inst6|lpm_and:lpm_and_component                                        ; work         ;
-;       |reg8:inst12|                            ; 4 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst14|reg8:inst12                                                                    ; work         ;
-;          |lpm_ff:lpm_ff_component|             ; 4 (4)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component                                            ; work         ;
 ;    |IR_Sensor:inst20|                          ; 9 (2)       ; 7            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (1)        ; 5 (0)             ; 2 (1)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst20                                                                                ; work         ;
 ;       |Shift4:inst4|                           ; 4 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst20|Shift4:inst4                                                                   ; work         ;
 ;          |lpm_shiftreg:lpm_shiftreg_component| ; 4 (4)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst20|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component                               ; work         ;
@@ -322,20 +319,13 @@ applicable agreement for further details.
 ;          |lpm_and:lpm_and_component|           ; 1 (1)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst20|bus_and:inst6|lpm_and:lpm_and_component                                        ; work         ;
 ;       |reg8:inst12|                            ; 2 (0)       ; 2            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst20|reg8:inst12                                                                    ; work         ;
 ;          |lpm_ff:lpm_ff_component|             ; 2 (2)       ; 2            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component                                            ; work         ;
-;    |IR_Sensor:inst21|                          ; 9 (2)       ; 7            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (1)        ; 5 (0)             ; 2 (1)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst21                                                                                ; work         ;
-;       |Shift4:inst4|                           ; 4 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst21|Shift4:inst4                                                                   ; work         ;
-;          |lpm_shiftreg:lpm_shiftreg_component| ; 4 (4)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst21|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component                               ; work         ;
-;       |bus_and:inst6|                          ; 1 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst21|bus_and:inst6                                                                  ; work         ;
-;          |lpm_and:lpm_and_component|           ; 1 (1)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst21|bus_and:inst6|lpm_and:lpm_and_component                                        ; work         ;
-;       |reg8:inst12|                            ; 2 (0)       ; 2            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst21|reg8:inst12                                                                    ; work         ;
-;          |lpm_ff:lpm_ff_component|             ; 2 (2)       ; 2            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component                                            ; work         ;
-;    |MusicCounter:inst6|                        ; 3 (0)       ; 3            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 3 (0)           ; 0 (0)      ; |robotmain|MusicCounter:inst6                                                                              ; work         ;
-;       |lpm_counter:lpm_counter_component|      ; 3 (0)       ; 3            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 3 (0)           ; 0 (0)      ; |robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component                                            ; work         ;
-;          |cntr_ilh:auto_generated|             ; 3 (3)       ; 3            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; 3 (3)           ; 0 (0)      ; |robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_ilh:auto_generated                    ; work         ;
+;    |MusicCounter:inst6|                        ; 2 (0)       ; 2            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |robotmain|MusicCounter:inst6                                                                              ; work         ;
+;       |lpm_counter:lpm_counter_component|      ; 2 (0)       ; 2            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component                                            ; work         ;
+;          |cntr_hlh:auto_generated|             ; 2 (2)       ; 2            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 2 (2)           ; 0 (0)      ; |robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_hlh:auto_generated                    ; work         ;
 ;    |Music_Block:inst54|                        ; 74 (4)      ; 20           ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 54 (3)       ; 0 (0)             ; 20 (1)           ; 21 (0)          ; 0 (0)      ; |robotmain|Music_Block:inst54                                                                              ; work         ;
-;       |Duration_ROM:inst6|                     ; 6 (6)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst54|Duration_ROM:inst6                                                           ; work         ;
+;       |Duration_ROM:inst6|                     ; 8 (8)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst54|Duration_ROM:inst6                                                           ; work         ;
 ;       |Notes:inst7|                            ; 7 (7)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst54|Notes:inst7                                                                  ; work         ;
-;       |Song_ROM:inst1|                         ; 33 (33)     ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 33 (33)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst54|Song_ROM:inst1                                                               ; work         ;
+;       |Song_ROM:inst1|                         ; 32 (32)     ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 32 (32)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst54|Song_ROM:inst1                                                               ; work         ;
 ;       |durCounter:inst31|                      ; 7 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 6 (0)            ; 7 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst54|durCounter:inst31                                                            ; work         ;
 ;          |lpm_counter:lpm_counter_component|   ; 7 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 6 (0)            ; 7 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst54|durCounter:inst31|lpm_counter:lpm_counter_component                          ; work         ;
 ;             |cntr_esi:auto_generated|          ; 7 (7)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 6 (6)            ; 7 (7)           ; 0 (0)      ; |robotmain|Music_Block:inst54|durCounter:inst31|lpm_counter:lpm_counter_component|cntr_esi:auto_generated  ; work         ;
@@ -348,16 +338,10 @@ applicable agreement for further details.
 ;       |octaveMux:inst10|                       ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst54|octaveMux:inst10                                                             ; work         ;
 ;          |lpm_mux:lpm_mux_component|           ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst54|octaveMux:inst10|lpm_mux:lpm_mux_component                                   ; work         ;
 ;             |mux_h9c:auto_generated|           ; 2 (2)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst54|octaveMux:inst10|lpm_mux:lpm_mux_component|mux_h9c:auto_generated            ; work         ;
-;       |restCompare:inst11|                     ; 1 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst54|restCompare:inst11                                                           ; work         ;
-;          |lpm_compare:lpm_compare_component|   ; 1 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst54|restCompare:inst11|lpm_compare:lpm_compare_component                         ; work         ;
-;             |cmpr_rci:auto_generated|          ; 1 (1)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Music_Block:inst54|restCompare:inst11|lpm_compare:lpm_compare_component|cmpr_rci:auto_generated ; work         ;
 ;    |Servo:inst12|                              ; 3 (3)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Servo:inst12                                                                                    ; work         ;
 ;    |Servo:inst9|                               ; 2 (2)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Servo:inst9                                                                                     ; work         ;
-;    |Seven_Seg_Driver:inst27|                   ; 10 (10)     ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Seven_Seg_Driver:inst27                                                                         ; work         ;
-;    |backFarCompare:inst33|                     ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|backFarCompare:inst33                                                                           ; work         ;
-;       |lpm_compare:lpm_compare_component|      ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|backFarCompare:inst33|lpm_compare:lpm_compare_component                                         ; work         ;
-;          |cmpr_bqi:auto_generated|             ; 2 (2)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|backFarCompare:inst33|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated                 ; work         ;
-;    |dark_spot:inst56|                          ; 12 (12)     ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|dark_spot:inst56                                                                                ; work         ;
+;    |Seven_Seg_Driver:inst27|                   ; 3 (3)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|Seven_Seg_Driver:inst27                                                                         ; work         ;
+;    |dark_spot:inst3|                           ; 6 (6)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|dark_spot:inst3                                                                                 ; work         ;
 ;    |distanceCompare:inst31|                    ; 1 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|distanceCompare:inst31                                                                          ; work         ;
 ;       |lpm_compare:lpm_compare_component|      ; 1 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|distanceCompare:inst31|lpm_compare:lpm_compare_component                                        ; work         ;
 ;          |cmpr_gqi:auto_generated|             ; 1 (1)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|distanceCompare:inst31|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated                ; work         ;
@@ -365,15 +349,15 @@ applicable agreement for further details.
 ;       |lpm_compare:lpm_compare_component|      ; 1 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|doneCompare:inst46|lpm_compare:lpm_compare_component                                            ; work         ;
 ;          |cmpr_fti:auto_generated|             ; 1 (1)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|doneCompare:inst46|lpm_compare:lpm_compare_component|cmpr_fti:auto_generated                    ; work         ;
 ;    |obstacle_avoidance_FSM:inst41|             ; 18 (18)     ; 7            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |robotmain|obstacle_avoidance_FSM:inst41                                                                   ; work         ;
-;    |sideCloseCompare:inst16|                   ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|sideCloseCompare:inst16                                                                         ; work         ;
-;       |lpm_compare:lpm_compare_component|      ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|sideCloseCompare:inst16|lpm_compare:lpm_compare_component                                       ; work         ;
-;          |cmpr_gqi:auto_generated|             ; 2 (2)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|sideCloseCompare:inst16|lpm_compare:lpm_compare_component|cmpr_gqi:auto_generated               ; work         ;
+;    |sideCloseCompare:inst16|                   ; 3 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|sideCloseCompare:inst16                                                                         ; work         ;
+;       |lpm_compare:lpm_compare_component|      ; 3 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|sideCloseCompare:inst16|lpm_compare:lpm_compare_component                                       ; work         ;
+;          |cmpr_kqi:auto_generated|             ; 3 (3)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|sideCloseCompare:inst16|lpm_compare:lpm_compare_component|cmpr_kqi:auto_generated               ; work         ;
+;    |sideFarCompare:inst18|                     ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|sideFarCompare:inst18                                                                           ; work         ;
+;       |lpm_compare:lpm_compare_component|      ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|sideFarCompare:inst18|lpm_compare:lpm_compare_component                                         ; work         ;
+;          |cmpr_fqi:auto_generated|             ; 2 (2)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|sideFarCompare:inst18|lpm_compare:lpm_compare_component|cmpr_fqi:auto_generated                 ; work         ;
 ;    |veryFarCompare:inst30|                     ; 1 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|veryFarCompare:inst30                                                                           ; work         ;
 ;       |lpm_compare:lpm_compare_component|      ; 1 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|veryFarCompare:inst30|lpm_compare:lpm_compare_component                                         ; work         ;
-;          |cmpr_bqi:auto_generated|             ; 1 (1)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|veryFarCompare:inst30|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated                 ; work         ;
-;    |wallMux:inst38|                            ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|wallMux:inst38                                                                                  ; work         ;
-;       |lpm_mux:lpm_mux_component|              ; 2 (0)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|wallMux:inst38|lpm_mux:lpm_mux_component                                                        ; work         ;
-;          |mux_i9c:auto_generated|              ; 2 (2)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|wallMux:inst38|lpm_mux:lpm_mux_component|mux_i9c:auto_generated                                 ; work         ;
+;          |cmpr_fqi:auto_generated|             ; 1 (1)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |robotmain|veryFarCompare:inst30|lpm_compare:lpm_compare_component|cmpr_fqi:auto_generated                 ; work         ;
 +------------------------------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -399,27 +383,48 @@ Encoding Type:  One-Hot
 +----------------------------------------------------+----------------------------------------+------------------------+
 ; Latch Name                                         ; Latch Enable Signal                    ; Free of Timing Hazards ;
 +----------------------------------------------------+----------------------------------------+------------------------+
-; dark_spot:inst56|right_left                        ; dark_spot:inst56|Equal1                ; yes                    ;
 ; obstacle_avoidance_FSM:inst41|l_fwd                ; obstacle_avoidance_FSM:inst41|state.s0 ; yes                    ;
 ; obstacle_avoidance_FSM:inst41|r_fwd                ; obstacle_avoidance_FSM:inst41|state.s0 ; yes                    ;
-; dark_spot:inst56|dark_go                           ; dark_spot:inst56|process0~1            ; no                     ;
-; dark_spot:inst56|reset_music                       ; dark_spot:inst56|reset_music~3         ; yes                    ;
+; dark_spot:inst3|play_music                         ; dark_spot:inst3|Equal0                 ; yes                    ;
+; dark_spot:inst3|dark_go                            ; dark_spot:inst3|Equal0                 ; yes                    ;
+; dark_spot:inst3|reset_music                        ; dark_spot:inst3|reset_music~0          ; yes                    ;
 ; Number of user-specified and inferred latches = 5  ;                                        ;                        ;
 +----------------------------------------------------+----------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+-----------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                ;
-+--------------------------------------------------------------+--------------------+
-; Register name                                                ; Reason for Removal ;
-+--------------------------------------------------------------+--------------------+
-; IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4] ; Lost fanout        ;
-; IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4] ; Lost fanout        ;
-; IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component|dffs[5] ; Lost fanout        ;
-; IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component|dffs[5] ; Lost fanout        ;
-; Total Number of Removed Registers = 4                        ;                    ;
-+--------------------------------------------------------------+--------------------+
++---------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                ;
++------------------------------------------------------------------------------+--------------------+
+; Register name                                                                ; Reason for Removal ;
++------------------------------------------------------------------------------+--------------------+
+; IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4..7]              ; Lost fanout        ;
+; IR_Sensor:inst21|inst9                                                       ; Lost fanout        ;
+; IR_Sensor:inst21|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[0..3] ; Lost fanout        ;
+; IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component|dffs[0..7]              ; Lost fanout        ;
+; IR_Sensor:inst14|inst9                                                       ; Lost fanout        ;
+; IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[0..3] ; Lost fanout        ;
+; IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4..5]              ; Lost fanout        ;
+; Total Number of Removed Registers = 24                                       ;                    ;
++------------------------------------------------------------------------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                    ;
++--------------------------------------------------------------+--------------------+----------------------------------------------------------------------------+
+; Register name                                                ; Reason for Removal ; Registers Removed due to This Register                                     ;
++--------------------------------------------------------------+--------------------+----------------------------------------------------------------------------+
+; IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component|dffs[7] ; Lost Fanouts       ; IR_Sensor:inst21|inst9,                                                    ;
+;                                                              ;                    ; IR_Sensor:inst21|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[0], ;
+;                                                              ;                    ; IR_Sensor:inst21|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[1], ;
+;                                                              ;                    ; IR_Sensor:inst21|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[2], ;
+;                                                              ;                    ; IR_Sensor:inst21|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[3]  ;
+; IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component|dffs[7] ; Lost Fanouts       ; IR_Sensor:inst14|inst9,                                                    ;
+;                                                              ;                    ; IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[0], ;
+;                                                              ;                    ; IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[1], ;
+;                                                              ;                    ; IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[2], ;
+;                                                              ;                    ; IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[3]  ;
++--------------------------------------------------------------+--------------------+----------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -427,23 +432,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 101   ;
+; Total registers                              ; 88    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 14    ;
-; Number of registers using Asynchronous Clear ; 24    ;
+; Number of registers using Asynchronous Clear ; 21    ;
 ; Number of registers using Asynchronous Load  ; 2     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |robotmain|obstacle_avoidance_FSM:inst41|Selector8 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -803,7 +799,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                               ;
 ; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                               ;
 ; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                             ;
-; LPM_WIDTH              ; 3           ; Signed Integer                                             ;
+; LPM_WIDTH              ; 2           ; Signed Integer                                             ;
 ; LPM_DIRECTION          ; UP          ; Untyped                                                    ;
 ; LPM_MODULUS            ; 0           ; Untyped                                                    ;
 ; LPM_AVALUE             ; UNUSED      ; Untyped                                                    ;
@@ -816,7 +812,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CARRY_CNT_EN           ; SMART       ; Untyped                                                    ;
 ; LABWIDE_SCLR           ; ON          ; Untyped                                                    ;
 ; USE_NEW_VERSION        ; TRUE        ; Untyped                                                    ;
-; CBXI_PARAMETER         ; cntr_ilh    ; Untyped                                                    ;
+; CBXI_PARAMETER         ; cntr_hlh    ; Untyped                                                    ;
 +------------------------+-------------+------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -826,7 +822,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+----------+--------------------------------------------------------------------+
 ; Parameter Name         ; Value    ; Type                                                               ;
 +------------------------+----------+--------------------------------------------------------------------+
-; lpm_width              ; 4        ; Untyped                                                            ;
+; lpm_width              ; 8        ; Untyped                                                            ;
 ; LPM_REPRESENTATION     ; UNSIGNED ; Untyped                                                            ;
 ; LPM_PIPELINE           ; 0        ; Untyped                                                            ;
 ; CHAIN_SIZE             ; 8        ; Untyped                                                            ;
@@ -836,7 +832,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CARRY_CHAIN_LENGTH     ; 48       ; CARRY_CHAIN_LENGTH                                                 ;
 ; CASCADE_CHAIN_LENGTH   ; 2        ; CASCADE_CHAIN_LENGTH                                               ;
 ; DEVICE_FAMILY          ; MAX II   ; Untyped                                                            ;
-; CBXI_PARAMETER         ; cmpr_gqi ; Untyped                                                            ;
+; CBXI_PARAMETER         ; cmpr_kqi ; Untyped                                                            ;
 ; AUTO_CARRY_CHAINS      ; ON       ; AUTO_CARRY                                                         ;
 ; IGNORE_CARRY_BUFFERS   ; OFF      ; IGNORE_CARRY                                                       ;
 ; AUTO_CASCADE_CHAINS    ; ON       ; AUTO_CASCADE                                                       ;
@@ -854,11 +850,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                       ;
 ; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                       ;
 ; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                     ;
-; LPM_WIDTH              ; 4       ; Untyped                                            ;
+; LPM_WIDTH              ; 8       ; Untyped                                            ;
 ; LPM_SIZE               ; 2       ; Untyped                                            ;
 ; LPM_WIDTHS             ; 1       ; Untyped                                            ;
 ; LPM_PIPELINE           ; 0       ; Untyped                                            ;
-; CBXI_PARAMETER         ; mux_i9c ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_l9c ; Untyped                                            ;
 ; DEVICE_FAMILY          ; MAX II  ; Untyped                                            ;
 +------------------------+---------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -1019,7 +1015,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+----------+------------------------------------------------------------------+
 ; Parameter Name         ; Value    ; Type                                                             ;
 +------------------------+----------+------------------------------------------------------------------+
-; lpm_width              ; 4        ; Untyped                                                          ;
+; lpm_width              ; 8        ; Untyped                                                          ;
 ; LPM_REPRESENTATION     ; UNSIGNED ; Untyped                                                          ;
 ; LPM_PIPELINE           ; 0        ; Untyped                                                          ;
 ; CHAIN_SIZE             ; 8        ; Untyped                                                          ;
@@ -1029,7 +1025,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CARRY_CHAIN_LENGTH     ; 48       ; CARRY_CHAIN_LENGTH                                               ;
 ; CASCADE_CHAIN_LENGTH   ; 2        ; CASCADE_CHAIN_LENGTH                                             ;
 ; DEVICE_FAMILY          ; MAX II   ; Untyped                                                          ;
-; CBXI_PARAMETER         ; cmpr_bqi ; Untyped                                                          ;
+; CBXI_PARAMETER         ; cmpr_fqi ; Untyped                                                          ;
 ; AUTO_CARRY_CHAINS      ; ON       ; AUTO_CARRY                                                       ;
 ; IGNORE_CARRY_BUFFERS   ; OFF      ; IGNORE_CARRY                                                     ;
 ; AUTO_CASCADE_CHAINS    ; ON       ; AUTO_CASCADE                                                     ;
@@ -1043,7 +1039,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+----------+------------------------------------------------------------------+
 ; Parameter Name         ; Value    ; Type                                                             ;
 +------------------------+----------+------------------------------------------------------------------+
-; lpm_width              ; 4        ; Untyped                                                          ;
+; lpm_width              ; 8        ; Untyped                                                          ;
 ; LPM_REPRESENTATION     ; UNSIGNED ; Untyped                                                          ;
 ; LPM_PIPELINE           ; 0        ; Untyped                                                          ;
 ; CHAIN_SIZE             ; 8        ; Untyped                                                          ;
@@ -1053,7 +1049,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CARRY_CHAIN_LENGTH     ; 48       ; CARRY_CHAIN_LENGTH                                               ;
 ; CASCADE_CHAIN_LENGTH   ; 2        ; CASCADE_CHAIN_LENGTH                                             ;
 ; DEVICE_FAMILY          ; MAX II   ; Untyped                                                          ;
-; CBXI_PARAMETER         ; cmpr_bqi ; Untyped                                                          ;
+; CBXI_PARAMETER         ; cmpr_fqi ; Untyped                                                          ;
 ; AUTO_CARRY_CHAINS      ; ON       ; AUTO_CARRY                                                       ;
 ; IGNORE_CARRY_BUFFERS   ; OFF      ; IGNORE_CARRY                                                     ;
 ; AUTO_CASCADE_CHAINS    ; ON       ; AUTO_CASCADE                                                     ;
@@ -1087,7 +1083,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: wallMux:inst34|lpm_mux:lpm_mux_component ;
+; Parameter Settings for User Entity Instance: smallMux:inst7|lpm_mux:lpm_mux_component ;
 +------------------------+---------+----------------------------------------------------+
 ; Parameter Name         ; Value   ; Type                                               ;
 +------------------------+---------+----------------------------------------------------+
@@ -1323,7 +1319,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Web Edition
-    Info: Processing started: Sun Apr 28 23:56:31 2019
+    Info: Processing started: Mon Apr 29 02:10:43 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off robotmain -c robotmain
 Info: Found 2 design units, including 1 entities, in source file Display_mux.vhd
     Info: Found design unit 1: display_mux-SYN
@@ -1447,13 +1443,15 @@ Info: Found 1 design units, including 1 entities, in source file ../../../../../
     Info: Found entity 1: lpm_shiftreg
 Info: Elaborating entity "lpm_shiftreg" for hierarchy "IR_Sensor:inst13|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component"
 Info: Elaborated megafunction instantiation "IR_Sensor:inst13|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component"
-Info: Elaborating entity "dark_spot" for hierarchy "dark_spot:inst56"
+Info: Elaborating entity "dark_spot" for hierarchy "dark_spot:inst3"
+Warning (10631): VHDL Process Statement warning at dark_spot.vhd(16): inferring latch(es) for signal or variable "play_music", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at dark_spot.vhd(16): inferring latch(es) for signal or variable "dark_go", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at dark_spot.vhd(16): inferring latch(es) for signal or variable "right_left", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at dark_spot.vhd(16): inferring latch(es) for signal or variable "reset_music", which holds its previous value in one or more paths through the process
 Info (10041): Inferred latch for "reset_music" at dark_spot.vhd(16)
 Info (10041): Inferred latch for "right_left" at dark_spot.vhd(16)
 Info (10041): Inferred latch for "dark_go" at dark_spot.vhd(16)
+Info (10041): Inferred latch for "play_music" at dark_spot.vhd(16)
 Warning: Using design file doneCompare.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: doneCompare
 Info: Elaborating entity "doneCompare" for hierarchy "doneCompare:inst46"
@@ -1504,28 +1502,33 @@ Warning: Using design file MusicCounter.vhd, which is not specified as a design 
 Info: Elaborating entity "MusicCounter" for hierarchy "MusicCounter:inst6"
 Info: Elaborating entity "lpm_counter" for hierarchy "MusicCounter:inst6|lpm_counter:lpm_counter_component"
 Info: Elaborated megafunction instantiation "MusicCounter:inst6|lpm_counter:lpm_counter_component"
-Info: Found 1 design units, including 1 entities, in source file db/cntr_ilh.tdf
-    Info: Found entity 1: cntr_ilh
-Info: Elaborating entity "cntr_ilh" for hierarchy "MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_ilh:auto_generated"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_hlh.tdf
+    Info: Found entity 1: cntr_hlh
+Info: Elaborating entity "cntr_hlh" for hierarchy "MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_hlh:auto_generated"
 Warning: Using design file sideCloseCompare.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: sideCloseCompare
 Info: Elaborating entity "sideCloseCompare" for hierarchy "sideCloseCompare:inst16"
+Info: Elaborating entity "lpm_compare" for hierarchy "sideCloseCompare:inst16|lpm_compare:lpm_compare_component"
+Info: Elaborated megafunction instantiation "sideCloseCompare:inst16|lpm_compare:lpm_compare_component"
+Info: Found 1 design units, including 1 entities, in source file db/cmpr_kqi.tdf
+    Info: Found entity 1: cmpr_kqi
+Info: Elaborating entity "cmpr_kqi" for hierarchy "sideCloseCompare:inst16|lpm_compare:lpm_compare_component|cmpr_kqi:auto_generated"
 Warning: Using design file wallMux.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: wallMux
 Info: Elaborating entity "wallMux" for hierarchy "wallMux:inst38"
 Info: Elaborating entity "lpm_mux" for hierarchy "wallMux:inst38|lpm_mux:lpm_mux_component"
 Info: Elaborated megafunction instantiation "wallMux:inst38|lpm_mux:lpm_mux_component"
-Info: Found 1 design units, including 1 entities, in source file db/mux_i9c.tdf
-    Info: Found entity 1: mux_i9c
-Info: Elaborating entity "mux_i9c" for hierarchy "wallMux:inst38|lpm_mux:lpm_mux_component|mux_i9c:auto_generated"
+Info: Found 1 design units, including 1 entities, in source file db/mux_l9c.tdf
+    Info: Found entity 1: mux_l9c
+Info: Elaborating entity "mux_l9c" for hierarchy "wallMux:inst38|lpm_mux:lpm_mux_component|mux_l9c:auto_generated"
 Warning: Using design file sideFarCompare.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: sideFarCompare
 Info: Elaborating entity "sideFarCompare" for hierarchy "sideFarCompare:inst18"
 Info: Elaborating entity "lpm_compare" for hierarchy "sideFarCompare:inst18|lpm_compare:lpm_compare_component"
 Info: Elaborated megafunction instantiation "sideFarCompare:inst18|lpm_compare:lpm_compare_component"
-Info: Found 1 design units, including 1 entities, in source file db/cmpr_bqi.tdf
-    Info: Found entity 1: cmpr_bqi
-Info: Elaborating entity "cmpr_bqi" for hierarchy "sideFarCompare:inst18|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated"
+Info: Found 1 design units, including 1 entities, in source file db/cmpr_fqi.tdf
+    Info: Found entity 1: cmpr_fqi
+Info: Elaborating entity "cmpr_fqi" for hierarchy "sideFarCompare:inst18|lpm_compare:lpm_compare_component|cmpr_fqi:auto_generated"
 Warning: Using design file veryFarCompare.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: veryFarCompare
 Info: Elaborating entity "veryFarCompare" for hierarchy "veryFarCompare:inst30"
@@ -1534,6 +1537,19 @@ Info: Elaborated megafunction instantiation "veryFarCompare:inst30|lpm_compare:l
 Warning: Using design file backFarCompare.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: backFarCompare
 Info: Elaborating entity "backFarCompare" for hierarchy "backFarCompare:inst33"
+Info: Elaborating entity "lpm_compare" for hierarchy "backFarCompare:inst33|lpm_compare:lpm_compare_component"
+Info: Elaborated megafunction instantiation "backFarCompare:inst33|lpm_compare:lpm_compare_component"
+Info: Found 1 design units, including 1 entities, in source file db/cmpr_bqi.tdf
+    Info: Found entity 1: cmpr_bqi
+Info: Elaborating entity "cmpr_bqi" for hierarchy "backFarCompare:inst33|lpm_compare:lpm_compare_component|cmpr_bqi:auto_generated"
+Warning: Using design file smallMux.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: smallMux
+Info: Elaborating entity "smallMux" for hierarchy "smallMux:inst7"
+Info: Elaborating entity "lpm_mux" for hierarchy "smallMux:inst7|lpm_mux:lpm_mux_component"
+Info: Elaborated megafunction instantiation "smallMux:inst7|lpm_mux:lpm_mux_component"
+Info: Found 1 design units, including 1 entities, in source file db/mux_i9c.tdf
+    Info: Found entity 1: mux_i9c
+Info: Elaborating entity "mux_i9c" for hierarchy "smallMux:inst7|lpm_mux:lpm_mux_component|mux_i9c:auto_generated"
 Info: Elaborating entity "Seven_Seg_Driver" for hierarchy "Seven_Seg_Driver:inst27"
 Info: Elaborating entity "Display_mux" for hierarchy "Display_mux:inst24"
 Info: Elaborating entity "lpm_mux" for hierarchy "Display_mux:inst24|lpm_mux:lpm_mux_component"
@@ -1571,23 +1587,44 @@ Info: Encoding result for state machine "|robotmain|obstacle_avoidance_FSM:inst4
     Info: State "|robotmain|obstacle_avoidance_FSM:inst41|state.s5" uses code string "0100001"
     Info: State "|robotmain|obstacle_avoidance_FSM:inst41|state.s6" uses code string "1000001"
 Info: Clock multiplexers have been protected
-Warning: Latch dark_spot:inst56|right_left has unsafe behavior
-    Warning: Ports ENA and CLR on the latch are fed by the same signal MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_ilh:auto_generated|safe_q[2]
-Warning: Latch dark_spot:inst56|dark_go has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_ilh:auto_generated|safe_q[2]
-    Warning: Ports ENA and PRE on the latch are fed by the same signal inst48
-Warning: Latch dark_spot:inst56|reset_music has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_ilh:auto_generated|safe_q[2]
+Warning: Latch dark_spot:inst3|play_music has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_hlh:auto_generated|safe_q[0]
+Warning: Latch dark_spot:inst3|dark_go has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_hlh:auto_generated|safe_q[0]
+Warning: Latch dark_spot:inst3|reset_music has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal MusicCounter:inst6|lpm_counter:lpm_counter_component|cntr_hlh:auto_generated|safe_q[0]
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "Blue_Tooth_TX_Out" stuck at GND
+    Warning (13410): Pin "Seg_B" stuck at VCC
+    Warning (13410): Pin "Seg_Colon" stuck at GND
     Warning (13410): Pin "Spare_Servo" stuck at GND
     Warning (13410): Pin "LED_Blue" stuck at VCC
     Warning (13410): Pin "LED_Green" stuck at VCC
-Info: 4 registers lost all their fanouts during netlist optimizations. The first 4 are displayed below.
-    Info: Register "IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component|dffs[5]" lost all its fanouts during netlist optimizations.
+Info: 24 registers lost all their fanouts during netlist optimizations. The first 24 are displayed below.
+    Info: Register "IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component|dffs[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component|dffs[6]" lost all its fanouts during netlist optimizations.
     Info: Register "IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component|dffs[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst21|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst21|inst9" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst21|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst21|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst21|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst21|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component|dffs[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component|dffs[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component|dffs[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component|dffs[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component|dffs[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component|dffs[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst14|reg8:inst12|lpm_ff:lpm_ff_component|dffs[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst14|inst9" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst14|Shift4:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component|dffs[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "IR_Sensor:inst20|reg8:inst12|lpm_ff:lpm_ff_component|dffs[5]" lost all its fanouts during netlist optimizations.
 Warning: Design contains 6 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "BlueTooth_RCV_In"
     Warning (15610): No output dependent on input pin "Bumper"
@@ -1595,14 +1632,14 @@ Warning: Design contains 6 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Dip[2]"
     Warning (15610): No output dependent on input pin "Dip[1]"
     Warning (15610): No output dependent on input pin "Dip[0]"
-Info: Implemented 261 device resources after synthesis - the final resource count might be different
+Info: Implemented 228 device resources after synthesis - the final resource count might be different
     Info: Implemented 11 input pins
     Info: Implemented 21 output pins
     Info: Implemented 5 bidirectional pins
-    Info: Implemented 224 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 54 warnings
-    Info: Allocated 280 megabytes of memory during processing
-    Info: Processing ended: Sun Apr 28 23:56:34 2019
-    Info: Elapsed time: 00:00:03
+    Info: Implemented 191 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 57 warnings
+    Info: Allocated 257 megabytes of memory during processing
+    Info: Processing ended: Mon Apr 29 02:11:02 2019
+    Info: Elapsed time: 00:00:19
 
 

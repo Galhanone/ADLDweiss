@@ -20,5 +20,5 @@ FUNCTION MusicCounter
 )
 
 RETURNS (
-	q[2..0]
+	q[1..0]
 );

@@ -15,7 +15,7 @@
 
 FUNCTION sideFarCompare 
 (
-	dataa[3..0]
+	dataa[7..0]
 )
 
 RETURNS (

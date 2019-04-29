@@ -4,20 +4,20 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Music_Block:inst54|restCompare:inst11|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_rci.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|backFarCompare:inst33|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_bqi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|doneCompare:inst46|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_fti.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|wallMux:inst34|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_i9c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|smallMux:inst7|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_i9c.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Colon_mux:inst25|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_sld.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_ilh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|MusicCounter:inst6|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_hlh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Music_Block:inst54|durCounter:inst31|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_esi.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|sideCloseCompare:inst16|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_gqi.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|veryFarCompare:inst30|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_bqi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|sideCloseCompare:inst16|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_kqi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|veryFarCompare:inst30|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_fqi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|BigCount:inst23|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_49h.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Digit_decode:inst26|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_gpe.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|distanceCompare:inst31|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_gqi.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|sideFarCompare:inst18|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_bqi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|sideFarCompare:inst18|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_fqi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Display_mux:inst24|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_vld.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Music_Block:inst54|freqCounter:inst30|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_gsi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Music_Block:inst54|noteCounter:inst29|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_klh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|Music_Block:inst54|octaveMux:inst10|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_h9c.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|wallMux:inst38|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_i9c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|robotmain|wallMux:inst38|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_l9c.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
