@@ -13,11 +13,11 @@
 --applicable agreement for further details.
 
 
-FUNCTION DoneCompare 
+FUNCTION doneCompare 
 (
-	dataa[1..0]
+	dataa[2..0]
 )
 
 RETURNS (
-	AeB
+	AgeB
 );

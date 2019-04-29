@@ -4,7 +4,7 @@
 -- MODULE: lpm_compare 
 
 -- ============================================================
--- File Name: DoneCompare.tdf
+-- File Name: doneCompare.tdf
 -- Megafunction Name(s):
 -- 			lpm_compare
 --
@@ -36,10 +36,10 @@ INCLUDE "lpm_compare.inc";
 
 
 
-SUBDESIGN DoneCompare
+SUBDESIGN doneCompare
 (
-	dataa[1..0]	 : INPUT;
-	AeB	 : OUTPUT;
+	dataa[2..0]	 : INPUT;
+	AgeB	 : OUTPUT;
 )
 
 VARIABLE
@@ -48,14 +48,14 @@ VARIABLE
 			LPM_HINT = "ONE_INPUT_IS_CONSTANT=YES",
 			LPM_REPRESENTATION = "UNSIGNED",
 			LPM_TYPE = "LPM_COMPARE",
-			LPM_WIDTH = 2
+			LPM_WIDTH = 3
 			);
 
 BEGIN
 
-	AeB = lpm_compare_component.AeB;
-	lpm_compare_component.dataa[1..0] = dataa[1..0];
-	lpm_compare_component.datab[1..0] = 3;
+	AgeB = lpm_compare_component.AgeB;
+	lpm_compare_component.dataa[2..0] = dataa[2..0];
+	lpm_compare_component.datab[2..0] = 6;
 END;
 
 
@@ -63,8 +63,8 @@ END;
 -- ============================================================
 -- CNX file retrieval info
 -- ============================================================
--- Retrieval info: PRIVATE: AeqB NUMERIC "1"
--- Retrieval info: PRIVATE: AgeB NUMERIC "0"
+-- Retrieval info: PRIVATE: AeqB NUMERIC "0"
+-- Retrieval info: PRIVATE: AgeB NUMERIC "1"
 -- Retrieval info: PRIVATE: AgtB NUMERIC "0"
 -- Retrieval info: PRIVATE: AleB NUMERIC "0"
 -- Retrieval info: PRIVATE: AltB NUMERIC "0"
@@ -72,29 +72,29 @@ END;
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "MAX II"
 -- Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "0"
 -- Retrieval info: PRIVATE: Latency NUMERIC "0"
--- Retrieval info: PRIVATE: PortBValue NUMERIC "3"
+-- Retrieval info: PRIVATE: PortBValue NUMERIC "6"
 -- Retrieval info: PRIVATE: Radix NUMERIC "2"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: SignedCompare NUMERIC "0"
 -- Retrieval info: PRIVATE: aclr NUMERIC "0"
 -- Retrieval info: PRIVATE: clken NUMERIC "0"
 -- Retrieval info: PRIVATE: isPortBConstant NUMERIC "1"
--- Retrieval info: PRIVATE: nBit NUMERIC "2"
+-- Retrieval info: PRIVATE: nBit NUMERIC "3"
 -- Retrieval info: CONSTANT: LPM_HINT STRING "ONE_INPUT_IS_CONSTANT=YES"
 -- Retrieval info: CONSTANT: LPM_REPRESENTATION STRING "UNSIGNED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COMPARE"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "2"
--- Retrieval info: USED_PORT: AeB 0 0 0 0 OUTPUT NODEFVAL AeB
--- Retrieval info: USED_PORT: dataa 0 0 2 0 INPUT NODEFVAL dataa[1..0]
--- Retrieval info: CONNECT: AeB 0 0 0 0 @AeB 0 0 0 0
--- Retrieval info: CONNECT: @dataa 0 0 2 0 dataa 0 0 2 0
--- Retrieval info: CONNECT: @datab 0 0 2 0 3 0 0 0 0
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "3"
+-- Retrieval info: USED_PORT: AgeB 0 0 0 0 OUTPUT NODEFVAL AgeB
+-- Retrieval info: USED_PORT: dataa 0 0 3 0 INPUT NODEFVAL dataa[2..0]
+-- Retrieval info: CONNECT: AgeB 0 0 0 0 @AgeB 0 0 0 0
+-- Retrieval info: CONNECT: @dataa 0 0 3 0 dataa 0 0 3 0
+-- Retrieval info: CONNECT: @datab 0 0 3 0 6 0 0 0 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
--- Retrieval info: GEN_FILE: TYPE_NORMAL DoneCompare.tdf TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL DoneCompare.inc TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL DoneCompare.cmp FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL DoneCompare.bsf TRUE FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL DoneCompare_inst.tdf FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL DoneCompare_waveforms.html TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL DoneCompare_wave*.jpg FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL doneCompare.tdf TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL doneCompare.inc TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL doneCompare.cmp FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL doneCompare.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL doneCompare_inst.tdf FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL doneCompare_waveforms.html TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL doneCompare_wave*.jpg FALSE
 -- Retrieval info: LIB_FILE: lpm

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EPM240T100) Path("C:/Users/Mainframe/Documents/GitHub/ADLDweiss/") File("robotmain.pof") MfrSpec(OpMask(1) SEC_Device(EPM240T100) Child_OpMask(2 0 0));
+		Device PartName(EPM240T100) Path("C:/Users/danielggarcia/Documents/GitHub/ADLDweiss/") File("robotmain.pof") MfrSpec(OpMask(1) SEC_Device(EPM240T100) Child_OpMask(2 0 0));
 
 ChainEnd;
 

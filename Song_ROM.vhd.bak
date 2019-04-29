@@ -44,8 +44,7 @@ when "10010"  => data <=  "011100001";
 when "10011"  => data <=  "100001101";
 when "10100"  => data <=  "010000110";
 
-
-when others => Data <= 	   "---------";--
+when others   => data <=  "---------";
 			
 		End Case;
 		
