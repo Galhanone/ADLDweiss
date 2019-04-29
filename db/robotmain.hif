@@ -8286,6 +8286,29 @@ d41d8cd98f0b24e980998ecf8427e
 
 # end
 # entity
+robotmain
+# storage
+db|robotmain.(0).cnf
+db|robotmain.(0).cnf
+# case_insensitive
+# source_file
+robotmain.bdf
+6ab02ab9f68420897b77c8e30aa9ed3
+25
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
 dark_spot
 # storage
 db|robotmain.(46).cnf
@@ -8319,6 +8342,29 @@ dark_spot:inst3
 
 # end
 # entity
+Music_Block
+# storage
+db|robotmain.(111).cnf
+db|robotmain.(111).cnf
+# case_insensitive
+# source_file
+Music_Block.bdf
+da2a555ac0dfe344269f7643adda6f8
+25
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Music_Block:inst44
+}
+# lmf
+..|..|..|..|..|altera|72sp3|quartus|lmf|
+d41d8cd98f0b24e980998ecf8427e
+# macro_sequence
+
+# end
+# entity
 Song_ROM
 # storage
 db|robotmain.(35).cnf
@@ -8348,52 +8394,6 @@ Music_Block:inst44|Song_ROM:inst1
 # lmf
 ..|..|..|..|..|altera|72sp3|quartus|lmf|maxplus2.lmf
 9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-robotmain
-# storage
-db|robotmain.(0).cnf
-db|robotmain.(0).cnf
-# case_insensitive
-# source_file
-robotmain.bdf
-8431fee4ec967c4f4910aee0f174de
-25
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# lmf
-..|..|..|..|..|altera|72sp3|quartus|lmf|
-d41d8cd98f0b24e980998ecf8427e
-# macro_sequence
-
-# end
-# entity
-Music_Block
-# storage
-db|robotmain.(111).cnf
-db|robotmain.(111).cnf
-# case_insensitive
-# source_file
-Music_Block.bdf
-da2a555ac0dfe344269f7643adda6f8
-25
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-Music_Block:inst44
-}
-# lmf
-..|..|..|..|..|altera|72sp3|quartus|lmf|
-d41d8cd98f0b24e980998ecf8427e
 # macro_sequence
 
 # end
