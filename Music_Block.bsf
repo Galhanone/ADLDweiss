@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 208 112)
+	(rect 16 16 208 144)
 	(text "Music_Block" (rect 5 0 75 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -65,7 +65,14 @@ applicable agreement for further details.
 		(text "Speaker_B" (rect 109 59 171 73)(font "Arial" (font_size 8)))
 		(line (pt 192 64)(pt 176 64)(line_width 1))
 	)
+	(port
+		(pt 192 80)
+		(output)
+		(text "Dur[2..0]" (rect 0 0 48 14)(font "Arial" (font_size 8)))
+		(text "Dur[2..0]" (rect 123 75 171 89)(font "Arial" (font_size 8)))
+		(line (pt 192 80)(pt 176 80)(line_width 3))
+	)
 	(drawing
-		(rectangle (rect 16 16 176 80)(line_width 1))
+		(rectangle (rect 16 16 176 112)(line_width 1))
 	)
 )
